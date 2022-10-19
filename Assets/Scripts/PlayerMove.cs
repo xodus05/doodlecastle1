@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-
+    // 부적붙이기
     private BoxCollider2D boxColider;
     public LayerMask LayerMask;
 
