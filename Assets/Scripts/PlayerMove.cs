@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-    private BoxCollider2D boxCollider;
-    public LayerMask layerMask;
+    private BoxCollider2D boxColider;
+    public LayerMask LayerMask;
 
     public float speed;
 
@@ -26,7 +26,6 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -49,6 +48,16 @@ public class PlayerMove : MonoBehaviour
             // 애니메이션 설정
             animator.SetFloat("DirX", vector.x);
             animator.SetFloat("DirY", vector.y);
+
+            RaycastHit2D hit;
+            // A지점, B지점
+            // 레이저 (무언가 닿으면 hit = 방해물 안 닿으면 hit = null)
+
+            Vector2 start = transform.position;  // A지점, 캐릭터 현재 위치값
+            Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount);    // B지점, 캐릭터가 이동하고자 하는 위치 값
+
+
+
             animator.SetBool("Walking", true);
 
             while(currentWalkCount < walkCount) {   // 한 칸을 가기 위한 반복문
@@ -79,3 +88,4 @@ public class PlayerMove : MonoBehaviour
         }
     }
 }
+
