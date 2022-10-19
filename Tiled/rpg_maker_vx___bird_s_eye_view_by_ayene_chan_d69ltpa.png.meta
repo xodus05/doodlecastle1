@@ -1,0 +1,6370 @@
+fileFormatVersion: 2
+guid: edb79909fcf7b6b4e820289b33182bbb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d0e597ceb2dbb45aa3471ae306dd1e
+      internalID: 529156508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813bdedc819657f4fae773272091e9d4
+      internalID: 1327692353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b266d2d9ba97c3545bc631a6e44fe7a2
+      internalID: 434308931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b0797a529af1b468911aa943fd7d34
+      internalID: 164997621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fd561204cf8754887d7aa9ad3745d2
+      internalID: -682752358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b494708e3085024bb8760be3f7d41f7
+      internalID: 1501331239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33243dd29c98654483ff0060fcf74a2
+      internalID: -650811952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0908ab36d9db1204caaf325c89feaadc
+      internalID: 187775897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab130ecc82aefa445babec131a68bf1b
+      internalID: -657129766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8214e7e7765a5f1459a7b3943be863e0
+      internalID: 1995586701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c138bb29910a442990b22ad6e48ce9
+      internalID: 1152816471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca053fa7d15023b449447ec10bb213fe
+      internalID: 2029595605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12614e32add0bdb44b2a8c287479fc6d
+      internalID: -558036364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be07457c46c42449a351157ebacb0e5
+      internalID: -1028233478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77417dc1694cf914f86f08e96153297d
+      internalID: 1634858472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da06e87a6aa2c98468e62ed398250564
+      internalID: 832183784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5238546a304aa9e48bd12de9bc9d30e9
+      internalID: -325657199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d479a5658dd18374daaa3f657ad9e690
+      internalID: -999851977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a29103e6ba793488719ab81a33dadd
+      internalID: -726725246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ae3af17752bc149a1c87cf69bbc29c
+      internalID: -884596385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9c1045f0b4adb4bb0cbae32e096ca9
+      internalID: -31821653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91294bb1eeefc543814f1569f01f12f
+      internalID: -2014358367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f4809c9f1acfa4188499059f18fdf1
+      internalID: 73699787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6209ac99e2cefd2418b1536576dbe8e4
+      internalID: -857145942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d94706833042a4b8521007bf0e252e
+      internalID: -1967229559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_25
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180f29fbc4f81dd43935a74284bd10f6
+      internalID: -600783218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39567be052150674f9d684b56b0c184b
+      internalID: 860180871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a8505f1d6457c4d972f2320ba7633a
+      internalID: 341223233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17eba01b33108c74686cf55264173a7a
+      internalID: -851071946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8eb981ea4dae447b3464d8e18ba42f
+      internalID: 1331696877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab779aaf8891724eb4a49819bd81e76
+      internalID: 497258132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_31
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9caa9484130ca4b90adbdf213dd417
+      internalID: -1339524258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb261fc81f26c804496977be2547702c
+      internalID: 1632781627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0ba5b00925edf4b984a2d6328206f2
+      internalID: 128981056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05f7018d6409a34d939dfcff2ffe652
+      internalID: 1163531829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca841f17a96a88044bdf846dd8a25d5c
+      internalID: 939776031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaa6aeadc6df1148815d06587dbd846
+      internalID: 5537545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13dfca818f449ee4f909df434ef71189
+      internalID: 311812898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c7f4327f0a00f40aa2aa2ebd71bdb6
+      internalID: -1301964006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab14bd5c5d93934f8a278471f0badc6
+      internalID: -1811672272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5d72a5ca279a049af9aea724ba9bc3
+      internalID: 1174345971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aba27d7cb1edc43a8cc7254ce8200d
+      internalID: -770848863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d149c0a3b91f849ab3c15bba1dabfc
+      internalID: 1594781365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_43
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88515b03fa1dc1d40971d40166d0e26a
+      internalID: -194381847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dde15e6ea630694baf254def14f6f59
+      internalID: -684629751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_45
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88c71e015613a84bb43560b9c743b44
+      internalID: 872946005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_46
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254cddc6439d7d44b8dc90e1afec7c01
+      internalID: -1295596589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3118f1577e5871478f9c4fc02bc4d8c
+      internalID: 303516023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2236f670d439d73449d7f359ebb99bd6
+      internalID: 1956786989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8805736469dc0d4ea8c7c9b2de39df9
+      internalID: 1099492255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f18190da4e22174f905e421a1b95c5e
+      internalID: -1759941072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04def2ecb8765448ada6098478528fd
+      internalID: 372428354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af9af4a74aab0244868c16813062045
+      internalID: 1646837223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00e62eab447b304e9ab54fc0f128dc8
+      internalID: -254567662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37eb900ff56c4e41950433cb8bbfd8c
+      internalID: 1512869263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63a0fd344502424495a2a1d18239f1a
+      internalID: 270539955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b032f518691bbac44af88304a6710420
+      internalID: -185904505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a765a0beb068c4aa252ad03e3f1b1f
+      internalID: 1897980690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fa85a39b87f8549a4b2fba04a2233b
+      internalID: -651780608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edb04808b196d946a1d1f99a310af74
+      internalID: 152824296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef7a5aac1ec871479af7de1ef8d2fa7
+      internalID: 210928092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_61
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f863ebc901a69c41b7a445c627e25b9
+      internalID: 583359543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ec614f07cf080499f121fc4e76d09a
+      internalID: -1592750659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac89faa42853b514f9f34d19a373ac34
+      internalID: 1760066153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6c6896091304a428ce4b49d9c8c50e
+      internalID: 1449072126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2d9d0ad5f57224e9aa8160625075c0
+      internalID: -1564764742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_66
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae0b8d768ca7cd438bc27e91d1fd564
+      internalID: -325325666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b734146a1b64bba468fc327855ef11a0
+      internalID: -253133019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8d41908a26b0c4f9bac869a458a5b7
+      internalID: 1675263319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_69
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7928c138cf44d954f97717b67d3b6c10
+      internalID: 732635059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_70
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a59f596342eac4e8cf2185e6b275a0
+      internalID: -1394313186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_71
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273bfbabeb87f3a42af888a7c6d897af
+      internalID: -985117470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32d9939aae676b48adefefd2c3ed14f
+      internalID: -318442266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_73
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25dc339570a0a741839dc9e28106d7b
+      internalID: -787095637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735fa1b5f69bc6f49bdec53e60cd8507
+      internalID: -504686577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50cddbb04a7031498e7d30d9bc6d556
+      internalID: -1265781560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131ac9da880cdc647bf9c20c05139a95
+      internalID: 1155345502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae33cc6abf325fb45b9bce3c40681a8d
+      internalID: -1226001228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_78
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d6f3801b173c545b7a677dfe6e03d3
+      internalID: -107528937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_79
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1702a26b97f674d912baf33cfa5f3f
+      internalID: 1226858911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78060153958cdf948973f21e032ea857
+      internalID: 740933290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_81
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d902e5ed021d143ad0c2f95541a80d
+      internalID: -1817146243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba249ca8d8264e4a9263d7332a7664f
+      internalID: -1248662880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b185ad956fc14439a35d239530380c
+      internalID: 1775599232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd470a76b68ce74cb4b014049545a8f
+      internalID: -1922852550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1615f5ecf4fa17d4296eda7e9542a0a6
+      internalID: 1097623633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe9817cda5d4f14c87049b1a9b0912e
+      internalID: -450257348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_87
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a572018d6f010478a24c6120a850dd
+      internalID: 1323208655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847db3599e40a5c4685c7452b658b9ad
+      internalID: -256765404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_89
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f1f4e1849a0cc458f8c7c72718f13b
+      internalID: -173745449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_90
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fd9d9b065616746a57b9520deda998
+      internalID: -1109371078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_91
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdc12deaf4445d4f8b6543a34808584
+      internalID: -1118459912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b4bfcb422b5854eb6b295239becd23
+      internalID: -1659984348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_93
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3597353abeada342a5fd9fa36d5fa44
+      internalID: 1107423457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_94
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a00ab7f0d412d541a2b2f2f74f5ee00
+      internalID: 808458727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_95
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b79bd7f704a72428c15d65c2a4c22e
+      internalID: 467276394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9bc63c1b9514e4dab856b5bae0718a
+      internalID: -881881348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_97
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57562c3300946a458084a4a2d1e2aca
+      internalID: -1359565082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_98
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae19fb0dc0a35a4f8fcd2f00690aafb
+      internalID: 1259828700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_99
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a88edd3d8cc3f142a79ce32b53323d1
+      internalID: -1132171590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_100
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a833c0c5c9a0549a4ef226c03e3bf9
+      internalID: 2112352907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_101
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91cae08273ac14499d850a20e745838
+      internalID: -1108361602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbcdca096a516740b183eb20ec7fb92
+      internalID: 895816613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_103
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e584d7a275d4749b94f47aac2cf7d0
+      internalID: 1046503366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbd6811d6dfb6347a1e97e57f5f47a6
+      internalID: -395883811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_105
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3174ead1788b6054083fabd8261e1f36
+      internalID: -1348793710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_106
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb653c5046560b42a42f88aace103c5
+      internalID: 1275565602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_107
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6be1399f8e9e34c817ca5679e5550f
+      internalID: 266380147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_108
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3365d4989f6d5214e8d5d9cb6a4c2586
+      internalID: -1665060834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_109
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5a67639e1608f4f96e21b70a1c19f4
+      internalID: 640922515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_110
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfd2e3b66fdd3442b550a3736433a72
+      internalID: 1956260467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_111
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f946316fec54bca48b53371d9fb87b40
+      internalID: -930333196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0d4eaf2d4155e4587cf940be874b84
+      internalID: -2010463020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_113
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873285895cbbea9498a787f51640ce04
+      internalID: -1809952751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_114
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0072abc4dc4f074468e535e6b13402a2
+      internalID: -1599065800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_115
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2121004394a9a6347b02a33fc1c9d301
+      internalID: -550597460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_116
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c37d0a987fca349a158603b9cc121f
+      internalID: 1905095556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_117
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dc1fb5d5899cf439f85b32628e3710
+      internalID: 982530242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_118
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8324ba6c88baa8248a770b19ae5af3a8
+      internalID: -1596851022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_119
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62271509109a075429b0c31e697ca1e1
+      internalID: 1800338539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_120
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1745ae31ad08faf4384b951f796a21b9
+      internalID: 1606202575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_121
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f80cbcc9d5c1b4e91492611dc6a5a0
+      internalID: 1080177485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_122
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f74119b12ab854282182c0299d593c
+      internalID: 1557125610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_123
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20518b6b63bf004287a0c8637d4642d
+      internalID: 1077197496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_124
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2663f897ac3019f4597358cc539f1580
+      internalID: -1534849260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_125
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0e87a9d9b0ad942b513e2e8b35672a
+      internalID: 668322966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_126
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2569321ce843ea243bf707971ca98d2c
+      internalID: 1173747962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_127
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35daf3d89f337df4ba88e470d962940e
+      internalID: -941822812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1bdf9873c2ad649a85636a88b42b8b
+      internalID: 1839752952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_129
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e86080544fefdc4aa3468002c78d8d0
+      internalID: -1589881692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_130
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6246f21ba2bdf6a41b235936b2f695cb
+      internalID: 991451690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_131
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4a02691bdf01e4eb5a0c7eed528879
+      internalID: -1501314333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_132
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb14734334fb0347b21bafbc9d67a8f
+      internalID: 1458255884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_133
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81a48879dc99d64bb82e9c5886251a6
+      internalID: -52962851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_134
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9104143412d55bf41ae463815a0c68f4
+      internalID: 1555818644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_135
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a780dca545dc64396e796ed6155bc0
+      internalID: 1016184583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_136
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc980bd84b80cf4eb1ad967b071cc4b
+      internalID: 92153982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_137
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5894ae046229e6144bd006c83266b04c
+      internalID: -1035128224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_138
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3df128ede875b34d86baeeeed0190ad
+      internalID: -1070286786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_139
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60a43f4cbcc27d4ab30ac4e9f098371
+      internalID: -1611748149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_140
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a46d46829856941b3104af9db7c8fe
+      internalID: 1311187998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_141
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a846c0f3d15dfe74d86cf922a70e055b
+      internalID: 739817084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_142
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881395de32c66b44c9f1c102d3baf9b0
+      internalID: 135245194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_143
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddd3ad862f834940ba8353ebcba14e3
+      internalID: 515117000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8937d23e16c442743a85e92abe522a20
+      internalID: -1605556987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_145
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c22e0fa61500d4f85a7b6c3b08a973
+      internalID: -484659016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_146
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6203f93dda348740adb63b2d58d2af9
+      internalID: 774040787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_147
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee578c1d72ae77842bdeb0c1b4b35a12
+      internalID: 1192328136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_148
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b1a88efb3764f42ad7169fd7903470
+      internalID: -1251736314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_149
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a315b4c2428fc54eb978d1ab6f6ea1f
+      internalID: -704658798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_150
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f257e156349f9842bc0c0a45354ec9b
+      internalID: -1763074656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_151
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b910d3126023c34c9db8117d83364f5
+      internalID: 1939329819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_152
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f456d2befd776fb4585b09512771572a
+      internalID: -1878694425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_153
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e8ede7e45830346942734ae3bef470
+      internalID: -1537614419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_154
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91af8836c93eea5489142cee22b596cd
+      internalID: -370491301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_155
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75149544e19bd664daf3fb8d6696e448
+      internalID: -1988173366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_156
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc35c298e69c0a438e75b41962ddd62
+      internalID: 131906188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_157
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29e554464126b740826111d97191af9
+      internalID: 2024512670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_158
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e965cfe2bfd3e42b70a78118734157
+      internalID: -423657615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_159
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9944b987817543b4883f59f956775c86
+      internalID: -281322472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f55c8dffbba0948be795ddd2fc0165
+      internalID: -523098401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_161
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008ab362c6077df44bd9a5c23b687f0c
+      internalID: -8849765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_162
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb920f2e6acf6f4da361c11809dcdb7
+      internalID: -557400449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_163
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d14493838097da45b27ac59329d3cc0
+      internalID: 878672378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_164
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83971fcbf6f25b445b925b6f4b05d08f
+      internalID: -1445719598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_165
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6a1c23b2537a44398abcd8b712477a
+      internalID: 1530189737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_166
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa45328c35c8e54f9f979d4b4d37caa
+      internalID: -585189855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_167
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b7028e20056df4aa602298e5a25615
+      internalID: 193378513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_168
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c3a8ad4b8ba1a4d8bf0ec034b4b4a1
+      internalID: 1986670714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_169
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e22d7d02c732b478c9a6ff88169881
+      internalID: -324422431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_170
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564120a4e8651054d9b6e1868af3273c
+      internalID: -1506921522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_171
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a99dd36765f054f945d9244adc7ed7
+      internalID: 339059435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_172
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757ed99dc6883cd4eb6b7136219c38fb
+      internalID: 1262787123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_173
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7ea10f78fe95841a083eebdf810d6a
+      internalID: 1333655515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_174
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187f4c3416c70f5429144e859b1a5da0
+      internalID: -1971756625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_175
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24553d725ee87be42b72264422125327
+      internalID: 900909871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3517b1acef0ab438bff4fe6ae3ffb8
+      internalID: 30421087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_177
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62120aecea5897f46b5e92fb8a67f695
+      internalID: -821943338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_178
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154996adf174e4e40bd08e94de113b5a
+      internalID: -1048919345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_179
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d24acb7b82f05c4ba2502f006412138
+      internalID: 1565401704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_180
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6892916b3ce7141baf5bac868ec474
+      internalID: 1413939283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_181
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0a7bacf24a89f46b1b15c07161e044
+      internalID: 270822186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_182
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64f03f9b5393844ca6a7965e3fd8fdb
+      internalID: 258181846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_183
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b351b21975339f149a647de966241a0f
+      internalID: 1915463371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_184
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b8531499beae947b9dae14ea59da46
+      internalID: 1130725638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_185
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac37bbd94a3818f4ea1317f2c3585bde
+      internalID: -1687460036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_186
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95897032ec4e904b84162c27f8f49fe
+      internalID: 1879798756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_187
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b5a576b1ba52448b3af035ef7441e7
+      internalID: -1020930764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_188
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b8fc6a80da2874c8e3ef494788249a
+      internalID: 1566528814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_189
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c213db6c6f1ca74478a4d58ac85e7423
+      internalID: 2073226509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_190
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e7d8a4c405782479fda842dcefa0e1
+      internalID: 1150552636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_191
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8290273e39090c341a244d53a78e7637
+      internalID: -502426980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_192
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defc8870ed06f204c9f85943c6fb1ae6
+      internalID: 429233383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_193
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da2af1055d6afd41983d218dd910c09
+      internalID: 1678887003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_194
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4669399c3bc3d5b4983a52f12018dc8c
+      internalID: 1577325000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_195
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68b20b2d7f352443955f310b14126e5
+      internalID: 1516617872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_196
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcb647741b60e8419759c9d9d32a0a0
+      internalID: 90557774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_197
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62786ec75e93a6441af00ded125b57a6
+      internalID: -1157016841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_198
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d891dc2d8bc04d40b2bc2bbb4c88261
+      internalID: 1069388810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_199
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e77cf752450e440a0280a76511e97d
+      internalID: -362823351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_200
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b022ed79030c39747a32e611912ccd3c
+      internalID: 724833309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_201
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b748fef13578946b5b23c9da41e05b
+      internalID: -1964128895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_202
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204a0c98e645baf4bab45d9bdb8b20c4
+      internalID: 285437758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_203
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85707041537bcee48b5c49817b20a9fe
+      internalID: -750507862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_204
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66541c675b56b1439467ac245f16b92
+      internalID: 1830852485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_205
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9245bafb3005ce34babbfc2da56599fd
+      internalID: 141422699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_206
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29956124537d19c449238a24d762d3c8
+      internalID: -1413998618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_207
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d795536bc02b1439ea68e8caa4089e
+      internalID: 90991130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_208
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11840f371b83fb4497eba330fa596f8
+      internalID: -1810700848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_209
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ff60953e949f248b511d2e257f86e1
+      internalID: 405280448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_210
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8283beffd9079a2458f573d92616b448
+      internalID: 1345308390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_211
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e6d29e9a02ab244811415f11177663
+      internalID: -1905540479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_212
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad26039e539143b409d8cefdb817abca
+      internalID: 2134810084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_213
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa12c63668ae5f488a4bf18f0e8dae9
+      internalID: -347250679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_214
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17057d6dd9ad8b84c8fc945d39679053
+      internalID: 392306223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_215
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d470e0d373e1445809e19b281bdbfa
+      internalID: 2134203609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_216
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22f96ea17fd4704ab04215af7d429f3
+      internalID: 1404454067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_217
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd802f1b24731342a8554875e5daac1
+      internalID: 152138656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_218
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f32a7dedf233b7469e9f1906fb14eef
+      internalID: -1389544152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_219
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd4183233b35f74b967a40e2b83023e
+      internalID: 2012381687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f42ea69cb953a4a977e5d814985ff2
+      internalID: 582162779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_221
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd1bd2d6afc80a488e0fc25d683fd43
+      internalID: -2033471304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_222
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123f5ddf564084f4f90e3a47b5ca94d5
+      internalID: -1478395376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_223
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829e591bbf56e5644b63f2aa324f00d2
+      internalID: -939283036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_224
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed37f4d507f5ee84c9cb70ac35da18ef
+      internalID: 2060536553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_225
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76212c53c1475554f91910884df0e500
+      internalID: 612946624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_226
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94ad16349c09e74691436712550ccfc
+      internalID: -1707148997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_227
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733ebb1e0cedb684cb6734fe29a3e569
+      internalID: -1517678459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_228
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c9427ab8353a3428425440f52c3e5a
+      internalID: -770727858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_229
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cd3fd1a170a8c4f973b338060e71f2
+      internalID: -2024345313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_230
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855b2c54f08f26748ba57ceaec43c15d
+      internalID: -803891495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_231
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0cf1d35bd3eb44c8e51ec24669b5dc
+      internalID: 540632861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_232
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2670ba078626d243b125dd9a9ef2695
+      internalID: -119074484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_233
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa0db7f0ce651345840618071942611
+      internalID: 443063037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_234
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78abb73ae8d45f459bfbc06d93aa96e
+      internalID: -213992819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_235
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326f1a5d8238a634e8278ec226b16b4d
+      internalID: 270423595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_236
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8add73bb80af76d4db3b852208e178df
+      internalID: -1764911591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_237
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50c189de34988b4ea9d29bf1f5ebd10
+      internalID: -528638454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_238
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c8f8ae82f64cc40a389ea37d6ae347
+      internalID: -273764390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_239
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e4baab593664b44ac9a1f78caf20c8
+      internalID: -1142199615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_240
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4d2b612ba9d91478102474b1d24d5d
+      internalID: -1408341022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_241
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7067c285d2a8b924988297e0fa864ea0
+      internalID: 2015451812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_242
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643b7d9461b716a47a114eadb1c68ba7
+      internalID: 540505608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_243
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf1d2b8530ee6b4eb95057b1955e58c
+      internalID: 6943626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_244
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c88d7ba5e3d85c4ea6d78c6ea7bc001
+      internalID: -1531787399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_245
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5953687630c89594f97f738148079c15
+      internalID: 69897717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_246
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ba55b8116bce344a2caabd334f7c23
+      internalID: -217219515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_247
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec649bc0f1f89974c83b7a30ad49c8a1
+      internalID: 208247263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_248
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b643f0f04533e444a8d0f90bdaf6dbba
+      internalID: 1755845852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_249
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d303455bd03f4e44bdc0dab9b01e0c8
+      internalID: -1895971567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_250
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40d05b9aaf5a134a8b9b852bd70df85
+      internalID: -615206091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_251
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d741eece1205f74386d3e3379330170
+      internalID: 1519300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_252
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c831478885ebf364f865e563cc29cf6f
+      internalID: 7964915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_253
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e082a6f2000480041acf87b4d38ddd0c
+      internalID: -962559570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_254
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7e26c03fdb75b4e89a425bef1a25e5
+      internalID: 1224333332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_255
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181a353f3051a3a4aa2d2b212b93ee45
+      internalID: 636985310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_256
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc431d7a80e3a7944a55be9446ab2616
+      internalID: -1562897193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_257
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76d508333a46774d908b2d68661bd1a
+      internalID: -1131477762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_258
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8707e6b908e1c4dafa2823bed13114
+      internalID: -1929572845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_259
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e199fabcfe149954ca94640be50413ff
+      internalID: 581901563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_260
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f284931455569f946b96db070a5d0852
+      internalID: 948173128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_261
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8507c6b6e27191e49b211e376b0efcb3
+      internalID: -133924723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_262
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab339cb89280b7646be05cfbd5ff8774
+      internalID: 1893335880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_263
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9598e1c0981bc89469840b246fa3dcfd
+      internalID: 1690307572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_264
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f82146b38cf0d468dfb2ba3746117b
+      internalID: -347413024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_265
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbd2e8556cce7449bfc80c96a0c0a19
+      internalID: 277575793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_266
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868311507dc0d9f49ba5af9ab6075e3e
+      internalID: -130110903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_267
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfeeca5d1bb39840acf1b1cf372f475
+      internalID: 1216756280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_268
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e90ef1a0b06a9d48b37ca077207e406
+      internalID: 1142675719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_269
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e678302226b6e749aa62c9630a3b97c
+      internalID: -579569332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_270
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286d0cdd6bd32a041801581dd1f23430
+      internalID: -116827132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_271
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59eff315d7926784d8302b7982d05b2a
+      internalID: -1538637675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_272
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf068cf72aa2744eaab0d8d61b915b9
+      internalID: -505982464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_273
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98927dc9230ee4848a8aecedaae5c78d
+      internalID: 428358205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_274
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3e76319806da8409f0bc167caf3034
+      internalID: -374776909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_275
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325ffccc419052c4886649b5c8ce2c78
+      internalID: -1984381633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_276
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d37258cf5ac4bd469c34f69a9b3f725
+      internalID: 661120732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_277
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda599534cebdfe45a75333d7204f670
+      internalID: 846699665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_278
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b92bbc510846c4aaa5bf91f8f0d2b0
+      internalID: 699565839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_279
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7325bb1ecb0550847afaaccff2ea5ad5
+      internalID: 1073765779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_280
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573f66fb7c36fd84da876f587950ba67
+      internalID: 1570791776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_281
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c846248bf23e0a4db4c5ff42f7502e9
+      internalID: -1376491792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_282
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3af71aae9819434db3c89fed3d8b19b
+      internalID: -1510059047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_283
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d084cb8973274494a8be78a77a26e3d1
+      internalID: -866781381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_70: -1394313186
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_186: 1879798756
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_91: -1118459912
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_126: 1173747962
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_5: 1501331239
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_115: -550597460
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_233: 443063037
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_134: 1555818644
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_153: -1537614419
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_99: -1132171590
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_95: 467276394
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_125: 668322966
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_29: 1331696877
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_2: 434308931
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_193: 1678887003
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_82: -1248662880
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_39: -1811672272
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_279: 1073765779
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_281: -1376491792
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_236: -1764911591
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_230: -803891495
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_256: -1562897193
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_195: 1516617872
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_140: 1311187998
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_62: -1592750659
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_136: 92153982
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_67: -253133019
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_27: 341223233
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_211: -1905540479
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_227: -1517678459
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_278: 699565839
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_19: -884596385
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_46: -1295596589
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_239: -1142199615
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_212: 2134810084
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_244: -1531787399
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_127: -941822812
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_138: -1070286786
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_92: -1659984348
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_274: -374776909
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_146: 774040787
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_88: -256765404
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_117: 982530242
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_104: -395883811
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_173: 1333655515
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_189: 2073226509
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_41: -770848863
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_72: -318442266
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_176: 30421087
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_148: -1251736314
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_259: 581901563
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_103: 1046503366
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_147: 1192328136
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_255: 636985310
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_246: -217219515
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_210: 1345308390
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_63: 1760066153
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_229: -2024345313
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_59: 152824296
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_89: -173745449
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_150: -1763074656
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_275: -1984381633
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_169: -324422431
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_277: 846699665
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_6: -650811952
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_199: -362823351
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_33: 128981056
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_258: -1929572845
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_207: 90991130
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_50: -1759941072
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_108: -1665060834
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_174: -1971756625
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_162: -557400449
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_182: 258181846
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_214: 392306223
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_47: 303516023
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_132: 1458255884
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_30: 497258132
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_185: -1687460036
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_280: 1570791776
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_273: 428358205
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_123: 1077197496
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_35: 939776031
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_205: 141422699
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_96: -881881348
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_109: 640922515
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_124: -1534849260
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_178: -1048919345
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_14: 1634858472
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_7: 187775897
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_17: -999851977
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_105: -1348793710
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_216: 1404454067
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_55: 270539955
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_200: 724833309
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_215: 2134203609
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_26: 860180871
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_166: -585189855
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_261: -133924723
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_241: 2015451812
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_201: -1964128895
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_3: 164997621
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_237: -528638454
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_179: 1565401704
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_268: 1142675719
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_218: -1389544152
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_262: 1893335880
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_54: 1512869263
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_128: 1839752952
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_107: 266380147
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_151: 1939329819
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_181: 270822186
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_161: -8849765
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_243: 6943626
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_73: -787095637
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_130: 991451690
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_74: -504686577
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_8: -657129766
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_100: 2112352907
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_57: 1897980690
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_60: 210928092
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_28: -851071946
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_106: 1275565602
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_24: -1967229559
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_1: 1327692353
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_101: -1108361602
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_159: -281322472
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_131: -1501314333
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_143: 515117000
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_253: -962559570
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_266: -130110903
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_228: -770727858
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_145: -484659016
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_111: -930333196
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_10: 1152816471
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_52: 1646837223
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_217: 152138656
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_139: -1611748149
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_61: 583359543
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_137: -1035128224
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_254: 1224333332
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_187: -1020930764
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_168: 1986670714
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_171: 339059435
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_97: -1359565082
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_118: -1596851022
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_194: 1577325000
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_264: -347413024
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_18: -726725246
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_78: -107528937
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_219: 2012381687
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_248: 1755845852
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_175: 900909871
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_170: -1506921522
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_15: 832183784
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_110: 1956260467
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_154: -370491301
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_23: -857145942
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_120: 1606202575
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_192: 429233383
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_45: 872946005
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_49: 1099492255
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_231: 540632861
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_265: 277575793
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_276: 661120732
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_112: -2010463020
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_272: -505982464
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_113: -1809952751
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_144: -1605556987
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_79: 1226858911
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_183: 1915463371
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_9: 1995586701
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_68: 1675263319
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_13: -1028233478
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_16: -325657199
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_85: 1097623633
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_75: -1265781560
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_116: 1905095556
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_21: -2014358367
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_102: 895816613
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_135: 1016184583
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_206: -1413998618
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_149: -704658798
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_208: -1810700848
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_165: 1530189737
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_69: 732635059
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_133: -52962851
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_225: 612946624
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_191: -502426980
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_197: -1157016841
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_223: -939283036
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_84: -1922852550
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_188: 1566528814
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_242: 540505608
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_260: 948173128
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_77: -1226001228
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_66: -325325666
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_38: -1301964006
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_44: -684629751
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_12: -558036364
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_37: 311812898
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_156: 131906188
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_122: 1557125610
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_87: 1323208655
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_204: 1830852485
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_232: -119074484
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_51: 372428354
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_83: 1775599232
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_71: -985117470
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_158: -423657615
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_221: -2033471304
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_245: 69897717
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_157: 2024512670
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_257: -1131477762
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_263: 1690307572
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_249: -1895971567
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_58: -651780608
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_34: 1163531829
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_81: -1817146243
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_142: 135245194
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_164: -1445719598
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_25: -600783218
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_167: 193378513
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_172: 1262787123
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_222: -1478395376
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_0: 529156508
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_43: -194381847
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_213: -347250679
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_224: 2060536553
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_155: -1988173366
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_64: 1449072126
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_234: -213992819
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_20: -31821653
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_160: -523098401
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_270: -116827132
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_271: -1538637675
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_141: 739817084
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_152: -1878694425
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_94: 808458727
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_48: 1956786989
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_226: -1707148997
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_76: 1155345502
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_32: 1632781627
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_198: 1069388810
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_40: 1174345971
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_98: 1259828700
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_86: -450257348
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_267: 1216756280
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_177: -821943338
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_80: 740933290
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_209: 405280448
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_90: -1109371078
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_251: 1519300204
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_11: 2029595605
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_65: -1564764742
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_220: 582162779
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_190: 1150552636
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_36: 5537545
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_235: 270423595
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_250: -615206091
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_203: -750507862
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_163: 878672378
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_119: 1800338539
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_121: 1080177485
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_184: 1130725638
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_129: -1589881692
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_56: -185904505
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_238: -273764390
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_180: 1413939283
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_31: -1339524258
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_4: -682752358
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_196: 90557774
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_22: 73699787
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_93: 1107423457
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_283: -866781381
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_202: 285437758
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_53: -254567662
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_114: -1599065800
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_252: 7964915
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_240: -1408341022
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_269: -579569332
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_42: 1594781365
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_282: -1510059047
+      rpg_maker_vx___bird_s_eye_view_by_ayene_chan_d69ltpa_247: 208247263
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

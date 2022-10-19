@@ -1,0 +1,5402 @@
+fileFormatVersion: 2
+guid: e2538d1e6b157c746af8387ecf8fda7b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b5b0be7dcfa7940be4a0cfcc960847
+      internalID: -194414501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d43ba29c76d9ca419176bae2ce04588
+      internalID: -933285055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf1c489627c14742b25c0f01e9a8d5e
+      internalID: -2089273721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409c3422eb0a8ef47854082e67101c8a
+      internalID: -1229062345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3c8137997432742bb6d8cdb83c2e3c
+      internalID: 708623107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eda7241d8e69b346adea8b512246649
+      internalID: -1266622289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c55e369baf75c54ca4ebc0673f5f370
+      internalID: 92910343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39617dc07504f3b4683ef13e5dacccca
+      internalID: 1196959163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb0a396e29fbb543a7d462e2ecd6c9a
+      internalID: -11770003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483b63d9d8ec4cc4399a2a3157c93ac3
+      internalID: -925861621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd3c81676719c3429883ae058f09042
+      internalID: 908140136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0df87ab2501c7e4db96b658c6da5d55
+      internalID: -1950420571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c42f365594eb3d4ea0a59e3c54146ca
+      internalID: 1916792298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae338da5bade3542bfa15b98bba6940
+      internalID: -1504452668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b944ddc29f2e146b101ec4d2ed20d2
+      internalID: -848573331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50c614054039b6429dcc56a4c636cf3
+      internalID: 1092829045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a50c7fa15ee1e40a7c2f4d44e68a60
+      internalID: -337975837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0e3b00cd4bd2a4fa5d3bf675490e58
+      internalID: 304839606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3293d775312a17549b2e8b3e7f02880f
+      internalID: -1457428050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78ee891f0f367c4fa82079bf024c753
+      internalID: -1244626009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f63e86dafb312d4a8f1c533a1308920
+      internalID: -1315765498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fefc123f65115149abb1a8919a99246
+      internalID: -1164190731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b00ef1c22a033499abbbf92422a69d
+      internalID: 774781094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f1a1208ac73f947b4fbd0510ccf783
+      internalID: 624074543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a8d6262b82c7d4db5110873ed349ba
+      internalID: 1641664252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_25
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0aab7e60c7314498638fe5cf03dcb0
+      internalID: 1867688830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa4954f04999214fad6ef422b43c50b
+      internalID: 1725611829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_27
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecb6ceabfce78e49bdd7b5d90bc7849
+      internalID: -1940902611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b187372ae3e226a4e929571a0fa640a1
+      internalID: -374779481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_29
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c968c4f6a1a8646a70858c404307b6
+      internalID: -1149202276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_30
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a401bf43da62545b923bae712584a3
+      internalID: -982015756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e3d9416a5e50a4a8e1a57ba0f4939c
+      internalID: -224250705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf245525161fb541bbf41fb15f03d12
+      internalID: 794124891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14e1812b5f574a4b97e8d45df5db8de
+      internalID: -680780976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6893e7747cea022419861593b97fac53
+      internalID: 1617334671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4cdf4f236c8d742b399edadba9babb
+      internalID: -1935811319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0276488e458434c87274842bf2931a
+      internalID: -200898425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64584dbea0da904aa3df1b9588252c9
+      internalID: 1547098430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2336426f2f5f11a4e92a4edb358b79be
+      internalID: 106784925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cb6488e4a46ad46a82950017a4561d
+      internalID: 1647608281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e608f0f592f164abcacf6689256711
+      internalID: -146276768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_41
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d6769fc3aafa746b502c04841ab023
+      internalID: -805974085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeb746478aa9024d8d0393e7fa0999a
+      internalID: 780216129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_43
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e237d6a4f255544a972b43a30b80b90
+      internalID: 1168902506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d294354fb495d468663ed2250ece1a
+      internalID: 1174497956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_45
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3dd7e2a7b423048acbd3a62c9116a0
+      internalID: 92988006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa411d638bcfbd42accdc28adb5adfe
+      internalID: 213558721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_47
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c27a20941563d4c9f8d79ad94f9091
+      internalID: 381586702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3987c42a034dcb4a8619717938d468a
+      internalID: -1577146873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ca459c70c211641a5f15d5da680e18
+      internalID: 1842174649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911747df30ce204459ba875fe8b01b8c
+      internalID: -45538607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64fe4e060334a44f93c13ac0759d8e7
+      internalID: 599643507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0425b9d4f0650114682b3c6b9c03e217
+      internalID: -170916344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b13fa322a410114bacbfa167c186198
+      internalID: 1289467959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372c2348a12ba9247ab93547c31318d0
+      internalID: 180206666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a19a49bb16f72c4b80e86af1d4c332a
+      internalID: 1559326304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b155dd20a00c26249a2299ce21a21007
+      internalID: 1854483594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85298787901832141b99588ff4e70308
+      internalID: -1776283053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dec2ed179ba98d4a8248e5dee3364cc
+      internalID: 1664138080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec5481d7a4c0204bbc8d8feba11bdce
+      internalID: 1747452837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa637fcb03e0694c9f90f6e02806327
+      internalID: -1250039182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_61
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1416e6acb71327341ae8403e34c467fb
+      internalID: -2128668976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_62
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f669783d967774c96bd2b4786710e8
+      internalID: -195996406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_63
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043e04c3024d9f64a857138d5102dc7c
+      internalID: -843511945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970981a9e449aed408b4d7fa253f4aaf
+      internalID: -696228367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0575e3dfaa05f42ac8a6c6ae86aafd
+      internalID: 810242300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e106cdce4f9005445b4b926fa6c54be4
+      internalID: -937743463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6930fb49b88d08d4c936de0fb4db54af
+      internalID: -93396638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0827d977ff1a3734f879a54738c0730c
+      internalID: 1268912847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_69
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b862f5fbec35ba5459144a233866e59e
+      internalID: -1054864901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01765bc6295c3d34a9eee0947fe09283
+      internalID: -152468169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c32ba84b9b7e854c977a038f82ed7fb
+      internalID: 1168494285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0119c37784484fb4cb58e87e3a931d0f
+      internalID: 1592489623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_73
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa144cfe45b6364faea7433abc15286
+      internalID: -132490656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535fbef618ca3394aaba4d42ac121b2b
+      internalID: 1474945624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_75
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a30b1147a51f424196fd90a2200c105
+      internalID: 786465567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fcce48fab7a1d468ef10371e99166f
+      internalID: 2130408992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_77
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8472f4c80db28154095dd0c939c02cd0
+      internalID: 816476283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_78
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55dcf57d38b9b74cbd6d6009e966f07
+      internalID: -708799282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_79
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50708f6266d6db408c816c0bacc6130
+      internalID: -533800274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4953b0f3c08554f4790f45496610710a
+      internalID: -345989739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea2030f79336ba4c871a0ef4ef3a24b
+      internalID: 1338033341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d814603e63e3b41b70583314dea42c
+      internalID: -630461652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9164dbe280ee2da4dac9d2e4c18b12f0
+      internalID: -1053648792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c593601ba1de54ca7e14e85ba78737
+      internalID: 1311154217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d397ccfa14baa4e93cc2da9ee245e0
+      internalID: 498389594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aff2885b018484e9a8344cc2259883
+      internalID: 48025441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762706e62c8ace34bac509ae2e160042
+      internalID: -258787244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc6c768bfa6336449b8e1eadd0f9486
+      internalID: 1880806292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_89
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fad45a2c41fc649800d7ab0de14442
+      internalID: 533143306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_90
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fdd3635ea0bba4099e91c003e37ef7
+      internalID: 2146933085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_91
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6332f6e82412d9488f0567d306c29b4
+      internalID: 994766424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e598805603db64f8a95dbe32105079
+      internalID: 938919491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_93
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80af3909ae588847b061e0d6f112249
+      internalID: 1171343527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_94
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b1781e04bf763438d6bc35df309796
+      internalID: 457012194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_95
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d8f00a59737d744971cb751a209c04
+      internalID: -583497923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ba5e42fddd5ed42a4410df158ebd20
+      internalID: 1826841170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_97
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a77101425c535f49b9ec131b142bb0d
+      internalID: -2098887391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ac7c9ebf976c548b4d7860061002e4
+      internalID: 1739594002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_99
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261721c5d497da841ba77244d7111c4c
+      internalID: 1024217679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_100
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dd8a73d08bc6a4096bd48be2fa3e0a
+      internalID: 824445229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c09a10de9252c2459a00c8abeb29998
+      internalID: 95938244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5603734fbeb90f24b993ff97b5b88f88
+      internalID: -356428450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21fc08762436d945bc435fb4fc776f9
+      internalID: 769996368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_104
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ab5619b79a87b478ec44a7b58605eb
+      internalID: 1657519025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_105
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c790079924dc5041a32e3bae1127aaa
+      internalID: -2081089617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_106
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bca02c0d646d54080194eb7df255c5
+      internalID: 595622198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_107
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5994ebf38e0149e4db9122ecd30dadc0
+      internalID: 506402437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76718853674fc0c458d5314127144379
+      internalID: -33616882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_109
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2ba976e59fce64a9c10d8a1ff11641
+      internalID: -794605008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_110
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d7f8cb31bd90144985b73eb3e030be
+      internalID: -526196812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_111
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3b9e7af8ec349419dcdf39997a207a
+      internalID: 933760503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359c9c2b3d7fd304db5974ed978eaedc
+      internalID: 1642368620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_113
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2607cebac4893d42b8f2511d17a71d1
+      internalID: -1612010356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab9ead0379d98d4799cf7180dd658a6
+      internalID: -340895569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_115
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a10e5a6fd0830a479e032c402bd151f
+      internalID: -1336424381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4548effe06df336409217f09c1f2b37d
+      internalID: -1262468504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_117
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1f32ab78e98ef47ad26fe2ad17ee3a
+      internalID: -331611989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_118
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6536b0f26877e054ab088e248c474b47
+      internalID: 791051154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_119
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3656d5e5a9eb24a84c7bf9b88c368f
+      internalID: -2117483145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_120
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca8359bd3ac7774bbe98785374f1a4e
+      internalID: -169347806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_121
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379d5d03fcc954d4a86b28c022b65a73
+      internalID: -1123851608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_122
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b78cce7ea764ea498dbcea224e4f60e
+      internalID: -1691073308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_123
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03be1865f14a81b4c86865cb66d96ad9
+      internalID: -1892300027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_124
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90439b4bdeaaad4f8e5762d2ad7c6f6
+      internalID: 1850084061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_125
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d3768dcc584ca47ab67cfa27216f79
+      internalID: -276647706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_126
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bf733d873371541bcae3bf69f9bb6b
+      internalID: -1809509415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_127
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3c5065c5177684987efe9bc9844adf
+      internalID: -1574003745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09d4403ec9e6cf4ea212644c896cdd1
+      internalID: 961046103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_129
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f4f7051d6a0ab4c9151625f40c47b9
+      internalID: -130594433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_130
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e63ab25f3bfd547b77a940c8e6b4da
+      internalID: -232427333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_131
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b41e7370528efe4cab6a4ec03fd5b5e
+      internalID: -1861697258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_132
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00190ac9a1cb25d48bceb311fe71b724
+      internalID: -511240179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_133
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09c038608252694ea99e645b0e91f53
+      internalID: -528999205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6881e6da56745c4bab9d5521dee340e
+      internalID: -1077992003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_135
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22dbd7012eb60f42b3eda2b1c93107d
+      internalID: 2065181065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_136
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff98eeac72d56e4fa17d793db809f1c
+      internalID: -1640364832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_137
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec7b270dfffd7c40a5d6056ce01aff0
+      internalID: 503584123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8ba2c3d6f6ac445933a15532fd9a31
+      internalID: -1912403270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_139
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec5ee1d4e20eae45967ccdaa398e8fb
+      internalID: 1111683688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df49b72e28c671e4f822409de0cd818c
+      internalID: -153245218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_141
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450e6608026b3d644907950d2f2405b3
+      internalID: 2116643698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_142
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115458294ec28234dadf9b5e9ed776ab
+      internalID: 1360760385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_143
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b33ad07902838449b74fc3b1e35c40
+      internalID: 36659091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a22f6d3d874ed4081823a31704c11a
+      internalID: -94411455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_145
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7460ec2c9809b4343956f7b0dca5e545
+      internalID: 1778392040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_146
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d631f00d506d20149b3305246be035f0
+      internalID: -1659760937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_147
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb946d817becf5e47a8868a83b705b8f
+      internalID: 1871805936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c287b77e1a68834b9c0b800f271e7c5
+      internalID: -1739826165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_149
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df80a1be63a45d47b7adc7740f1d1fe
+      internalID: 181601530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_150
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f189e09ecd8c86d4aacd681e252e0937
+      internalID: -111379129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_151
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201ca1ba6178121439b41361694a3c96
+      internalID: -105352747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_152
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33b76e2f6638bc4392e481f8df63635
+      internalID: -94498241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_153
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c86597028a82144a63534a0578939e
+      internalID: -1077912645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_154
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538df878b3393fc499d4d224908b1859
+      internalID: 899749590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_155
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a326bc81ab8ebe345bf40e397f939183
+      internalID: -446668786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_156
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa392f0a4721b064a886e9a34a1dd587
+      internalID: -1126275191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_157
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8523305ce276dab4ba6b8e5fb2edc29a
+      internalID: 449406426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_158
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa6ac9b88548b24a8e50b4b6f7ab0a5
+      internalID: -1663428746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_159
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff4d20356caf4a4b945c41111388e43
+      internalID: -1105409022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_160
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247eab6acf84ec14b880d0801fcdcd51
+      internalID: -1106709040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_161
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349fefce9dff211429dae3db0b95f918
+      internalID: -777768812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_162
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c0d0f6fbdea75448e5bc519ff66dcc
+      internalID: 933049937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_163
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2b293dda2c13b4bafd12d062f4913c
+      internalID: -1592322138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_164
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70889d4189ab2141a8da37ef2272c46
+      internalID: -1644735855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_165
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb6221163d92524aa3d11db98ad45c1
+      internalID: 1160202578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_166
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5e9dc8d9fb6ba419de37eca4a95a8c
+      internalID: 1075290786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_167
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c550d7cab2921dd4fb178e57d30b3baf
+      internalID: 557328297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_168
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04eab42b64c41e408afd47f88a98e3c
+      internalID: -526883833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_169
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735c99ea5e3c71d46bc219f5c46402e1
+      internalID: 1795676332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_170
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c88aae8e80d274b84bb7537c840236
+      internalID: 756441164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_171
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef16f587577e6f43b19d53974c9252a
+      internalID: 1713484114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_172
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3018f2d4cd0fa4aa6ca8bc6fbd1fb7
+      internalID: 783059439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_173
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a5d0b7370fe8c47b25ab20a58e9572
+      internalID: -1231206028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_174
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b661b0584506919488e28bcaba0f412e
+      internalID: -765970912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_175
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1824e191c8c7445951e26d1e8c55c3
+      internalID: -541125487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab11ca6c2c08c541b67f94551f3ac0e
+      internalID: -3191545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_177
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4f07596613f6243a0ba6b378c5ba69
+      internalID: 2110994976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_178
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0b77e55ce20724499295e926fdcbaf
+      internalID: 844868490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_179
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e319efbcdcc9db47add3ae450db354d
+      internalID: 2099431948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_180
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2adc1b4a00c6e4c9aa99d32355d8da
+      internalID: 844088889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_181
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db1fa8f21e86e142b6190efb5fdb637
+      internalID: 824470892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_182
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e22f54e0d981c40b73fec90b3a8618
+      internalID: -1322160863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_183
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc79b080a26bcb48b475ede2998b1ca
+      internalID: 791295583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_184
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef9ab58401bdf0489814c3e44d90649
+      internalID: 1058978736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_185
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3f4deb7961d0c4980ed36dce3ac5b2
+      internalID: -1170063424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_186
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e25144a4eaf1948b213e7831a75f52
+      internalID: 2011869267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_187
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efcfd1fb11665f45b4601924d062e45
+      internalID: 1326596320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_188
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f831162d8fbbb48a53f58504a28c02
+      internalID: 435662260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_189
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cc9f8d64d02f540b1b61899d69eecc
+      internalID: -1496267377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_190
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d15bd76e6319f48aae37a9a445d9ea
+      internalID: -553575895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_191
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04404b4f6c9a5049b85fd56ef634970
+      internalID: -819846552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5632443bfe7c941a2600e3ba39242f
+      internalID: -1345209160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_193
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6581d632e675f9e4bba69c2690950086
+      internalID: -1164275258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_194
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f13fe3ba9e9fd4db6bb838e7864325
+      internalID: -226512030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_195
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08149d4f7ebeaf243b2c1660635c389e
+      internalID: -1549289378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_196
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c2e2c8b4eb19a40ad21197becaddb2
+      internalID: 744391184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_197
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9763684c8821b4243b2b34aacd5117f9
+      internalID: 1775869678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_198
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37b670203f17b24c885018d1c234136
+      internalID: -927022015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_199
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ac8450c21316242911b9cb68e9d813
+      internalID: -1778070676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_200
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87540398e4415a44ebcbfad98b9482ad
+      internalID: -2101487912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_201
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dd42fff8da1c94d9dbb204f29e0156
+      internalID: -177509294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_202
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51285d34742ebd24db28e3e6294a47f7
+      internalID: 1717158421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_203
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd985e6439da124b9fc6caa9fd3df4d
+      internalID: -1832930975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_204
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46fa43e55417384cad622c6b1a87fe4
+      internalID: 1422787325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_205
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e74722988f1464db1e7620b1ee5604
+      internalID: -103928023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_206
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5c49a63a01081489f38607277c87dc
+      internalID: -1850930822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_207
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb516c5a4be86ec46a4b5401a884c7d6
+      internalID: -901691937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d654b70f2065d744afbbcaea558ad9c
+      internalID: 934861401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_209
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7264bc4d0d97d6f4db7e20cdea10cbea
+      internalID: -137298748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_210
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258bab5f651da1e458cdadbe733b0a23
+      internalID: 1983074946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_211
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d21fde2c4cd654e97ef0d5b53c1989
+      internalID: 1348470784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_212
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd7730939a4fe14b8d45bc6b61f9149
+      internalID: -71479183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_213
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae719f0d6e883e42b1a53490a7682ce
+      internalID: 720176502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_214
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510353b12e5c3ab4c809e7f658a6c73d
+      internalID: -901472230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_215
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f44b00e0985e1749872f146f9fc6cad
+      internalID: -261370602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_216
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c3cb93beb306c488c7285177d62ba9
+      internalID: -412673198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_217
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19108bc374e7df44cb25ef146d2db012
+      internalID: -291821760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_218
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb2c1f5cf3089a4bb22cad36c0621a9
+      internalID: 1499652474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_219
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373c0cbf844e322408a091d8acd653b2
+      internalID: -586127555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_220
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dad171b5885d84c9207966838508a8
+      internalID: 914461562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_221
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8e560dc5418f54cbcff36fd2ae0268
+      internalID: 412003381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_222
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906d5f8534278434fb14eb34bc411c5e
+      internalID: -1049994554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_223
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d7e77edce57e144a4e83201c7b1de8
+      internalID: -660000162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_224
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c44be3078c74f04c9765ffff0b31c31
+      internalID: -187570103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_225
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d7d899ad5f0035499c66e730501b7c5
+      internalID: -1629221827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_226
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3892414aea62b324588335d83d7499ab
+      internalID: 1748845027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_227
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f038017ed6806c140b0dcf462c811f02
+      internalID: -1854296724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_228
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683789e6ecfa4a845adeffd49fae9cbc
+      internalID: 2134727960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_229
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4024a21410efeda47a1d65b57f6a2642
+      internalID: -1846215831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_230
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b13aa6b9c6f0b419842231147e2112
+      internalID: -1251564064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_231
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8826b1f0c9a6f5e4c9836defda52da97
+      internalID: 352213685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_232
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354bfe7cd52ceb842bc838b3f12f1839
+      internalID: 1286500879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_233
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896586b8ab79c1d4893c73358f7b2595
+      internalID: -212501406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_234
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294740923aa24da468860207cdc08d8b
+      internalID: 611607243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_235
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4273c08d0b00b104983b16d8ce876c0c
+      internalID: -1635796587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_236
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33610f08ff3d1fb4a9de2b9a0acff7e6
+      internalID: -1192549494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_237
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3b822230fcf6f458655de391c3ea5c
+      internalID: -2051612309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_238
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd1b55feab2cbc49b55bff8e18ba39f
+      internalID: -785538171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_239
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6195a4319ffc2348b3ce08828cc0058
+      internalID: 2047212936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_32: 794124891
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_59: 1747452837
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_71: 1168494285
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_75: 786465567
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_24: 1641664252
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_58: 1664138080
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_197: 1775869678
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_192: -1345209160
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_198: -927022015
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_229: -1846215831
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_104: 1657519025
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_111: 933760503
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_3: -1229062345
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_22: 774781094
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_227: -1854296724
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_44: 1174497956
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_27: -1940902611
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_92: 938919491
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_33: -680780976
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_114: -340895569
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_190: -553575895
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_91: 994766424
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_113: -1612010356
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_234: 611607243
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_162: 933049937
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_0: -194414501
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_16: -337975837
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_106: 595622198
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_148: -1739826165
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_188: 435662260
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_77: 816476283
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_195: -1549289378
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_232: 1286500879
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_41: -805974085
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_191: -819846552
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_60: -1250039182
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_14: -848573331
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_73: -132490656
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_37: 1547098430
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_1: -933285055
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_68: 1268912847
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_139: 1111683688
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_216: -412673198
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_159: -1105409022
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_164: -1644735855
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_55: 1559326304
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_85: 498389594
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_45: 92988006
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_150: -111379129
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_65: 810242300
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_74: 1474945624
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_25: 1867688830
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_206: -1850930822
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_69: -1054864901
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_39: 1647608281
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_189: -1496267377
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_130: -232427333
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_163: -1592322138
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_239: 2047212936
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_169: 1795676332
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_225: -1629221827
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_110: -526196812
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_34: 1617334671
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_9: -925861621
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_135: 2065181065
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_182: -1322160863
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_194: -226512030
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_83: -1053648792
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_72: 1592489623
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_67: -93396638
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_102: -356428450
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_170: 756441164
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_54: 180206666
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_185: -1170063424
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_38: 106784925
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_219: -586127555
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_49: 1842174649
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_196: 744391184
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_100: 824445229
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_108: -33616882
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_21: -1164190731
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_56: 1854483594
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_116: -1262468504
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_107: 506402437
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_184: 1058978736
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_178: 844868490
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_30: -982015756
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_230: -1251564064
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_52: -170916344
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_80: -345989739
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_128: 961046103
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_221: 412003381
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_136: -1640364832
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_79: -533800274
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_210: 1983074946
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_120: -169347806
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_167: 557328297
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_6: 92910343
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_175: -541125487
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_121: -1123851608
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_7: 1196959163
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_96: 1826841170
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_238: -785538171
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_224: -187570103
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_144: -94411455
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_181: 824470892
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_11: -1950420571
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_90: 2146933085
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_89: 533143306
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_132: -511240179
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_82: -630461652
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_183: 791295583
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_233: -212501406
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_112: 1642368620
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_223: -660000162
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_13: -1504452668
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_84: 1311154217
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_36: -200898425
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_129: -130594433
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_31: -224250705
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_19: -1244626009
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_97: -2098887391
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_12: 1916792298
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_109: -794605008
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_165: 1160202578
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_220: 914461562
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_199: -1778070676
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_200: -2101487912
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_138: -1912403270
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_103: 769996368
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_101: 95938244
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_70: -152468169
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_226: 1748845027
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_94: 457012194
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_115: -1336424381
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_152: -94498241
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_123: -1892300027
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_5: -1266622289
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_93: 1171343527
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_134: -1077992003
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_193: -1164275258
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_174: -765970912
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_161: -777768812
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_177: 2110994976
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_133: -528999205
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_47: 381586702
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_57: -1776283053
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_105: -2081089617
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_40: -146276768
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_66: -937743463
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_156: -1126275191
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_8: -11770003
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_154: 899749590
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_214: -901472230
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_145: 1778392040
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_23: 624074543
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_146: -1659760937
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_228: 2134727960
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_158: -1663428746
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_61: -2128668976
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_157: 449406426
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_95: -583497923
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_119: -2117483145
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_127: -1574003745
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_86: 48025441
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_28: -374779481
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_202: 1717158421
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_50: -45538607
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_179: 2099431948
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_76: 2130408992
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_166: 1075290786
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_173: -1231206028
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_160: -1106709040
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_137: 503584123
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_186: 2011869267
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_218: 1499652474
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_153: -1077912645
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_126: -1809509415
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_140: -153245218
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_88: 1880806292
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_17: 304839606
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_231: 352213685
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_43: 1168902506
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_141: 2116643698
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_211: 1348470784
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_212: -71479183
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_236: -1192549494
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_149: 181601530
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_147: 1871805936
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_151: -105352747
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_62: -195996406
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_207: -901691937
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_117: -331611989
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_4: 708623107
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_87: -258787244
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_98: 1739594002
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_172: 783059439
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_205: -103928023
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_10: 908140136
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_18: -1457428050
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_235: -1635796587
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_64: -696228367
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_81: 1338033341
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_20: -1315765498
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_143: 36659091
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_217: -291821760
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_213: 720176502
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_155: -446668786
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_209: -137298748
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_201: -177509294
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_180: 844088889
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_53: 1289467959
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_131: -1861697258
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_237: -2051612309
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_203: -1832930975
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_204: 1422787325
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_187: 1326596320
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_176: -3191545
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_48: -1577146873
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_125: -276647706
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_171: 1713484114
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_15: 1092829045
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_42: 780216129
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_142: 1360760385
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_118: 791051154
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_124: 1850084061
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_29: -1149202276
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_99: 1024217679
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_26: 1725611829
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_2: -2089273721
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_168: -526883833
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_35: -1935811319
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_46: 213558721
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_78: -708799282
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_215: -261370602
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_222: -1049994554
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_122: -1691073308
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_63: -843511945
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_51: 599643507
+      rpg_maker_vx___tilea4_by_ayene_chan_d4heg2s_208: 934861401
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
