@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
+    
     // 부적붙이기
     private BoxCollider2D boxColider;
     public LayerMask LayerMask;
@@ -26,6 +28,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         animator = GetComponent<Animator>();
     }
 
