@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+
+    static public PlayerMove instance; // Sprite 중복 생성 방지
+
+
+
     public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
+    public int startPointNumber;
     
     // 부적붙이기
     private BoxCollider2D boxColider;
@@ -28,6 +34,12 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(instance != null) Destroy(this.gameObject);
+        else {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+        }
+
         DontDestroyOnLoad(this.gameObject);
         animator = GetComponent<Animator>();
     }

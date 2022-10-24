@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class StartPoint : MonoBehaviour
 {
-    public string startPoint; //¸ÊÀÌ ÀÌµ¿ÇÒ¶§ ÇÃ·¹ÀÌ¾îÀÇ ½ÃÀÛ Àå¼Ò
+    public string startPoint; //ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ò¶ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+    public int startPointNumber;
     private PlayerMove thePlayer;
    
 
@@ -13,7 +14,7 @@ public class StartPoint : MonoBehaviour
     {
         thePlayer = FindObjectOfType<PlayerMove>();
 
-        if(startPoint == thePlayer.currentMapName)
+        if(startPoint == thePlayer.currentMapName && startPointNumber == thePlayer.startPointNumber)
         {
             thePlayer.transform.position = this.transform.position;
         }
