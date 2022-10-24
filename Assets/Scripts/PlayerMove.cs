@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-
+   
     static public PlayerMove instance; // Sprite 중복 생성 방지
 
 
@@ -17,6 +17,7 @@ public class PlayerMove : MonoBehaviour
     public LayerMask LayerMask;
 
     public float speed;
+    private Rigidbody2D rigid2D;
 
     private Vector3 vector;
 
@@ -31,6 +32,10 @@ public class PlayerMove : MonoBehaviour
 
     private Animator animator;
 
+    private void Awake()
+    {
+        rigid2D = GetComponent<Rigidbody2D>();
+    }
     // Start is called before the first frame update
     void Start()
     {
