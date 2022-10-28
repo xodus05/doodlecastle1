@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-
+   
     static public PlayerMove instance; // Sprite 중복 생성 방지
-
-
 
     public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
     public int startPointNumber;
@@ -17,6 +16,7 @@ public class PlayerMove : MonoBehaviour
     public LayerMask LayerMask;
 
     public float speed;
+    private Rigidbody2D rigid2D;
 
     private Vector3 vector;
 
@@ -30,6 +30,11 @@ public class PlayerMove : MonoBehaviour
     private bool canMove = true;
 
     private Animator animator;
+
+    private void Awake()
+    {
+        rigid2D = GetComponent<Rigidbody2D>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +63,7 @@ public class PlayerMove : MonoBehaviour
             
             vector.Set(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), transform.position.z); // 설정
 
-            if(vector.x != 0) vector.y = 0;
+            if (vector.x != 0) vector.y = 0;
 
             // 애니메이션 설정
             animator.SetFloat("DirX", vector.x);
@@ -68,8 +73,11 @@ public class PlayerMove : MonoBehaviour
             // A지점, B지점
             // 레이저 (무언가 닿으면 hit = 방해물 안 닿으면 hit = null)
 
-            Vector2 start = transform.position;  // A지점, 캐릭터 현재 위치값
-            Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount);    // B지점, 캐릭터가 이동하고자 하는 위치 값
+            Vector2 position = rigid2D.position;
+            rigid2D.MovePosition(vector);
+
+            //Vector2 start = transform.position;  // A지점, 캐릭터 현재 위치값
+            //Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount);    // B지점, 캐릭터가 이동하고자 하는 위치 값
 
 
 
@@ -93,14 +101,17 @@ public class PlayerMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+
         if(canMove) {
             if(Input.GetAxisRaw("Horizontal")!=0 || Input.GetAxisRaw("Vertical") !=0) {
                 canMove = false;
                 StartCoroutine(MoveCoroutine());
+                rigid2D.velocity = Vector3.zero;
             }
         }
+        /*rigid2D.angularVelocity = Vector3.zero;*/
     }
 }
 
