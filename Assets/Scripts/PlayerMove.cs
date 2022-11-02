@@ -11,12 +11,11 @@ public class PlayerMove : MonoBehaviour
     public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
     public int startPointNumber;
     
-    // 부적붙이기
-    private BoxCollider2D boxColider;
-    public LayerMask LayerMask;
+    private BoxCollider2D boxCollider;
+    public LayerMask layerMask;
 
     public float speed;
-    private Rigidbody2D rigid2D;
+    // private Rigidbody2D rigid2D;
 
     private Vector3 vector;
 
@@ -33,12 +32,13 @@ public class PlayerMove : MonoBehaviour
 
     private void Awake()
     {
-        rigid2D = GetComponent<Rigidbody2D>();
+        // rigid2D = GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        boxCollider = GetComponent<BoxCollider2D>();
         if(instance != null) Destroy(this.gameObject);
         else {
             DontDestroyOnLoad(this.gameObject);
@@ -73,13 +73,18 @@ public class PlayerMove : MonoBehaviour
             // A지점, B지점
             // 레이저 (무언가 닿으면 hit = 방해물 안 닿으면 hit = null)
 
-            Vector2 position = rigid2D.position;
-            rigid2D.MovePosition(vector);
+            //Vector2 position = rigid2D.position;
+            // rigid2D.MovePosition(vector);
 
-            //Vector2 start = transform.position;  // A지점, 캐릭터 현재 위치값
-            //Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount);    // B지점, 캐릭터가 이동하고자 하는 위치 값
+            Vector2 start = transform.position;  // A지점, 캐릭터 현재 위치값
+            Vector2 end = start + new Vector2(vector.x * speed * walkCount, vector.y * speed * walkCount);    // B지점, 캐릭터가 이동하고자 하는 위치 값
 
+            boxCollider.enabled = false;
+            hit = Physics2D.Linecast(start, end, layerMask);
+            boxCollider.enabled = true;
 
+            if(hit.transform != null) 
+                break;
 
             animator.SetBool("Walking", true);
 
@@ -108,7 +113,7 @@ public class PlayerMove : MonoBehaviour
             if(Input.GetAxisRaw("Horizontal")!=0 || Input.GetAxisRaw("Vertical") !=0) {
                 canMove = false;
                 StartCoroutine(MoveCoroutine());
-                rigid2D.velocity = Vector3.zero;
+                // rigid2D.velocity = Vector3.zero;
             }
         }
         /*rigid2D.angularVelocity = Vector3.zero;*/
