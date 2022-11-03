@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 719305843}
   - component: {fileID: 719305845}
   m_Layer: 0
-  m_Name: 'B bound '
+  m_Name: 'bound '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
