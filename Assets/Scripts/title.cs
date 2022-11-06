@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,17 +8,17 @@ public class title : MonoBehaviour
 
     public void SceneChange()
     {
-        SceneManager.LoadScene("quote"); //quote ·Î scene ÀÌµ¿
+        SceneManager.LoadScene("quote"); //quote ë¡œ scene ì´ë™
     }
 
     public void QuoteChange()
     {
-        SceneManager.LoadScene("house");
+        SceneManager.LoadScene("house"); //quoteì—ì„œ houseë¡œ scene ì´ë™
     }
 
     public void OnClickExit()
     {
-        Application.Quit(); // ¾Û ³ª°¡±â
-        System.Diagnostics.Process.GetCurrentProcess().Kill(); // omg ÀÌ°Å ´©¸£¸é À¯´ÏÆ¼ ¾Æ¿¹ ²¨¹ö¸²..¤»¤»¤»¤»¤»¤»¤»¤»¤»¤»
+        Application.Quit(); // ì•± ë‚˜ê°€ê¸°
+        System.Diagnostics.Process.GetCurrentProcess().Kill(); // omg ì´ê±° ëˆ„ë¥´ë©´ ìœ ë‹ˆí‹° ì•„ì˜ˆ êº¼ë²„ë¦¼..ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹ã…‹
     }
 }

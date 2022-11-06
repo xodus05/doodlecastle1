@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class ChatControll : MonoBehaviour
 {
 
-    public Text ChatText; // ½ÇÁ¦ Ã¤ÆÃÀÌ ³ª¿À´Â ÅØ½ºÆ®
-    //public Text CharacterName; // Ä³¸¯ÅÍ ÀÌ¸§ÀÌ ³ª¿À´Â ÅØ½ºÆ® (¾ÆÁ÷ ¾È¾µµí)
+    public Text ChatText; // ì‹¤ì œ ì±„íŒ…ì´ ë‚˜ì˜¤ëŠ” í…ìŠ¤íŠ¸
+    //public Text CharacterName; // ìºë¦­í„° ì´ë¦„ì´ ë‚˜ì˜¤ëŠ” í…ìŠ¤íŠ¸ (ì•„ì§ ì•ˆì“¸ë“¯)
     public float m_Speed = 0.2f;
 
     IEnumerator NormalChat(string narrator, string narration)
@@ -17,7 +17,7 @@ public class ChatControll : MonoBehaviour
         //CharacterName.text = narrator;
         string writerText = " ";
 
-        // ÅØ½ºÆ® Å¸ÀÌÇÎ È¿°ú
+        // í…ìŠ¤íŠ¸ íƒ€ì´í•‘ íš¨ê³¼
         for(a = 0; a < narration.Length; a++)
         {
             writerText += narration[a];
@@ -28,8 +28,8 @@ public class ChatControll : MonoBehaviour
 
     IEnumerator TextPractice()
     {
-        yield return StartCoroutine(NormalChat("Ä³¸¯ÅÍ1", "Ãß¾ïÀº ÀÏÁ¾ÀÇ ¸¸³²ÀÌ´Ù. -Ä®¸± Áöºê¶õ"));
-        //yield return StartCoroutine(NormalChat("Ä³¸¯ÅÍ2", "¾È³ç..! ±¸Çö ¿¬½ÀÁß!"));
+        yield return StartCoroutine(NormalChat("ìºë¦­í„°1", "ì¶”ì–µì€ ì¼ì¢…ì˜ ë§Œë‚¨ì´ë‹¤. -ì¹¼ë¦´ ì§€ë¸Œë€"));
+        //yield return StartCoroutine(NormalChat("ìºë¦­í„°2", "ì•ˆë…•..! êµ¬í˜„ ì—°ìŠµì¤‘!"));
     }
 
 
