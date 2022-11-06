@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class title : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public void SceneChange()
     {
-        
+        SceneManager.LoadScene("house"); //house 로 scene 이동
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClickExit()
     {
-        
+        Application.Quit(); // 앱 나가기
+        System.Diagnostics.Process.GetCurrentProcess().Kill(); // omg 이거 누르면 유니티 아예 꺼버림..ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
     }
 }
