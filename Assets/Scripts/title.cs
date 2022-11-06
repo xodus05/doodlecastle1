@@ -8,7 +8,12 @@ public class title : MonoBehaviour
 
     public void SceneChange()
     {
-        SceneManager.LoadScene("house"); //house 로 scene 이동
+        SceneManager.LoadScene("quote"); //quote 로 scene 이동
+    }
+
+    public void QuoteChange()
+    {
+        SceneManager.LoadScene("house");
     }
 
     public void OnClickExit()
