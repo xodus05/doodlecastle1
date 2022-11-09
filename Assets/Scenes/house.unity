@@ -209,6 +209,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+  sound: {fileID: 0}
   speed: 2.4
   runSpeed: 2.4
   walkCount: 25

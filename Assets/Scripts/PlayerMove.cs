@@ -14,6 +14,9 @@ public class PlayerMove : MonoBehaviour
     private BoxCollider2D boxCollider;
     public LayerMask layerMask;
 
+    public AudioClip sound; //사운드 파일
+    private AudioSource audioSource; // 사운드 플레이어
+
     public float speed;
     // private Rigidbody2D rigid2D;
 
@@ -47,6 +50,7 @@ public class PlayerMove : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     IEnumerator MoveCoroutine() {

@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class title : MonoBehaviour
 {
+/*    public GameObject playButton;
+    public GameObject playAgainButton;
+    public GameObject menuButton;*/
 
     public void SceneChange()
     {
