@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : MonoBehaviour
 {
 
-/*    Vector3 dirVec; //현재 바라보고있는 방향 값을 가진 변수
+    //Vector3 dirVec; //현재 바라보고있는 방향 값을 가진 변수
+       /* float h;
+        float v;*/
     GameObject scanObject; // 스캔 확인
-    float h;
-    float v;*/
-   
+    public int dirction;
+    float detect_range = 1.5f;
+
     static public PlayerMove instance; // Sprite 중복 생성 방지
 
     public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
@@ -38,10 +40,12 @@ public class PlayerMove : MonoBehaviour
 
     private Animator animator;
     Rigidbody2D rigid2D;
+    SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         rigid2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Start is called before the first frame update
@@ -115,30 +119,27 @@ public class PlayerMove : MonoBehaviour
         canMove = true;
     }
 
-/*    void Update()
+    void Update()
     {
-        h = Input.GetAxisRaw("Horizontal");
-        v = Input.GetAxisRaw("Vertical");
+/*        if (Input.GetButton("Horizontal"))
+        {
+            if(Input.GetAxisRaw("Horizontal") == -1)
+            {
+                spriteRenderer.flipX = true;
+                dirction = -1;
+            }
+
+            else
+            {
+                spriteRenderer.flipX=false;
+                dirction = 1;
+            }
+        }*/
         if (Input.GetButtonDown("Jump") && scanObject != null)
         {
             Debug.Log("this is : " + scanObject.name);
         }
-
-        bool hDown = Input.GetButtonDown("Horizontal");
-        bool vDown = Input.GetButtonDown("Vertical");
-        bool hUp = Input.GetButtonDown("Horizontal");
-        bool vUp = Input.GetButtonDown("Vertical");
-
-        // Direction
-        if (vDown && v == 1)
-            dirVec = Vector3.up;
-        else if (vDown && v == -1)
-            dirVec = Vector3.down;
-        else if (hDown && h == -1)
-            dirVec = Vector3.left;
-        else if (hDown && h == 1)
-            dirVec = Vector3.right;
-    }*/
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -154,16 +155,16 @@ public class PlayerMove : MonoBehaviour
         /*rigid2D.angularVelocity = Vector3.zero;*/
 
 
-/*        //Ray
-        Debug.DrawRay(rigid2D.position, dirVec * 0.7f, new Color(0,1,0));
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 0.7f, LayerMask.GetMask("Object"));
+        //Ray
+        Debug.DrawRay(rigid2D.position, new Vector3(dirction*detect_range,0,0), new Color(0,0,1));
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, new Vector3(dirction,0,0), detect_range, LayerMask.GetMask("Object"));
 
         if(rayHit.collider != null)
         {
             scanObject = rayHit.collider.gameObject;
         }
         else
-            scanObject = null;*/
+            scanObject = null;
     }
 }
 
