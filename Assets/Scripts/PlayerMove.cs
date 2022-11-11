@@ -3,40 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerMove : MonoBehaviour
-{
+public class PlayerMove : MovingObject {
 
 /*    Vector3 dirVec; //현재 바라보고있는 방향 값을 가진 변수
     GameObject scanObject; // 스캔 확인
     float h;
     float v;*/
    
+   
+
     static public PlayerMove instance; // Sprite 중복 생성 방지
 
     public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
     public int startPointNumber;
-    
-    private BoxCollider2D boxCollider;
-    public LayerMask layerMask;
 
     public AudioClip sound; //사운드 파일
     private AudioSource audioSource; // 사운드 플레이어
 
-    public float speed;
+    
     // private Rigidbody2D rigid2D;
-
-    private Vector3 vector;
 
     public float runSpeed; 
     private float applyRunSpeed;
     private bool applyRunFlag = false;  // 달릴 때 2칸을 가지 않기 위해 조절
 
-    public int walkCount;
-    private int currentWalkCount;
-
     private bool canMove = true;
-
-    private Animator animator;
     Rigidbody2D rigid2D;
 
     private void Awake()
