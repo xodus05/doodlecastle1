@@ -12,6 +12,8 @@ public class EventCastle : MonoBehaviour
     private OrderManager theOrder;
     private PlayerMove thePlayer;   // DirY == 1f
 
+    private bool flag;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,17 @@ public class EventCastle : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    private void OnTriggerStay2D(Collider2D collision) {
+        if(!flag && Input.GetKey(KeyCode.Space) && thePlayer.animator.GetFloat("DirY") == 1f)
+        {
+            flag = true;    // 다시 실행되지 않게
+            EventCoroutine();
+        }
+    }
+
+    IEnumerator EventCoroutine() {
+        theOrder.PreLoadCharater();
+
+        theOrder.Move();
     }
 }
