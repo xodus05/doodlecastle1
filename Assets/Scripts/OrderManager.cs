@@ -14,20 +14,20 @@ public class OrderManager : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
     }
 
-    public void PreLoadCharater() {
+/*    public void PreLoadCharater() {
         characters = ToList();
-    }
+    }*/
 
-    public List<MovingObject> ToList() {
+/*    public List<MovingObject> ToList() {
         List<MovingObject> ToList = new List<MovingObject>();
         MovingObject temp = FindObjectOfType<MovingObject>();
 
-        for(int i = 0; i < temp.Length; i++) {
+*//*        for(int i = 0; i < temp.Length; i++) {
             tempList.Add(temp[i]);
         }
 
-        return tempList; 
-    }
+        return tempList; *//*
+    }*/
 
     public void Move(string _name, string _dir) {
         for(int i = 0; i < characters.Count; i++) {

@@ -23,17 +23,19 @@ public class EventCastle : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnTriggerStay2D(Collider2D collision) {
-        if(!flag && Input.GetKey(KeyCode.Space) && thePlayer.animator.GetFloat("DirY") == 1f)
+/*    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!flag && Input.GetKey(KeyCode.Space) && thePlayer.animator.GetFloat("DirY") == 1f)
         {
             flag = true;    // 다시 실행되지 않게
             EventCoroutine();
         }
     }
 
-    IEnumerator EventCoroutine() {
+    IEnumerator EventCoroutine()
+    {
         theOrder.PreLoadCharater();
 
         theOrder.Move();
-    }
+    }*/
 }
