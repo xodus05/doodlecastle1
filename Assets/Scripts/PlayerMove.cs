@@ -42,6 +42,7 @@ public class PlayerMove : MovingObject {
     // Start is called before the first frame update
     void Start()
     {
+        queue = new Queue<string>();
         boxCollider = GetComponent<BoxCollider2D>();
         if(instance != null) Destroy(this.gameObject);
         else {
