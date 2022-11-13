@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMove : MovingObject
 {
     public GameManager manager;
 
@@ -17,38 +17,29 @@ public class PlayerMove : MonoBehaviour
     public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
     public int startPointNumber;
 
-    private BoxCollider2D boxCollider;
-    public LayerMask layerMask;
-
     public AudioClip sound; //사운드 파일
     private AudioSource audioSource; // 사운드 플레이어
-
-    public float speed;
-    // private Rigidbody2D rigid2D;
-
-    private Vector3 vector;
 
     public float runSpeed;
     private float applyRunSpeed;
     private bool applyRunFlag = false;  // 달릴 때 2칸을 가지 않기 위해 조절
 
-    public int walkCount;
-    private int currentWalkCount;
-
     private bool canMove = true;
 
-    private Animator animator;
     Rigidbody2D rigid2D;
+    SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
         // rigid2D = GetComponent<Rigidbody2D>();
         rigid2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        queue = new Queue<string>();
         boxCollider = GetComponent<BoxCollider2D>();
         if (instance != null) Destroy(this.gameObject);
         else

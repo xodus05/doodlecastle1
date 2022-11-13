@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventCastle : MonoBehaviour
+/*public class EventCastle : MonoBehaviour
 {
 
     //public Dialogue Dialogue_1;
@@ -37,5 +37,5 @@ public class EventCastle : MonoBehaviour
         theOrder.PreLoadCharater();
 
         theOrder.Move();
-    }*/
-}
+    }
+}*/
