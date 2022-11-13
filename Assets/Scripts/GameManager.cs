@@ -6,21 +6,29 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public TalkManager talkManager;
+    private PlayerMove thePlayer;
     public GameObject talkPanel;
     public Text talkText;
     public int talkIndex;
     public GameObject scanObject;
     public bool isAction; //상태 변수값
 
+    void Start()
+    {
+        thePlayer = FindObjectOfType<PlayerMove>();
+    }
+
     public void Action(GameObject scanObj)
     {
         if (isAction) // Exit Action
         {
             isAction = false;
+            thePlayer.canMove = true;
         }
         else // Enter Action
         {
-            isAction=true;
+            thePlayer.canMove = false;
+            isAction =true;
             scanObject = scanObj;
             Objdata objData = scanObject.GetComponent<Objdata>();
             //talkText.text = "이것의 이름은 " + scanObject.name + "이야ㅗㅗㅗ";

@@ -15,12 +15,14 @@ public class TalkManager : MonoBehaviour
 
     void GenerateData()
     {
-        talkData.Add(100, new string[] { "어제 먹은 배달 음식이 버려져 있어." }); //id값과 대사 추가
-        talkData.Add(1000, new string[] { "평범한 책장이다." });
+        talkData.Add(1, new string[] { "나가고 싶지 않아. 이젠 정말 피곤한걸... 그만 자자." }); //id???? ??? ???
+        talkData.Add(2, new string[] { "그만 잘까?" }); //id???? ??? ???
+        talkData.Add(100, new string[] { "어제 먹은 배달음식이 버려져 있어." }); //id???? ??? ???
+        talkData.Add(1000, new string[] { "평범한 책장이야." });
     }
 
 
-    // 지정한 대화 문장을 반환하는 함수
+    // ?????? ??? ?????? ?????? ???
     public string GetTalk(int id, int talkIndex)
     {
         return talkData[id][talkIndex];
