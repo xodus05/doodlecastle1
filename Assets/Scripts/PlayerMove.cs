@@ -24,7 +24,7 @@ public class PlayerMove : MovingObject
     private float applyRunSpeed;
     private bool applyRunFlag = false;  // 달릴 때 2칸을 가지 않기 위해 조절
 
-    private bool canMove = true;
+    public bool canMove = true;
 
     Rigidbody2D rigid2D;
     SpriteRenderer spriteRenderer;

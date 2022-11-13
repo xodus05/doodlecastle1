@@ -15,6 +15,7 @@ public class TalkManager : MonoBehaviour
 
     void GenerateData()
     {
+        talkData.Add(1, new string[] { "이젠 정말 피곤해... 나가고 싶지 않아." }); //id값과 대사 추가
         talkData.Add(100, new string[] { "어제 먹은 배달 음식이 버려져 있어." }); //id값과 대사 추가
         talkData.Add(1000, new string[] { "평범한 책장이다." });
     }
