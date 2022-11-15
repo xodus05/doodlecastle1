@@ -20,8 +20,8 @@ public class DialogueManager : MonoBehaviour
     #endregion Singleton
 
     public Text text;
-    public Image rendererSprite;
-    public Image rendererDialogueWindow;
+    public SpriteRenderer rendererSprite;
+    public SpriteRenderer rendererDialogueWindow;
 
     private List<string> listSentences;
     private List<Sprite> listSprites;
@@ -32,6 +32,11 @@ public class DialogueManager : MonoBehaviour
     public Animator animSprite;
     public Animator animDialogueWindow;
 
+    private OrderManager theOrder;
+
+    public bool talking = false;
+    private bool keyActivated = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,16 +45,19 @@ public class DialogueManager : MonoBehaviour
         listSentences = new List<string>();
         listSprites = new List<Sprite>();
         listDialogueWindows = new List<Sprite>();
+        theOrder = FindObjectOfType<OrderManager>();
     }
 
     public void ShowDialogue(Dialogue dialogue)
     {
+        talking = true;
+
         for(int i = 0; i < dialogue.sentences.Length; i++) {
             listSentences.Add(dialogue.sentences[i]);
             listSprites.Add(dialogue.sprites[i]);
             listDialogueWindows.Add(dialogue.dialogueWindows[i]);
         }
-        // animSprite.SetBool("Appear", true);
+        animSprite.SetBool("Appear", true);
         animDialogueWindow.SetBool("Appear", true); // 대화창 등장
 
         StartCoroutine(StartDialogueCoroutine());
@@ -60,19 +68,19 @@ public class DialogueManager : MonoBehaviour
         count = 0;
         listSentences.Clear();
         listDialogueWindows.Clear();
+        animSprite.SetBool("Appear", false);
         animDialogueWindow.SetBool("Appear", false);
+        talking = false;
     }
 
     IEnumerator StartDialogueCoroutine() {
-        
-
         if(count > 0) { 
             if(listDialogueWindows[count] != listDialogueWindows[count - 1]){ // 대사 바가 달라질 경우
                 animSprite.SetBool("Change", true);
                 animDialogueWindow.SetBool("Appear", false);
-                yield return new WaitForSeconds(0.2f);
-                rendererDialogueWindow.sprite = listDialogueWindows[count];
-                rendererSprite.sprite = listSprites[count];
+                yield return new WaitForSeconds(0.1f);
+                rendererDialogueWindow.GetComponent<SpriteRenderer>().sprite = listDialogueWindows[count];
+                rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
                 animDialogueWindow.SetBool("Appear", true);
                 animSprite.SetBool("Change", false);
             }
@@ -93,7 +101,7 @@ public class DialogueManager : MonoBehaviour
             rendererDialogueWindow.sprite = listDialogueWindows[count];
             rendererSprite.sprite = listSprites[count];
         }
-
+        keyActivated = true;
         for(int i = 0; i < listSentences[count].Length; i++) {
                 text.text += listSentences[count][i];   // 한글자씩 출력
                 yield return new WaitForSeconds(0.01f);
@@ -103,16 +111,23 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z)) {
-            text.text = "";     // text 초기화
-            count++;
-            if(count != listSentences.Count) {
-                StopAllCoroutines();
-                ExitDialogue();
-            }
-            else {
-                StopAllCoroutines();
-                StartCoroutine(StartDialogueCoroutine());
+        if (talking && keyActivated)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                keyActivated = false;
+                text.text = "";     // text 초기화
+                count++;
+                if (count == listSentences.Count)
+                {
+                    StopAllCoroutines();
+                    ExitDialogue();
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(StartDialogueCoroutine());
+                }
             }
         }
     }

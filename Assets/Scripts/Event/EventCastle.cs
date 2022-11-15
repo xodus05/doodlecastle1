@@ -28,7 +28,10 @@ public class EventCastle : MonoBehaviour
         if (!flag)
         {
             flag = true;
-            StartCoroutine(EventCoroutine());
+            if (collision.gameObject.name == "Player")
+            {
+                theDM.ShowDialogue(Dialogue_1);
+            }
         }
     }
 
@@ -37,16 +40,6 @@ public class EventCastle : MonoBehaviour
         theOrder.PreLoadCharater(); // 리스트 채우기
 
         theOrder.NotMove();
-
-        theDM.ShowDialogue(Dialogue_1);
-
-        yield return now WaitUntil(() => !theDM.talking);
-
-        theOrder.Move("player", "UP");
-        theOrder.Move("player", "UP");
-        theOrder.Move("player", "UP");
-
-        yield return now WaitUntil(1.0f);
 
         theOrder.Move();
     }

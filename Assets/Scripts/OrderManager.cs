@@ -29,6 +29,16 @@ public class OrderManager : MonoBehaviour
         return temp; 
     }
 
+    public void NotMove()
+    {
+        thePlayer.notMove = true;
+    }
+
+    public void Move()
+    {
+        thePlayer.notMove = false;
+    }
+
     public void Move(string _name, string _dir) {   // 이동할 객체 이름과 이동할 방향
         /*for(int i = 0; i < characters.Count; i++) {
             // if(_name == characters[i].)
