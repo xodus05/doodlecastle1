@@ -123,7 +123,7 @@ public class PlayerMove : MovingObject
         v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
 
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
-        if (Input.GetButtonDown("Jump") && scanObject != null)
+        if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
         {
             manager.Action(scanObject);
             //Debug.Log("this is : " + scanObject.name);

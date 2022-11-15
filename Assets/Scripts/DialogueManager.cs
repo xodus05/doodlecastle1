@@ -32,8 +32,6 @@ public class DialogueManager : MonoBehaviour
     public Animator animSprite;
     public Animator animDialogueWindow;
 
-    private OrderManager theOrder;
-
     public bool talking = false;
     private bool keyActivated = false;
 
@@ -45,7 +43,8 @@ public class DialogueManager : MonoBehaviour
         listSentences = new List<string>();
         listSprites = new List<Sprite>();
         listDialogueWindows = new List<Sprite>();
-        theOrder = FindObjectOfType<OrderManager>();
+        rendererDialogueWindow.GetComponent<SpriteRenderer>().sprite = listDialogueWindows[count];
+        rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
     }
 
     public void ShowDialogue(Dialogue dialogue)
@@ -67,10 +66,12 @@ public class DialogueManager : MonoBehaviour
         text.text = "";
         count = 0;
         listSentences.Clear();
+        listSprites.Clear();
         listDialogueWindows.Clear();
         animSprite.SetBool("Appear", false);
         animDialogueWindow.SetBool("Appear", false);
         talking = false;
+        Debug.Log("나가기");
     }
 
     IEnumerator StartDialogueCoroutine() {
@@ -89,7 +90,7 @@ public class DialogueManager : MonoBehaviour
                 if(listSprites[count] != listSprites[count - 1]) {  // 스프라이트만 교체하는 경우
                     animSprite.SetBool("Change", true);
                     yield return new WaitForSeconds(0.1f);
-                    rendererSprite.sprite = listSprites[count];
+                    rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
                     animSprite.SetBool("Change", false);
                 }
                 else {
