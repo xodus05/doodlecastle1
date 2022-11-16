@@ -6,9 +6,10 @@ using UnityEngine;
 [System.Serializable]
 public class Sound
 {
-    public string name; // »ç¿îµåÀÇ ÀÌ¸§
-    public AudioClip clip; // »ç¿îµå ÆÄÀÏ
-    private AudioSource source; // »ç¿îµå ÇÃ·¹ÀÌ¾î
+
+    public string name; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½
+    public AudioClip clip; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    private AudioSource source; // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½Ì¾ï¿½
 
     public float Volumn;
     public bool loop;
@@ -19,12 +20,30 @@ public class Sound
         source.clip = clip;
         source.loop = loop;
     }
+
+    public void Play() {
+        source.Play();
+    }
 }
 
 
 
 public class AudioManager : MonoBehaviour
 {
+
+    public static AudioManager instance;
+
+    #region Singleton
+    private void Awake() {
+         if(instance == null) {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+         }
+         else {
+            Destroy(this.gameObject);
+         }
+    }
+    #endregion Singleton
     [SerializeField]
     public Sound[] sounds;
 
@@ -32,8 +51,18 @@ public class AudioManager : MonoBehaviour
     {
         for(int i = 0; i < sounds.Length; i++)
         {
-            GameObject soundObject = new GameObject("»ç¿îµå ÆÄÀÏ ÀÌ¸§ : " + i + " = " + sounds[i].name);
+            GameObject soundObject = new GameObject("ì‚¬ìš´ë“œ íŒŒì¼ ì´ë¦„ : " + i + " = " + sounds[i].name);
             sounds[i].SetSource(soundObject.AddComponent<AudioSource>());
+            soundObject.transform.SetParent(this.transform);
+        }
+    }
+
+    public void Play(string _name) {
+        for(int i = 0; i<sounds.Length; i++) {
+            if(_name == sounds[i].name) {
+                sounds[i].Play();
+                return;
+            }
         }
     }
 
