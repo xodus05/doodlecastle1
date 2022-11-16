@@ -67,6 +67,12 @@ public class GameManager : MonoBehaviour
     void Talk(int id, bool isNpc)
     {
         string talkData = talkManager.GetTalk(id, talkIndex);
+
+        if(talkData == null)
+        {
+            isAction = false;
+            return;
+        }
         if (isNpc)
         {
             talkText.text = talkData;
