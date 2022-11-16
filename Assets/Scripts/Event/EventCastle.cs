@@ -15,6 +15,8 @@ public class EventCastle : MonoBehaviour
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
 
+    public GameObject Panel;
+
     private bool flag;
 
     // Start is called before the first frame update
@@ -71,6 +73,10 @@ public class EventCastle : MonoBehaviour
 
         }
         theDM.ShowDialogue(Dialogue_3);
+        yield return new WaitUntil(()=>!theDM.talking);
+
+        Panel.SetActive(true);
+
         theOrder.Move();
     }
 }

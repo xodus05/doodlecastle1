@@ -47,7 +47,12 @@ public class GameManager : MonoBehaviour
             isAction =true;
             scanObject = scanObj;
             Objdata objData = scanObject.GetComponent<Objdata>();
-            Talk(objData.id, objData.isNpc);
+            if(objData != null) {
+                Talk(objData.id, objData.isNpc);
+            }
+            else {
+                return;
+            }
         }
         //talkPanel.SetActive(isAction); //함수 숨기기 보여주기 구현
         if(isAction) {
@@ -67,15 +72,15 @@ public class GameManager : MonoBehaviour
 
         if(talkData == null)
         {
-            isAction = false;
+            //isAction = false;
             talkIndex = 0;
         }
         thePlayer.canMove = false;
         talkData = talkManager.GetTalk(id, talkIndex);
         talkText.text = talkData;
 
-        isAction = true;
-        talkIndex++;
+        //isAction = true;
+        //talkIndex++;
     }
 
 }
