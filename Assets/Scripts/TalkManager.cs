@@ -21,7 +21,7 @@ public class TalkManager : MonoBehaviour
         talkData.Add(1, new string[] { "너무 피곤해. 이젠 나가고 싶지 않아... 그만 자자." }); //id???? ??? ???
         talkData.Add(2, new string[] { "포탈이 막혀있어...돌아갈 수 없잖아." }); //id???? ??? ???
         talkData.Add(100, new string[2] { "어제 먹고 남은 쓰레기가 남아있어.", "치킨 먹고 싶네..." }); //id???? ??? ???
-        talkData.Add(1000, new string[2] { "평범한 옷장이야.", "최근에 책을 읽은 적이 없어서 뭐가 있는지도 모르겠다." });
+        talkData.Add(1000, new string[2] { "평범한 책장이야.", "최근에 책을 읽은 적이 없어서 뭐가 있는지도 모르겠다." });
     }
 
 
