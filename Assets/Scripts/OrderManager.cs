@@ -4,6 +4,20 @@ using UnityEngine;
 
 public class OrderManager : MonoBehaviour
 {
+    public static OrderManager instance;
+
+    #region Singleton
+    private void Awake() {
+         if(instance == null) {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+         }
+         else {
+            Destroy(this.gameObject);
+         }
+    }
+    #endregion Singleton
+
     private PlayerMove thePlayer;    // 이벤트 도중 키입력 처리 방지
     // private List<MovingObject> characters;
     private MovingObject character;
