@@ -14,6 +14,7 @@ public class EventCastle : MonoBehaviour
     private OrderManager theOrder;
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
+    private FadeManager theFade;
 
     public GameObject Panel;
 
@@ -26,6 +27,7 @@ public class EventCastle : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
+        theFade = FindObjectOfType<FadeManager>();
     }
 
     // Update is called once per frame
@@ -74,7 +76,8 @@ public class EventCastle : MonoBehaviour
         }
         theDM.ShowDialogue(Dialogue_3);
         yield return new WaitUntil(()=>!theDM.talking);
-
+        theFade.Flash();
+        yield return new WaitForSeconds(0.5f);
         Panel.SetActive(true);
 
         theOrder.Move();

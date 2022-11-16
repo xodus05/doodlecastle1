@@ -39,7 +39,6 @@ public class TransferMap : MonoBehaviour
         thePlayer.currentMapName = transferMapName;
         SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
         theFade.FadeIn();
-        yield return new WaitForSeconds(0.5f);
         theOrder.Move();
     }
 
