@@ -109,7 +109,7 @@ public class ChoiceManager : MonoBehaviour
     }
     IEnumerator TypingAnswer(int n, float time = 0.4f) {
         yield return new WaitForSeconds(time);
-        for(int i = 0; i < question.Length; i++) {
+        for(int i = 0; i < answerList[n].Length; i++) {
             answer_Text[n].text += answerList[n][i];  // 한 글자씩 나오게
             yield return waitTime;
         }

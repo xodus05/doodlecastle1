@@ -38,7 +38,7 @@ public class bedEvent : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
 
         theOrder.NotMove();
-
+        //flag = false;
         theChoice.ShowChoice(choice_1);
         yield return new WaitUntil(() => !theChoice.choiceIng);
         if(theChoice.GetResult()==0) {
@@ -50,9 +50,9 @@ public class bedEvent : MonoBehaviour
 
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(()=>!theDM.talking);
-
+            flag = true;
         }
-        flag = true;
+        
         theOrder.Move();
     }
 }

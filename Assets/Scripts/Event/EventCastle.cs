@@ -13,7 +13,7 @@ public class EventCastle : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private ChoiceManager theChoice;
-    private PlayerMove thePlayer;   // DirY == 1f
+    private PlayerMove thePlayer;
 
     private bool flag;
 

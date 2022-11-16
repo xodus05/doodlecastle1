@@ -43,8 +43,6 @@ public class DialogueManager : MonoBehaviour
         listSentences = new List<string>();
         listSprites = new List<Sprite>();
         listDialogueWindows = new List<Sprite>();
-        rendererDialogueWindow.GetComponent<SpriteRenderer>().sprite = listDialogueWindows[count];
-        rendererSprite.GetComponent<SpriteRenderer>().sprite = listSprites[count];
     }
 
     public void ShowDialogue(Dialogue dialogue)
