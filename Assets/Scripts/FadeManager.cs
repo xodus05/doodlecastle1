@@ -31,24 +31,24 @@ public class FadeManager : MonoBehaviour
 
 
 
-    public Image image; //°ËÀº»ö È­¸é
-    public GameObject button; //Å¬¸¯ÇÒ ¹öÆ°
+    public Image image; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½
+    public GameObject button; //Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°
 
     public void Fadebutton()
     {
-        Debug.Log("¹öÆ°Å¬¸¯");
-        button.SetActive(false); //¹öÆ°À» Å¬¸¯ÇÏ¸é ¹öÆ°Àº ºñÈ°¼ºÈ­
+        Debug.Log("ï¿½ï¿½Æ°Å¬ï¿½ï¿½");
+        button.SetActive(false); //ï¿½ï¿½Æ°ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
         StartCoroutine(FadeCoroutine());
     }
 
     IEnumerator FadeCoroutine()
     {
-        float fadeCount = 0; //Ã³À½ ¾ËÆÄ°ª
-        while (fadeCount < 1.0f) //¾ËÆÄ ÃÖ´ë°ª 1.0±îÁö ¹Ýº¹
+        float fadeCount = 0; //Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½Ä°ï¿½
+        while (fadeCount < 1.0f) //ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ë°ª 1.0ï¿½ï¿½ï¿½ï¿½ ï¿½Ýºï¿½
         {
             fadeCount += 0.01f;
-            yield return new WaitForSeconds(0.01f); //0.01ÃÊ ¸¶´Ù ½ÇÇà
-            image.color = new Color(0, 0, 0, fadeCount); //ÇØ´ç º¯¼ö°ªÀ¸·Î ¾ËÆÄ°ª ÁöÁ¤
+            yield return new WaitForSeconds(0.01f); //0.01ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            image.color = new Color(0, 0, 0, fadeCount); //ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ä°ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
     }*/
 }
