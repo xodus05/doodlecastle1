@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         else {
             text.text = "";
             animSprite.SetBool("Appear", false);
-        animDialogueWindow.SetBool("Appear", false); // 대화창 삭제
+            animDialogueWindow.SetBool("Appear", false); // 대화창 삭제
         }
     }
 
@@ -72,15 +72,15 @@ public class GameManager : MonoBehaviour
 
         if(talkData == null)
         {
-            isAction = false;
+            //isAction = false;
             talkIndex = 0;
         }
         thePlayer.canMove = false;
-        talkData = talkManager.GetTalk(id, talkIndex);
+        //talkData = talkManager.GetTalk(id, talkIndex);
         talkText.text = talkData;
 
-        isAction = true;
-        talkIndex++;
+        //isAction = true;
+        //talkIndex++;
     }
 
 }

@@ -32,6 +32,8 @@ public class DialogueManager : MonoBehaviour
     public Animator animSprite;
     public Animator animDialogueWindow;
 
+    private GameManager theGM;
+
     public bool talking = false;
     private bool keyActivated = false;
 
@@ -43,6 +45,7 @@ public class DialogueManager : MonoBehaviour
         listSentences = new List<string>();
         listSprites = new List<Sprite>();
         listDialogueWindows = new List<Sprite>();
+        theGM = FindObjectOfType<GameManager>();
     }
 
     public void ShowDialogue(Dialogue dialogue)
@@ -96,6 +99,10 @@ public class DialogueManager : MonoBehaviour
             }
         }
         else {  // count == 0
+            if(theGM.scanObject!=null) {
+                theGM.scanObject = null;
+                theGM.isAction = false;
+            }
             rendererDialogueWindow.sprite = listDialogueWindows[count];
             rendererSprite.sprite = listSprites[count];
         }
