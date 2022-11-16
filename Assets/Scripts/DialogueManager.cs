@@ -69,7 +69,6 @@ public class DialogueManager : MonoBehaviour
         animSprite.SetBool("Appear", false);
         animDialogueWindow.SetBool("Appear", false);
         talking = false;
-        Debug.Log("나가기");
     }
 
     IEnumerator StartDialogueCoroutine() {

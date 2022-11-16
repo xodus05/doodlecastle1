@@ -44,8 +44,6 @@ public class GameManager : MonoBehaviour
         }
         else // Enter Action
         {
-
-            thePlayer.canMove = false;
             isAction =true;
             scanObject = scanObj;
             Objdata objData = scanObject.GetComponent<Objdata>();
@@ -71,16 +69,10 @@ public class GameManager : MonoBehaviour
         {
             isAction = false;
             talkIndex = 0;
-            return;
         }
-        if (isNpc)
-        {
-            talkText.text = talkData;
-        }
-        else
-        {
-            talkText.text = talkData;
-        }
+        thePlayer.canMove = false;
+        talkData = talkManager.GetTalk(id, talkIndex);
+        talkText.text = talkData;
 
         isAction = true;
         talkIndex++;
