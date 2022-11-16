@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
         if(talkData == null)
         {
             isAction = false;
+            talkIndex = 0;
             return;
         }
         if (isNpc)
@@ -81,6 +82,9 @@ public class GameManager : MonoBehaviour
         {
             talkText.text = talkData;
         }
+
+        isAction = true;
+        talkIndex++;
     }
 
 }
