@@ -49,7 +49,6 @@ public class GameManager : MonoBehaviour
             isAction =true;
             scanObject = scanObj;
             Objdata objData = scanObject.GetComponent<Objdata>();
-            //talkText.text = "이것의 이름은 " + scanObject.name + "이야ㅗㅗㅗ";
             Talk(objData.id, objData.isNpc);
         }
         //talkPanel.SetActive(isAction); //함수 숨기기 보여주기 구현
