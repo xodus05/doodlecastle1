@@ -25,6 +25,7 @@ public class PlayerMove : MovingObject
     private bool applyRunFlag = false;  // 달릴 때 2칸을 가지 않기 위해 조절
 
     public bool canMove = true;
+    public bool notMove = false;
 
     Rigidbody2D rigid2D;
     SpriteRenderer spriteRenderer;
@@ -55,7 +56,7 @@ public class PlayerMove : MovingObject
 
     IEnumerator MoveCoroutine()
     {
-        while (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0)   // 연속 걷기 시 애니메이션이 계속 실행되도록
+        while (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0 && !notMove)   // 연속 걷기 시 애니메이션이 계속 실행되도록
         {
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {   // SHIFT를 눌렀을 시 달리기
@@ -122,7 +123,7 @@ public class PlayerMove : MovingObject
         v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
 
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
-        if (Input.GetButtonDown("Jump") && scanObject != null)
+        if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
         {
             manager.Action(scanObject);
             //Debug.Log("this is : " + scanObject.name);
@@ -148,7 +149,7 @@ public class PlayerMove : MovingObject
     void FixedUpdate()
     {
 
-        if (canMove)
+        if (canMove && !notMove)
         {
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {

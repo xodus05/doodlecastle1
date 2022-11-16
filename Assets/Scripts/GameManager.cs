@@ -12,6 +12,23 @@ public class GameManager : MonoBehaviour
     public int talkIndex;
     public GameObject scanObject;
     public bool isAction; //상태 변수값
+    public Text text;
+    public Animator animSprite;
+    public Animator animDialogueWindow;
+
+    public static GameManager instance;
+
+    #region Singleton
+    private void Awake() {
+         if(instance == null) {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+         }
+         else {
+            Destroy(this.gameObject);
+         }
+    }
+    #endregion Singleton
 
     void Start()
     {
@@ -27,6 +44,7 @@ public class GameManager : MonoBehaviour
         }
         else // Enter Action
         {
+
             thePlayer.canMove = false;
             isAction =true;
             scanObject = scanObj;
@@ -34,7 +52,16 @@ public class GameManager : MonoBehaviour
             //talkText.text = "이것의 이름은 " + scanObject.name + "이야ㅗㅗㅗ";
             Talk(objData.id, objData.isNpc);
         }
-        talkPanel.SetActive(isAction); //함수 숨기기 보여주기 구현
+        //talkPanel.SetActive(isAction); //함수 숨기기 보여주기 구현
+        if(isAction) {
+            animSprite.SetBool("Appear", true);
+            animDialogueWindow.SetBool("Appear", true); // 대화창 등장
+        }
+        else {
+            text.text = "";
+            animSprite.SetBool("Appear", false);
+        animDialogueWindow.SetBool("Appear", false); // 대화창 삭제
+        }
     }
 
     void Talk(int id, bool isNpc)
