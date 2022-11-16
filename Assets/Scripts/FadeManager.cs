@@ -5,50 +5,84 @@ using UnityEngine.UI;
 
 public class FadeManager : MonoBehaviour
 {
-    float time = 0;
+    public SpriteRenderer white;
+    public SpriteRenderer black;
+    private Color color;
 
-    void Update()
-    {
-/*        if(time < 2f)
-        {
-            GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, time/2);
-        }
-        else
-        {
-            time = 0;
-            this.gameObject.SetActive(false);
-        }
-        time += Time.deltaTime;*/
+    private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
+
+    public void FadeOut(float _speed = 0.02f) {
+        StartCoroutine(FadeOutCoroutine(_speed));
     }
 
-/*    public void resetAnim()
-    {
-        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
-        this.gameObject.SetActive(true);
-        time = 0;
-    }
+    IEnumerator FadeOutCoroutine(float _speed) {
+        color = black.color;
 
-
-
-
-    public Image image; //������ ȭ��
-    public GameObject button; //Ŭ���� ��ư
-
-    public void Fadebutton()
-    {
-        Debug.Log("��ưŬ��");
-        button.SetActive(false); //��ư�� Ŭ���ϸ� ��ư�� ��Ȱ��ȭ
-        StartCoroutine(FadeCoroutine());
-    }
-
-    IEnumerator FadeCoroutine()
-    {
-        float fadeCount = 0; //ó�� ���İ�
-        while (fadeCount < 1.0f) //���� �ִ밪 1.0���� �ݺ�
-        {
-            fadeCount += 0.01f;
-            yield return new WaitForSeconds(0.01f); //0.01�� ���� ����
-            image.color = new Color(0, 0, 0, fadeCount); //�ش� ���������� ���İ� ����
+        while(color.a < 1f) {
+            color.a += _speed;
+            black.color = color;
+            yield return waitTime;
         }
-    }*/
+    }
+
+    public void FadeIn(float _speed = 0.02f) {
+        StartCoroutine(FadeInCoroutine(_speed));
+    }
+
+    IEnumerator FadeInCoroutine(float _speed) {
+        color = black.color;
+
+        while(color.a > 0f) {
+            color.a -= _speed;
+            black.color = color;
+            yield return waitTime;
+        }
+    }
+
+    public void Flash(float _speed = 0.1f) {
+        StartCoroutine(FlashCoroutine(_speed));
+    }
+
+    IEnumerator FlashCoroutine(float _speed) {
+        color = white.color;
+
+        while(color.a < 1f) {
+            color.a += _speed;
+            white.color = color;
+            yield return waitTime;
+        }
+        while(color.a > 0f) {
+            color.a -= _speed;
+            white.color = color;
+            yield return waitTime;
+        }
+    }
+
+    public void FlashOut(float _speed = 0.02f) {
+        StartCoroutine(FlashOutCoroutine(_speed));
+    }
+
+    IEnumerator FlashOutCoroutine(float _speed) {
+        color = white.color;
+
+        while(color.a < 1f) {
+            color.a += _speed;
+            white.color = color;
+            yield return waitTime;
+        }
+    }
+
+    public void FlashIn(float _speed = 0.02f) {
+        StartCoroutine(FlashInCoroutine(_speed));
+    }
+
+    IEnumerator FlashInCoroutine(float _speed) {
+        color = white.color;
+
+        while(color.a > 0f) {
+            color.a -= _speed;
+            white.color = color;
+            yield return waitTime;
+        }
+    }
 }

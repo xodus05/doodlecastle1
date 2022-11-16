@@ -14,6 +14,7 @@ public class bookEvent2 : MonoBehaviour
     private OrderManager theOrder;
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
+    private FadeManager theFade;
 
     public GameObject Panel;
     public GameObject Panel2;
@@ -27,6 +28,7 @@ public class bookEvent2 : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
+        theFade = FindObjectOfType<FadeManager>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -52,12 +54,14 @@ public class bookEvent2 : MonoBehaviour
             Panel.SetActive(true);
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(()=>!theDM.talking);
+            theFade.Flash();
             Panel2.SetActive(true);
             theDM.ShowDialogue(dialogue_3);
             yield return new WaitUntil(()=>!theDM.talking);
             Panel.SetActive(false);
             Panel2.SetActive(false);
             Panel3.SetActive(true);
+            theFade.Flash();
         }
         else {
             flag = false;

@@ -10,12 +10,16 @@ public class TransferMap : MonoBehaviour
     
     private PlayerMove thePlayer;
     private CameraManager theCamera;
+    private FadeManager theFade;
+    private OrderManager theOrder;
 
     // Start is called before the first frame update
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerMove>(); // 다수 객체 리턴
         theCamera = FindObjectOfType<CameraManager>();
+        theFade = FindObjectOfType<FadeManager>();
+        theOrder = FindObjectOfType<OrderManager>();
         //GetComponent //단일 객체;
     }
 
@@ -23,10 +27,20 @@ public class TransferMap : MonoBehaviour
     {
         if(collision.gameObject.name == "Player") //boxCollider에 닿은 객체 이름(player)가 닿았을때 조건문 실행
         {
-            thePlayer.startPointNumber = startPointNumber;
-            thePlayer.currentMapName = transferMapName;
-            SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
+            StartCoroutine(TransferCoroutine());
         }    
+    }
+
+    IEnumerator TransferCoroutine() {
+        theOrder.NotMove();
+        theFade.FadeOut();
+        yield return new WaitForSeconds(1f);
+        thePlayer.startPointNumber = startPointNumber;
+        thePlayer.currentMapName = transferMapName;
+        SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
+        theFade.FadeIn();
+        yield return new WaitForSeconds(0.5f);
+        theOrder.Move();
     }
 
 
