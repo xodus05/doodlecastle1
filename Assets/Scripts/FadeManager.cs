@@ -9,19 +9,19 @@ public class FadeManager : MonoBehaviour
 
     void Update()
     {
-        if(time < 2f)
+/*        if(time < 2f)
         {
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, time/2);
         }
-/*        else
+        else
         {
             time = 0;
             this.gameObject.SetActive(false);
-        }*/
-        time += Time.deltaTime;
+        }
+        time += Time.deltaTime;*/
     }
 
-    public void resetAnim()
+/*    public void resetAnim()
     {
         GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
         this.gameObject.SetActive(true);
@@ -31,24 +31,24 @@ public class FadeManager : MonoBehaviour
 
 
 
-    /*    public Image image; //검은색 화면
-        public GameObject button; //클릭할 버튼
+    public Image image; //검은색 화면
+    public GameObject button; //클릭할 버튼
 
-        public void Fadebutton()
+    public void Fadebutton()
+    {
+        Debug.Log("버튼클릭");
+        button.SetActive(false); //버튼을 클릭하면 버튼은 비활성화
+        StartCoroutine(FadeCoroutine());
+    }
+
+    IEnumerator FadeCoroutine()
+    {
+        float fadeCount = 0; //처음 알파값
+        while (fadeCount < 1.0f) //알파 최대값 1.0까지 반복
         {
-            Debug.Log("버튼클릭");
-            button.SetActive(false); //버튼을 클릭하면 버튼은 비활성화
-            StartCoroutine(FadeCoroutine());
+            fadeCount += 0.01f;
+            yield return new WaitForSeconds(0.01f); //0.01초 마다 실행
+            image.color = new Color(0, 0, 0, fadeCount); //해당 변수값으로 알파값 지정
         }
-
-        IEnumerator FadeCoroutine()
-        {
-            float fadeCount = 0; //처음 알파값
-            while (fadeCount < 1.0f) //알파 최대값 1.0까지 반복
-            {
-                fadeCount += 0.01f;
-                yield return new WaitForSeconds(0.01f); //0.01초 마다 실행
-                image.color = new Color(0,0,0,fadeCount); //해당 변수값으로 알파값 지정
-            }
-        }*/
+    }*/
 }
