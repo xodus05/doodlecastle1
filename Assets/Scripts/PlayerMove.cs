@@ -125,6 +125,7 @@ public class PlayerMove : MovingObject
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
         if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
         {
+            //scanObject = null;
             manager.Action(scanObject);
             //Debug.Log("this is : " + scanObject.name);
         }

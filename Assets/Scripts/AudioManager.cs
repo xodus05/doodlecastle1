@@ -31,7 +31,7 @@ public class Sound
 public class AudioManager : MonoBehaviour
 {
 
-    public static AudioManager instance;
+    public static AudioManager instance; 
 
     #region Singleton
     private void Awake() {

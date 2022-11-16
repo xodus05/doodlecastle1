@@ -72,15 +72,15 @@ public class GameManager : MonoBehaviour
 
         if(talkData == null)
         {
-            //isAction = false;
+            isAction = false;
             talkIndex = 0;
         }
         thePlayer.canMove = false;
         talkData = talkManager.GetTalk(id, talkIndex);
         talkText.text = talkData;
 
-        //isAction = true;
-        //talkIndex++;
+        isAction = true;
+        talkIndex++;
     }
 
 }

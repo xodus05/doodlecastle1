@@ -13,6 +13,7 @@ public class TalkManager : MonoBehaviour
     {
         talkData = new Dictionary<int, string[]>();
         GenerateData();
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void GenerateData()
