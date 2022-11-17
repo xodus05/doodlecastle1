@@ -5555,6 +5555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1509262568}
   - component: {fileID: 1509262569}
+  - component: {fileID: 1509262570}
   m_Layer: 0
   m_Name: bound
   m_TagString: Untagged
@@ -5603,6 +5604,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1509262570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509262567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d728f896cfa104f488656555a43c0c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1530674049
 GameObject:
   m_ObjectHideFlags: 0
@@ -6624,23 +6637,31 @@ MonoBehaviour:
   sounds:
   - name: rustle
     clip: {fileID: 8300000, guid: 9fa87d7bb6d40ba4a9bd25c5df9f15c4, type: 3}
-    Volumn: 1
+    Volume: 1
     loop: 0
   - name: enter
     clip: {fileID: 8300000, guid: 8149a21c4fb6a5f44a399cde75b1ddd8, type: 3}
-    Volumn: 1
+    Volume: 1
     loop: 0
   - name: cancel
     clip: {fileID: 8300000, guid: 73eba3fcf5a6d1645af103fc0d7258b9, type: 3}
-    Volumn: 1
+    Volume: 1
     loop: 0
   - name: key
     clip: {fileID: 8300000, guid: 3a3ede64940be364eacd3236df6480da, type: 3}
-    Volumn: 1
+    Volume: 1
     loop: 0
   - name: correct
     clip: {fileID: 8300000, guid: ea8927733f0c2404387b99ad68116e7c, type: 3}
-    Volumn: 1
+    Volume: 1
+    loop: 0
+  - name: monsterdoor
+    clip: {fileID: 8300000, guid: dae2b49e5a2acf9449a5c78e89b3ec29, type: 3}
+    Volume: 1
+    loop: 1
+  - name: door1
+    clip: {fileID: 8300000, guid: ee67b5472429c3e478d7b90023dc8d42, type: 3}
+    Volume: 0
     loop: 0
 --- !u!4 &2009068470
 Transform:
