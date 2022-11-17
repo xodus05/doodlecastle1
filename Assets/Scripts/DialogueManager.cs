@@ -19,6 +19,9 @@ public class DialogueManager : MonoBehaviour
     }
     #endregion Singleton
 
+    private AudioManager theAudio;
+    public string enter_sound;
+
     public Text text;
     public SpriteRenderer rendererSprite;
     public SpriteRenderer rendererDialogueWindow;
@@ -46,6 +49,7 @@ public class DialogueManager : MonoBehaviour
         listSprites = new List<Sprite>();
         listDialogueWindows = new List<Sprite>();
         theGM = FindObjectOfType<GameManager>();
+        theAudio = FindObjectOfType<AudioManager>();
     }
 
     public void ShowDialogue(Dialogue dialogue)
@@ -120,6 +124,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
+                theAudio.Play(enter_sound);
                 keyActivated = false;
                 text.text = "";     // text 초기화
                 count++;

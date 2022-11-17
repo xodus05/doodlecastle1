@@ -41,6 +41,7 @@ public class map1event : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         theOrder.Move("player", "UP");
+        theOrder.Move("player", "UP");
         yield return new WaitUntil(()=>thePlayer.queue.Count == 0);
 
         theDM.ShowDialogue(Dialogue_1);

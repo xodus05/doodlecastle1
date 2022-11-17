@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public TalkManager talkManager;
     private PlayerMove thePlayer;
     public GameObject talkPanel;
+    Objdata objData;
     public Text talkText;
     public int talkIndex;
     public GameObject scanObject;
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour
         {
             isAction =true;
             scanObject = scanObj;
-            Objdata objData = scanObject.GetComponent<Objdata>();
+            objData = scanObject.GetComponent<Objdata>();
             if(objData != null) {
                 Talk(objData.id, objData.isNpc);
             }
@@ -56,12 +57,14 @@ public class GameManager : MonoBehaviour
         }
         //talkPanel.SetActive(isAction); //함수 숨기기 보여주기 구현
         if(isAction) {
-            animSprite.SetBool("Appear", true);
+            if(!objData.isNpc)
+                animSprite.SetBool("Appear", true);
             animDialogueWindow.SetBool("Appear", true); // 대화창 등장
         }
         else {
             text.text = "";
-            animSprite.SetBool("Appear", false);
+            if(!objData.isNpc)
+                animSprite.SetBool("Appear", false);
             animDialogueWindow.SetBool("Appear", false); // 대화창 삭제
         }
     }
