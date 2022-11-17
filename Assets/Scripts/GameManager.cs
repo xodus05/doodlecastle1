@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Text text;
     public Animator animSprite;
     public Animator animDialogueWindow;
+    public OrderManager theOrder;
 
     public static GameManager instance;
 
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerMove>();
+        theOrder = FindObjectOfType<OrderManager>();
     }
 
     public void Action(GameObject scanObj)
@@ -41,7 +43,7 @@ public class GameManager : MonoBehaviour
         if (isAction) // Exit Action
         {
             isAction = false;
-            thePlayer.canMove = true;
+            theOrder.Move();
         }
         else // Enter Action
         {
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
             objData = scanObject.GetComponent<Objdata>();
             if(objData != null) {
                 Talk(objData.id, objData.isNpc);
+                theOrder.NotMove();
             }
             else {
                 return;
@@ -78,7 +81,6 @@ public class GameManager : MonoBehaviour
             //isAction = false;
             talkIndex = 0;
         }
-        thePlayer.canMove = false;
         //talkData = talkManager.GetTalk(id, talkIndex);
         talkText.text = talkData;
 

@@ -104,7 +104,7 @@ public class DialogueManager : MonoBehaviour
         }
         else {  // count == 0
             if(theGM.scanObject!=null) {
-                theGM.scanObject = null;
+                // theGM.scanObject = null;
                 theGM.isAction = false;
             }
             rendererDialogueWindow.sprite = listDialogueWindows[count];
