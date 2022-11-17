@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 30
-  isNpc: 0
+  isNpc: 1
 --- !u!61 &396379462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 30
-  isNpc: 0
+  isNpc: 1
 --- !u!61 &557816871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 30
-  isNpc: 0
+  isNpc: 1
 --- !u!61 &600671217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 30
-  isNpc: 0
+  isNpc: 1
 --- !u!61 &950935387
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 30
-  isNpc: 0
+  isNpc: 1
 --- !u!61 &1243821715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1828,7 +1828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 30
-  isNpc: 0
+  isNpc: 1
 --- !u!61 &1480425126
 BoxCollider2D:
   m_ObjectHideFlags: 0

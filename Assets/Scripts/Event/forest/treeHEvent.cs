@@ -2,38 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lockEvent : MonoBehaviour
+public class treeHEvent : MonoBehaviour
 {
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
 
+    public GameObject panel;
+    public string sound;
+
+    private bool flag;
+
     private DialogueManager theDM;
     private OrderManager theOrder;
     private PlayerMove thePlayer;
-    private NumberSystem theNumber;
-
-    private bool flag;
-    public int correctNumber;
-    public GameObject Panel;
-    private bool isOpen;
+    private AudioManager theAudio;
+    private FadeManager theFade;
 
     // Start is called before the first frame update
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
+        theFade = FindObjectOfType<FadeManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
-        theNumber = FindObjectOfType<NumberSystem>();
+        theAudio = FindObjectOfType<AudioManager>();
     }
 
-    // Update is called once per frame
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(isOpen) {
-            Panel.SetActive(true);
-        }
-
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+        if (!flag)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -44,22 +41,17 @@ public class lockEvent : MonoBehaviour
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
-
+        theOrder.Move("player", "UP");
+        theOrder.Move("player", "UP");
+        theAudio.Play(sound);
+        theOrder.Move("player", "DOWN");
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
-
-        theNumber.ShowNumber(correctNumber);
-        yield return new WaitUntil(() => !theNumber.activated);
-        if(theNumber.GetResult()) {
-            dialogue_2.sentences[0] = "열렸어!\n들어가자.";
-            Panel.SetActive(true);
-            isOpen =
-        }
-        else {
-            dialogue_2.sentences[0] = "틀렸어...";
-            flag = false;
-        }
+        yield return new WaitForSeconds(3.0f);
+        theAudio.Stop(sound);
         theDM.ShowDialogue(dialogue_2);
+        yield return new WaitUntil(()=>!theDM.talking);
+        panel.SetActive(true);
         theOrder.Move();
     }
 }

@@ -11,7 +11,7 @@ public class Sound
     public AudioClip clip; // ���� ����
     private AudioSource source; // ���� �÷��̾�
 
-    public float Volumn;
+    public float Volume;
     public bool loop;
 
     public void SetSource(AudioSource _source)
@@ -19,10 +19,15 @@ public class Sound
         source = _source;
         source.clip = clip;
         source.loop = loop;
+        source.volume = Volume;
     }
 
     public void Play() {
         source.Play();
+    }
+
+    public void Stop() {
+        source.volume = 0f;
     }
 }
 
@@ -61,6 +66,15 @@ public class AudioManager : MonoBehaviour
         for(int i = 0; i<sounds.Length; i++) {
             if(_name == sounds[i].name) {
                 sounds[i].Play();
+                return;
+            }
+        }
+    }
+
+    public void Stop(string _name) {
+        for(int i = 0; i<sounds.Length; i++) {
+            if(_name == sounds[i].name) {
+                sounds[i].Stop();
                 return;
             }
         }
