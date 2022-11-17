@@ -53,7 +53,7 @@ public class lockEvent : MonoBehaviour
         if(theNumber.GetResult()) {
             dialogue_2.sentences[0] = "열렸어!\n들어가자.";
             Panel.SetActive(true);
-            isOpen =
+            isOpen = true;
         }
         else {
             dialogue_2.sentences[0] = "틀렸어...";
