@@ -22,6 +22,8 @@ public class bedEvent : MonoBehaviour
 
     private bool flag;
 
+
+
     // Start is called before the first frame update
     void Start()
     {

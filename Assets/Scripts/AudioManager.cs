@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 
 [System.Serializable]
@@ -25,7 +27,7 @@ public class Sound
     public void Play() {
         source.Play();
     }
-
+    
     public void Stop() {
         source.volume = 0f;
     }
