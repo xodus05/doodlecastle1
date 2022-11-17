@@ -1371,7 +1371,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 35.92079, y: -20.428135}
+  m_Offset: {x: 36.059433, y: -20.98259}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1382,7 +1382,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 66.97571, y: 64.04071}
+  m_Size: {x: 53.39158, y: 50.73385}
   m_EdgeRadius: 0
 --- !u!483693784 &2146609094
 TilemapRenderer:
