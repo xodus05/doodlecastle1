@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -312,6 +312,7 @@ MonoBehaviour:
     - {fileID: -6833289811283636104, guid: ea9611c5bc406b44d8432c6505629397, type: 2}
     - {fileID: -2520982748785298417, guid: 58f6c70b1b8e6da47950a2e676807b73, type: 2}
     - {fileID: -7784587517895569004, guid: 58f6c70b1b8e6da47950a2e676807b73, type: 2}
+    - {fileID: 6662777158367819539, guid: 746fc9d240177b841aa72cc3a48291f5, type: 2}
     m_ValueSerializationHelper:
     - e00: 1.0129637
       e01: 0
@@ -377,12 +378,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 0.63382506
+      e01: 0
+      e02: 0
+      e03: 111.32381
+      e10: 0
+      e11: 0.63382506
+      e12: 0
+      e13: 177.4821
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 58f6c70b1b8e6da47950a2e676807b73, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 746fc9d240177b841aa72cc3a48291f5, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -2520982748785298417, guid: 58f6c70b1b8e6da47950a2e676807b73, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  - m_Target: {fileID: -7784587517895569004, guid: 58f6c70b1b8e6da47950a2e676807b73, type: 2}
+  - m_Target: {fileID: 6662777158367819539, guid: 746fc9d240177b841aa72cc3a48291f5, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -496,7 +511,7 @@ MonoBehaviour:
       m_UserData: 24812
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 

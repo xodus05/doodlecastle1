@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public TalkManager talkManager;
     private PlayerMove thePlayer;
     public GameObject talkPanel;
+    Objdata objData;
     public Text talkText;
     public int talkIndex;
     public GameObject scanObject;
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public Text text;
     public Animator animSprite;
     public Animator animDialogueWindow;
+    public OrderManager theOrder;
 
     public static GameManager instance;
 
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         thePlayer = FindObjectOfType<PlayerMove>();
+        theOrder = FindObjectOfType<OrderManager>();
     }
 
     public void Action(GameObject scanObj)
@@ -40,15 +43,16 @@ public class GameManager : MonoBehaviour
         if (isAction) // Exit Action
         {
             isAction = false;
-            thePlayer.canMove = true;
+            theOrder.Move();
         }
         else // Enter Action
         {
             isAction =true;
             scanObject = scanObj;
-            Objdata objData = scanObject.GetComponent<Objdata>();
+            objData = scanObject.GetComponent<Objdata>();
             if(objData != null) {
                 Talk(objData.id, objData.isNpc);
+                theOrder.NotMove();
             }
             else {
                 return;
@@ -56,12 +60,14 @@ public class GameManager : MonoBehaviour
         }
         //talkPanel.SetActive(isAction); //함수 숨기기 보여주기 구현
         if(isAction) {
-            animSprite.SetBool("Appear", true);
+            if(!objData.isNpc)
+                animSprite.SetBool("Appear", true);
             animDialogueWindow.SetBool("Appear", true); // 대화창 등장
         }
         else {
             text.text = "";
-            animSprite.SetBool("Appear", false);
+            if(!objData.isNpc)
+                animSprite.SetBool("Appear", false);
             animDialogueWindow.SetBool("Appear", false); // 대화창 삭제
         }
     }
@@ -75,7 +81,6 @@ public class GameManager : MonoBehaviour
             //isAction = false;
             talkIndex = 0;
         }
-        thePlayer.canMove = false;
         //talkData = talkManager.GetTalk(id, talkIndex);
         talkText.text = talkData;
 

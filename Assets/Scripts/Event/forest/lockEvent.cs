@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class map1event : MonoBehaviour
+public class lockEvent : MonoBehaviour
 {
-    [SerializeField]
-    public Dialogue Dialogue_1;
+    public Dialogue dialogue_1;
+    public Dialogue dialogue_2;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
-    private ChoiceManager theChoice;
     private PlayerMove thePlayer;
+    private NumberSystem theNumber;
 
     private bool flag;
+    public int correctNumber;
 
     // Start is called before the first frame update
     void Start()
@@ -20,12 +21,13 @@ public class map1event : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
-        theChoice = FindObjectOfType<ChoiceManager>();
+        theNumber = FindObjectOfType<NumberSystem>();
     }
 
+    // Update is called once per frame
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!flag)
+        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -35,18 +37,21 @@ public class map1event : MonoBehaviour
     IEnumerator EventCoroutine()
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
-
         theOrder.NotMove();
 
-        yield return new WaitForSeconds(0.5f);
-
-        theOrder.Move("player", "UP");
-        theOrder.Move("player", "UP");
-        yield return new WaitUntil(()=>thePlayer.queue.Count == 0);
-
-        theDM.ShowDialogue(Dialogue_1);
+        theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
 
+        theNumber.ShowNumber(correctNumber);
+        yield return new WaitUntil(() => !theNumber.activated);
+        if(theNumber.GetResult()) {
+            dialogue_2.sentences[0] = "열렸어!\n들어가자.";
+        }
+        else {
+            dialogue_2.sentences[0] = "틀렸어...";
+            flag = false;
+        }
+        theDM.ShowDialogue(dialogue_2);
         theOrder.Move();
     }
 }
