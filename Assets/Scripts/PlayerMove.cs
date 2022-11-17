@@ -17,7 +17,6 @@ public class PlayerMove : MovingObject
     public string currentMapName; // transferMap 스크립트에 있는 transferMapName 변수의 값을 저장;
     public int startPointNumber;
 
-    public AudioClip sound; //사운드 파일
     private AudioSource audioSource; // 사운드 플레이어
 
     public float runSpeed;

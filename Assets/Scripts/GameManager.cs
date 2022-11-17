@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
             scanObject = scanObj;
             objData = scanObject.GetComponent<Objdata>();
             if(objData != null) {
-                Talk(objData.id, objData.isNpc);
+                Talk(objData.id);
                 theOrder.NotMove();
             }
             else {
@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Talk(int id, bool isNpc)
+    void Talk(int id)
     {
         string talkData = talkManager.GetTalk(id, talkIndex);
 
