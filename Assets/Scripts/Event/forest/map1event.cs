@@ -12,7 +12,7 @@ public class map1event : MonoBehaviour
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
 
-    private bool flag;
+    private static bool flag;
 
     // Start is called before the first frame update
     void Start()
@@ -39,14 +39,13 @@ public class map1event : MonoBehaviour
         theOrder.NotMove();
 
         yield return new WaitForSeconds(0.5f);
-
+        thePlayer.walkCount = 30;
         theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");
         yield return new WaitUntil(()=>thePlayer.queue.Count == 0);
 
         theDM.ShowDialogue(Dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
-
         theOrder.Move();
     }
 }

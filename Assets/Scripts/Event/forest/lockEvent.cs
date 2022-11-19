@@ -12,10 +12,10 @@ public class lockEvent : MonoBehaviour
     private PlayerMove thePlayer;
     private NumberSystem theNumber;
 
-    private bool flag;
+    private static bool flag;
+    private static bool isOpen;
     public int correctNumber;
     public GameObject Panel;
-    private bool isOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +29,7 @@ public class lockEvent : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(isOpen) {
-            Panel.SetActive(true);
-        }
-
+        if(isOpen) Panel.SetActive(true);
         if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
         {
             flag = true;
