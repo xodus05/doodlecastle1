@@ -10,7 +10,7 @@ public class treeHEvent : MonoBehaviour
     public GameObject panel;
     public string sound;
 
-    private bool flag;
+    private static bool flag;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
@@ -49,6 +49,7 @@ public class treeHEvent : MonoBehaviour
         yield return new WaitUntil(()=>!theDM.talking);
         yield return new WaitForSeconds(3.0f);
         theAudio.Stop(sound);
+        yield return new WaitForSeconds(1.0f);
         theDM.ShowDialogue(dialogue_2);
         yield return new WaitUntil(()=>!theDM.talking);
         panel.SetActive(true);

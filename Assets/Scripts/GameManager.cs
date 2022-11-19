@@ -63,6 +63,12 @@ public class GameManager : MonoBehaviour
             if(!objData.isNpc)
                 animSprite.SetBool("Appear", true);
             animDialogueWindow.SetBool("Appear", true); // 대화창 등장
+            if(objData == null && Input.GetKeyDown(KeyCode.Z)) {
+                text.text = "";
+                if(!objData.isNpc)
+                    animSprite.SetBool("Appear", false);
+                animDialogueWindow.SetBool("Appear", false); // 대화창 삭제
+            }
         }
         else {
             text.text = "";
