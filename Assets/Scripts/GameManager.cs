@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
             }
         }
         //talkPanel.SetActive(isAction); //함수 숨기기 보여주기 구현
+        if(objData!=null) {
         if(isAction) {
             if(!objData.isNpc)
                 animSprite.SetBool("Appear", true);
@@ -75,6 +76,7 @@ public class GameManager : MonoBehaviour
             if(!objData.isNpc)
                 animSprite.SetBool("Appear", false);
             animDialogueWindow.SetBool("Appear", false); // 대화창 삭제
+        }
         }
     }
 
