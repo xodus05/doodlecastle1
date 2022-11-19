@@ -162,9 +162,9 @@ public class PlayerMove : MovingObject
 
         //Ray
         // Ray를 그림
-        Debug.DrawRay(rigid2D.position, dirVec * 60.0f, Color.red);
+        Debug.DrawRay(rigid2D.position, dirVec * 50.0f, Color.red);
         // layout이 Object 인것만 반응
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 60.0f, LayerMask.GetMask("Object"));
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 50.0f, LayerMask.GetMask("Object"));
 
         if (rayHit.collider != null)
         {
