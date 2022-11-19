@@ -3790,7 +3790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1156861001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1033364709}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1156861001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5455,7 +5467,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC774\uC5B4\uD558\uAE30"
+  m_Text: "\uB2E4\uC2DC\uD558\uAE30"
 --- !u!222 &1472410987
 CanvasRenderer:
   m_ObjectHideFlags: 0
