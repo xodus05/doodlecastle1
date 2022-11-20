@@ -739,7 +739,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -849,8 +849,8 @@ MonoBehaviour:
   dialogue_3:
     sentences:
     - "\uC73C\uC545!\n\uB099\uC11C\uAC00 \uD280\uC5B4\uB098\uC654\uC5B4...?"
-    - "\uBC15\uCD98\uC2DD\uC528!! \uC774\uB7F4 \uB54C\uAC00 \uC544\uB2C8\uC5D0\uC694.
-      \uB099\uC11C \uC655\uAD6D\uC744 \uAD6C\uD558\uB7EC \uAC00\uC57C\uD55C\uB2E4\uAD6C\uC694!\r\n"
+    - "\uBC15\uCD98\uC2DD \uC528! \uBC15\uCD98\uC2DD \uC528 \uB9DE\uC8E0? \uD55C
+      \uC2DC\uAC00 \uAE09\uD574\uC694. \uC655\uAD6D\uC774 \uC704\uD5D8\uD558\uB2E4\uAD6C\uC694!"
     - "\uBB50, \uBB50\uB77C\uB294\uAC70\uC57C."
     - "\uC2DC\uAC04\uC774 \uC5C6\uC5B4\uC694! \uC9C0\uAE08 \uB2F9\uC7A5 \uB4E4\uC5B4\uAC00\uC57C
       \uD55C\uB2E8 \uB9D0\uC774\uC5D0\uC694!"

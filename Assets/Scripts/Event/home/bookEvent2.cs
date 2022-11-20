@@ -47,6 +47,7 @@ public class bookEvent2 : MonoBehaviour
 
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
+        theOrder.NotMove();
         theChoice.ShowChoice(choice_1);
         yield return new WaitUntil(() => !theChoice.choiceIng);
         
