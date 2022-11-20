@@ -30,6 +30,10 @@ public class TalkManager : MonoBehaviour
         talkData.Add(30, new string[] { "여기 온 자들은 다 죽었어. \n너도 그렇게 될걸." }); 
         talkData.Add(40, new string[] { "쓰레기통엔 잿더미밖에 없어." }); 
         talkData.Add(50, new string[] { "웬 장작더미지? 캠프파이어라도 했나." }); 
+        talkData.Add(200, new string[] { "열쇠는 길목에 있어." }); 
+        talkData.Add(300, new string[] { "숨겨진 곳엔 괴물의 흔적이 남았지." }); 
+        talkData.Add(400, new string[] { "너희 집에도 있던 것이지." }); 
+        talkData.Add(500, new string[] { "열쇠는 눈에 보이지 않아." }); 
         talkData.Add(100, new string[] { "어제 먹고 버린 쓰레기가 남아있어."}); //id???? ??? ???
         talkData.Add(1000, new string[] { "평범한 책장이야."});
     }
