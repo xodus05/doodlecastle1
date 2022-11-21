@@ -16,6 +16,8 @@ public class bedEvent : MonoBehaviour
     public GameObject Panel;
     public GameObject Panel2;
 
+    BoxCollider2D boxCollider;
+
     public string sound;
 
     private AudioManager theAudio;
@@ -32,14 +34,17 @@ public class bedEvent : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
         theAudio = FindObjectOfType<AudioManager>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirX") == -1f)
-        {
-            flag = true;
-            StartCoroutine(EventCoroutine());
+        if(Input.GetKey(KeyCode.Z)) {
+            if (!flag && thePlayer.animator.GetFloat("DirX") == -1f)
+            {
+                flag = true;
+                StartCoroutine(EventCoroutine());
+            }
         }
     }
 
@@ -48,6 +53,7 @@ public class bedEvent : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
 
         theOrder.NotMove();
+        boxCollider.enabled = false;
         theChoice.ShowChoice(choice_1);
         yield return new WaitUntil(() => !theChoice.choiceIng);
         if(theChoice.GetResult()==0) {
@@ -68,8 +74,9 @@ public class bedEvent : MonoBehaviour
         }
         else {
             flag = false;
+            yield return new WaitForSeconds(0.2f);
         }
-        
+        boxCollider.enabled = true;
         theOrder.Move();
     }
 }

@@ -197,7 +197,7 @@ MonoBehaviour:
   transferMapName: treehouse
   startPointNumber: 0
   Panel: {fileID: 94253743}
-  sound: door1
+  sound: door2
 --- !u!1 &94253743
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881380498}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1472, y: 1051, z: 0}
+  m_LocalPosition: {x: 1469, y: 1051, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1070,7 +1070,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 161.1912, y: -84.11058}
+  m_Offset: {x: 161.1912, y: -84.93587}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1081,7 +1081,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 235.15302, y: 83.38677}
+  m_Size: {x: 235.15302, y: 81.7362}
   m_EdgeRadius: 0
 --- !u!61 &1732178165
 BoxCollider2D:
@@ -1096,7 +1096,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 115.00668, y: -3.2324533}
+  m_Offset: {x: 115.00668, y: -3.029603}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1107,7 +1107,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 322.02106, y: 56.464905}
+  m_Size: {x: 322.02106, y: 56.059204}
   m_EdgeRadius: 0
 --- !u!61 &1732178166
 BoxCollider2D:
@@ -1122,7 +1122,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -116.38051, y: -85.12728}
+  m_Offset: {x: -117.449615, y: -85.85333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1133,7 +1133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 294.84415, y: 85.39116}
+  m_Size: {x: 292.70593, y: 83.93905}
   m_EdgeRadius: 0
 --- !u!61 &1732178167
 BoxCollider2D:

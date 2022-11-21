@@ -25,6 +25,10 @@ public class PlayerMove : MovingObject
 
     public bool canMove = true;
     public bool notMove = false;
+    public bool isAction = false;
+
+    public bool haveKey = false;
+    public bool haveShovel = false;
 
     Rigidbody2D rigid2D;
     SpriteRenderer spriteRenderer;
@@ -125,6 +129,10 @@ public class PlayerMove : MovingObject
         if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
         {
             manager.Action(scanObject);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Z)) {
+            isAction = true;
         }
 
         bool hDown = Input.GetButtonDown("Horizontal");

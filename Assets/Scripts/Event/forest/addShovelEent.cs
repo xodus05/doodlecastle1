@@ -2,23 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class leafEvent : MonoBehaviour
+public class addShovelEent : MonoBehaviour
 {
+
+    public GameObject Panel;
     public Dialogue dialogue_1;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
+    private ChoiceManager theChoice;
+    private PlayerMove thePlayer;
 
-    BoxCollider2D boxCollider;
+    private static bool flag;
 
-    private bool flag;
-
-    // Start is called before the first frame update
     void Start()
     {
+        theChoice = FindObjectOfType<ChoiceManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        thePlayer = FindObjectOfType<PlayerMove>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -33,11 +35,12 @@ public class leafEvent : MonoBehaviour
     IEnumerator EventCoroutine()
     {
         theOrder.NotMove();
-        yield return new WaitForSeconds(0.1f);
+
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
-        yield return new WaitForSeconds(0.1f);
-        flag = false;
+
+        Panel.SetActive(false);
         theOrder.Move();
     }
+
 }

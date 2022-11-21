@@ -19,7 +19,7 @@ public class ChoiceManager : MonoBehaviour
     }
     #endregion Singleton
 
-    // public AudioManager theAudio;   // 사운드 재생
+    public AudioManager theAudio;   // 사운드 재생
 
     private string question;
     private List<string> answerList;
@@ -34,7 +34,7 @@ public class ChoiceManager : MonoBehaviour
     public Animator anim;
 
     // public string keySound;
-    // public string enterSound;
+    public string enterSound;
 
     public bool choiceIng;  // 대기
     private bool keyInput;  // 키처리 활성화, 비활성화
@@ -47,7 +47,7 @@ public class ChoiceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // theAudio = FindObjectOfType<AudioManager>();
+        theAudio = FindObjectOfType<AudioManager>();
         answerList = new List<string>();
         for(int i = 0; i <= 3 ; i++) {
             answer_Text[i].text = "";
@@ -73,7 +73,6 @@ public class ChoiceManager : MonoBehaviour
     }
 
     public int GetResult() {
-        // go.SetActive(false);
         return result;
     }
 
@@ -130,7 +129,7 @@ public class ChoiceManager : MonoBehaviour
                 Selection();
             }
             else if(Input.GetKeyDown(KeyCode.Z)) {
-                //theAudio.Play(enterSound);
+                theAudio.Play(enterSound);
                 keyInput = false;
                 ExitChoice();
             }

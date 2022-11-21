@@ -2308,7 +2308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
-  isNpc: 1
+  isNpc: 0
 --- !u!61 &1752592973
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class bookEvent2 : MonoBehaviour
     private PlayerMove thePlayer;
     private FadeManager theFade;
 
+    BoxCollider2D boxCollider;
+
     public GameObject Panel;
     public GameObject Panel2;
     public GameObject Panel3;
@@ -29,6 +31,7 @@ public class bookEvent2 : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
         theFade = FindObjectOfType<FadeManager>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -48,6 +51,8 @@ public class bookEvent2 : MonoBehaviour
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
         theOrder.NotMove();
+        boxCollider.enabled = false;
+        boxCollider.enabled = true;
         theChoice.ShowChoice(choice_1);
         yield return new WaitUntil(() => !theChoice.choiceIng);
         
@@ -67,7 +72,6 @@ public class bookEvent2 : MonoBehaviour
         else {
             flag = false;
         }
-
         theOrder.Move();
     }
 }
