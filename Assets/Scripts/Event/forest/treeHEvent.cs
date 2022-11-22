@@ -41,6 +41,7 @@ public class treeHEvent : MonoBehaviour
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
+        yield return new WaitForSeconds(0.1f);
         theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");
         theAudio.Play(sound);

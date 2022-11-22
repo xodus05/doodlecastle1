@@ -35,7 +35,7 @@ public class Test2 : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
 
         theOrder.NotMove();
-
+        yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue);
 
         yield return new WaitUntil(()=>!theDM.talking);

@@ -47,7 +47,7 @@ public class bookEvent2 : MonoBehaviour
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
-
+        yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
         theOrder.NotMove();

@@ -832,8 +832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc634af19ec9244d897a525cc6898bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  button: {fileID: 832436825}
+  white: {fileID: 0}
+  black: {fileID: 0}
 --- !u!4 &1193398269
 Transform:
   m_ObjectHideFlags: 0

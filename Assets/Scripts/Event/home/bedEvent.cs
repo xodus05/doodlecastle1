@@ -53,6 +53,7 @@ public class bedEvent : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
 
         theOrder.NotMove();
+        yield return new WaitForSeconds(0.1f);
         boxCollider.enabled = false;
         theChoice.ShowChoice(choice_1);
         yield return new WaitUntil(() => !theChoice.choiceIng);

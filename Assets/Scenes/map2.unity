@@ -211,7 +211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33988651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3249.4, y: 1522, z: 0}
+  m_LocalPosition: {x: -3249.4, y: 1547, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -971,12 +971,20 @@ MonoBehaviour:
   transferMapName: redhouse
   startPointNumber: 0
   sound: door2
+  sound1: correct
   dialogue_1:
     sentences:
     - "\uC7A0\uACA8\uC788\uC5B4. \uC5F4\uC1E0\uAC00 \uC788\uC5B4\uC57C \uD480 \uC218
       \uC788\uC744 \uAC83 \uAC19\uC740\uB370..."
     sprites:
     - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - "\uC5F4\uC1E0\uB97C \uC0AC\uC6A9\uD588\uB2E4."
+    sprites:
+    - {fileID: 0}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
 --- !u!61 &1445080425

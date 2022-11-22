@@ -9,10 +9,13 @@ public class openEvent2 : MonoBehaviour
     public int startPointNumber;
 
     public string sound;
+    public string sound1;
 
     public Dialogue dialogue_1;
+    public Dialogue dialogue_2;
 
     private static bool flag;
+    private static bool isFirst = true;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
@@ -42,7 +45,14 @@ public class openEvent2 : MonoBehaviour
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
+        yield return new WaitForSeconds(0.1f);
         if(thePlayer.haveKey) {
+            if(isFirst) {
+                theAudio.Play(sound1);
+                theDM.ShowDialogue(dialogue_2);
+                yield return new WaitUntil(()=>!theDM.talking);
+                isFirst = false;
+            }
             theAudio.Play(sound);
             theFade.FadeOut();
             yield return new WaitForSeconds(1f);
@@ -60,3 +70,4 @@ public class openEvent2 : MonoBehaviour
         theOrder.Move();
     }
 }
+

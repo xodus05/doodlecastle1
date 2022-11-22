@@ -6,15 +6,23 @@ public class shovelEvent : MonoBehaviour
 {
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
+    public Dialogue dialogue_3;
 
     public Choice choice_1;
+
+    public string sound;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
+    private FadeManager theFade;
+    private AudioManager theAudio;
 
     private static bool flag;
+
+    public GameObject Panel;
+    public GameObject Panel2;
 
     void Start()
     {
@@ -22,6 +30,8 @@ public class shovelEvent : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        theFade = FindObjectOfType<FadeManager>();
+        theAudio = FindObjectOfType<AudioManager>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -36,6 +46,7 @@ public class shovelEvent : MonoBehaviour
     IEnumerator EventCoroutine()
     {
         theOrder.NotMove();
+        yield return new WaitForSeconds(0.1f);
         if(thePlayer.haveShovel) {
             theChoice.ShowChoice(choice_1);
             yield return new WaitUntil(() => !theChoice.choiceIng);
@@ -43,6 +54,13 @@ public class shovelEvent : MonoBehaviour
             case 0 : 
                 theDM.ShowDialogue(dialogue_2);
                 yield return new WaitUntil(()=>!theDM.talking);
+                theFade.Flash();
+                Panel.SetActive(true);
+                Panel2.SetActive(true);
+                theAudio.Play(sound);
+                theDM.ShowDialogue(dialogue_3);
+                yield return new WaitUntil(()=>!theDM.talking);
+                theAudio.Stop(sound);
             break;
             case 1 :
                 flag = false;

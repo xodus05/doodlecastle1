@@ -40,6 +40,7 @@ public class openEvent : MonoBehaviour
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
+        yield return new WaitForSeconds(0.1f);
         Panel.SetActive(false);
         theAudio.Play(sound);
         theFade.FadeOut();
