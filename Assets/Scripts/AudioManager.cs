@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,9 +9,9 @@ using static Unity.VisualScripting.Member;
 public class Sound
 {
 
-    public string name; // ������ �̸�
-    public AudioClip clip; // ���� ����
-    private AudioSource source; // ���� �÷��̾�
+    public string name; // 이름
+    public AudioClip clip; // 오디오 클립
+    private AudioSource source; // 오디오 사운드
 
     public float Volume;
     public bool loop;
