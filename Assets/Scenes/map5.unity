@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1356056126}
-  moveSpeed: 200
+  moveSpeed: 257
   contactDistance: 1
 --- !u!1 &232344196
 GameObject:
@@ -1339,7 +1339,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -66.19374, y: 16.966099}
+  m_Offset: {x: -65.6749, y: 16.966099}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1350,7 +1350,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.521606, y: 18.012817}
+  m_Size: {x: 17.483917, y: 18.012817}
   m_EdgeRadius: 0
 --- !u!61 &1130749196
 BoxCollider2D:
@@ -1365,7 +1365,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.1380453, y: -13.998808}
+  m_Offset: {x: -5.5516815, y: -12.475166}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1376,7 +1376,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.84025, y: 21.821697}
+  m_Size: {x: 14.304241, y: 15.727051}
   m_EdgeRadius: 0
 --- !u!61 &1130749197
 BoxCollider2D:
@@ -1391,7 +1391,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.515935, y: 17.163342}
+  m_Offset: {x: -5.709599, y: 17.163342}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1402,7 +1402,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.707277, y: 19.08325}
+  m_Size: {x: 13.789592, y: 19.083252}
   m_EdgeRadius: 0
 --- !u!1 &1144839626
 GameObject:
@@ -1726,7 +1726,7 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
     - {fileID: 0}
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 21300000, guid: e20d3de0ae51cfb448f98ae7afc45db7, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
@@ -1736,8 +1736,8 @@ MonoBehaviour:
     - "\uC545! \uB0B4 \uB208...\n\uC7A0, \uC7A0\uAE50\uB9CC... \uC800\uAC70."
     - "...\n\uB3C4\uB9DD\uCE58\uC790!!"
     sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
+    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
