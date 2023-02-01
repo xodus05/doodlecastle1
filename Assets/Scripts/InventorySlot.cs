@@ -9,12 +9,12 @@ public class InventorySlot : MonoBehaviour
     public Text itemName_Text;
     public GameObject selected_Item;
 
-/*    public void Additem(Item _item)
+    public void Additem(Item _item)
     {
         itemName_Text.text = _item.itemName;
         icon.sprite = _item.itemIcon;
         
-    }*/
+    }
 
     public void RemoveItem()
     {
