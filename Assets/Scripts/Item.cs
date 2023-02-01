@@ -18,6 +18,10 @@ public class Item
     public Sprite itemIcon;
     public ItemType itemType;
 
+    public Item(bool haveShovel, ItemType use)
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {
