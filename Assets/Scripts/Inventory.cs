@@ -39,6 +39,7 @@ public class Inventory : MonoBehaviour
         inventoryTabList = new List<Item>();
         slots = tf.GetComponentsInChildren<InventorySlot>();
         inventoryItemList.Add(new Item(thePlayer.haveShovel, Item.ItemType.Use));
+        inventoryItemList.Add(new Item(thePlayer.haveKey, Item.ItemType.Use));
     }
 
     public void ShowTab()

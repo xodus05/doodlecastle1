@@ -31,7 +31,7 @@ public class DatabaseManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        item_list.Add(new Item (playermove.haveShovel, Item.ItemType.Use));
+        //item_list.Add(new Item (playermove.haveShovel, Item.ItemType.Use));
     }
 
     // Update is called once per frame

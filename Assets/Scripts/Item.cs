@@ -7,7 +7,6 @@ public class Item
 {
 
     public enum ItemType {
-        Quest,
         Use
     }
 
@@ -20,6 +19,9 @@ public class Item
 
     public Item(bool haveShovel, ItemType use)
     {
+        //itemID = _itemID;
+        //itemIcon = Resources.Load("ItemIcon/" + _itemID.ToString(), typeof(Sprite)) as Sprite;
+       
     }
 
     // Start is called before the first frame update
