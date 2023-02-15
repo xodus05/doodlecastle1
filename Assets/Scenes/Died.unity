@@ -604,7 +604,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1170485908}
         m_TargetAssemblyTypeName: title, Assembly-CSharp
-        m_MethodName: OnClickExit
+        m_MethodName: GameOverChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

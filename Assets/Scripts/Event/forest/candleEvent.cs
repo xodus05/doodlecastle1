@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class candleEvent : MonoBehaviour
 {
+    private Inventory inventory;
+
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
     public Dialogue dialogue_3;
@@ -25,6 +27,8 @@ public class candleEvent : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        inventory = FindObjectOfType<Inventory>();
+        inventory.inventoryItemList.Add(new Item(thePlayer.haveKey, 5002, "열쇠", Item.ItemType.Use));
     }
 
     private void OnTriggerStay2D(Collider2D collision)

@@ -19,6 +19,11 @@ public class title : MonoBehaviour
         SceneManager.LoadScene("house"); //quote에서 house로 scene 이동
     }
 
+    public void GameOverChange()
+    {
+        SceneManager.LoadScene("title"); // title 로 scene 이동
+    }
+
     public void OnClickExit()
     {
         Application.Quit(); // 앱 나가기

@@ -5,6 +5,8 @@ using UnityEngine;
 public class addShovelEent : MonoBehaviour
 {
 
+    private Inventory inventory;
+
     public GameObject Panel;
     public Dialogue dialogue_1;
 
@@ -21,6 +23,8 @@ public class addShovelEent : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        inventory = FindObjectOfType<Inventory>();
+        inventory.inventoryItemList.Add(new Item(thePlayer.haveShovel, 5001, "»ð", Item.ItemType.Use));
     }
 
     private void OnTriggerStay2D(Collider2D collision)

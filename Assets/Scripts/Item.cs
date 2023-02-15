@@ -17,10 +17,11 @@ public class Item
     public Sprite itemIcon;
     public ItemType itemType;
 
-    public Item(bool haveShovel, ItemType use)
+    public Item(bool haveShovel, int _itemID, string _itemName,ItemType use)
     {
-        //itemID = _itemID;
-        //itemIcon = Resources.Load("ItemIcon/" + _itemID.ToString(), typeof(Sprite)) as Sprite;
+        itemID = _itemID;
+        itemName = _itemName;
+        itemIcon = Resources.Load("ItemIcon/" + _itemID.ToString(), typeof(Sprite)) as Sprite;
        
     }
 

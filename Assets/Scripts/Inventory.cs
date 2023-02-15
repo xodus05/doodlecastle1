@@ -11,8 +11,8 @@ public class Inventory : MonoBehaviour
 
     private InventorySlot[] slots; // 인벤토리 슬롯들;
 
-    private List<Item> inventoryItemList; // 플레이어가 소지한 아이템 리스트;
-    private List<Item> inventoryTabList; // 선택한 탭에 따라 다르게 보여질 아이템 리스트;
+    public List<Item> inventoryItemList; // 플레이어가 소지한 아이템 리스트;
+    public List<Item> inventoryTabList; // 선택한 탭에 따라 다르게 보여질 아이템 리스트;
 
     public Transform tf; // 부모객체 Slot;
 
@@ -38,8 +38,7 @@ public class Inventory : MonoBehaviour
         inventoryItemList = new List<Item>();
         inventoryTabList = new List<Item>();
         slots = tf.GetComponentsInChildren<InventorySlot>();
-        inventoryItemList.Add(new Item(thePlayer.haveShovel, Item.ItemType.Use));
-        inventoryItemList.Add(new Item(thePlayer.haveKey, Item.ItemType.Use));
+        
     }
 
     public void ShowTab()
@@ -104,7 +103,7 @@ public class Inventory : MonoBehaviour
                         inventoryTabList.Add(inventoryItemList[i]); // 아이템이 탭으로 들어감
                 }
             break;
-/*            case 1:
+            /*case 1:
                 for (int i = 0; i < inventoryItemList.Count; i++)
                 {
                     if (Item.ItemType.Use == inventoryItemList[i].itemType)
@@ -159,6 +158,8 @@ public class Inventory : MonoBehaviour
                 yield return waitTime;
             }
 
+            yield return new WaitForSeconds(0.3f);
+
         }
     } // 선택된 아이템 반짝임 효과
 
@@ -182,11 +183,12 @@ public class Inventory : MonoBehaviour
                 }
                 else
                 {
-                    StopAllCoroutines();
                     go.SetActive(false);
                     tabActivated = false;
                     itemActivated = false;
                     theOrder.Move();
+                    preventExec = true;
+                    StopAllCoroutines();
                 }
             }
 
@@ -242,7 +244,7 @@ public class Inventory : MonoBehaviour
                     }
                     else if (Input.GetKeyDown(KeyCode.RightArrow))
                     {
-                        if (selectedItem < inventoryTabList.Count - 2)
+                        if (selectedItem < inventoryTabList.Count - 1)
                             selectedItem++;
                         else
                             selectedItem = 0;
@@ -256,7 +258,7 @@ public class Inventory : MonoBehaviour
                             selectedItem = inventoryTabList.Count - 2;
                         SelectedItem();
                     }
-                    else if (Input.GetKeyDown(KeyCode.Z) && !preventExec)
+/*                    else if (Input.GetKeyDown(KeyCode.Z) && !preventExec)
                     {
                         if(selectedTab == 0)
                         {
@@ -267,7 +269,7 @@ public class Inventory : MonoBehaviour
                         {
                             // 저장. 등등 뭐 했냐
                         }
-                    }
+                    }*/
                     else if (Input.GetKeyDown(KeyCode.X))
                     {
                         StopAllCoroutines();
