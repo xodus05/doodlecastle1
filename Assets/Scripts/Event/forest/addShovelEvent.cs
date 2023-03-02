@@ -22,6 +22,7 @@ public class addShovelEvent : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         inventory = FindObjectOfType<Inventory>();
+        if(inventory.haveItem("삽")) Panel.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)

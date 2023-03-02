@@ -241,6 +241,7 @@ MonoBehaviour:
   transferMapName: map2
   startPointNumber: 7
   Panel: {fileID: 938440191}
+  Panel2: {fileID: 1473399767}
   sound: door1
 --- !u!61 &342252671
 BoxCollider2D:
