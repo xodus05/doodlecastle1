@@ -9,24 +9,24 @@ public class Inventory : MonoBehaviour
     private OrderManager theOrder;
     private PlayerMove thePlayer;
 
-    private InventorySlot[] slots; // ÀÎº¥Åä¸® ½½·Ôµé;
+    private InventorySlot[] slots; // ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ï¿½Ôµï¿½;
 
-    public List<Item> inventoryItemList; // ÇÃ·¹ÀÌ¾î°¡ ¼ÒÁöÇÑ ¾ÆÀÌÅÛ ¸®½ºÆ®;
-    public List<Item> inventoryTabList; // ¼±ÅÃÇÑ ÅÇ¿¡ µû¶ó ´Ù¸£°Ô º¸¿©Áú ¾ÆÀÌÅÛ ¸®½ºÆ®;
+    public List<Item> inventoryItemList; // ï¿½Ã·ï¿½ï¿½Ì¾î°¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®;
+    public List<Item> inventoryTabList; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®;
 
-    public Transform tf; // ºÎ¸ð°´Ã¼ Slot;
+    public Transform tf; // ï¿½Î¸ï¿½Ã¼ Slot;
 
-    public GameObject go; // ÀÎº¥Åä¸® È°¼ºÈ­ ºñÈ°¼ºÈ­;
-    public GameObject[] selectedTabImages; // ÅÇ ÆÐ³Î
+    public GameObject go; // ï¿½Îºï¿½ï¿½ä¸® È°ï¿½ï¿½È­ ï¿½ï¿½È°ï¿½ï¿½È­;
+    public GameObject[] selectedTabImages; // ï¿½ï¿½ ï¿½Ð³ï¿½
 
-    private int selectedItem; // ¼±ÅÃµÈ ¾ÆÀÌÅÛ;
-    private int selectedTab; // ¼±ÅÃµÈ ÅÇ;
+    private int selectedItem; // ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
+    private int selectedTab; // ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½;
 
-    private bool activated; // ÀÎº¥Åä¸® È°¼ºÈ­½Ã true;
-    private bool tabActivated; // ÅÇ È°¼ºÈ­½Ã true;
-    private bool itemActivated; // ¾ÆÀÌÅÛ È°¼ºÈ­½Ã true;
-    private bool stopKeyInput; // Å° ÀÔ·Â Á¦ÇÑ (¼ÒºñÇÒ ¶§ ÁúÀÇ°¡ ³ª¿Ã ÅÙµ¥, ±× ¶§ Å° ÀÔ·Â ¹æÁö);
-    private bool preventExec; // Áßº¹½ÇÇà Á¦ÇÑ;
+    private bool activated; // ï¿½Îºï¿½ï¿½ä¸® È°ï¿½ï¿½È­ï¿½ï¿½ true;
+    private bool tabActivated; // ï¿½ï¿½ È°ï¿½ï¿½È­ï¿½ï¿½ true;
+    private bool itemActivated; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½È­ï¿½ï¿½ true;
+    private bool stopKeyInput; // Å° ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½Òºï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ç°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ùµï¿½, ï¿½ï¿½ ï¿½ï¿½ Å° ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ï¿½);
+    private bool preventExec; // ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½;
 
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
 
@@ -45,7 +45,7 @@ public class Inventory : MonoBehaviour
     {
         RemoveSlot();
         SelectedTab();
-    } // ÅÇ È°¼ºÈ­
+    } // ï¿½ï¿½ È°ï¿½ï¿½È­
     public void RemoveSlot()
     {
         for(int i = 0; i < slots.Length; i++)
@@ -53,7 +53,7 @@ public class Inventory : MonoBehaviour
             slots[i].RemoveItem();
             slots[i].gameObject.SetActive(false);
         }
-    } // ÀÎº¥Åä¸® ½½·Ô ÃÊ±âÈ­
+    } // ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
 
     public void SelectedTab()
     {
@@ -65,7 +65,15 @@ public class Inventory : MonoBehaviour
             selectedTabImages[i].GetComponent<Image>().color = color;
         }
         StartCoroutine(SelectedTabEffectCoroutine());
-    } // ¼±ÅÃµÈ ÅÇ Á¦¿ÜÇÏ°í ´Ù¸¥ ¸ðµç ÅÇÀÇ ÄÃ·¯ ¾ËÆÄ°ª 0
+    } // ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ ï¿½ï¿½ï¿½Ä°ï¿½ 0
+
+    public bool haveItem(string a) {
+        foreach (Item i in inventoryItemList)
+        {
+            if(string.Compare(a, i.itemName) == 0) return true;
+        }
+        return false;
+    }
 
     IEnumerator SelectedTabEffectCoroutine()
     {
@@ -86,12 +94,12 @@ public class Inventory : MonoBehaviour
             }
 
         }
-    } // ¼±ÅÃµÈ ÅÇ ¹ÝÂ¦ÀÓ È¿°ú
+    } // ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ ï¿½ï¿½Â¦ï¿½ï¿½ È¿ï¿½ï¿½
 
     public void ShowItem()
     {
-        inventoryTabList.Clear(); // ÀÎº¥Åä¸® ÅÇ ¸®½ºÆ® ÃÊ±âÈ­
-        RemoveSlot(); // ½½·Ô Á¦°Å
+        inventoryTabList.Clear(); // ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ê±ï¿½È­
+        RemoveSlot(); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         selectedItem = 0;
 
         switch (selectedTab)
@@ -100,26 +108,26 @@ public class Inventory : MonoBehaviour
                 for (int i = 0; i < inventoryItemList.Count; i++)
                 {
                     if(Item.ItemType.Use == inventoryItemList[i].itemType)
-                        inventoryTabList.Add(inventoryItemList[i]); // ¾ÆÀÌÅÛÀÌ ÅÇÀ¸·Î µé¾î°¨
+                        inventoryTabList.Add(inventoryItemList[i]); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½î°¨
                 }
             break;
             /*case 1:
                 for (int i = 0; i < inventoryItemList.Count; i++)
                 {
                     if (Item.ItemType.Use == inventoryItemList[i].itemType)
-                        inventoryTabList.Add(inventoryItemList[i]); // ¾ÆÀÌÅÛÀÌ ÅÇÀ¸·Î µé¾î°¨
+                        inventoryTabList.Add(inventoryItemList[i]); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½î°¨
                 }
                 break;*/
-        } //ÅÇ¿¡ µû¸¥ ¾ÆÀÌÅÛ ºÐ·ù. ±×°ÍÀ» ÀÎº¥Åä¸® ÅÇ ¸®½ºÆ®¿¡ Ãß°¡
+        } //ï¿½Ç¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð·ï¿½. ï¿½×°ï¿½ï¿½ï¿½ ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ß°ï¿½
 
         for(int i = 0; i < inventoryTabList.Count; i++)
         {
             slots[i].gameObject.SetActive(true);
             slots[i].Additem(inventoryTabList[i]);
-        } // ÀÎº¥Åä¸® ÅÇ ¸®½ºÆ®ÀÇ ³»¿ëÀ», ÀÎº¥Åä¸® ½½·Ô¿¡ Ãß°¡
+        } // ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ï¿½Ô¿ï¿½ ï¿½ß°ï¿½
 
         SelectedItem();
-    } // ¾ÆÀÌÅÛ È°¼ºÈ­ (inventoryTabList¿¡ Á¶°Ç¿¡ ¸Â´Â ¾ÆÀÌÅÛµé¸¸ ³Ö¾îÁÖ°í, ÀÎº¥Åä¸® ½½·Ô Ãâ·Â)
+    } // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½È­ (inventoryTabListï¿½ï¿½ ï¿½ï¿½ï¿½Ç¿ï¿½ ï¿½Â´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ûµé¸¸ ï¿½Ö¾ï¿½ï¿½Ö°ï¿½, ï¿½Îºï¿½ï¿½ä¸® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½)
 
     public void SelectedItem()
     {
@@ -139,7 +147,7 @@ public class Inventory : MonoBehaviour
 
         }
 
-    } // ¼±ÅÃµÈ ¾ÆÀÌÅÛ Á¦¿Ü, ´Ù¸¥ ¸ðµç ÅÇÀÇ ÄÃ·¯ ¾ËÆÄ°ª 0
+    } // ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã·ï¿½ ï¿½ï¿½ï¿½Ä°ï¿½ 0
     IEnumerator SelectedItemEffectCoroutine()
     {
         while (itemActivated)
@@ -161,7 +169,7 @@ public class Inventory : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
 
         }
-    } // ¼±ÅÃµÈ ¾ÆÀÌÅÛ ¹ÝÂ¦ÀÓ È¿°ú
+    } // ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¦ï¿½ï¿½ È¿ï¿½ï¿½
 
     // Update is called once per frame
     void Update()
@@ -177,7 +185,7 @@ public class Inventory : MonoBehaviour
                     theOrder.NotMove();
                     go.SetActive(true);
                     selectedTab = 0;
-                    tabActivated = true; // ÅÇºÎÅÍ ¶ç¿öÁú¼ö ÀÖµµ·Ï
+                    tabActivated = true; // ï¿½Çºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Öµï¿½ï¿½ï¿½
                     itemActivated = false;
                     ShowTab();
                 }
@@ -196,7 +204,7 @@ public class Inventory : MonoBehaviour
             {
                 if (tabActivated)
                 {
-                    if (Input.GetKeyDown(KeyCode.RightArrow)) // È­»ìÇ¥ ´©¸¦½Ã ÀÌµ¿
+                    if (Input.GetKeyDown(KeyCode.RightArrow)) // È­ï¿½ï¿½Ç¥ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
                     {
                         if (selectedTab < selectedTabImages.Length - 1)
                             selectedTab++;
@@ -217,9 +225,9 @@ public class Inventory : MonoBehaviour
                         Color color = selectedTabImages[selectedTab].GetComponent<Image>().color;
                         color.a = 0.25f;
                         selectedTabImages[selectedTab].GetComponent<Image>().color = color;
-                        itemActivated = true; // ¾ÆÀÌÅÛ Ã¢
-                        tabActivated = false; // ÅÇ Ã¢
-                        preventExec = true; // Áßº¹Å° ¹æÁö
+                        itemActivated = true; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¢
+                        tabActivated = false; // ï¿½ï¿½ Ã¢
+                        preventExec = true; // ï¿½ßºï¿½Å° ï¿½ï¿½ï¿½ï¿½
                         ShowItem();
                     }
                 }
@@ -229,9 +237,9 @@ public class Inventory : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.DownArrow))
                     {
                         if (selectedItem < inventoryTabList.Count - 2)
-                            selectedItem += 2; // ¾Æ·¡·Î 2¾¿ ³»·Á°¨ 0, 2, 4, 6
+                            selectedItem += 2; // ï¿½Æ·ï¿½ï¿½ï¿½ 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0, 2, 4, 6
                         else
-                            selectedItem %= 2; // ´Ù½Ã 0
+                            selectedItem %= 2; // ï¿½Ù½ï¿½ 0
                         SelectedItem();
                     }
                     else if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -263,11 +271,11 @@ public class Inventory : MonoBehaviour
                         if(selectedTab == 0)
                         {
                             stopKeyInput = true;
-                            // ¾ÆÀÌÅÛ »ç¿ë ÇÒ°Å³Ä ÇÏ´Â ÁúÀÇ ¼±ÅÃÁö
+                            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ò°Å³ï¿½ ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                         }
                         else if(selectedTab == 1)
                         {
-                            // ÀúÀå. µîµî ¹¹ Çß³Ä
+                            // ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ß³ï¿½
                         }
                     }*/
                     else if (Input.GetKeyDown(KeyCode.X))
@@ -279,7 +287,7 @@ public class Inventory : MonoBehaviour
                     }
                 }
 
-                if (Input.GetKeyUp(KeyCode.Z)) // Áßº¹½ÇÇà ¹æÁö
+                if (Input.GetKeyUp(KeyCode.Z)) // ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                     preventExec = false;
             }
         }

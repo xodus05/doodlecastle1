@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class shovelEvent : MonoBehaviour
 {
+    private Inventory inventory;
+
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
     public Dialogue dialogue_3;
@@ -32,6 +34,7 @@ public class shovelEvent : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         theFade = FindObjectOfType<FadeManager>();
         theAudio = FindObjectOfType<AudioManager>();
+        inventory = FindObjectOfType<Inventory>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -47,7 +50,7 @@ public class shovelEvent : MonoBehaviour
     {
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
-        if(thePlayer.haveShovel) {
+        if(inventory.haveItem("삽")) {
             theChoice.ShowChoice(choice_1);
             yield return new WaitUntil(() => !theChoice.choiceIng);
             switch(theChoice.GetResult()) {

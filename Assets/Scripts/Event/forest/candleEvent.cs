@@ -28,7 +28,6 @@ public class candleEvent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         inventory = FindObjectOfType<Inventory>();
-        inventory.inventoryItemList.Add(new Item(thePlayer.haveKey, 5002, "열쇠", Item.ItemType.Use));
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -77,7 +76,7 @@ public class candleEvent : MonoBehaviour
                         flag = false;
                     break;
                     case 1 :
-                        thePlayer.haveKey = true;
+                        inventory.inventoryItemList.Add(new Item(5002, "열쇠", Item.ItemType.Use));
                         theDM.ShowDialogue(dialogue_3);
                         yield return new WaitUntil(()=>!theDM.talking);
                     break;

@@ -17,7 +17,7 @@ public class Item
     public Sprite itemIcon;
     public ItemType itemType;
 
-    public Item(bool haveShovel, int _itemID, string _itemName,ItemType use)
+    public Item(int _itemID, string _itemName,ItemType use)
     {
         itemID = _itemID;
         itemName = _itemName;

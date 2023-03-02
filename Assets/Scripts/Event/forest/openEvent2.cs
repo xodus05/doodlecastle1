@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class openEvent2 : MonoBehaviour
 {
+    private Inventory inventory;
+
     public string transferMapName; //이동할 맵의 이름
     public int startPointNumber;
 
@@ -31,6 +33,7 @@ public class openEvent2 : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theAudio = FindObjectOfType<AudioManager>();
+        inventory = FindObjectOfType<Inventory>();
     }
 
     private void OnTriggerStay2D(Collider2D collision) {
@@ -46,7 +49,7 @@ public class openEvent2 : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
-        if(thePlayer.haveKey) {
+        if(inventory.haveItem("열쇠")) {
             if(isFirst) {
                 theAudio.Play(sound1);
                 theDM.ShowDialogue(dialogue_2);
