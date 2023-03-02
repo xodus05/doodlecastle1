@@ -22,7 +22,6 @@ public class addShovelEvent : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         inventory = FindObjectOfType<Inventory>();
-        inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -40,7 +39,7 @@ public class addShovelEvent : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
-
+        inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
         Panel.SetActive(false);
         theOrder.Move();
     }
