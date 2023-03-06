@@ -60,6 +60,7 @@ public class shovelEvent : MonoBehaviour
                 theFade.Flash();
                 Panel.SetActive(true);
                 Panel2.SetActive(true);
+                inventory.activeList.Add("라이터");
                 theAudio.Play(sound);
                 theDM.ShowDialogue(dialogue_3);
                 yield return new WaitUntil(()=>!theDM.talking);

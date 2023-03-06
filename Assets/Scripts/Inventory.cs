@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
 
     public List<Item> inventoryItemList; // �÷��̾ ������ ������ ����Ʈ;
     public List<Item> inventoryTabList; // ������ �ǿ� ���� �ٸ��� ������ ������ ����Ʈ;
+    public List<string> activeList;
 
     public Transform tf; // �θ�ü Slot;
 
@@ -37,6 +38,7 @@ public class Inventory : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         inventoryItemList = new List<Item>();
         inventoryTabList = new List<Item>();
+        activeList = new List<string>();
         slots = tf.GetComponentsInChildren<InventorySlot>();
         
     }
@@ -67,10 +69,18 @@ public class Inventory : MonoBehaviour
         StartCoroutine(SelectedTabEffectCoroutine());
     } // ���õ� �� �����ϰ� �ٸ� ��� ���� �÷� ���İ� 0
 
-    public bool haveItem(string a) {
+    public bool haveItem(string a) {    // 해당 아이템을 가지고 있는지
         foreach (Item i in inventoryItemList)
         {
             if(string.Compare(a, i.itemName) == 0) return true;
+        }
+        return false;
+    }
+
+    public bool doing(string a) {   // 해당 행동을 수행할 조건을 만족했는지
+        foreach (string i in activeList)
+        {
+            if(string.Compare(a, i) == 0) return true;
         }
         return false;
     }
