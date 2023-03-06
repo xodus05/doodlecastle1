@@ -20,6 +20,7 @@ public class shovelEvent : MonoBehaviour
     private PlayerMove thePlayer;
     private FadeManager theFade;
     private AudioManager theAudio;
+    private title title;
 
     private static bool flag;
 
@@ -35,6 +36,7 @@ public class shovelEvent : MonoBehaviour
         theFade = FindObjectOfType<FadeManager>();
         theAudio = FindObjectOfType<AudioManager>();
         inventory = FindObjectOfType<Inventory>();
+        title = FindObjectOfType<title>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)

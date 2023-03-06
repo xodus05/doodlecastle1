@@ -8,7 +8,12 @@ public class title : MonoBehaviour
 /*    public GameObject playButton;
     public GameObject playAgainButton;
     public GameObject menuButton;*/
+    public shovelEvent shovelEvent;
 
+    void Start()
+    {
+        shovelEvent = FindObjectOfType<shovelEvent>();    
+    }
     public void SceneChange()
     {
         SceneManager.LoadScene("quote"); //quote 로 scene 이동
@@ -22,6 +27,14 @@ public class title : MonoBehaviour
     public void GameOverChange()
     {
         SceneManager.LoadScene("title"); // title 로 scene 이동
+    }
+
+    public void ReRoad()
+    {
+        if(shovelEvent != null)
+        {       
+            SceneManager.LoadScene("map6");
+        }
     }
 
     public void OnClickExit()
