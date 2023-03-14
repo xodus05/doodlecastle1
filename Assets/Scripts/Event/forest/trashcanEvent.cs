@@ -40,6 +40,7 @@ public class trashcanEvent : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         if(inventory.doing("라이터")) {
             theDM.ShowDialogue(dialogue_2);
+            inventory.inventoryItemList.Add(new Item(5003, "라이터", Item.ItemType.Use));
             yield return new WaitUntil(()=>!theDM.talking);
         }
         else {
