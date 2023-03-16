@@ -16,6 +16,8 @@ public class campEvent : MonoBehaviour
     private ChoiceManager theChoice;
     private OrderManager theOrder;
 
+    public GameObject Panel;
+
     private bool flag;
 
     // Start is called before the first frame update
@@ -41,19 +43,21 @@ public class campEvent : MonoBehaviour
     {
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
-        if (inventory.haveItem("¶óÀÌÅÍ"))
+        if (inventory.haveItem("ë¼ì´í„°"))
         {
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
             theChoice.ShowChoice(choice_1);
-            switch (theChoice.GetResult())
-            {
+            yield return new WaitUntil(() => !theChoice.choiceIng);
+            Debug.Log(theChoice.GetResult());
+            switch(theChoice.GetResult()) {
                 case 0 :
-                    // ºÒÅ¸´Â °Å µîÀå
                     theFade.Flash(1f);
-                    yield return new WaitUntil(() => !theDM.talking);
+                    Panel.SetActive(true);
                     break;
-               
+                case 1 :
+                    flag = false;
+                    break;
             }
         }
         else
