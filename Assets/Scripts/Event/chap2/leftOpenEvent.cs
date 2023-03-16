@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 using UnityEngine.SceneManagement;
 
-public class upOpenEvent : MonoBehaviour
+public class leftOpenEvent : MonoBehaviour
 {
-
     public string transferMapName; //이동할 맵의 이름
     public int startPointNumber;
 
@@ -29,7 +29,7 @@ public class upOpenEvent : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirX") == -1f)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
