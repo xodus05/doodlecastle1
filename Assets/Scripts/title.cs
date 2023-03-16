@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class title : MonoBehaviour
 {
-/*    public GameObject playButton;
-    public GameObject playAgainButton;
-    public GameObject menuButton;*/
+    /*    public GameObject playButton;
+        public GameObject playAgainButton;
+        public GameObject menuButton;*/
+    public EnemyAI enemyai;
+
+    void Start()
+    {
+        enemyai = GetComponent<EnemyAI>();
+    }
 
     public void SceneChange()
     {
@@ -25,8 +31,8 @@ public class title : MonoBehaviour
     }
 
     public void ReRoad()
-    {     
-            SceneManager.LoadScene("map5"); 
+    {
+        SceneManager.LoadScene("map5");
     }
 
     public void OnClickExit()
