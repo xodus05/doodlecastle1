@@ -29,12 +29,15 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] [Range(0f, 3f)] float contactDistance = 1f;
 
-    bool follow = false;
-    bool isFirst = false;
+    public bool isStopped = false; // ∏ÿ√„ ªÛ≈¬ ¿˙¿Â
+    public Vector2 startPosition;
+    public bool follow = false;
+    public bool isFirst = false;
 
-    void Start() {
+    public void Start() {
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        startPosition = transform.position;
     }
 
     void Update() {
@@ -42,15 +45,20 @@ public class EnemyAI : MonoBehaviour
     }
 
     void FollowTarget() {
-        if(Vector2.Distance(transform.position, target.position) > contactDistance && follow) {
-            Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
-            isFirst = true;
-        }
-        else {
-            if(isFirst) {
-                Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, (moveSpeed) * Time.deltaTime);
+        if (isStopped) {
+            if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
+            {
+                Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
+                isFirst = true;
             }
-            //rb.velocity = Vector2.zero;
+            else
+            {
+                if (isFirst)
+                {
+                    Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, (moveSpeed) * Time.deltaTime);
+                }
+                //rb.velocity = Vector2.zero;
+            }
         }
     }
 
@@ -59,7 +67,10 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        follow = false;
+        if (other.gameObject.name == "Player")
+        {
+            transform.position = startPosition;
+        }
     }
 }
 
