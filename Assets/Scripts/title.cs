@@ -8,12 +8,7 @@ public class title : MonoBehaviour
 /*    public GameObject playButton;
     public GameObject playAgainButton;
     public GameObject menuButton;*/
-    public shovelEvent shovelEvent;
 
-    void Start()
-    {
-        shovelEvent = FindObjectOfType<shovelEvent>();    
-    }
     public void SceneChange()
     {
         SceneManager.LoadScene("quote"); //quote 로 scene 이동
