@@ -25,8 +25,8 @@ public class title : MonoBehaviour
     }
 
     public void ReRoad()
-    {
-        SceneManager.LoadScene("map6");
+    {     
+            SceneManager.LoadScene("map5"); 
     }
 
     public void OnClickExit()
