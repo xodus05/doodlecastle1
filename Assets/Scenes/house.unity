@@ -8594,7 +8594,7 @@ MonoBehaviour:
     loop: 1
   - name: door2
     clip: {fileID: 8300000, guid: ee67b5472429c3e478d7b90023dc8d42, type: 3}
-    Volume: 0
+    Volume: 1
     loop: 0
   - name: monster
     clip: {fileID: 8300000, guid: 81b6f849b884c2a4da6390a56641fa0c, type: 3}
