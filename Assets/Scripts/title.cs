@@ -30,11 +30,8 @@ public class title : MonoBehaviour
     }
 
     public void ReRoad()
-    {
-        if(shovelEvent != null)
-        {       
-            SceneManager.LoadScene("map6");
-        }
+    {     
+            SceneManager.LoadScene("map5"); 
     }
 
     public void OnClickExit()
