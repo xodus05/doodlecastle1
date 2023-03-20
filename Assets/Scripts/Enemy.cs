@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
 
     public void Start()
     {
-        enemyai = GetComponent<EnemyAI>();
+        enemyai = FindObjectOfType<EnemyAI>(); 
     }
 
     #region Singleton
@@ -27,11 +27,11 @@ public class Enemy : MonoBehaviour
 
      private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player") {
-            //enemyai.isStopped = true;
-            //transform.position = enemyai.startPosition;
-            //enemyai.isStopped = false;
+
+            if (collision.gameObject.name == "Player")
+            {
             SceneManager.LoadScene("Died"); //quote 로 scene 이동
-          }
+            enemyai.follow = false;
+        }
     }
 }

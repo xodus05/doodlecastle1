@@ -29,7 +29,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] [Range(0f, 3f)] float contactDistance = 1f;
 
-    public bool isStopped = false; // ¸ØÃã »óÅÂ ÀúÀå
+    //public bool isStopped = false; // ë©ˆì¶¤ ìƒíƒœ ì €ìž¥
     public Vector2 startPosition;
     public bool follow = false;
     public bool isFirst = false;
@@ -45,7 +45,6 @@ public class EnemyAI : MonoBehaviour
     }
 
     void FollowTarget() {
-        if (isStopped) {
             if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
             {
                 Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
@@ -59,7 +58,6 @@ public class EnemyAI : MonoBehaviour
                 }
                 //rb.velocity = Vector2.zero;
             }
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
