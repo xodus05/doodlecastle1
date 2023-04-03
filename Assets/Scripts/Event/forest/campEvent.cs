@@ -9,6 +9,7 @@ public class campEvent : MonoBehaviour
 
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
+    public Dialogue dialogue_3;
     public Choice choice_1;
 
     private FadeManager theFade;
@@ -17,6 +18,7 @@ public class campEvent : MonoBehaviour
     private OrderManager theOrder;
 
     public GameObject Panel;
+    public GameObject Panel2;
 
     private bool flag;
 
@@ -52,8 +54,14 @@ public class campEvent : MonoBehaviour
             Debug.Log(theChoice.GetResult());
             switch(theChoice.GetResult()) {
                 case 0 :
-                    theFade.Flash(1f);
+                    theFade.Flash(0.01f);
+                    yield return new WaitForSeconds(1.0f);
                     Panel.SetActive(true);
+                    Panel2.SetActive(true);
+                    yield return new WaitForSeconds(1.5f);
+                    theDM.ShowDialogue(dialogue_3);
+                    yield return new WaitUntil(() => !theDM.talking);
+                    theFade.Flash(0.01f);
                     break;
                 case 1 :
                     flag = false;
@@ -64,8 +72,9 @@ public class campEvent : MonoBehaviour
         {
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(() => !theDM.talking);
-            yield return new WaitForSeconds(0.1f);
+            inventory.inventoryItemList.Add(new Item(5003, "라이터", Item.ItemType.Use));
             flag = false;
+            yield return new WaitForSeconds(0.1f);
         }
         theOrder.Move();
     }

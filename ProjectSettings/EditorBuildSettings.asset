@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Died.unity
     guid: c4501fe7f9ce9fa49a768a8e88d8e7c4
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/start.unity
+    guid: 59851700b9fbead49857dfece949cb7b
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/hall.unity
+    guid: 0baedaa866213b44380afd0e37c46652
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/TVroom.unity
+    guid: 0f76fe38190fcd94f99962d1fe4cd6cb
   m_configObjects: {}

@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: hall
-  startPointNumber: 0
+  startPointNumber: 50
 --- !u!61 &66091967
 BoxCollider2D:
   m_ObjectHideFlags: 0
