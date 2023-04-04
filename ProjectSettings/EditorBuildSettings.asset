@@ -30,17 +30,11 @@ EditorBuildSettings:
     path: Assets/Scenes/map5.unity
     guid: fad5809d19fef964399aaeb40e8958d9
   - enabled: 1
-    path: Assets/Scenes/Chapter2/start.unity
-    guid: 59851700b9fbead49857dfece949cb7b
-  - enabled: 1
     path: Assets/Scenes/map6.unity
     guid: 854f47dc43ebcb946a258fae64ad6f89
   - enabled: 1
     path: Assets/Scenes/Chapter2/buttonroom.unity
     guid: bedac8857b710a54783792d64f5cba40
-  - enabled: 1
-    path: Assets/Scenes/Chapter2/TVroom.unity
-    guid: 0f76fe38190fcd94f99962d1fe4cd6cb
   - enabled: 1
     path: Assets/Scenes/map7.unity
     guid: 5d1036a7a215eb04cb76b3e8de064b35
@@ -51,9 +45,6 @@ EditorBuildSettings:
     path: Assets/Scenes/castle.unity
     guid: b545a2bc9bcd2644a8ddb07306458968
   - enabled: 1
-    path: Assets/Scenes/Chapter2/hall.unity
-    guid: 0baedaa866213b44380afd0e37c46652
-  - enabled: 1
     path: Assets/Scenes/treehouse.unity
     guid: 4adb5da810360d84a88b28b0b700acde
   - enabled: 1
@@ -63,11 +54,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Died.unity
     guid: c4501fe7f9ce9fa49a768a8e88d8e7c4
   - enabled: 1
-    path: Assets/Scenes/Chapter2/start.unity
-    guid: 59851700b9fbead49857dfece949cb7b
-  - enabled: 1
     path: Assets/Scenes/Chapter2/hall.unity
     guid: 0baedaa866213b44380afd0e37c46652
+  - enabled: 1
+    path: Assets/Scenes/Chapter2/start.unity
+    guid: 59851700b9fbead49857dfece949cb7b
   - enabled: 1
     path: Assets/Scenes/Chapter2/TVroom.unity
     guid: 0f76fe38190fcd94f99962d1fe4cd6cb

@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
 
+    private Inventory inventory;
+
     public static EnemyAI instance;
 
     #region Singleton
@@ -45,23 +47,25 @@ public class EnemyAI : MonoBehaviour
     }
 
     void FollowTarget() {
-            if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
+        if (inventory.doing("불")) follow = false;
+        if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
+        {
+            Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
+            isFirst = true;
+        }
+        else
+        {
+            if (isFirst)
             {
-                Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
-                isFirst = true;
+                Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, (moveSpeed) * Time.deltaTime);
             }
-            else
-            {
-                if (isFirst)
-                {
-                    Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, (moveSpeed) * Time.deltaTime);
-                }
-                //rb.velocity = Vector2.zero;
-            }
+            //rb.velocity = Vector2.zero;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        follow = true;
+        if (inventory.doing("불")) follow = false;
+        else follow = true;
     }
 
     private void OnTriggerExit2D(Collider2D other) {
