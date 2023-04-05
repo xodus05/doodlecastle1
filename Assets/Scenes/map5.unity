@@ -2028,6 +2028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyai: {fileID: 0}
+  startPosition: {x: -819, y: 452}
 --- !u!1 &1451669470
 GameObject:
   m_ObjectHideFlags: 0

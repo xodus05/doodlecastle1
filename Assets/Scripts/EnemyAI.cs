@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -60,14 +61,25 @@ public class EnemyAI : MonoBehaviour
             }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+/*    private void OnTriggerEnter2D(Collider2D other) {
         follow = true;
+    }*/
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player") // 충돌한 게임 오브젝트의 태그가 "Player"인 경우
+        {
+            follow = true;
+            startPosition = transform.position; // 충돌 시 현재 위치를 저장합니다.
+            SceneManager.LoadScene("Died"); // Died 씬으로 이동합니다.
+        }
     }
 
-    private void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject.name == "Player")
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player") // 충돌이 끝난 게임 오브젝트의 태그가 "Player"인 경우
         {
-            transform.position = startPosition;
+            Panel.transform.position = startPosition; // 충돌이 끝나면 저장된 위치로 되돌아갑니다.
         }
     }
 }
