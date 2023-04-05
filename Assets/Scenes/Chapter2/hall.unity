@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 214600324}
   - component: {fileID: 214600323}
   - component: {fileID: 214600325}
+  - component: {fileID: 214600326}
   m_Layer: 0
   m_Name: openEvent (1)
   m_TagString: Untagged
@@ -290,8 +291,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: bookroom
-  startPointNumber: 0
+  startPointNumber: 60
   sound: door2
+--- !u!114 &214600326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214600321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4200fa56db91349bfb3caf6a0cc33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transferMapName: bookroom
+  startPointNumber: 60
+  sound: door2
+  sound1: 
+  dialogue_1:
+    sentences:
+    - "\uC5F4\uB9AC\uC9C0 \uC54A\uC544.."
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - "\uBB38\uC774 \uC5F4\uB838\uB2E4."
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
 --- !u!1 &682353575
 GameObject:
   m_ObjectHideFlags: 0

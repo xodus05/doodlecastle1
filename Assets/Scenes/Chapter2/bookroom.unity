@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPoint: bookroom
-  startPointNumber: 0
+  startPointNumber: 60
 --- !u!61 &1959563970
 BoxCollider2D:
   m_ObjectHideFlags: 0

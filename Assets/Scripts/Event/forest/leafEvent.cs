@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class leafEvent : MonoBehaviour
 {
+
     public Dialogue dialogue_1;
 
     private DialogueManager theDM;
@@ -12,6 +14,8 @@ public class leafEvent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,4 +44,5 @@ public class leafEvent : MonoBehaviour
         flag = false;
         theOrder.Move();
     }
+
 }
