@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class EnemyAI : MonoBehaviour
 {
 
+    private Inventory inventory;
+
     public static EnemyAI instance;
 
     #region Singleton
@@ -46,33 +48,25 @@ public class EnemyAI : MonoBehaviour
     }
 
     void FollowTarget() {
-            if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
+        if (inventory.doing("불")) follow = false;
+        if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
+        {
+            Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
+            isFirst = true;
+        }
+        else
+        {
+            if (isFirst)
             {
-                Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
-                isFirst = true;
+                Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, (moveSpeed) * Time.deltaTime);
             }
-            else
-            {
-                if (isFirst)
-                {
-                    Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, (moveSpeed) * Time.deltaTime);
-                }
-                //rb.velocity = Vector2.zero;
-            }
+            //rb.velocity = Vector2.zero;
+        }
     }
 
-/*    private void OnTriggerEnter2D(Collider2D other) {
-        follow = true;
-    }*/
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player") // 충돌한 게임 오브젝트의 태그가 "Player"인 경우
-        {
-            follow = true;
-            startPosition = transform.position; // 충돌 시 현재 위치를 저장합니다.
-            SceneManager.LoadScene("Died"); // Died 씬으로 이동합니다.
-        }
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (inventory.doing("불")) follow = false;
+        else follow = true;
     }
 
     void OnCollisionExit2D(Collision2D collision)
