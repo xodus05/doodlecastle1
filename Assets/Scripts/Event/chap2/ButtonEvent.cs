@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class ButtonEvent : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class ButtonEvent : MonoBehaviour
 
     public string sound;
     public string sound1;
+
+    public Choice choice_1;
+
 
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
@@ -24,6 +28,9 @@ public class ButtonEvent : MonoBehaviour
     private PlayerMove thePlayer;
     private AudioManager theAudio;
     private FadeManager theFade;
+    private ChoiceManager theChoice;
+
+    public GameObject Panel;
 
     // Start is called before the first frame update
     void Start()
@@ -34,23 +41,23 @@ public class ButtonEvent : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         theAudio = FindObjectOfType<AudioManager>();
         inventory = FindObjectOfType<Inventory>();
+        theChoice = FindObjectOfType<ChoiceManager>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+        if (!flag && Input.GetKey(KeyCode.Z))
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
-
-    IEnumerator EventCoroutine()
-    {
+        IEnumerator EventCoroutine()
+        {
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
-        if (inventory.haveItem("열쇠2"))
+        if (inventory.haveItem("도서관 열쇠"))
         {
             if (isFirst)
             {
@@ -59,13 +66,13 @@ public class ButtonEvent : MonoBehaviour
                 yield return new WaitUntil(() => !theDM.talking);
                 isFirst = false;
             }
-            theAudio.Play(sound);
+/*            theAudio.Play(sound);
             theFade.FadeOut();
             yield return new WaitForSeconds(1f);
             thePlayer.startPointNumber = startPointNumber;
             thePlayer.currentMapName = transferMapName;
             SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
-            theFade.FadeIn();
+            theFade.FadeIn();*/
         }
         else
         {

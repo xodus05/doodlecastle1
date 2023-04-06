@@ -201,7 +201,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404821102}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b4200fa56db91349bfb3caf6a0cc33e, type: 3}
   m_Name: 
@@ -210,6 +210,9 @@ MonoBehaviour:
   startPointNumber: 0
   sound: 
   sound1: 
+  choice_1:
+    question: 
+    answers: []
   dialogue_1:
     sentences: []
     sprites: []
@@ -218,6 +221,7 @@ MonoBehaviour:
     sentences: []
     sprites: []
     dialogueWindows: []
+  Panel: {fileID: 0}
 --- !u!114 &404821105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,11 +236,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD2C0\uB838\uC5B4.."
+    - "\uD2C0\uB838\uC5B4...."
     sprites:
     - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
 --- !u!483693784 &404821106
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -1090,11 +1095,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD2C0\uB838\uC5B4.."
+    - "\uD2C0\uB838\uC5B4...."
     sprites:
     - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
 --- !u!114 &1882275028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,7 +1108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882275021}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b4200fa56db91349bfb3caf6a0cc33e, type: 3}
   m_Name: 
@@ -1111,6 +1117,9 @@ MonoBehaviour:
   startPointNumber: 0
   sound: 
   sound1: 
+  choice_1:
+    question: 
+    answers: []
   dialogue_1:
     sentences: []
     sprites: []
@@ -1119,6 +1128,7 @@ MonoBehaviour:
     sentences: []
     sprites: []
     dialogueWindows: []
+  Panel: {fileID: 0}
 --- !u!1 &1885157412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1182,9 @@ MonoBehaviour:
   startPointNumber: 60
   sound: 
   sound1: 
+  choice_1:
+    question: 
+    answers: []
   dialogue_1:
     sentences: []
     sprites: []
@@ -1180,6 +1193,7 @@ MonoBehaviour:
     sentences: []
     sprites: []
     dialogueWindows: []
+  Panel: {fileID: 0}
 --- !u!114 &1885157415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,6 +1216,7 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
 --- !u!483693784 &1885157416
 TilemapRenderer:
   m_ObjectHideFlags: 0

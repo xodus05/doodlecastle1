@@ -7,9 +7,11 @@ public class leafEvent : MonoBehaviour
 {
 
     public Dialogue dialogue_1;
+    public GameObject Panel;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
+    private Inventory inventory;
 
     BoxCollider2D boxCollider;
 
@@ -23,6 +25,8 @@ public class leafEvent : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         boxCollider = GetComponent<BoxCollider2D>();
+        inventory = FindObjectOfType<Inventory>();
+        if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -40,6 +44,7 @@ public class leafEvent : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
+        inventory.inventoryItemList.Add(new Item(5004, "도서관 열쇠", Item.ItemType.Use));
         yield return new WaitForSeconds(0.1f);
         flag = false;
         theOrder.Move();
