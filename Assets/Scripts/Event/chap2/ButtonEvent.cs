@@ -12,10 +12,6 @@ public class ButtonEvent : MonoBehaviour
     public int startPointNumber;
 
     public string sound;
-    public string sound1;
-
-    public Choice choice_1;
-
 
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
@@ -28,20 +24,16 @@ public class ButtonEvent : MonoBehaviour
     private PlayerMove thePlayer;
     private AudioManager theAudio;
     private FadeManager theFade;
-    private ChoiceManager theChoice;
-
-    public GameObject Panel;
 
     // Start is called before the first frame update
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
-        theFade = FindObjectOfType<FadeManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theAudio = FindObjectOfType<AudioManager>();
         inventory = FindObjectOfType<Inventory>();
-        theChoice = FindObjectOfType<ChoiceManager>();
+        theFade = FindObjectOfType<FadeManager>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -54,25 +46,24 @@ public class ButtonEvent : MonoBehaviour
     }
         IEnumerator EventCoroutine()
         {
-        theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
+        theOrder.PreLoadCharacter(); // 리스트 채우기
         if (inventory.haveItem("도서관 열쇠"))
         {
             if (isFirst)
             {
-                theAudio.Play(sound1);
+                theAudio.Play(sound);
                 theDM.ShowDialogue(dialogue_2);
                 yield return new WaitUntil(() => !theDM.talking);
                 isFirst = false;
             }
-/*            theAudio.Play(sound);
             theFade.FadeOut();
             yield return new WaitForSeconds(1f);
             thePlayer.startPointNumber = startPointNumber;
             thePlayer.currentMapName = transferMapName;
             SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
-            theFade.FadeIn();*/
+            theFade.FadeIn();
         }
         else
         {

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 5075450}
   m_Layer: 3
   m_Name: event (3)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 1097930190}
   m_Layer: 3
   m_Name: event (2)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 2052695007}
   m_Layer: 3
   m_Name: event (1)
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1055,7 +1055,7 @@ TilemapCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1134,16 +1134,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2052695002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b7db5491541c8b4ca731b9071ad5875, type: 3}
+  m_Script: {fileID: 11500000, guid: b63f41bfa3ac3134b8be46318beb24aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "4\uB85C \uB098\uB204\uC5B4 \uB5A8\uC5B4\uC9C0\uB294 \uC218\uC57C"
+    - "\uC5B4\uCA4C\uAD6C..."
     sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 21300000, guid: 77369c224b6b9394bbcc45c7d9fe57cc, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
 --- !u!1 &2073003512
 GameObject:
   m_ObjectHideFlags: 0
