@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,10 +9,12 @@ public class title : MonoBehaviour
         public GameObject playAgainButton;
         public GameObject menuButton;*/
     public EnemyAI enemyai;
+    public Vector2 startPosition;
 
     void Start()
     {
         enemyai = GetComponent<EnemyAI>();
+        startPosition = transform.position;
     }
 
     public void SceneChange()
@@ -32,6 +34,7 @@ public class title : MonoBehaviour
 
     public void ReRoad()
     {
+        startPosition = transform.position;
         SceneManager.LoadScene("map5");
     }
 
