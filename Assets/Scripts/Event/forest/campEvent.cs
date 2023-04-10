@@ -100,7 +100,7 @@ public class campEvent : MonoBehaviour
         {
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(() => !theDM.talking);
-            inventory.inventoryItemList.Add(new Item(5003, "라이터", Item.ItemType.Use));
+            // inventory.inventoryItemList.Add(new Item(5003, "라이터", Item.ItemType.Use));
             flag = false;
             yield return new WaitForSeconds(0.1f);
         }

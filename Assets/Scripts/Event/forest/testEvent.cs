@@ -49,19 +49,20 @@ public class testEvent : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
-        Debug.Log("꺄아악!!!!!!!!");
         inventory.activeList.Add("불");
-        theEnemy.transform.position = theEnemy.startPosition;
-        theEnemyAI.transform.position = theEnemy.startPosition;
-        thePlayer.transform.position = new Vector2(theEnemy.startPosition.x+200, theEnemy.startPosition.y-200);
-        theCamera.transform.position = new Vector2(theEnemy.startPosition.x+200, theEnemy.startPosition.y-200);
+        theEnemy.transform.position = new Vector2(-819, 452);
+        theEnemyAI.transform.position = new Vector2(-819, 452);
+        // thePlayer.transform.position = new Vector2(theEnemy.startPosition.x+200, theEnemy.startPosition.y-200);
+        thePlayer.transform.position = new Vector2(40, 390);
+        theCamera.transform.position = new Vector2(40, 390);
+        // theCamera.transform.position = new Vector2(theEnemy.startPosition.x+200, theEnemy.startPosition.y-200);
         flag = false;
         yield return new WaitForSeconds(1.0f);
         if(thePlayer.getSceneName()!="map5") {
-            LoadScene("map5");
+            SceneManager.LoadScene("map5");
         }
         else {
-            Debug.Log("this is test");
+            Debug.Log("in map5");
         }
     }
 }

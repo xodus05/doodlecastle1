@@ -30,10 +30,12 @@ public class Enemy : MonoBehaviour
     }
     #endregion Singleton
 
-     private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
           if(collision.gameObject.name == "Player" && !inventory.doing("불")) {
-            //    SceneManager.LoadScene("Died"); //quote 로 scene 이동
+            // inventory.activeList.Add("불");
+            Debug.Log("아 제발요");
+            SceneManager.LoadScene("Died"); //quote 로 scene 이동
           }
     }
 }
