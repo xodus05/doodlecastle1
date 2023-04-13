@@ -208,12 +208,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD2C0\uB838\uC5B4...."
+    - 
     sprites:
     - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - 
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 0}
   Panel: {fileID: 0}
+  choice_1:
+    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
 --- !u!483693784 &404821106
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -1145,12 +1157,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD2C0\uB838\uC5B4...."
+    - 
     sprites:
     - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - 
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 0}
   Panel: {fileID: 0}
+  choice_1:
+    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
 --- !u!1 &1885157412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1225,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
+    - 
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 0}
+  dialogue_2:
+    sentences:
     - "\uBB38\uC774 \uC5F4\uB9AC\uB294 \uC18C\uB9AC\uAC00 \uB0AC\uB2E4."
     - "\uC88B\uC558\uC5B4!"
     sprites:
@@ -1210,6 +1241,11 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
+  choice_1:
+    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
 --- !u!483693784 &1885157416
 TilemapRenderer:
   m_ObjectHideFlags: 0
