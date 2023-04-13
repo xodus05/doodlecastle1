@@ -8,13 +8,24 @@ public class title : MonoBehaviour
     /*    public GameObject playButton;
         public GameObject playAgainButton;
         public GameObject menuButton;*/
-    public EnemyAI enemyai;
     public Vector2 startPosition;
+
+    private Inventory inventory;
+
+    private PlayerMove thePlayer;
+
+    private Enemy theEnemy;
+    private EnemyAI theEnemyAI;
+    private CameraManager theCamera;
 
     void Start()
     {
-        enemyai = GetComponent<EnemyAI>();
         startPosition = transform.position;
+        inventory = FindObjectOfType<Inventory>();
+
+        thePlayer = FindObjectOfType<PlayerMove>();
+        theEnemy = FindObjectOfType<Enemy>();
+        theEnemyAI = FindObjectOfType<EnemyAI>();
     }
 
     public void SceneChange()
@@ -34,8 +45,11 @@ public class title : MonoBehaviour
 
     public void ReRoad()
     {
-        startPosition = transform.position;
         SceneManager.LoadScene("map5");
+        theEnemy.transform.position = new Vector2(-819, 452);
+        theEnemyAI.transform.position = new Vector2(-819, 452);
+        thePlayer.transform.position = new Vector2(40, 370);
+        theCamera.transform.position = new Vector2(40, 370);
     }
 
     public void OnClickExit()

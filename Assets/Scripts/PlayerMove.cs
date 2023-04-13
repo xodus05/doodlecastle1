@@ -9,6 +9,9 @@ public class PlayerMove : MovingObject
 
     Vector3 dirVec; //현재 바라보고있는 방향 값을 가진 변수
     GameObject scanObject; // 스캔 확인
+
+    Scene scene;
+
     float h;
     float v;
 
@@ -43,6 +46,7 @@ public class PlayerMove : MovingObject
     // Start is called before the first frame update
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
         queue = new Queue<string>();
         boxCollider = GetComponent<BoxCollider2D>();
         if (instance != null) Destroy(this.gameObject);
@@ -178,5 +182,9 @@ public class PlayerMove : MovingObject
         }
         else
             scanObject = null;
+    }
+
+    public string getSceneName() {
+        return scene.name;
     }
 }

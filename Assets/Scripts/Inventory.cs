@@ -67,7 +67,7 @@ public class Inventory : MonoBehaviour
             selectedTabImages[i].GetComponent<Image>().color = color;
         }
         StartCoroutine(SelectedTabEffectCoroutine());
-    } // ���õ� �� �����ϰ� �ٸ� ��� ���� �÷� ���İ� 0
+    }
 
     public bool haveItem(string a) {    // 해당 아이템을 가지고 있는지
         foreach (Item i in inventoryItemList)
@@ -83,6 +83,24 @@ public class Inventory : MonoBehaviour
             if(string.Compare(a, i) == 0) return true;
         }
         return false;
+    }
+
+    public void deleteItem(string a) {
+        int c = 0;
+        foreach (Item i in inventoryItemList)
+        {
+            if(string.Compare(a, i.itemName) == 0) inventoryItemList.RemoveAt(c);
+            c++;
+        }
+    }
+
+    public void deleteActive(string a) {
+        int c = 0;
+        foreach (string i in activeList)
+        {
+            if(string.Compare(a, i) == 0) activeList.RemoveAt(c);
+            c++;
+        }
     }
 
     IEnumerator SelectedTabEffectCoroutine()
