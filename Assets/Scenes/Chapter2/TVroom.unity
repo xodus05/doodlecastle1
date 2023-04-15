@@ -252,10 +252,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uAC70\uC9D3\uB9D0\uC880 \uD588\uB2E4.\u314E"
+    - "\uBD89\uC740 \uACF3\uC5D0\uC11C \uD0C0\uC624\uB974\uB294 \uAC83.. \uC7AC\uBBF8\uC788\uACA0\uB294\uAC78.."
+    - "\uC9C4\uC2E4\uC740 \uCCAB\uBC88\uC9F8 \uAC1C\uAD6C\uB9AC\uC5D0\uAC8C \uC788\uC5B4."
     sprites:
     - {fileID: 21300000, guid: 1621ffb6ab1e82e44b02a0604e2a46db, type: 3}
+    - {fileID: 21300000, guid: 1621ffb6ab1e82e44b02a0604e2a46db, type: 3}
     dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
 --- !u!1 &362627059
@@ -289,7 +292,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1576977511}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &362627062
 BoxCollider2D:
@@ -363,21 +366,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393304536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -33.930122}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1620815664}
   - {fileID: 1499641755}
   m_Father: {fileID: 1576977511}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -262, y: 453}
+  m_SizeDelta: {x: 1198.8691, y: 574.4858}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393304538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +420,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &393304540
 Canvas:
   m_ObjectHideFlags: 0
@@ -427,7 +430,7 @@ Canvas:
   m_GameObject: {fileID: 393304536}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -534,6 +537,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &645319304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645319305}
+  - component: {fileID: 645319306}
+  - component: {fileID: 645319307}
+  m_Layer: 0
+  m_Name: TVevent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &645319305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645319304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -259, y: 392, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1576977511}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &645319306
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645319304}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 50}
+  m_EdgeRadius: 0
+--- !u!114 &645319307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645319304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63f41bfa3ac3134b8be46318beb24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_1:
+    sentences:
+    - "\uAC1C\uAD6C\uB9AC\uB4E4\uC740 \uAC70\uC9D3\uB9D0 \uC7C1\uC774\uC57C"
+    - "\uADF8\uB4E4\uC744 \uBBFF\uC5B4\uC120 \uC548\uB3FC"
+    - "\uC774\uAC8C \uBB34\uC2A8.. \uC18C\uB9AC\uC9C0?"
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
 --- !u!1 &874319337
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,7 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD5C8\uD5C8\uD5C8 \uADF8\uB798 \uC694\uB140\uC11D\uC544"
+    - "\uAC70\uC9D3\uB9D0. \uB2EC\uC774 \uB730\uB54C \uC6B0\uB9AC\uB294 \uC8FD\uAC8C\uB420\uAC70\uC57C"
     sprites:
     - {fileID: 21300000, guid: 96b69d0d75b5d48429dbdf6e44c4d23c, type: 3}
     dialogueWindows:
@@ -868,6 +956,7 @@ Transform:
   - {fileID: 2052695003}
   - {fileID: 1097930189}
   - {fileID: 5075449}
+  - {fileID: 645319305}
   - {fileID: 362627060}
   - {fileID: 393304537}
   m_Father: {fileID: 0}
@@ -1524,7 +1613,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uC5B4\uCA4C\uAD6C..."
+    - "\uBD89\uC740 \uB208\uC744 \uAC00\uC9C4\uC790\uB9CC \uC0B4\uC544\uB0A8\uC744\uC218
+      \uC788\uC5B4"
     sprites:
     - {fileID: 21300000, guid: bd47610675c8f1f45a18d4f3d880c45e, type: 3}
     dialogueWindows:

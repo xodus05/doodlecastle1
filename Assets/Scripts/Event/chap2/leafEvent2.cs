@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class leafEvent : MonoBehaviour
+public class leafEvent2 : MonoBehaviour
 {
 
     public Dialogue dialogue_1;
-    //public Dialogue dialogue_2;
+    public Dialogue dialogue_2;
     public GameObject Panel;
     public Choice choice_1;
     private PlayerMove thePlayer;
@@ -32,16 +32,16 @@ public class leafEvent : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
-        //if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
+        if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-            if (!flag && Input.GetKey(KeyCode.Z))
-            {
+        if (!flag && Input.GetKey(KeyCode.Z))
+        {
             flag = true;
-                StartCoroutine(EventCoroutine());
-            }
+            StartCoroutine(EventCoroutine());
+        }
     }
 
     IEnumerator EventCoroutine()
@@ -58,15 +58,20 @@ public class leafEvent : MonoBehaviour
         switch (theChoice.GetResult())
         {
             case 0:
-                dialogue_1.sentences[0] = "틀렸어...";
+                dialogue_1.sentences[0] = "문이 열리는 소리가 났다!";
                 theDM.ShowDialogue(dialogue_1);
                 yield return new WaitUntil(() => !theDM.talking);
-                SceneManager.LoadScene("Died");
+                dialogue_2.sentences[0] = "도서관 열쇠를 획득했다";
+                theDM.ShowDialogue(dialogue_2);
+                yield return new WaitUntil(() => !theDM.talking);
+                inventory.inventoryItemList.Add(new Item(5004, "도서관 열쇠", Item.ItemType.Use));
+                thePlayer.queue.Clear();
                 break;
             case 1:
                 dialogue_1.sentences[0] = "다시 생각해보자";
                 theDM.ShowDialogue(dialogue_1);
                 yield return new WaitUntil(() => !theDM.talking);
+                thePlayer.queue.Clear();
                 break;
         }
 
