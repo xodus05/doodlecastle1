@@ -8,7 +8,7 @@ public class FadeManager : MonoBehaviour
     public SpriteRenderer white;
     public SpriteRenderer black;
     private Color color;
-
+    
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
 
     public void FadeOut(float _speed = 0.02f) {

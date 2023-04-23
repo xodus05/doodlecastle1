@@ -79,6 +79,7 @@ public class EventCastle : MonoBehaviour
         theFade.Flash();
         yield return new WaitForSeconds(0.5f);
         Panel.SetActive(true);
+        gameObject.SetActive(false);
 
         theOrder.Move();
     }
