@@ -22,7 +22,7 @@ public class title : MonoBehaviour
     {
         startPosition = transform.position;
         inventory = FindObjectOfType<Inventory>();
-
+        theCamera = FindObjectOfType<CameraManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theEnemy = FindObjectOfType<Enemy>();
         theEnemyAI = FindObjectOfType<EnemyAI>();
@@ -50,6 +50,13 @@ public class title : MonoBehaviour
         theEnemyAI.transform.position = new Vector2(-819, 452);
         thePlayer.transform.position = new Vector2(40, 370);
         theCamera.transform.position = new Vector2(40, 370);
+    }
+
+    public void ReRoad2()
+    {
+        SceneManager.LoadScene("buttonroom");
+        thePlayer.transform.position = new Vector2(-11048, 3455);
+        //theCamera.transform.position = new Vector2(-11048, 3455);
     }
 
     public void OnClickExit()

@@ -61,14 +61,10 @@ public class leafEvent : MonoBehaviour
                 dialogue_1.sentences[0] = "틀렸어...";
                 theDM.ShowDialogue(dialogue_1);
                 yield return new WaitUntil(() => !theDM.talking);
-                SceneManager.LoadScene("Died");
-                break;
-            case 1:
-                dialogue_1.sentences[0] = "다시 생각해보자";
-                theDM.ShowDialogue(dialogue_1);
-                yield return new WaitUntil(() => !theDM.talking);
+                SceneManager.LoadScene("Died1");
                 break;
         }
+        flag = false;
 
         theOrder.Move();
     }

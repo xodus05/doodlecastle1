@@ -32,7 +32,7 @@ public class leafEvent2 : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
-        if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
+        //if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -61,19 +61,21 @@ public class leafEvent2 : MonoBehaviour
                 dialogue_1.sentences[0] = "문이 열리는 소리가 났다!";
                 theDM.ShowDialogue(dialogue_1);
                 yield return new WaitUntil(() => !theDM.talking);
-                dialogue_2.sentences[0] = "도서관 열쇠를 획득했다";
+                dialogue_2.sentences[0] = "찾아가보자";
                 theDM.ShowDialogue(dialogue_2);
                 yield return new WaitUntil(() => !theDM.talking);
                 inventory.inventoryItemList.Add(new Item(5004, "도서관 열쇠", Item.ItemType.Use));
                 thePlayer.queue.Clear();
                 break;
             case 1:
-                dialogue_1.sentences[0] = "다시 생각해보자";
-                theDM.ShowDialogue(dialogue_1);
-                yield return new WaitUntil(() => !theDM.talking);
-                thePlayer.queue.Clear();
+                //dialogue_1.sentences[0] = "다시 생각해보자";
+                //theDM.ShowDialogue(dialogue_1);
+                //yield return new WaitUntil(() => !theDM.talking);
+                //thePlayer.queue.Clear();
                 break;
         }
+
+        flag = false;
 
         theOrder.Move();
     }
