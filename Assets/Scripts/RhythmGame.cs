@@ -17,8 +17,12 @@ public class RhythmGame : MonoBehaviour
     private WaitForSeconds waitTime2 = new WaitForSeconds(0.5f);
     private System.Random rand = new System.Random();
 
+    public int correctNumber = 0;  // 정답
+
     public void createTile() {
-        int r = rand.Next(1, 5);
+        int r = rand.Next(1, 5); 
+        correctNumber *= 10;
+        correctNumber += r;
         StartCoroutine(createTileCoroutine(r));
     }
 
