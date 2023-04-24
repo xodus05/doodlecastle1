@@ -15,6 +15,7 @@ public class EventCastle : MonoBehaviour
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
     private FadeManager theFade;
+    private BGMManager BGM;
 
     public GameObject Panel;
 
@@ -23,6 +24,7 @@ public class EventCastle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        BGM = FindObjectOfType<BGMManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
@@ -42,6 +44,7 @@ public class EventCastle : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
+        BGM.Play(1);
         theOrder.PreLoadCharacter(); // 리스트 채우기
 
         theOrder.NotMove();
@@ -78,6 +81,7 @@ public class EventCastle : MonoBehaviour
         yield return new WaitUntil(()=>!theDM.talking);
         theFade.Flash();
         yield return new WaitForSeconds(0.5f);
+        BGM.FadeOutMusic();
         Panel.SetActive(true);
         gameObject.SetActive(false);
 

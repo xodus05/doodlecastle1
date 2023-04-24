@@ -845,7 +845,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &187257751
 BoxCollider2D:
@@ -2260,7 +2260,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -2277,6 +2277,7 @@ MonoBehaviour:
   target: {fileID: 187257743}
   moveSpeed: 3
   bound: {fileID: 1509262569}
+  ShakeAmount: 0
 --- !u!1 &527657177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3831,7 +3832,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: b50f24e749e18f844ba9c0c5aad54364, type: 3}
+  - {fileID: 8300000, guid: eb43afe5411140044a7ca47f16a0b45b, type: 3}
+  - {fileID: 8300000, guid: 0620f7404ee9acd4ab48ced55d1d3e5e, type: 3}
+  - {fileID: 8300000, guid: e9aa25ead86c6c64ba9874110a1772f7, type: 3}
+  - {fileID: 8300000, guid: 9a8d3e2ad1b60c74bb92d89c9754986b, type: 3}
 --- !u!82 &910753549
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8795,6 +8799,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 81b6f849b884c2a4da6390a56641fa0c, type: 3}
     Volume: 0
     loop: 0
+  - name: blop
+    clip: {fileID: 8300000, guid: 082dc087357d3db4dbed7548c3cc3db7, type: 3}
+    Volume: 1
+    loop: 0
+  - name: damaged
+    clip: {fileID: 8300000, guid: b7cf0c7a1bbdb4744ab2df1ef72dd299, type: 3}
+    Volume: 1
+    loop: 0
 --- !u!4 &2009068470
 Transform:
   m_ObjectHideFlags: 0
@@ -11075,7 +11087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2116580906
 MonoBehaviour:
   m_ObjectHideFlags: 0

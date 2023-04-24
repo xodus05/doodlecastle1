@@ -11,6 +11,7 @@ public class map1event : MonoBehaviour
     private OrderManager theOrder;
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
+    private BGMManager BGM;
 
     private static bool flag;
 
@@ -21,6 +22,7 @@ public class map1event : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
+        BGM = FindObjectOfType<BGMManager>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -28,6 +30,9 @@ public class map1event : MonoBehaviour
         if (!flag)
         {
             flag = true;
+            BGM.Stop(1);
+            BGM.FadeInMusic();
+            BGM.Play(2);
             StartCoroutine(EventCoroutine());
         }
     }

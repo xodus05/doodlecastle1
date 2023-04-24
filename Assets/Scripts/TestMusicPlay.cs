@@ -12,7 +12,6 @@ public class TestMusicPlay : MonoBehaviour
     void Start()
     {
         bgmManager = FindObjectOfType<BGMManager>();
-        bgmManager.Play(_playMusicTrack);
         this.gameObject.SetActive(true);
     }
 

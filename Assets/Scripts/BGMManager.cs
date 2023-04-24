@@ -7,9 +7,22 @@ public class BGMManager : MonoBehaviour
 {
     static public BGMManager instance;
 
-    public AudioClip[] clips; // ¹è°æÀ½¾Ç ¹è¿­
+    public AudioClip[] clips; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­
     private AudioSource source;
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
+
+    #region Singleton
+    private void Awake() {
+         if(instance == null) {
+            DontDestroyOnLoad(this.gameObject);
+            instance = this;
+         }
+         else {
+            Destroy(this.gameObject);
+         }
+    }
+    #endregion Singleton
+    // [SerializeField]
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +32,7 @@ public class BGMManager : MonoBehaviour
 
     public void Play(int _playMusicTrack)
     {
-        source.clip = clips[_playMusicTrack]; //¹è¿­·Î ¼±¾ð
+        source.clip = clips[_playMusicTrack]; //ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         source.Play();
     }
 
@@ -32,7 +45,7 @@ public class BGMManager : MonoBehaviour
     public void FadeOutMusic()
     {
         StopAllCoroutines();
-        StartCoroutine(FadeOutMusicCoroutine()); //Fadeout ½ÇÇà
+        StartCoroutine(FadeOutMusicCoroutine()); //Fadeout ï¿½ï¿½ï¿½ï¿½
     }
 
     IEnumerator FadeOutMusicCoroutine()
@@ -47,11 +60,11 @@ public class BGMManager : MonoBehaviour
     public void FadeInMusic()
     {
         StopAllCoroutines();
-        StartCoroutine(FadeOutMusicCoroutine());
+        StartCoroutine(FadeInMusicCoroutine());
     }
     IEnumerator FadeInMusicCoroutine()
     {
-        for (float i = 0f; i >= 1f; i += 0.01f)
+        for (float i = 0f; i <= 1f; i += 0.01f)
         {
             source.volume = i;
             yield return waitTime;

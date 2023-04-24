@@ -15,6 +15,8 @@ public class RhythmEvent : MonoBehaviour
     private RhythmGame theRhythm;
     private OrderManager theOrder;
     private DialogueManager theDM;
+    private BGMManager BGM;
+    private AudioManager theAudio;
 
     private string arrowPush;
     private string myAnswer; // 내가 입력한 값
@@ -25,6 +27,7 @@ public class RhythmEvent : MonoBehaviour
     private int c = 2;
 
     public string sound;
+    public string sound2;
     public int turn;
     public Text arrowText;
 
@@ -37,6 +40,8 @@ public class RhythmEvent : MonoBehaviour
         theRhythm = FindObjectOfType<RhythmGame>();
         theOrder = FindObjectOfType<OrderManager>();
         theDM = FindObjectOfType<DialogueManager>();
+        BGM = FindObjectOfType<BGMManager>();
+        theAudio = FindObjectOfType<AudioManager>();
         arrowPush = "";
     }
 
@@ -52,7 +57,7 @@ public class RhythmEvent : MonoBehaviour
                 go = true;
                 arrowPush = "";
                 flag2 = false;
-
+                theAudio.Play(sound);
             }
             // Direction
             if (Input.GetKeyDown(KeyCode.UpArrow)) {
@@ -80,6 +85,8 @@ public class RhythmEvent : MonoBehaviour
         if (!flag)
         {
             flag = true;
+            BGM.Play(3);
+            BGM.FadeInMusic();
             StartCoroutine(EventCoroutine());
         }
     }
@@ -97,6 +104,7 @@ public class RhythmEvent : MonoBehaviour
             go = false;
             for (int j = 0; j < c; j++)
             {
+                theAudio.Play(sound2);
                 theRhythm.createTile();
                 yield return new WaitForSeconds(0.6f);
             }
@@ -104,6 +112,7 @@ public class RhythmEvent : MonoBehaviour
             yield return new WaitUntil(() => go);
             if(theRhythm.correctNumber.ToString().Equals(myAnswer))
             {
+                theFade.Flash();
                 theDM.ShowDialogue(Dialogue_c);
                 yield return new WaitUntil(() => !theDM.talking);
                 c++;
