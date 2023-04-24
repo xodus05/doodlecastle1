@@ -72,8 +72,11 @@ public class PlayerMove : MovingObject
             }
             else
             {
-                applyRunSpeed = 0;
-                applyRunFlag = false;
+                // applyRunSpeed = 0;
+                // applyRunFlag = false;
+
+                applyRunSpeed = runSpeed;
+                applyRunFlag = true;
             }
 
             vector.Set(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), transform.position.z); // 설정

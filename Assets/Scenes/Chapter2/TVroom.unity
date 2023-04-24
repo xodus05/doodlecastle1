@@ -253,7 +253,8 @@ MonoBehaviour:
   dialogue_1:
     sentences:
     - "\uBD89\uC740 \uACF3\uC5D0\uC11C \uD0C0\uC624\uB974\uB294 \uAC83.. \uC7AC\uBBF8\uC788\uACA0\uB294\uAC78.."
-    - "\uC9C4\uC2E4\uC740 \uCCAB\uBC88\uC9F8 \uAC1C\uAD6C\uB9AC\uC5D0\uAC8C \uC788\uC5B4."
+    - "\uB2EC\uACFC \uBD89\uC740 \uB208\uC740 \uC808\uB300 \uC544\uB2C8\uB77C\uB294
+      \uAC70\uC9C0."
     sprites:
     - {fileID: 21300000, guid: 1621ffb6ab1e82e44b02a0604e2a46db, type: 3}
     - {fileID: 21300000, guid: 1621ffb6ab1e82e44b02a0604e2a46db, type: 3}
@@ -922,7 +923,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uAC70\uC9D3\uB9D0. \uB2EC\uC774 \uB730\uB54C \uC6B0\uB9AC\uB294 \uC8FD\uAC8C\uB420\uAC70\uC57C"
+    - "\uAC70\uC9D3\uB9D0. \uB2EC\uC774 \uB730\uB54C \uC6B0\uB9AC\uB294 \uC8FD\uAC8C\uB420\uAC70\uC57C.
+      \uB208\uC774 X\uC790\uC778 \uAC1C\uAD6C\uB9AC\uB9CC\uC774 \uC9C4\uC2E4\uC744
+      \uB9D0\uD574\uC904 \uAC78?"
     sprites:
     - {fileID: 21300000, guid: 96b69d0d75b5d48429dbdf6e44c4d23c, type: 3}
     dialogueWindows:
@@ -1412,7 +1415,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.258789, y: -88.09924}
+  m_Offset: {x: 14.925415, y: -88.09924}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1423,7 +1426,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 462.58594, y: 159.26685}
+  m_Size: {x: 441.2527, y: 159.26685}
   m_EdgeRadius: 0
 --- !u!61 &1951322870
 BoxCollider2D:
@@ -1836,8 +1839,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uBD89\uC740 \uB208\uC744 \uAC00\uC9C4\uC790\uB9CC \uC0B4\uC544\uB0A8\uC744\uC218
-      \uC788\uC5B4"
+    - "\uBD89\uC740 \uB208\uC744 \uAC00\uC9C4\uC790\uC640 \uBD88\uC744 \uAC00\uC9C4
+      \uC790\uB9CC \uC0B4\uC544\uB0A8\uC744\uC218 \uC788\uC5B4"
     sprites:
     - {fileID: 21300000, guid: bd47610675c8f1f45a18d4f3d880c45e, type: 3}
     dialogueWindows:
