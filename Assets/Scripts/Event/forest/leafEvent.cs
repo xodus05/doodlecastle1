@@ -52,18 +52,9 @@ public class leafEvent : MonoBehaviour
 
         yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
-        theChoice.ShowChoice(choice_1);
-        yield return new WaitUntil(() => !theChoice.choiceIng);
-        Debug.Log(theChoice.GetResult());
-        switch (theChoice.GetResult())
-        {
-            case 0:
-                dialogue_1.sentences[0] = "틀렸어...";
                 theDM.ShowDialogue(dialogue_1);
                 yield return new WaitUntil(() => !theDM.talking);
-                SceneManager.LoadScene("Died1");
-                break;
-        }
+
         flag = false;
 
         theOrder.Move();

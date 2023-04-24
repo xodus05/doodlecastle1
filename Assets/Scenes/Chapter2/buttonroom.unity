@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 404821108}
   - component: {fileID: 404821107}
   - component: {fileID: 404821106}
-  - component: {fileID: 404821105}
+  - component: {fileID: 404821110}
   m_Layer: 3
   m_Name: event (2)
   m_TagString: Untagged
@@ -194,31 +194,6 @@ Transform:
   m_Father: {fileID: 246465144}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &404821105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 404821102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b7db5491541c8b4ca731b9071ad5875, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_1:
-    sentences:
-    - 
-    sprites:
-    - {fileID: 0}
-    dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
-  Panel: {fileID: 0}
-  choice_1:
-    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
-    answers:
-    - "\uC608"
-    - "\uC544\uB2C8\uC624"
 --- !u!483693784 &404821106
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -348,6 +323,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15, y: 15}
   m_EdgeRadius: 0
+--- !u!114 &404821110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404821102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2256abf5848a84bbe2736268034715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_1:
+    sentences:
+    - 
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!1 &699634140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882275021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b7db5491541c8b4ca731b9071ad5875, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c2256abf5848a84bbe2736268034715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_1:
@@ -1157,10 +1155,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
-    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
-    answers:
-    - "\uC608"
-    - "\uC544\uB2C8\uC624"
+    question: 
+    answers: []
 --- !u!1 &1885157412
 GameObject:
   m_ObjectHideFlags: 0
