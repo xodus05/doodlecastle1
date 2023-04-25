@@ -21,6 +21,7 @@ public class campEvent : MonoBehaviour
     private ChoiceManager theChoice;
     private OrderManager theOrder;
     private PlayerMove thePlayer;
+    private Enemy theEnemy;
 
     public GameObject Panel;
     public GameObject Panel2;
@@ -29,6 +30,7 @@ public class campEvent : MonoBehaviour
     public GameObject Panel5;
 
     private bool flag;
+    private bool flag2;
 
     // Start is called before the first frame update
     void Start()
@@ -39,15 +41,26 @@ public class campEvent : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         theFade = FindObjectOfType<FadeManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        theEnemy = FindObjectOfType<Enemy>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -68,6 +81,7 @@ public class campEvent : MonoBehaviour
                     yield return new WaitForSeconds(1.0f);
                     Panel.SetActive(true);
                     Panel2.SetActive(true);
+                    theEnemy.monster.SetActive(false);
                     yield return new WaitForSeconds(1.5f);
                     theDM.ShowDialogue(dialogue_3);
                     yield return new WaitUntil(() => !theDM.talking);

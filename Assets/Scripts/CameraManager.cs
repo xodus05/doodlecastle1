@@ -16,6 +16,11 @@ public class CameraManager : MonoBehaviour
     private Vector3 maxBound;
     // 박스 컬라이더 영역의 최소 최대 xyz값을 지님
 
+    // 카메라 흔들기
+    public float ShakeAmount; 
+    float ShakeTime;            
+    Vector3 initialPosition; 
+
     private float halfWidth;
     private float halfHeight;
     // 카메라의 반너비, 반높이 값을 지닐 변수
@@ -63,4 +68,8 @@ public class CameraManager : MonoBehaviour
         minBound = bound.bounds.min;
         maxBound = bound.bounds.max;
     }
+
+    // IEnumerator Shake() {
+                
+    // }
 }

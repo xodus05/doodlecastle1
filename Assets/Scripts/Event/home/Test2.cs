@@ -9,12 +9,14 @@ public class Test2 : MonoBehaviour
 
     private DialogueManager theDM;
     private OrderManager theOrder;
+    private BGMManager BGM;
      
 
     private bool flag;
 
     void Start()
     {
+        BGM = FindObjectOfType<BGMManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
     }
@@ -25,6 +27,8 @@ public class Test2 : MonoBehaviour
         if(collision.gameObject.name == "Player") {
             if (!flag) {
                 flag = true;
+                BGM.Play(0);
+                
                 StartCoroutine(EventCoroutine());
             }
         }

@@ -179,6 +179,9 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &135399107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -365,6 +368,9 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &155731649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -800,6 +806,9 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &475116609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1463,6 +1472,9 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &1144839629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1717,7 +1729,7 @@ MonoBehaviour:
     - "\uC0BD \uAC19\uC740 \uAC8C \uC788\uC73C\uBA74 \uD314 \uC218 \uC788\uC744 \uAC83
       \uAC19\uC740\uB370..."
     sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
     - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
@@ -2029,6 +2041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: -819, y: 452}
+  monster: {fileID: 1356056126}
 --- !u!1 &1543191474
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,6 +2193,9 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &1543567246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2739,6 +2755,9 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &2091202325
 BoxCollider2D:
   m_ObjectHideFlags: 0

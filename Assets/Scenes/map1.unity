@@ -564,7 +564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692441442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4624, y: 1854, z: 46.637096}
+  m_LocalPosition: {x: 4624, y: 1880, z: 46.637096}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -585,11 +585,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uB3C4\uD1A0\uB9AC\uC640 \uB2E4\uB78C\uC950\uB2E4."
+    - "\uACAC\uACFC\uB958\uB2E4."
     sprites:
     - {fileID: 0}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &692441445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -603,7 +607,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.1603355, y: -4.7177434}
+  m_Offset: {x: -62.517433, y: -4.7177434}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -614,7 +618,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 196.39612, y: 15.401315}
+  m_Size: {x: 85.68193, y: 15.401315}
   m_EdgeRadius: 0
 --- !u!483693784 &692441446
 TilemapRenderer:
@@ -1057,7 +1061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1050351907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,12 +1285,16 @@ MonoBehaviour:
   dialogue_1:
     sentences:
     - "\uC21C\uC11C\uB294 \uB3C4\uD1A0\uB9AC, \uB098\uBB47\uC78E, \uBAA8\uC591\uC774
-      \uB2E4\uB978 \uB098\uBB34 \uAC1C\uC218\uC640, \\n\uADF8\uB9AC\uACE0(\uC9C0\uC6CC\uC838\uC11C
+      \uB2E4\uB978 \uB098\uBB34 \uAC1C\uC218\uC640, \uADF8\uB9AC\uACE0(\uC9C0\uC6CC\uC838\uC11C
       \uC77D\uC744 \uC218 \uC5C6\uB2E4.)"
     sprites:
     - {fileID: 0}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &1083515412
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1489,7 +1497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1509774596
 Transform:
   m_ObjectHideFlags: 0
@@ -1529,6 +1537,10 @@ MonoBehaviour:
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &1509774598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1843,6 +1855,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!1 &1527659577
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,6 +2165,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 1509774595}
 --- !u!61 &1862357075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2690,7 +2707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094146395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4698, y: 2051, z: 46.637096}
+  m_LocalPosition: {x: 4698, y: 2060, z: 46.637096}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2716,6 +2733,10 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+  choice_1:
+    question: 
+    answers: []
 --- !u!61 &2094146398
 BoxCollider2D:
   m_ObjectHideFlags: 0

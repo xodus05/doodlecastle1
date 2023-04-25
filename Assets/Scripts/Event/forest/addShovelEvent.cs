@@ -15,6 +15,7 @@ public class addShovelEvent : MonoBehaviour
     private ChoiceManager theChoice;
 
     private static bool flag;
+    private static bool flag2;
 
     void Start()
     {
@@ -25,14 +26,25 @@ public class addShovelEvent : MonoBehaviour
         if(inventory.haveItem("삽")) Panel.SetActive(false);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
+    }
+
 
     IEnumerator EventCoroutine()
     {

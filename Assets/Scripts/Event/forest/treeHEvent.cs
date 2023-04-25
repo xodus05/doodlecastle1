@@ -17,6 +17,7 @@ public class treeHEvent : MonoBehaviour
     private PlayerMove thePlayer;
     private AudioManager theAudio;
     private FadeManager theFade;
+    private BGMManager BGM;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class treeHEvent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theAudio = FindObjectOfType<AudioManager>();
+        BGM = FindObjectOfType<BGMManager>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -44,12 +46,14 @@ public class treeHEvent : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");
+        BGM.FadeOutMusic();
         theAudio.Play(sound);
         theOrder.Move("player", "DOWN");
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
         yield return new WaitForSeconds(3.0f);
         theAudio.Stop(sound);
+        BGM.FadeInMusic();
         yield return new WaitForSeconds(1.0f);
         theDM.ShowDialogue(dialogue_2);
         yield return new WaitUntil(()=>!theDM.talking);

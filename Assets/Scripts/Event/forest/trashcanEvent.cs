@@ -15,6 +15,7 @@ public class trashcanEvent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
+    private bool flag2;
 
     // Start is called before the first frame update
     void Start()
@@ -25,13 +26,23 @@ public class trashcanEvent : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-            if (!flag && Input.GetKey(KeyCode.Z))
-            {
-                flag = true;
-                StartCoroutine(EventCoroutine());
-            }
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        {
+            flag = true;
+            StartCoroutine(EventCoroutine());
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
