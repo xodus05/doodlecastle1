@@ -14,6 +14,10 @@ public class map1event : MonoBehaviour
     private BGMManager BGM;
 
     private static bool flag;
+    private static bool flag2;
+    private static bool isOK;
+
+    public GameObject Panel;
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +27,10 @@ public class map1event : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
         BGM = FindObjectOfType<BGMManager>();
+        if(isOK) Panel.SetActive(true);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!flag)
         {
@@ -48,7 +53,8 @@ public class map1event : MonoBehaviour
         theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");
         yield return new WaitUntil(()=>thePlayer.queue.Count == 0);
-
+        Panel.SetActive(true);
+        isOK = true;
         theDM.ShowDialogue(Dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
         theOrder.Move();

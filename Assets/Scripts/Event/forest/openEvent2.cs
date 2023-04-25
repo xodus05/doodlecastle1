@@ -17,6 +17,7 @@ public class openEvent2 : MonoBehaviour
     public Dialogue dialogue_2;
 
     private static bool flag;
+    private static bool flag2;
     private static bool isFirst = true;
 
     private DialogueManager theDM;
@@ -36,12 +37,23 @@ public class openEvent2 : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision) {
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
