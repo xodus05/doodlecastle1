@@ -20,6 +20,7 @@ public class leafEvent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
+    private bool flag2;
 
 
 
@@ -35,13 +36,23 @@ public class leafEvent : MonoBehaviour
         //if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-            if (!flag && Input.GetKey(KeyCode.Z))
-            {
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        {
             flag = true;
-                StartCoroutine(EventCoroutine());
-            }
+            StartCoroutine(EventCoroutine());
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -50,7 +61,7 @@ public class leafEvent : MonoBehaviour
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
 
-        yield return new WaitUntil(() => thePlayer.queue.Count == 0);
+        // yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
                 theDM.ShowDialogue(dialogue_1);
                 yield return new WaitUntil(() => !theDM.talking);

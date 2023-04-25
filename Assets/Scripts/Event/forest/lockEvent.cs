@@ -13,6 +13,7 @@ public class lockEvent : MonoBehaviour
     private NumberSystem theNumber;
 
     private static bool flag;
+    private static bool flag2;
     private static bool isOpen;
     public int correctNumber;
     public GameObject Panel;
@@ -24,17 +25,26 @@ public class lockEvent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theNumber = FindObjectOfType<NumberSystem>();
+        if (isOpen) Panel.SetActive(true);
     }
 
-    // Update is called once per frame
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if(isOpen) Panel.SetActive(true);
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -52,11 +62,11 @@ public class lockEvent : MonoBehaviour
             Panel.SetActive(true);
             isOpen = true;
         }
-        else {
-            dialogue_2.sentences[0] = "틀렸어...";
-            flag = false;
-        }
+        else dialogue_2.sentences[0] = "틀렸어...";
         theDM.ShowDialogue(dialogue_2);
+        yield return new WaitUntil(() => !theDM.talking);
+        flag = false;
+        if (isOpen) flag = true;
         theOrder.Move();
     }
 }

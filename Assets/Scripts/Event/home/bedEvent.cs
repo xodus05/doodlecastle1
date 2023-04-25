@@ -23,6 +23,7 @@ public class bedEvent : MonoBehaviour
     private AudioManager theAudio;
 
     private bool flag;
+    private bool flag2;
 
 
 
@@ -37,15 +38,23 @@ public class bedEvent : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if(Input.GetKey(KeyCode.Z)) {
-            if (!flag && thePlayer.animator.GetFloat("DirX") == -1f)
-            {
-                flag = true;
-                StartCoroutine(EventCoroutine());
-            }
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirX") == -1f && flag2)
+        {
+            flag = true;
+            StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
