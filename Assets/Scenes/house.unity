@@ -1695,6 +1695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: -819, y: 452}
+  monster: {fileID: 0}
 --- !u!61 &475685558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4604,7 +4605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1086531357
 Rigidbody2D:
   serializedVersion: 4
@@ -11351,7 +11352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2116580906
 MonoBehaviour:
   m_ObjectHideFlags: 0

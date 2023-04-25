@@ -344,8 +344,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
-    question: 
-    answers: []
+    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
 --- !u!1 &699634140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,8 +1157,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
-    question: 
-    answers: []
+    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
 --- !u!1 &1885157412
 GameObject:
   m_ObjectHideFlags: 0
