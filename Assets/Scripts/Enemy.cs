@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
 
     public static Enemy instance;
 
+    public GameObject monster;
+
     #region Singleton
 
     void Start() {
@@ -34,7 +36,6 @@ public class Enemy : MonoBehaviour
     {
           if(collision.gameObject.name == "Player" && !inventory.doing("불")) {
             // inventory.activeList.Add("불");
-            Debug.Log("아 제발요");
             SceneManager.LoadScene("Died"); //quote 로 scene 이동
           }
     }

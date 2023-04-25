@@ -49,7 +49,7 @@ public class title : MonoBehaviour
         theEnemy.transform.position = new Vector2(-819, 452);
         theEnemyAI.transform.position = new Vector2(-819, 452);
         thePlayer.transform.position = new Vector2(40, 370);
-        theCamera.transform.position = new Vector2(40, 370);
+        // theCamera.transform.position = new Vector2(40, 370);
     }
 
     public void ReRoad2()

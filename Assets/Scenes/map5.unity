@@ -2041,6 +2041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: -819, y: 452}
+  monster: {fileID: 1356056126}
 --- !u!1 &1543191474
 GameObject:
   m_ObjectHideFlags: 0

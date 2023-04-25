@@ -21,6 +21,7 @@ public class campEvent : MonoBehaviour
     private ChoiceManager theChoice;
     private OrderManager theOrder;
     private PlayerMove thePlayer;
+    private Enemy theEnemy;
 
     public GameObject Panel;
     public GameObject Panel2;
@@ -40,6 +41,7 @@ public class campEvent : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         theFade = FindObjectOfType<FadeManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        theEnemy = FindObjectOfType<Enemy>();
     }
 
     void Update()
@@ -79,6 +81,7 @@ public class campEvent : MonoBehaviour
                     yield return new WaitForSeconds(1.0f);
                     Panel.SetActive(true);
                     Panel2.SetActive(true);
+                    theEnemy.monster.SetActive(false);
                     yield return new WaitForSeconds(1.5f);
                     theDM.ShowDialogue(dialogue_3);
                     yield return new WaitUntil(() => !theDM.talking);
