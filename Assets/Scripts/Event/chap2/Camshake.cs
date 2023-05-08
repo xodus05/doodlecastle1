@@ -1,41 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 
 public class Camshake : MonoBehaviour
 {
-    public float shakeDuration = 0.3f;
-    public float shakeAmplitude = 1.2f;
-    public float shakeFrequency = 2.0f;
+    [SerializeField] float shakeMagnitude = 0.1f;
+    [SerializeField] float shakeDuration = 0.1f;
 
-    private CinemachineVirtualCamera virtualCamera;
-    private CinemachineBasicMultiChannelPerlin noise;
-
-    // Start is called before the first frame update
-    void Start()
+    public void Shake()
     {
-        virtualCamera = GetComponent<CinemachineVirtualCamera>();
-        if (virtualCamera != null)
-        {
-            noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        }
+        StartCoroutine(DoShake());
     }
 
-    IEnumerator ShakeCamera()
+    IEnumerator DoShake()
     {
-        if (noise != null)
+        Vector3 originalPosition = transform.localPosition;
+
+        float elapsedTime = 0f;
+
+        while (elapsedTime < shakeDuration)
         {
-            noise.m_AmplitudeGain = shakeAmplitude;
-            noise.m_FrequencyGain = shakeFrequency;
+            float x = Random.Range(-1f, 1f) * shakeMagnitude;
+            float y = Random.Range(-1f, 1f) * shakeMagnitude;
+
+            transform.localPosition = new Vector3(x, y, originalPosition.z);
+
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
         }
 
-        yield return new WaitForSeconds(shakeDuration);
-
-        if (noise != null)
-        {
-            noise.m_AmplitudeGain = 0.0f;
-            noise.m_FrequencyGain = 0.0f;
-        }
+        transform.localPosition = originalPosition;
     }
 }

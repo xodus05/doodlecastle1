@@ -11,6 +11,7 @@ public class addladder : MonoBehaviour
     private PlayerMove thePlayer;
     private NumberSystem theNumber;
     private Inventory inventory;
+    private Camshake theCam;
 
     private static bool flag;
     private static bool flag2;
@@ -27,6 +28,7 @@ public class addladder : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theNumber = FindObjectOfType<NumberSystem>();
+        theCam = FindObjectOfType<Camshake>();
         if (inventory.haveItem("사다리")) Panel.SetActive(false);
     }
 
@@ -68,6 +70,8 @@ public class addladder : MonoBehaviour
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         Panel.SetActive(false);
+        Camera.main.GetComponent<Camshake>().Shake();
         theOrder.Move();
+
     }
 }
