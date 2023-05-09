@@ -14,8 +14,10 @@ public class addKing : MonoBehaviour
     private Inventory inventory;
 
     private static bool flag;
+    private static bool flag2;
     private static bool isOpen;
     public GameObject Panel;
+    public GameObject Panel1;
     BoxCollider2D boxCollider;
 
     // Start is called before the first frame update
@@ -30,23 +32,35 @@ public class addKing : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
+    }
+
     IEnumerator EventCoroutine()
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
-        theOrder.NotMove();
-        theDM.ShowDialogue(dialogue_1);
-        yield return new WaitUntil(() => !theDM.talking);
+
         if (inventory.haveItem("상자열쇠"))
         {
+            theOrder.NotMove();
+            theDM.ShowDialogue(dialogue_1);
+            yield return new WaitUntil(() => !theDM.talking);
+            Panel1.SetActive(true);
             inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);

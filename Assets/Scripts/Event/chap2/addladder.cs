@@ -11,8 +11,10 @@ public class addladder : MonoBehaviour
     private PlayerMove thePlayer;
     private NumberSystem theNumber;
     private Inventory inventory;
+    private Camshake theCam;
 
     private static bool flag;
+    private static bool flag2;
     private static bool isOpen;
     public int correctNumber;
     public GameObject Panel;
@@ -26,18 +28,38 @@ public class addladder : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theNumber = FindObjectOfType<NumberSystem>();
+        theCam = FindObjectOfType<Camshake>();
         if (inventory.haveItem("사다리")) Panel.SetActive(false);
     }
 
     // Update is called once per frame
-    private void OnTriggerStay2D(Collider2D collision)
+/*    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (isOpen) Panel.SetActive(true);
+        
         if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }*/
+    void Update()
+    {
+        if (isOpen) Panel.SetActive(true);
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        {
+            flag = true;
+            StartCoroutine(EventCoroutine());
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -48,6 +70,8 @@ public class addladder : MonoBehaviour
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         Panel.SetActive(false);
+        Camera.main.GetComponent<Camshake>().Shake();
         theOrder.Move();
+
     }
 }

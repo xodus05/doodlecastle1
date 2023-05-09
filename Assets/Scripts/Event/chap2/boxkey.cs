@@ -42,7 +42,6 @@ public class boxkey : MonoBehaviour
         {
             Panel.SetActive(true);
             Panel1.SetActive(isOpen);
-            Panel.SetActive(!isOpen);
         }
     }
 
