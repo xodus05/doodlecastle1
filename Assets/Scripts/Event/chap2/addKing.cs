@@ -28,12 +28,13 @@ public class addKing : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theNumber = FindObjectOfType<NumberSystem>();
-        if (inventory.haveItem("왕관")) Panel.SetActive(false);
+        if (inventory.haveItem("왕관")) Panel1.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isOpen) Panel1.SetActive(true);
         if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
@@ -64,8 +65,8 @@ public class addKing : MonoBehaviour
             inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
-            Panel.SetActive(false);
         }
+        flag = true;
         theOrder.Move();
     }
 }

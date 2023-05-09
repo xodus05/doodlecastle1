@@ -70,7 +70,7 @@ public class addladder : MonoBehaviour
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         Panel.SetActive(false);
-        Camera.main.GetComponent<Camshake>().Shake();
+        //Camera.main.GetComponent<Camshake>().Shake();
         theOrder.Move();
 
     }

@@ -316,7 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 226014143}
   - component: {fileID: 226014142}
-  - component: {fileID: 226014141}
+  - component: {fileID: 226014144}
   m_Layer: 0
   m_Name: openEvent (4)
   m_TagString: Untagged
@@ -324,21 +324,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &226014141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226014140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4194252753b488e459fa32902ef7ec3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transferMapName: castle
-  startPointNumber: 1
-  sound: door2
 --- !u!61 &226014142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -380,6 +365,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &226014144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226014140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ae0d25fc0442a4d9e4f2056a21b98a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredKeyPresses: 10
 --- !u!1 &682353575
 GameObject:
   m_ObjectHideFlags: 0
