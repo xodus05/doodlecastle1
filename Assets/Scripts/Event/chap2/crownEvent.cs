@@ -22,7 +22,7 @@ public class crownEvent : MonoBehaviour
     private bool flag2;
 
     private static bool isOpen;
-    public bool isOpen2;
+    public static bool isOpen2;
 
 
 
@@ -33,7 +33,11 @@ public class crownEvent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
-        if (inventory.haveItem("왕관")) Panel.SetActive(false);
+        if (inventory.haveItem("왕관"))
+        {
+            Panel.SetActive(false);
+            isOpen2 = false;
+        }
     }
 
     void Update()
@@ -41,8 +45,8 @@ public class crownEvent : MonoBehaviour
         if (isOpen) Panel.SetActive(true);
         if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
         {
-            isOpen2 = true;
             flag = true;
+            isOpen2 = true;
             StartCoroutine(EventCoroutine());
         }
     }
@@ -69,7 +73,8 @@ public class crownEvent : MonoBehaviour
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
             yield return new WaitForSeconds(0.1f);
-            isOpen = true;
+            isOpen2 = false;
+
         } else
         {
             yield return new WaitForSeconds(0.1f);

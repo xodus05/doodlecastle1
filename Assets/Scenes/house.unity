@@ -2426,6 +2426,8 @@ MonoBehaviour:
   moveSpeed: 3
   bound: {fileID: 1509262569}
   ShakeAmount: 0
+  shakeMagnitude: 50
+  shakeDuration: 50
 --- !u!1 &527657177
 GameObject:
   m_ObjectHideFlags: 0

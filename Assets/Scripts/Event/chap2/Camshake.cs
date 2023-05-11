@@ -11,6 +11,11 @@ public class Camshake : MonoBehaviour
     {
         StartCoroutine(DoShake());
     }
+    public void SetShakeMagnitude(float magnitude)
+    {
+        shakeMagnitude = magnitude;
+    }
+
 
     IEnumerator DoShake()
     {
@@ -29,6 +34,7 @@ public class Camshake : MonoBehaviour
 
             yield return null;
         }
+
 
         transform.localPosition = originalPosition;
     }

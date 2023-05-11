@@ -35,7 +35,7 @@ public class DoorEvent : MonoBehaviour
 
     void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && crownEvent.isOpen2)
         {
             flag = true;
             StartCoroutine(CountKeyPresses());
@@ -71,24 +71,24 @@ public class DoorEvent : MonoBehaviour
 
     private IEnumerator CountKeyPresses()
     {
-        while (true)
-        {
-            if (Input.GetKeyDown(KeyCode.Z))
+            while (true)
             {
-                currentKeyPresses++;
-                Debug.Log("현재 키 입력 횟수: " + currentKeyPresses);
-
-                if (currentKeyPresses >= requiredKeyPresses)
+                if (Input.GetKeyDown(KeyCode.Z))
                 {
-                    Debug.Log("문이 열립니다.");
-                    SceneManager.LoadScene("castle");
-                    thePlayer.transform.position = new Vector2(-6096, -1982);
-                    yield break;
-                }
-            }
+                    currentKeyPresses++;
+                    Debug.Log("현재 키 입력 횟수: " + currentKeyPresses);
 
-            yield return null;
+                    if (currentKeyPresses >= requiredKeyPresses)
+                    {
+                        Debug.Log("문이 열립니다.");
+                        SceneManager.LoadScene("castle");
+                        thePlayer.transform.position = new Vector2(-6096, -1982);
+                        //crownEvent.isOpen2 = false; // isOpen을 false로 설정
+                        yield break;
+                    }
+                }
+                yield return null;
+            }
         }
-    }
 
 }
