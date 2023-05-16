@@ -12,6 +12,7 @@ public class leftOpenEvent : MonoBehaviour
     public string sound;
 
     private static bool flag;
+    private static bool flag2;
 
     private OrderManager theOrder;
     private PlayerMove thePlayer;
@@ -29,10 +30,10 @@ public class leftOpenEvent : MonoBehaviour
 
     void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && crownEvent.isOpen2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirX") == -1f && flag2)
         {
             flag = true;
-            StartCoroutine(CountKeyPresses());
+            StartCoroutine(EventCoroutine());
         }
     }
 
