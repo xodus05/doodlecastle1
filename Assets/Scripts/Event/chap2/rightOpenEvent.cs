@@ -27,23 +27,13 @@ public class rightOpenEvent : MonoBehaviour
         theAudio = FindObjectOfType<AudioManager>();
     }
 
-    void Update()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirX") == 1f && flag2)
+        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirX") == 1f)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
     }
 
     IEnumerator EventCoroutine()

@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class DoorEvent : MonoBehaviour
 {
@@ -12,7 +14,9 @@ public class DoorEvent : MonoBehaviour
     private Inventory inventory;
     private crownEvent theCrown;
     private PlayerMove thePlayer;
-   
+
+
+
 
     BoxCollider2D boxCollider;
 
@@ -41,6 +45,7 @@ public class DoorEvent : MonoBehaviour
             StartCoroutine(CountKeyPresses());
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -71,8 +76,9 @@ public class DoorEvent : MonoBehaviour
 
     private IEnumerator CountKeyPresses()
     {
-            while (true)
+        while (true)
             {
+
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
                     currentKeyPresses++;
@@ -90,5 +96,29 @@ public class DoorEvent : MonoBehaviour
                 yield return null;
             }
         }
+
+/*    IEnumerator EventCoroutine()
+    {
+        theOrder.PreLoadCharacter(); // 리스트 채우기
+        theOrder.NotMove();
+
+
+        if (crownEvent.isOpen2)
+        {
+
+            dialogue_1.sentences[0] = "저..저게 뭐야! 어서 문으로 가자";
+            theDM.ShowDialogue(dialogue_1); // 대사를 나타내는 대화창을 활성화
+            yield return new WaitForSeconds(3f); // 3초 대기
+
+            Panel1.SetActive(true);
+            Panel2.SetActive(true);
+
+            yield return new WaitForSeconds(3f);
+        }
+
+
+
+        theOrder.Move();
+    }*/
 
 }

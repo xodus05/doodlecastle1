@@ -10,7 +10,7 @@ public class crownEvent : MonoBehaviour
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
     public GameObject Panel;
-    public GameObject Panel2;
+
 
     private DialogueManager theDM;
     private OrderManager theOrder;

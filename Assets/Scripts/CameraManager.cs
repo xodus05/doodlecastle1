@@ -87,6 +87,12 @@ public class CameraManager : MonoBehaviour
         shakeMagnitude = magnitude;
     }
 
+    public void SetCameraFollow(GameObject newTarget)
+    {
+        target = newTarget;
+    }
+
+
     IEnumerator DoShake()
     {
         float elapsedTime = 0f;

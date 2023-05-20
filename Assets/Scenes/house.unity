@@ -820,7 +820,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1231083692, guid: 3c4137673bec47645b946bac674b7afd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2425,7 +2425,6 @@ MonoBehaviour:
   target: {fileID: 187257743}
   moveSpeed: 3
   bound: {fileID: 1509262569}
-  ShakeAmount: 0
   shakeMagnitude: 50
   shakeDuration: 50
 --- !u!1 &527657177

@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
 
     public static EnemyAI instance;
 
-    #region Singleton
+/*    #region Singleton
     private void Awake() {
          if(instance == null) {
             DontDestroyOnLoad(this.gameObject);
@@ -19,7 +19,7 @@ public class EnemyAI : MonoBehaviour
             Destroy(this.gameObject);
          }
     }
-    #endregion Singleton
+    #endregion Singleton*/
 
     Rigidbody2D rb;
     Transform target;
