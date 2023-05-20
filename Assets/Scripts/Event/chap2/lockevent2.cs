@@ -75,12 +75,15 @@ public class lockevent2 : MonoBehaviour
         else
         {
             dialogue_2.sentences[0] = "틀렸어...";
-            flag = false;
+            theDM.ShowDialogue(dialogue_2);
+
         }
 
-        theDM.ShowDialogue(dialogue_2);
+
         yield return new WaitUntil(() => !theDM.talking);
+        flag = false;
         yield return new WaitForSeconds(0.1f);
+
 /*
         if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
         {

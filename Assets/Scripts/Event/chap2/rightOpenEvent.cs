@@ -11,6 +11,7 @@ public class rightOpenEvent : MonoBehaviour
     public string sound;
 
     private static bool flag;
+    private static bool flag2;
 
     private OrderManager theOrder;
     private PlayerMove thePlayer;
@@ -26,13 +27,23 @@ public class rightOpenEvent : MonoBehaviour
         theAudio = FindObjectOfType<AudioManager>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirX") == 1f)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirX") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
