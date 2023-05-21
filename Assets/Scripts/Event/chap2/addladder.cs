@@ -68,10 +68,12 @@ public class addladder : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
         inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
+        yield return new WaitForSeconds(0.1f);
         dialogue_1.sentences[0] = "사다리를 획득했다.";
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         theCam.Shake();
+        yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_2);
         yield return new WaitUntil(() => !theDM.talking);
         yield return new WaitForSeconds(2f); // 1초간 카메라 흔들림 유지

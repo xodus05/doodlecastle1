@@ -48,6 +48,7 @@ public class boxkey : MonoBehaviour
 
     void Update()
     {
+        if (isOpen) Panel.SetActive(false);
         if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
         {
             flag = true;
@@ -87,7 +88,7 @@ public class boxkey : MonoBehaviour
                         yield return new WaitUntil(() => !theDM.talking);
                         inventory.inventoryItemList.Add(new Item(5006, "상자열쇠", Item.ItemType.Use));
                         Panel.SetActive(false);
-                        isOpen = false;
+                        isOpen = true;
                     }
                     break;
                 case 1:
@@ -96,7 +97,6 @@ public class boxkey : MonoBehaviour
       
             }
         }
-        isOpen = true;
         flag = false;
         theOrder.Move();
     }
