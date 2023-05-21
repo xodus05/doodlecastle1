@@ -57,8 +57,9 @@ public class fgevent : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
-        yield return new WaitForSeconds(0.1f);
         flag = false;
+        flag2 = false;
+        yield return new WaitForSeconds(0.1f);
         theOrder.Move();
     }
 
