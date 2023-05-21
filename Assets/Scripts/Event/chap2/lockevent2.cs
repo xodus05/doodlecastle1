@@ -21,6 +21,7 @@ public class lockevent2 : MonoBehaviour
     public GameObject Panel;
     public GameObject Panel1;
     public GameObject Panel2;
+    public GameObject Panel3;
     BoxCollider2D boxCollider;
 
     // Start is called before the first frame update
@@ -72,6 +73,7 @@ public class lockevent2 : MonoBehaviour
             theDM.ShowDialogue(dialogue_3);
             Panel1.SetActive(true);
             Panel2.SetActive(true);
+            Panel3.SetActive(true);
             Panel.SetActive(true);
             isOpen = true;
         }

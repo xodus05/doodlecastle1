@@ -4608,7 +4608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1086531357
 Rigidbody2D:
   serializedVersion: 4
@@ -9079,6 +9079,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5f7b72c2c4048a7448097d85eb65d6b5, type: 3}
     Volume: 1
     loop: 0
+  - name: dropkey
+    clip: {fileID: 8300000, guid: 94c29353133c9cc458c2909c4deefaed, type: 3}
+    Volume: 1
+    loop: 0
 --- !u!4 &2009068470
 Transform:
   m_ObjectHideFlags: 0
@@ -11359,7 +11363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2116580906
 MonoBehaviour:
   m_ObjectHideFlags: 0
