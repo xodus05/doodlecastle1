@@ -98,8 +98,10 @@ public class DoorEvent : MonoBehaviour
                         
                         SceneManager.LoadScene("castle");
                         thePlayer.transform.position = new Vector2(-6096, -1982);
-                        //crownEvent.isOpen2 = false; // isOpen을 false로 설정
-                    }
+                    //crownEvent.isOpen2 = false; // isOpen을 false로 설정
+
+                    yield break;
+                }
                 }
                 yield return null;
             }

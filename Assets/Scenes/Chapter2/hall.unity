@@ -1188,7 +1188,7 @@ MonoBehaviour:
     sentences: []
     sprites: []
     dialogueWindows: []
-  moveSpeed: 86
+  moveSpeed: 190
   contactDistance: 1
   follow: 0
 --- !u!58 &1458989532
@@ -1784,7 +1784,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -8.543457, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1795,7 +1795,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 70, y: 70}
+  m_Size: {x: 87.086914, y: 70}
   m_EdgeRadius: 0
 --- !u!4 &1817194502
 Transform:
