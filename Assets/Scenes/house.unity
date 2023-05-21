@@ -820,7 +820,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 1231083692, guid: 3c4137673bec47645b946bac674b7afd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6375,7 +6375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366093464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22, y: 64, z: -57.836613}
+  m_LocalPosition: {x: -22.9, y: 64, z: -57.836613}
   m_LocalScale: {x: 2, y: 2, z: 0.642629}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9072,6 +9072,10 @@ MonoBehaviour:
     loop: 0
   - name: damaged
     clip: {fileID: 8300000, guid: b7cf0c7a1bbdb4744ab2df1ef72dd299, type: 3}
+    Volume: 1
+    loop: 0
+  - name: lockdoor
+    clip: {fileID: 8300000, guid: 5f7b72c2c4048a7448097d85eb65d6b5, type: 3}
     Volume: 1
     loop: 0
 --- !u!4 &2009068470
