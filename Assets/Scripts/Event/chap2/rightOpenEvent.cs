@@ -38,14 +38,12 @@ public class rightOpenEvent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("오른쪽이 켜졌어요");
         if(collision.gameObject.name == "Player")
             flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("오른 꺼져 제발");
         if(collision.gameObject.name == "Player")
             flag2 = false;
     }
