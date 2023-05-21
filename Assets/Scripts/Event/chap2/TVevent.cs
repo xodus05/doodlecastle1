@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class controlEvent : MonoBehaviour
+public class TVevent : MonoBehaviour
 {
 
     public Dialogue dialogue_1;
@@ -12,12 +12,11 @@ public class controlEvent : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private Inventory inventory;
+    private controlEvent control;
 
     BoxCollider2D boxCollider;
-    private bool activated;
 
     private bool flag;
-    public bool isOpen;
 
 
 
@@ -28,6 +27,7 @@ public class controlEvent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
+        control = FindObjectOfType<controlEvent>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -41,17 +41,17 @@ public class controlEvent : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
-        theOrder.NotMove();
-        yield return new WaitForSeconds(0.1f);
-        theDM.ShowDialogue(dialogue_1);
-        yield return new WaitUntil(() => !theDM.talking);
-        yield return new WaitForSeconds(0.1f);
-
-        Panel.SetActive(true);
-
-        isOpen = true;
-        flag = false;
-        theOrder.Move();
+        if (control.isOpen)
+        {
+            theOrder.NotMove();
+            yield return new WaitForSeconds(0.1f);
+            theDM.ShowDialogue(dialogue_1);
+            yield return new WaitUntil(() => !theDM.talking);
+            yield return new WaitForSeconds(0.1f);
+            flag = false;
+            theOrder.Move();
+        }
+        else flag = false;
     }
 
 }

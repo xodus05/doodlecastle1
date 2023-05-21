@@ -12,6 +12,7 @@ public class fgevent : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private Inventory inventory;
+    private controlEvent control;
 
     BoxCollider2D boxCollider;
 
@@ -26,6 +27,7 @@ public class fgevent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
+        control = FindObjectOfType<controlEvent>();
     }
 
     private void OnTriggerStay2D(Collider2D collision)

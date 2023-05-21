@@ -73,7 +73,7 @@ public class crownEvent : MonoBehaviour
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
             yield return new WaitForSeconds(0.1f);
-            isOpen2 = false;
+            isOpen2 = true;
 
         } else
         {
@@ -81,9 +81,10 @@ public class crownEvent : MonoBehaviour
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(() => !theDM.talking);
             yield return new WaitForSeconds(0.1f);
+            isOpen2 = false;
         }
         flag = true;
-        isOpen2 = true;
+
         theOrder.Move();
     }
 
