@@ -39,12 +39,16 @@ public class upOpenEvent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        flag2 = true;
+        Debug.Log("위가 켜졌어요");
+        if(collision.gameObject.name == "Player")
+            flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        flag2 = false;
+        Debug.Log("위 꺼져 제발");
+        if(collision.gameObject.name == "Player")
+            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -60,7 +64,7 @@ public class upOpenEvent : MonoBehaviour
         SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
         theFade.FadeIn();
         flag = false;
-
+        flag2 = false;
 
         theOrder.Move();
     }

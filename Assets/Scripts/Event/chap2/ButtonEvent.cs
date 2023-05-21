@@ -17,6 +17,7 @@ public class ButtonEvent : MonoBehaviour
     public Dialogue dialogue_2;
 
     private static bool flag;
+    private static bool flag2;
     private static bool isFirst = true;
 
     private DialogueManager theDM;
@@ -35,15 +36,29 @@ public class ButtonEvent : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         theFade = FindObjectOfType<FadeManager>();
     }
-
-    private void OnTriggerStay2D(Collider2D collision)
+    
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirX") == -1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Player")
+            flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Player")
+            flag2 = false;
+    }
+
+
         IEnumerator EventCoroutine()
         {
         theOrder.NotMove();
@@ -72,6 +87,7 @@ public class ButtonEvent : MonoBehaviour
             yield return new WaitForSeconds(0.4f);
         }
         flag = false;
+        flag2 = false;
         theOrder.Move();
     }
 }

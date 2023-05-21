@@ -294,7 +294,7 @@ MonoBehaviour:
   sound: door2
   dialogue_1:
     sentences:
-    - "\uC5F4\uB9AC\uC9C0 \uC54A\uC544.."
+    - "\uBCF4\uC774\uC9C0 \uC54A\uB294 \uD798\uC73C\uB85C \uB9C9\uD600\uC788\uB2E4."
     sprites:
     - {fileID: 0}
     dialogueWindows:
