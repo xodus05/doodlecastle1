@@ -14,6 +14,9 @@ public class DoorEvent : MonoBehaviour
     private Inventory inventory;
     private crownEvent theCrown;
     private PlayerMove thePlayer;
+    public AudioManager theAudio;
+
+    public string sound;
 
     public GameObject Panel;
 
@@ -35,6 +38,7 @@ public class DoorEvent : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         theFade = FindObjectOfType<FadeManager>();
         theCrown = FindObjectOfType<crownEvent>();
+        theAudio = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -81,6 +85,7 @@ public class DoorEvent : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
+                    theAudio.Play(sound);
                     currentKeyPresses++;
                     Debug.Log("현재 키 입력 횟수: " + currentKeyPresses);
 
