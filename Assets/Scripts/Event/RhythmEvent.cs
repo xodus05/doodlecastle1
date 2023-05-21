@@ -15,6 +15,7 @@ public class RhythmEvent : MonoBehaviour
     private RhythmGame theRhythm;
     private OrderManager theOrder;
     private DialogueManager theDM;
+    private CameraManager theCamera;
     private BGMManager BGM;
     private AudioManager theAudio;
 
@@ -40,6 +41,7 @@ public class RhythmEvent : MonoBehaviour
         theRhythm = FindObjectOfType<RhythmGame>();
         theOrder = FindObjectOfType<OrderManager>();
         theDM = FindObjectOfType<DialogueManager>();
+        theCamera = FindObjectOfType<CameraManager>();
         BGM = FindObjectOfType<BGMManager>();
         theAudio = FindObjectOfType<AudioManager>();
         arrowPush = "";
@@ -113,7 +115,10 @@ public class RhythmEvent : MonoBehaviour
             if(theRhythm.correctNumber.ToString().Equals(myAnswer))
             {
                 theFade.Flash();
+                theCamera.Shake();
                 theDM.ShowDialogue(Dialogue_c);
+                yield return new WaitForSeconds(0.6f);
+                theCamera.StopShake();
                 yield return new WaitUntil(() => !theDM.talking);
                 c++;
             }

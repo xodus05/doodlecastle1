@@ -17,7 +17,7 @@ public class fgevent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
-
+    private bool flag2;
 
 
     // Start is called before the first frame update
@@ -30,13 +30,25 @@ public class fgevent : MonoBehaviour
         control = FindObjectOfType<controlEvent>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Player")
+            flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.name == "Player")
+            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
