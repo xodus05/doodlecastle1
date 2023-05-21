@@ -5,9 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class bookEvent : MonoBehaviour
 {
-
-    public Dialogue dialogue_1;
-    public Dialogue dialogue_2;
     public GameObject Panel;
     private PlayerMove thePlayer;
 
@@ -19,6 +16,7 @@ public class bookEvent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
+    private bool flag2;
 
 
 
@@ -31,36 +29,41 @@ public class bookEvent : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
+    }
+
+
     IEnumerator EventCoroutine()
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
-        yield return new WaitForSeconds(0.1f);
 
         yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
         Panel.SetActive(true);
-        dialogue_1.sentences[0] = "그림일기다!";
-        theDM.ShowDialogue(dialogue_1);
-        yield return new WaitUntil(() => !theDM.talking);
-        dialogue_2.sentences[0] = "이게 무슨 의미지?";
-        theDM.ShowDialogue(dialogue_2);
-        yield return new WaitUntil(() => !theDM.talking);
+        yield return new WaitForSeconds(3.0f);
         Panel.SetActive(false);
-        thePlayer.queue.Clear();
 
         flag = false;
 
         theOrder.Move();
     }
+
 
 }

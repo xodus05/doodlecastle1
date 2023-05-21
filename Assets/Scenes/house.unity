@@ -1695,6 +1695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: -819, y: 452}
+  monster: {fileID: 0}
 --- !u!61 &475685558
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2425,6 +2426,8 @@ MonoBehaviour:
   moveSpeed: 3
   bound: {fileID: 1509262569}
   ShakeAmount: 0
+  shakeMagnitude: 50
+  shakeDuration: 50
 --- !u!1 &527657177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3983,6 +3986,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0620f7404ee9acd4ab48ced55d1d3e5e, type: 3}
   - {fileID: 8300000, guid: e9aa25ead86c6c64ba9874110a1772f7, type: 3}
   - {fileID: 8300000, guid: 9a8d3e2ad1b60c74bb92d89c9754986b, type: 3}
+  - {fileID: 8300000, guid: b8c8e5609c2c4594d994e50fbd032648, type: 3}
 --- !u!82 &910753549
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4604,7 +4608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1086531357
 Rigidbody2D:
   serializedVersion: 4
@@ -11351,7 +11355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2116580906
 MonoBehaviour:
   m_ObjectHideFlags: 0

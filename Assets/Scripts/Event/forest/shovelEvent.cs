@@ -20,6 +20,7 @@ public class shovelEvent : MonoBehaviour
     private PlayerMove thePlayer;
     private FadeManager theFade;
     private AudioManager theAudio;
+    private BGMManager BGM;
     private title title;
 
     private static bool flag;
@@ -38,6 +39,7 @@ public class shovelEvent : MonoBehaviour
         theAudio = FindObjectOfType<AudioManager>();
         inventory = FindObjectOfType<Inventory>();
         title = FindObjectOfType<title>();
+        BGM = FindObjectOfType<BGMManager>();
     }
 
     void Update()
@@ -77,6 +79,7 @@ public class shovelEvent : MonoBehaviour
                 theAudio.Play(sound);
                 theDM.ShowDialogue(dialogue_3);
                 yield return new WaitUntil(()=>!theDM.talking);
+                BGM.Play(4);
                 theAudio.Stop(sound);
             break;
             case 1 :

@@ -332,7 +332,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 216.03027, y: -997.57434}
+  m_Offset: {x: 216.03027, y: -1000.1085}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -343,7 +343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 214.76367, y: 220.87671}
+  m_Size: {x: 214.76367, y: 221.61304}
   m_EdgeRadius: 0
 --- !u!61 &254850142
 BoxCollider2D:
@@ -1028,20 +1028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 853fb0ce4989b63489de6066d21f0ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue_1:
-    sentences:
-    - 
-    sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
-    dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
-  dialogue_2:
-    sentences:
-    - 
-    sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
-    dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 1429653692}
 --- !u!1 &1429653692
 GameObject:
@@ -1073,7 +1059,7 @@ RectTransform:
   m_GameObject: {fileID: 1429653692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 215.5834}
-  m_LocalScale: {x: 6, y: 6, z: 4.49}
+  m_LocalScale: {x: 10, y: 10, z: 4.49}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1429577114}
@@ -1081,7 +1067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 64, y: 81}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200.00002, y: 112.47217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429653694
@@ -1143,7 +1129,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &1429653697
 MonoBehaviour:
@@ -1342,20 +1328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 853fb0ce4989b63489de6066d21f0ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue_1:
-    sentences:
-    - 
-    sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
-    dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
-  dialogue_2:
-    sentences:
-    - 
-    sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
-    dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 1671658763}
 --- !u!1 &1610820209
 GameObject:
@@ -1471,7 +1443,7 @@ RectTransform:
   m_GameObject: {fileID: 1671658763}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 215.5834}
-  m_LocalScale: {x: 6, y: 6, z: 4.49}
+  m_LocalScale: {x: 10, y: 10, z: 4.49}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1521437968}
@@ -1479,7 +1451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 56, y: 55}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200.00002, y: 112.47217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671658765
@@ -1539,7 +1511,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &1671658768
 MonoBehaviour:
@@ -1726,7 +1698,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 110.18213, y: 573.5963}
+  m_Offset: {x: 110.18213, y: 520.4182}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1737,7 +1709,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 988.97754, y: 171.50952}
+  m_Size: {x: 988.97754, y: 277.86572}
   m_EdgeRadius: 0
 --- !u!61 &1852549114
 BoxCollider2D:

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,7 @@ public class bookEvent1 : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
+    private bool flag2;
 
 
 
@@ -27,13 +29,23 @@ public class bookEvent1 : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
