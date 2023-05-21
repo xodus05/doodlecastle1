@@ -27,13 +27,27 @@ public class rightOpenEvent : MonoBehaviour
         theAudio = FindObjectOfType<AudioManager>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+       void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirX") == 1f)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirX") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("오른쪽이 켜졌어요");
+        if(collision.gameObject.name == "Player")
+            flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("오른 꺼져 제발");
+        if(collision.gameObject.name == "Player")
+            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -49,7 +63,7 @@ public class rightOpenEvent : MonoBehaviour
         SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
         theFade.FadeIn();
         flag = false;
-
+        flag2 = false;
 
         theOrder.Move();
     }
