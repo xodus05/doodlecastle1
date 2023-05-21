@@ -8,15 +8,14 @@ using UnityEngine.UIElements;
 
 public class DoorEvent : MonoBehaviour
 {
-
+    private FadeManager theFade;
     private DialogueManager theDM;
     private OrderManager theOrder;
     private Inventory inventory;
     private crownEvent theCrown;
     private PlayerMove thePlayer;
 
-
-
+    public GameObject Panel;
 
     BoxCollider2D boxCollider;
 
@@ -34,6 +33,7 @@ public class DoorEvent : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        theFade = FindObjectOfType<FadeManager>();
         theCrown = FindObjectOfType<crownEvent>();
     }
 
@@ -87,9 +87,14 @@ public class DoorEvent : MonoBehaviour
                     if (currentKeyPresses >= requiredKeyPresses)
                     {
                         Debug.Log("문이 열립니다.");
+                        theFade.Flash(0.007f);
+                        yield return new WaitForSeconds(1.0f);
+                        Panel.SetActive(true);
+ 
                         SceneManager.LoadScene("castle");
                         thePlayer.transform.position = new Vector2(-6096, -1982);
                         //crownEvent.isOpen2 = false; // isOpen을 false로 설정
+
                         yield break;
                     }
                 }
