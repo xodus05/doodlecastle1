@@ -18,14 +18,13 @@ public class end1 : MonoBehaviour
         count = 0;
         text.text = "";
         listSentences = new List<string>();
-        StartCoroutine(NormalChat());
     }
 
-    IEnumerator NormalChat(string narrator, string narration)
+    IEnumerator NormalChat()
     {
-        for (int i = 0; i < listSentences.Length; i++)
+        for (int i = 0; i < listSentences.Count; i++)
         {
-
+            yield return new WaitForSeconds(0.1f);
         }
     }
 
@@ -35,19 +34,17 @@ public class end1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                theAudio.Play(enter_sound);
                 keyActivated = false;
                 text.text = "";     // text 초기화
                 count++;
                 if (count == listSentences.Count)
                 {
                     StopAllCoroutines();
-                    ExitDialogue();
                 }
                 else
                 {
                     StopAllCoroutines();
-                    StartCoroutine(StartDialogueCoroutine());
+                    StartCoroutine(NormalChat());
                 }
             }
         }
