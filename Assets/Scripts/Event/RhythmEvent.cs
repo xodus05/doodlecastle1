@@ -22,6 +22,7 @@ public class RhythmEvent : MonoBehaviour
     private ChoiceManager theChoice;
     private BGMManager BGM;
     private AudioManager theAudio;
+    private PlayerMove thePlayer;
 
     private string arrowPush;
     private string myAnswer; // 내가 입력한 값
@@ -49,6 +50,7 @@ public class RhythmEvent : MonoBehaviour
         theCamera = FindObjectOfType<CameraManager>();
         BGM = FindObjectOfType<BGMManager>();
         theAudio = FindObjectOfType<AudioManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         arrowPush = "";
     }
 
@@ -146,6 +148,9 @@ public class RhythmEvent : MonoBehaviour
                 }
                 theDM.ShowDialogue(Dialogue_2);
                 yield return new WaitUntil(() => !theDM.talking);
+                SceneManager.LoadScene("house2");
+                thePlayer.transform.position = new Vector2(-5900, 146);
+                theOrder.Move();
                 break;
             case 1:
                 SceneManager.LoadScene("end1");

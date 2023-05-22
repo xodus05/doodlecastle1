@@ -66,6 +66,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter2/start.unity
     guid: 59851700b9fbead49857dfece949cb7b
   - enabled: 1
+    path: Assets/Scenes/house2.unity
+    guid: 6034246b658edce4a96550ccb984b6e6
+  - enabled: 1
     path: Assets/Scenes/Chapter2/TVroom.unity
     guid: 0f76fe38190fcd94f99962d1fe4cd6cb
   m_configObjects: {}
