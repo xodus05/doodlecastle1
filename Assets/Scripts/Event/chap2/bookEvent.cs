@@ -18,8 +18,6 @@ public class bookEvent : MonoBehaviour
     private bool flag;
     private bool flag2;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -31,10 +29,16 @@ public class bookEvent : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
+        }
+        else if (Input.GetKeyDown(KeyCode.Z))
+        {
+            flag = false;
+            Panel.SetActive(false);
         }
     }
 
@@ -54,15 +58,21 @@ public class bookEvent : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
 
-        yield return new WaitUntil(() => thePlayer.queue.Count == 0);
-
         Panel.SetActive(true);
-        yield return new WaitForSeconds(3.0f);
+
+        yield return new WaitForSeconds(0.01f);
+
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                break;
+            }
+            yield return null;
+        }
         Panel.SetActive(false);
-
-        flag = false;
-
         theOrder.Move();
+        flag = false;
     }
 
 
