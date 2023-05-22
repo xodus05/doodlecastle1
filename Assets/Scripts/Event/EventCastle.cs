@@ -18,8 +18,10 @@ public class EventCastle : MonoBehaviour
     private BGMManager BGM;
 
     public GameObject Panel;
+    public GameObject Panel2;
 
     private bool flag;
+    private static bool isOK;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,7 @@ public class EventCastle : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if(isOK) Panel2.SetActive(true);
         if (!flag)
         {
             flag = true;
@@ -84,6 +87,7 @@ public class EventCastle : MonoBehaviour
         BGM.FadeOutMusic();
         Panel.SetActive(true);
         gameObject.SetActive(false);
+        isOK = true;
 
         theOrder.Move();
     }

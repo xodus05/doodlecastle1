@@ -9,7 +9,6 @@ public class end1 : MonoBehaviour
     public List<string> listSentences;
 
     private int count;
-    public bool talking = false;
     private bool keyActivated = false;
 
     // Start is called before the first frame update
@@ -17,20 +16,33 @@ public class end1 : MonoBehaviour
     {
         count = 0;
         text.text = "";
-        listSentences = new List<string>();
+        StartCoroutine(StartChat());
     }
 
     IEnumerator NormalChat()
     {
-        for (int i = 0; i < listSentences.Count; i++)
+        keyActivated = true;
+        for (int i = 0; i < listSentences[count].Length; i++)
         {
-            yield return new WaitForSeconds(0.1f);
+            text.text += listSentences[count][i];   // 한글자씩 출력
+            yield return new WaitForSeconds(0.01f);
         }
+    }
+
+    IEnumerator StartChat()
+    {        
+        keyActivated = true;
+        for (int i = 0; i < listSentences[count].Length; i++)
+        {
+            text.text += listSentences[count][i];   // 한글자씩 출력
+            yield return new WaitForSeconds(0.01f);
+        }
+        count++;
     }
 
     void Update()
     {
-        if (talking && keyActivated)
+        if (keyActivated)
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
