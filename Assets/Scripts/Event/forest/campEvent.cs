@@ -76,12 +76,12 @@ public class campEvent : MonoBehaviour
             Debug.Log(theChoice.GetResult());
             switch(theChoice.GetResult()) {
                 case 0 :
-                    inventory.activeList.Add("불");
-                    theFade.Flash(0.01f);
+                    inventory.activeList.Add("불");  // 불이 나는 상황 추가
+                    theFade.Flash(0.01f);   // 불이 나면서 플래시 이벤트
                     yield return new WaitForSeconds(1.0f);
-                    Panel.SetActive(true);
-                    Panel2.SetActive(true);
-                    theEnemy.monster.SetActive(false);
+                    Panel.SetActive(true);  // 불 나타나기
+                    Panel2.SetActive(true); // 빨간 배경 나타나기
+                    theEnemy.monster.SetActive(false);  // 몬스터 움직임 멈춤
                     yield return new WaitForSeconds(1.5f);
                     theDM.ShowDialogue(dialogue_3);
                     yield return new WaitUntil(() => !theDM.talking);
