@@ -32,6 +32,7 @@ public class MonsterAI : MonoBehaviour
     Transform target1;
     public GameObject Panel;
     public Dialogue dialogue_1;
+    public DoorEvent door;
 
     private AudioManager theAudio;
 
@@ -48,6 +49,7 @@ public class MonsterAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         theCrown = FindObjectOfType<crownEvent>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        door = FindObjectOfType<DoorEvent>();
     }
 
     public void Update()
@@ -56,9 +58,9 @@ public class MonsterAI : MonoBehaviour
         FollowTarget();
     }
 
-
     public void FollowTarget()
     {
+        if(door.isOpen) follow = false;
         if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
         {
             Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.transform.position, moveSpeed * Time.deltaTime);

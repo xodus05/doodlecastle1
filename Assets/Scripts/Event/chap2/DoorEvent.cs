@@ -14,6 +14,7 @@ public class DoorEvent : MonoBehaviour
     private Inventory inventory;
     private crownEvent theCrown;
     private PlayerMove thePlayer;
+    private Monster theMonster;
     public AudioManager theAudio;
 
     public string sound;
@@ -24,6 +25,8 @@ public class DoorEvent : MonoBehaviour
 
     private bool flag;
     private bool flag2;
+
+    public bool isOpen;
 
 
     public int requiredKeyPresses = 10; // 문을 열기 위해 필요한 키 입력 횟수
@@ -39,6 +42,8 @@ public class DoorEvent : MonoBehaviour
         theFade = FindObjectOfType<FadeManager>();
         theCrown = FindObjectOfType<crownEvent>();
         theAudio = FindObjectOfType<AudioManager>();
+        theMonster = FindObjectOfType<Monster>();
+        isOpen = false;
     }
 
     void Update()
@@ -89,13 +94,12 @@ public class DoorEvent : MonoBehaviour
 
                     if (currentKeyPresses >= requiredKeyPresses)
                     {
-                        Panel.SetActive(true);
+                    isOpen = true;
+                    Panel.SetActive(true);
                         theFade.Flash(0.01f);
-                    yield return new WaitForSeconds(1f);
-                    Debug.Log("문이 열립니다.");
+                        yield return new WaitForSeconds(1f);
+                        Debug.Log("문이 열립니다.");
 
-
-                        
                         SceneManager.LoadScene("castle");
                         thePlayer.transform.position = new Vector2(-6096, -1982);
                     //crownEvent.isOpen2 = false; // isOpen을 false로 설정
