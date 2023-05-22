@@ -8,6 +8,8 @@ public class MonsterAI : MonoBehaviour
     private Inventory inventory;
     private crownEvent theCrown;
 
+    private DialogueManager theDM;
+
     public static MonsterAI instance;
 
     #region Singleton
@@ -27,7 +29,9 @@ public class MonsterAI : MonoBehaviour
 
     Rigidbody2D rb;
     Transform target;
+    Transform target1;
     public GameObject Panel;
+    public Dialogue dialogue_1;
 
     private AudioManager theAudio;
 
@@ -35,24 +39,26 @@ public class MonsterAI : MonoBehaviour
 
     [SerializeField][Range(0f, 3f)] float contactDistance = 1f;
 
-    bool follow = false;
+    public bool follow = false;
 
     void Start()
     {
+        theDM = FindObjectOfType<DialogueManager>();
         inventory = FindObjectOfType<Inventory>();
         rb = GetComponent<Rigidbody2D>();
         theCrown = FindObjectOfType<crownEvent>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
-    void Update()
+    public void Update()
     {
+        follow = true;
         FollowTarget();
     }
 
-    void FollowTarget()
+
+    public void FollowTarget()
     {
-        //if (crownEvent.isOpen2) follow = true;
         if (Vector2.Distance(transform.position, target.position) > contactDistance && follow)
         {
             Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.transform.position, moveSpeed * Time.deltaTime);
@@ -67,4 +73,9 @@ public class MonsterAI : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log("End");
+        follow = false;
+    }
 }

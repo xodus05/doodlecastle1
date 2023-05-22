@@ -38,7 +38,7 @@ public class boxkey : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         theChoice = FindObjectOfType<ChoiceManager>();
         //inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
-        inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
+        //inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
         if (inventory.haveItem("사다리"))
         {
             Panel.SetActive(true);
@@ -48,6 +48,7 @@ public class boxkey : MonoBehaviour
 
     void Update()
     {
+        if (isOpen) Panel.SetActive(false);
         if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
         {
             flag = true;
@@ -82,12 +83,15 @@ public class boxkey : MonoBehaviour
                 case 0:
                     if(inventory.haveItem("상자열쇠") == false)
                     {
+                        theOrder.Move("player", "UP");
+                        theOrder.Move("player", "UP");
+                        theOrder.Move("player", "UP");
                         Panel1.SetActive(true);
                         theDM.ShowDialogue(dialogue_2);
                         yield return new WaitUntil(() => !theDM.talking);
                         inventory.inventoryItemList.Add(new Item(5006, "상자열쇠", Item.ItemType.Use));
                         Panel.SetActive(false);
-                        isOpen = false;
+                        isOpen = true;
                     }
                     break;
                 case 1:
@@ -96,7 +100,6 @@ public class boxkey : MonoBehaviour
       
             }
         }
-        isOpen = true;
         flag = false;
         theOrder.Move();
     }

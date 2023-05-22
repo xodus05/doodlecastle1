@@ -2425,7 +2425,6 @@ MonoBehaviour:
   target: {fileID: 187257743}
   moveSpeed: 3
   bound: {fileID: 1509262569}
-  ShakeAmount: 0
   shakeMagnitude: 50
   shakeDuration: 50
 --- !u!1 &527657177
@@ -3987,6 +3986,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e9aa25ead86c6c64ba9874110a1772f7, type: 3}
   - {fileID: 8300000, guid: 9a8d3e2ad1b60c74bb92d89c9754986b, type: 3}
   - {fileID: 8300000, guid: b8c8e5609c2c4594d994e50fbd032648, type: 3}
+  - {fileID: 8300000, guid: c4dfaeb1a4782974c934698b8fe4dc08, type: 3}
 --- !u!82 &910753549
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6005,7 +6005,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6376,7 +6376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366093464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22, y: 64, z: -57.836613}
+  m_LocalPosition: {x: -22.9, y: 64, z: -57.836613}
   m_LocalScale: {x: 2, y: 2, z: 0.642629}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9073,6 +9073,14 @@ MonoBehaviour:
     loop: 0
   - name: damaged
     clip: {fileID: 8300000, guid: b7cf0c7a1bbdb4744ab2df1ef72dd299, type: 3}
+    Volume: 1
+    loop: 0
+  - name: lockdoor
+    clip: {fileID: 8300000, guid: 5f7b72c2c4048a7448097d85eb65d6b5, type: 3}
+    Volume: 1
+    loop: 0
+  - name: dropkey
+    clip: {fileID: 8300000, guid: 94c29353133c9cc458c2909c4deefaed, type: 3}
     Volume: 1
     loop: 0
 --- !u!4 &2009068470

@@ -11,6 +11,7 @@ public class rightOpenEvent : MonoBehaviour
     public string sound;
 
     private static bool flag;
+    private static bool flag2;
 
     private OrderManager theOrder;
     private PlayerMove thePlayer;
@@ -26,24 +27,27 @@ public class rightOpenEvent : MonoBehaviour
         theAudio = FindObjectOfType<AudioManager>();
     }
 
-    void Update()
+       void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && crownEvent.isOpen2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirX") == 1f && flag2)
         {
             flag = true;
-            StartCoroutine(CountKeyPresses());
+            StartCoroutine(EventCoroutine());
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        flag2 = true;
+        if(collision.gameObject.name == "Player")
+            flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        flag2 = false;
+        if(collision.gameObject.name == "Player")
+            flag2 = false;
     }
+
     IEnumerator EventCoroutine()
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
@@ -57,7 +61,7 @@ public class rightOpenEvent : MonoBehaviour
         SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
         theFade.FadeIn();
         flag = false;
-
+        flag2 = false;
 
         theOrder.Move();
     }

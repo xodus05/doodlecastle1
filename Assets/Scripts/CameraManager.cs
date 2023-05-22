@@ -87,16 +87,25 @@ public class CameraManager : MonoBehaviour
         shakeMagnitude = magnitude;
     }
 
+    public void SetCameraFollow(GameObject newTarget)
+    {
+        target = newTarget;
+    }
+
+
     IEnumerator DoShake()
     {
         float elapsedTime = 0f;
+        Vector3 playerPosition = target.transform.position; // 플레이어의 위치 저장
 
         while (elapsedTime < shakeDuration)
         {
             float x = Random.Range(-1f, 1f) * shakeMagnitude;
             float y = Random.Range(-1f, 1f) * shakeMagnitude;
 
-            transform.localPosition = new Vector3(x, y, targetPosition.z);
+            // 플레이어 위치를 기준으로 흔들림 벡터 생성
+            Vector3 shakeVector = new Vector3(playerPosition.x + x, playerPosition.y + y, targetPosition.z);
+            transform.localPosition = shakeVector;
 
             elapsedTime += Time.deltaTime;
 

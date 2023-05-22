@@ -3,34 +3,36 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class upOpenEvent : MonoBehaviour
+public class drawerEvent : MonoBehaviour
 {
 
-    public string transferMapName; //이동할 맵의 이름
-    public int startPointNumber;
+    public Dialogue dialogue_1;
+    public GameObject Panel;
 
-    public string sound;
-
-    private static bool flag;
-    private static bool flag2;
-
+    private DialogueManager theDM;
     private OrderManager theOrder;
     private PlayerMove thePlayer;
-    private AudioManager theAudio;
-    private FadeManager theFade;
+    private Inventory inventory;
+
+    BoxCollider2D boxCollider;
+
+    private bool flag;
+    private bool flag2;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        theFade = FindObjectOfType<FadeManager>();
+        theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
-        theAudio = FindObjectOfType<AudioManager>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        inventory = FindObjectOfType<Inventory>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && thePlayer.animator.GetFloat("DirX") == 1f && !flag && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -51,19 +53,13 @@ public class upOpenEvent : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
-        theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
-        theAudio.Play(sound);
-        theFade.FadeOut();
-        yield return new WaitForSeconds(1f);
-        thePlayer.startPointNumber = startPointNumber;
-        thePlayer.currentMapName = transferMapName;
-        SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
-        theFade.FadeIn();
+        theDM.ShowDialogue(dialogue_1);
+        yield return new WaitUntil(() => !theDM.talking);
+        yield return new WaitForSeconds(0.1f);
         flag = false;
-        flag2 = false;
-
         theOrder.Move();
     }
+
 }

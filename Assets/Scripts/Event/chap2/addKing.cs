@@ -65,6 +65,7 @@ public class addKing : MonoBehaviour
             inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
+            isOpen = true;
         }
         flag = true;
         theOrder.Move();

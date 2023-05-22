@@ -6,6 +6,7 @@ public class lockevent2 : MonoBehaviour
 {
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
+    public Dialogue dialogue_3;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
@@ -20,6 +21,7 @@ public class lockevent2 : MonoBehaviour
     public GameObject Panel;
     public GameObject Panel1;
     public GameObject Panel2;
+    public GameObject Panel3;
     BoxCollider2D boxCollider;
 
     // Start is called before the first frame update
@@ -37,7 +39,7 @@ public class lockevent2 : MonoBehaviour
 
     void Update()
     {
-        if (isOpen) Panel.SetActive(true);
+        //if (isOpen) Panel.SetActive(true);
         if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;
@@ -60,35 +62,39 @@ public class lockevent2 : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
+        dialogue_1.sentences[0] = "자물쇠가 걸려있다.";
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
-
         theNumber.ShowNumber(correctNumber);
         yield return new WaitUntil(() => !theNumber.activated);
         if (theNumber.GetResult())
         {
+            dialogue_3.sentences[0] = "열렸다!!";
+            theDM.ShowDialogue(dialogue_3);
             Panel1.SetActive(true);
             Panel2.SetActive(true);
+            Panel3.SetActive(true);
             Panel.SetActive(true);
             isOpen = true;
         }
         else
         {
             dialogue_2.sentences[0] = "틀렸어...";
-        }
-        theDM.ShowDialogue(dialogue_2);
-        yield return new WaitUntil(() => !theDM.talking);
-        flag = false;
-        yield return new WaitForSeconds(0.1f);
-/*
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
-        {
-            flag = true;
-            inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
-            theDM.ShowDialogue(dialogue_3);
+            theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
-            Panel2.SetActive(false);
-        }*/
+            flag = false;
+        }
+
+
+        /*
+                if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+                {
+                    flag = true;
+                    inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
+                    theDM.ShowDialogue(dialogue_3);
+                    yield return new WaitUntil(() => !theDM.talking);
+                    Panel2.SetActive(false);
+                }*/
 
         theOrder.Move();
     }
