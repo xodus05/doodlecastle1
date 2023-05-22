@@ -12,8 +12,10 @@ public class bookEvent : MonoBehaviour
     private OrderManager theOrder;
     private Inventory inventory;
     private ChoiceManager theChoice;
+    public AudioManager theAudio;
 
     BoxCollider2D boxCollider;
+    public string sound;
 
     private bool flag;
     private bool flag2;
@@ -25,6 +27,7 @@ public class bookEvent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         boxCollider = GetComponent<BoxCollider2D>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        theAudio = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -58,6 +61,7 @@ public class bookEvent : MonoBehaviour
         theOrder.PreLoadCharacter(); // 리스트 채우기
         theOrder.NotMove();
 
+        theAudio.Play(sound);
         Panel.SetActive(true);
 
         yield return new WaitForSeconds(0.01f);
@@ -66,10 +70,12 @@ public class bookEvent : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
+                theAudio.Play(sound);
                 break;
             }
             yield return null;
         }
+
         Panel.SetActive(false);
         theOrder.Move();
         flag = false;
