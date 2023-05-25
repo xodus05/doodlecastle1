@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD504\uB85C\uADF8\uB798\uBC0D\uC5D0 \uAD00\uD55C \uCC45\uC774\uC788\uB2E4."
+    - "\uD504\uB85C\uADF8\uB798\uBC0D \uCC45\uC774 \uC788\uB2E4."
     sprites:
     - {fileID: 0}
     dialogueWindows:

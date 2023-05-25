@@ -1781,8 +1781,8 @@ MonoBehaviour:
   choice_1:
     question: "\uC655\uC758 \uB9D0\uC744 \uB530\uB97C\uAE4C?"
     answers:
-    - "\uB530\uB978\uB2E4."
     - "\uB530\uB974\uC9C0 \uC54A\uB294\uB2E4."
+    - "\uB530\uB978\uB2E4."
   sound: damaged
   sound2: blop
   turn: 5

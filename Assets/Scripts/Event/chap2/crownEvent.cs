@@ -9,10 +9,14 @@ public class crownEvent : MonoBehaviour
 
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
+
+    public Choice choice_1;
+
     public GameObject Panel;
 
 
     private DialogueManager theDM;
+    private ChoiceManager theChoice;
     private OrderManager theOrder;
     private Inventory inventory;
 
@@ -30,6 +34,7 @@ public class crownEvent : MonoBehaviour
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
+        theChoice = FindObjectOfType<ChoiceManager>();
         theOrder = FindObjectOfType<OrderManager>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
@@ -68,13 +73,22 @@ public class crownEvent : MonoBehaviour
 
         if (inventory.haveItem("왕관"))
         {
-            Panel.SetActive(true);
-            yield return new WaitForSeconds(0.1f);
-            theDM.ShowDialogue(dialogue_2);
-            yield return new WaitUntil(() => !theDM.talking);
-            yield return new WaitForSeconds(0.1f);
-            isOpen2 = true;
+            theChoice.ShowChoice(choice_1);
+            yield return new WaitUntil(() => !theChoice.choiceIng);
 
+            switch (theChoice.GetResult())
+            {
+                case 0:
+                    Panel.SetActive(true);
+                    theDM.ShowDialogue(dialogue_2);
+                    yield return new WaitUntil(() => !theDM.talking);
+                    yield return new WaitForSeconds(0.1f);
+                    isOpen2 = true;
+                    break;
+                case 1:
+                    flag = false;
+                    break;
+            }
         } else
         {
             yield return new WaitForSeconds(0.1f);
@@ -82,8 +96,9 @@ public class crownEvent : MonoBehaviour
             yield return new WaitUntil(() => !theDM.talking);
             yield return new WaitForSeconds(0.1f);
             isOpen2 = false;
+            flag = false;
         }
-        flag = true;
+        
 
         theOrder.Move();
     }

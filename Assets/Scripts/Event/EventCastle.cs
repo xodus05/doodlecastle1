@@ -26,6 +26,7 @@ public class EventCastle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (isOK) Panel2.SetActive(true);
         BGM = FindObjectOfType<BGMManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
@@ -37,7 +38,6 @@ public class EventCastle : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(isOK) Panel2.SetActive(true);
         if (!flag)
         {
             flag = true;
