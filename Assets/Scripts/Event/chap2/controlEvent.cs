@@ -17,6 +17,7 @@ public class controlEvent : MonoBehaviour
     private bool activated;
 
     private bool flag;
+    private bool flag2;
     public bool isOpen;
 
 
@@ -30,13 +31,23 @@ public class controlEvent : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()

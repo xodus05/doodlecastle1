@@ -70,12 +70,10 @@ public class crownEvent : MonoBehaviour
     {
         theOrder.NotMove();
 
-
         if (inventory.haveItem("왕관"))
         {
             theChoice.ShowChoice(choice_1);
             yield return new WaitUntil(() => !theChoice.choiceIng);
-
             switch (theChoice.GetResult())
             {
                 case 0:
@@ -94,12 +92,13 @@ public class crownEvent : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(() => !theDM.talking);
+            flag = false;
             yield return new WaitForSeconds(0.1f);
             isOpen2 = false;
             flag = false;
         }
-        
 
+        flag = false;
         theOrder.Move();
     }
 

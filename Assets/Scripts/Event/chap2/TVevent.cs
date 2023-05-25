@@ -17,6 +17,7 @@ public class TVevent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
+    private bool flag2;
 
 
 
@@ -30,13 +31,23 @@ public class TVevent : MonoBehaviour
         control = FindObjectOfType<controlEvent>();
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    void Update()
     {
-        if (!flag && Input.GetKey(KeyCode.Z))
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        flag2 = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -51,7 +62,6 @@ public class TVevent : MonoBehaviour
             flag = false;
             theOrder.Move();
         }
-        else flag = false;
     }
 
 }
