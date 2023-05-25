@@ -49,7 +49,7 @@ public class addladder : MonoBehaviour
     }*/
     void Update()
     {
-        if (isOpen) Panel.SetActive(true);
+/*        if (isOpen) Panel.SetActive(true);*/
         if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
         {
             flag = true;

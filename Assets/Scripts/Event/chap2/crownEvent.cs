@@ -65,7 +65,6 @@ public class crownEvent : MonoBehaviour
     {
         theOrder.NotMove();
 
-
         if (inventory.haveItem("왕관"))
         {
             Panel.SetActive(true);
@@ -75,16 +74,19 @@ public class crownEvent : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             isOpen2 = true;
 
-        } else
+            theOrder.Move();
+        }
+        else
         {
             yield return new WaitForSeconds(0.1f);
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(() => !theDM.talking);
+            flag = false;
             yield return new WaitForSeconds(0.1f);
             isOpen2 = false;
         }
-        flag = true;
 
+        flag = false;
         theOrder.Move();
     }
 
