@@ -70,10 +70,10 @@ public class leafEvent2 : MonoBehaviour
         switch (theChoice.GetResult())
         {
             case 0:
-                dialogue_1.sentences[0] = "문이 열리는 소리가 났다!";
+                dialogue_1.sentences[0] = "문이 열리는 소리가 났다.";
                 theDM.ShowDialogue(dialogue_1);
                 yield return new WaitUntil(() => !theDM.talking);
-                dialogue_2.sentences[0] = "찾아가보자";
+                dialogue_2.sentences[0] = "풀었다!";
                 theDM.ShowDialogue(dialogue_2);
                 yield return new WaitUntil(() => !theDM.talking);
                 inventory.inventoryItemList.Add(new Item(5004, "도서관 열쇠", Item.ItemType.Use));

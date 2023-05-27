@@ -46,12 +46,14 @@ public class bookEvent2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        flag2 = true;
+        if (collision.gameObject.name == "Player")
+            flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        flag2 = false;
+        if (collision.gameObject.name == "Player")
+            flag2 = false;
     }
 
     IEnumerator EventCoroutine()

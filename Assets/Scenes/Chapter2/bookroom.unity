@@ -1029,6 +1029,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1429653692}
+  theAudio: {fileID: 0}
+  sound: book
 --- !u!1 &1429653692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,7 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD504\uB85C\uADF8\uB798\uBC0D\uC5D0 \uAD00\uD55C \uCC45\uC774\uC788\uB2E4."
+    - "\uD504\uB85C\uADF8\uB798\uBC0D \uCC45\uC774 \uC788\uB2E4."
     sprites:
     - {fileID: 0}
     dialogueWindows:
@@ -1329,6 +1331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1671658763}
+  theAudio: {fileID: 0}
+  sound: book
 --- !u!1 &1610820209
 GameObject:
   m_ObjectHideFlags: 0

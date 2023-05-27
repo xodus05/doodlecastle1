@@ -14,7 +14,7 @@ public class lockEvent : MonoBehaviour
 
     private static bool flag;
     private static bool flag2;
-    private static bool isOpen;
+    private static bool isOpen2;
     public int correctNumber;
     public GameObject Panel;
     BoxCollider2D boxCollider;
@@ -26,7 +26,7 @@ public class lockEvent : MonoBehaviour
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
         theNumber = FindObjectOfType<NumberSystem>();
-        if (isOpen) Panel.SetActive(true);
+        if (isOpen2) Panel.SetActive(true);
     }
 
     void Update()
@@ -40,12 +40,14 @@ public class lockEvent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        flag2 = true;
+        if (collision.gameObject.name == "Player")
+            flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        flag2 = false;
+        if (collision.gameObject.name == "Player")
+            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -62,13 +64,13 @@ public class lockEvent : MonoBehaviour
         {
             dialogue_2.sentences[0] = "열렸어!\n들어가자.";
             Panel.SetActive(true);
-            isOpen = true;
+            isOpen2 = true;
         }
         else dialogue_2.sentences[0] = "틀렸어...";
         theDM.ShowDialogue(dialogue_2);
         yield return new WaitUntil(() => !theDM.talking);
         flag = false;
-        if (isOpen) flag = true;
+        if (isOpen2) flag = true;
         theOrder.Move();
     }
 }

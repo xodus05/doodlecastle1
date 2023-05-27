@@ -843,7 +843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uC5F4\uC1E0..? \uCC98\uC74C\uC5D4 \uC5C6\uC5C8\uB294\uB370?"
+    - "\uC704\uC5D0 \uBB34\uC5B8\uAC00 \uC788\uC5B4. "
     sprites:
     - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
     dialogueWindows:
@@ -1526,19 +1526,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD639\uC2DC \uC5EC\uAE30\uC5D0 \uC5F4\uC1E0\uB97C?"
-    - "\uB3CC\uC544\uAC14\uB2E4!!"
+    - "\uC5F4\uC1E0\uB97C \uC0AC\uC6A9\uD588\uB2E4."
     sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
-    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
+    - {fileID: 0}
     dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   dialogue_2:
     sentences:
-    - "\uC655\uAD00..? \uC774\uAC78 \uC65C \uB098\uD55C\uD14C \uC8FC\uB294\uAC70\uC57C?"
+    - "\uC655\uAD00\uC744 \uD68D\uB4DD\uD588\uB2E4."
     sprites:
-    - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
+    - {fileID: 0}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 1060056028}

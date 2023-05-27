@@ -788,6 +788,7 @@ MonoBehaviour:
     - "\uB531\uD788?"
     - "\uC2B9\uB099\uD560\uAC8C\uC694."
   Panel: {fileID: 255843564}
+  Panel2: {fileID: 1443983224}
 --- !u!1 &689542783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1443983225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,10 +1737,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogue_1:
     sentences:
-    - "\uC544\uBB34\uD2BC \uC2A4\uD1A0\uB9AC \uC9C4\uD589"
+    - "\uB3CC, \uB3CC\uC544\uC654\uB2E4!"
+    - "\uC800 \uB140\uC11D\uC774 \uC5B4\uB5BB\uAC8C \uC5EC\uAE30\uC5D0?? \uB2E4\uC2DC
+      \uB3CC\uC544\uAC00\uC11C \uB9C8\uC800 \uD574\uCE58\uC6B0\uB3C4\uB85D \uD574!
+      \uB099\uC11C\uC655\uAD6D\uC740 \uC544\uC9C1 \uC704\uD5D8\uD558\uB2E4\uACE0!"
+    - "\uB0B4\uAC00 \uBA87\uBC88\uC744 \uC8FD\uC744 \uBED4 \uD588\uB294\uB370? \uBABB
+      \uAC00!"
+    - "\uAC00!"
+    - "\uBABB \uAC00!"
     sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
+    - {fileID: 21300000, guid: 28442975b8a7b5545ace580059aef930, type: 3}
+    - {fileID: 21300000, guid: f2668425c0804ac459e2a9a9e5a825c0, type: 3}
+    - {fileID: 21300000, guid: 28442975b8a7b5545ace580059aef930, type: 3}
+    - {fileID: 21300000, guid: f2668425c0804ac459e2a9a9e5a825c0, type: 3}
     dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Dialogue_2:
     sentences:
@@ -1762,6 +1778,11 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  choice_1:
+    question: "\uC655\uC758 \uB9D0\uC744 \uB530\uB97C\uAE4C?"
+    answers:
+    - "\uB530\uB974\uC9C0 \uC54A\uB294\uB2E4."
+    - "\uB530\uB978\uB2E4."
   sound: damaged
   sound2: blop
   turn: 5
@@ -2191,7 +2212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -208.69519, y: 213}
+  m_AnchoredPosition: {x: -386, y: 297}
   m_SizeDelta: {x: 447.5495, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1933101381

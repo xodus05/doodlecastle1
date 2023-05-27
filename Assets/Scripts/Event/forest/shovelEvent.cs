@@ -53,12 +53,14 @@ public class shovelEvent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        flag2 = true;
+        if (collision.gameObject.name == "Player")
+            flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        flag2 = false;
+        if (collision.gameObject.name == "Player")
+            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -90,7 +92,6 @@ public class shovelEvent : MonoBehaviour
         else {
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(()=>!theDM.talking);
-            inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
             flag = false;
         }
         theOrder.Move();

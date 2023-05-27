@@ -5608,8 +5608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 52, y: -153}
-  m_SizeDelta: {x: 750, y: 60}
+  m_AnchoredPosition: {x: -16.967697, y: -153}
+  m_SizeDelta: {x: 612.0643, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1267426144
 MonoBehaviour:
@@ -9082,6 +9082,10 @@ MonoBehaviour:
   - name: dropkey
     clip: {fileID: 8300000, guid: 94c29353133c9cc458c2909c4deefaed, type: 3}
     Volume: 1
+    loop: 0
+  - name: book
+    clip: {fileID: 8300000, guid: 55b0706974d4d3f49953a20b717cb105, type: 3}
+    Volume: 3
     loop: 0
 --- !u!4 &2009068470
 Transform:

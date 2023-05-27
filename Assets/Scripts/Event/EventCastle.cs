@@ -18,12 +18,15 @@ public class EventCastle : MonoBehaviour
     private BGMManager BGM;
 
     public GameObject Panel;
+    public GameObject Panel2;
 
     private bool flag;
+    private static bool isOK;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (isOK) Panel2.SetActive(true);
         BGM = FindObjectOfType<BGMManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
@@ -84,6 +87,7 @@ public class EventCastle : MonoBehaviour
         BGM.FadeOutMusic();
         Panel.SetActive(true);
         gameObject.SetActive(false);
+        isOK = true;
 
         theOrder.Move();
     }

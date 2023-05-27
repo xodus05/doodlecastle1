@@ -1188,7 +1188,7 @@ MonoBehaviour:
     sentences: []
     sprites: []
     dialogueWindows: []
-  moveSpeed: 190
+  moveSpeed: 170
   contactDistance: 1
   follow: 0
 --- !u!58 &1458989532
