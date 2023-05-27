@@ -380,6 +380,7 @@ MonoBehaviour:
   theAudio: {fileID: 0}
   sound: lockdoor
   Panel: {fileID: 1928471906}
+  isOpen: 0
   requiredKeyPresses: 10
 --- !u!1 &235068063
 GameObject:
@@ -1188,7 +1189,8 @@ MonoBehaviour:
     sentences: []
     sprites: []
     dialogueWindows: []
-  moveSpeed: 170
+  door: {fileID: 0}
+  moveSpeed: 180
   contactDistance: 1
   follow: 0
 --- !u!58 &1458989532

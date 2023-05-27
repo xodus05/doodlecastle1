@@ -354,6 +354,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: e20d3de0ae51cfb448f98ae7afc45db7, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  isOpen: 0
   correctNumber: 3982
   Panel: {fileID: 1308557115}
   Panel1: {fileID: 1682569311}
@@ -387,10 +388,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15600967, y: -12.712761}
+  m_Offset: {x: 1.3779373, y: -9.610938}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -401,7 +402,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.66201, y: 26.002468}
+  m_Size: {x: 27.129349, y: 19.798822}
   m_EdgeRadius: 0
 --- !u!212 &177123343
 SpriteRenderer:
@@ -1554,7 +1555,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15600967, y: -12.712761}
+  m_Offset: {x: 1.941906, y: -10.174907}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1565,7 +1566,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.66201, y: 26.002468}
+  m_Size: {x: 26.377388, y: 20.92676}
   m_EdgeRadius: 0
 --- !u!114 &1704931553
 MonoBehaviour:
