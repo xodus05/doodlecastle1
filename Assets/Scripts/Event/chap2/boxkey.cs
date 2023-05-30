@@ -38,7 +38,7 @@ public class boxkey : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         theChoice = FindObjectOfType<ChoiceManager>();
         //inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
-        inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
+        //inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
         //inventory.inventoryItemList.Add(new Item(5006, "도서관 열쇠", Item.ItemType.Use));
         if (inventory.haveItem("사다리"))
         {
