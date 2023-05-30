@@ -84,6 +84,7 @@ public class openEvent2 : MonoBehaviour
             yield return new WaitForSeconds(0.4f);
         }
         flag = false;
+        flag2 = false;
         theOrder.Move();
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RhythmEvent : MonoBehaviour
 {
@@ -11,13 +12,17 @@ public class RhythmEvent : MonoBehaviour
     public Dialogue Dialogue_c;
     public Dialogue Dialogue_n;
 
+    public Choice choice_1;
+
     private FadeManager theFade;
     private RhythmGame theRhythm;
     private OrderManager theOrder;
     private DialogueManager theDM;
     private CameraManager theCamera;
+    private ChoiceManager theChoice;
     private BGMManager BGM;
     private AudioManager theAudio;
+    private PlayerMove thePlayer;
 
     private string arrowPush;
     private string myAnswer; // 내가 입력한 값
@@ -41,9 +46,11 @@ public class RhythmEvent : MonoBehaviour
         theRhythm = FindObjectOfType<RhythmGame>();
         theOrder = FindObjectOfType<OrderManager>();
         theDM = FindObjectOfType<DialogueManager>();
+        theChoice = FindObjectOfType<ChoiceManager>();
         theCamera = FindObjectOfType<CameraManager>();
         BGM = FindObjectOfType<BGMManager>();
         theAudio = FindObjectOfType<AudioManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         arrowPush = "";
     }
 
@@ -62,9 +69,9 @@ public class RhythmEvent : MonoBehaviour
                 theAudio.Play(sound);
             }
             // Direction
-            if (Input.GetKeyDown(KeyCode.UpArrow)) {
-                arrowPush += "↑";
-                myAnswer += "1";
+            if (Input.GetKeyDown(KeyCode.UpArrow)) {    // 위 누르면
+                arrowPush += "↑";   // 방향 저장
+                myAnswer += "1";    // Answer에 추가
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow)) {
                 arrowPush += "↓";
@@ -78,7 +85,7 @@ public class RhythmEvent : MonoBehaviour
                 arrowPush += "→";
                 myAnswer += "3";
             }
-            arrowText.text = arrowPush;
+            arrowText.text = arrowPush; // arrowText의 text가 화면에도 나오도록
         }
     }
 
@@ -101,38 +108,53 @@ public class RhythmEvent : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(Dialogue_1);
         yield return new WaitUntil(()=>!theDM.talking);
-        panel.SetActive(true);
-        for(int i = 0; i < turn; i++) {
-            go = false;
-            for (int j = 0; j < c; j++)
-            {
-                theAudio.Play(sound2);
-                theRhythm.createTile();
-                yield return new WaitForSeconds(0.6f);
-            }
-            flag2 = true;
-            yield return new WaitUntil(() => go);
-            if(theRhythm.correctNumber.ToString().Equals(myAnswer))
-            {
-                theFade.Flash();
-                theCamera.Shake();
-                theDM.ShowDialogue(Dialogue_c);
-                yield return new WaitForSeconds(0.6f);
-                theCamera.StopShake();
+        theChoice.ShowChoice(choice_1);
+        yield return new WaitUntil(() => !theChoice.choiceIng);
+        Debug.Log(theChoice.GetResult());
+        switch (theChoice.GetResult())
+        {
+            case 0:
+                panel.SetActive(true);
+                for (int i = 0; i < turn; i++)
+                {
+                    go = false;
+                    for (int j = 0; j < c; j++)
+                    {
+                        theAudio.Play(sound2);
+                        theRhythm.createTile();
+                        yield return new WaitForSeconds(0.6f);
+                    }
+                    flag2 = true;
+                    yield return new WaitUntil(() => go);
+                    if (theRhythm.correctNumber.ToString().Equals(myAnswer))
+                    {
+                        theFade.Flash();
+                        theCamera.Shake();
+                        theDM.ShowDialogue(Dialogue_c);
+                        yield return new WaitForSeconds(0.6f);
+                        theCamera.StopShake();
+                        yield return new WaitUntil(() => !theDM.talking);
+                        c++;
+                    }
+                    else
+                    {
+                        theDM.ShowDialogue(Dialogue_n);
+                        yield return new WaitUntil(() => !theDM.talking);
+                        i--;
+                    }
+                    myAnswer = "";
+                    theRhythm.correctNumber = 0;
+                    arrowText.text = arrowPush;
+                }
+                theDM.ShowDialogue(Dialogue_2);
                 yield return new WaitUntil(() => !theDM.talking);
-                c++;
-            }
-            else
-            {
-                theDM.ShowDialogue(Dialogue_n);
-                yield return new WaitUntil(() => !theDM.talking);
-                i--;
-            }
-            myAnswer = "";
-            theRhythm.correctNumber = 0;
-            arrowText.text = arrowPush;
+                SceneManager.LoadScene("house2");
+                thePlayer.transform.position = new Vector2(-5900, 146);
+                theOrder.Move();
+                break;
+            case 1:
+                SceneManager.LoadScene("end1");
+                break;
         }
-        theDM.ShowDialogue(Dialogue_2);
-        yield return new WaitUntil(() => !theDM.talking);
     }
 }

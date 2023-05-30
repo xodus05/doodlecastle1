@@ -15,6 +15,7 @@ public class addladder : MonoBehaviour
     private NumberSystem theNumber;
     private Inventory inventory;
     private CameraManager theCam;
+    private lockevent2 theLock;
 
     private static bool flag;
     private static bool flag2;
@@ -34,27 +35,31 @@ public class addladder : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         theNumber = FindObjectOfType<NumberSystem>();
         theCam = FindObjectOfType<CameraManager>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        theLock = FindObjectOfType<lockevent2>();
         if (inventory.haveItem("사다리")) Panel.SetActive(false);
     }
 
     // Update is called once per frame
-/*    private void OnTriggerStay2D(Collider2D collision)
-    {
-        
-        if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+    /*    private void OnTriggerStay2D(Collider2D collision)
         {
-            flag = true;
-            StartCoroutine(EventCoroutine());
-        }
-    }*/
+
+            if (!flag && Input.GetKeyDown(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+            {
+                flag = true;
+                StartCoroutine(EventCoroutine());
+            }
+        }*/
     void Update()
     {
-        if (isOpen) Panel.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
-        {
-            flag = true;
-            StartCoroutine(EventCoroutine());
-        }
+            if (Input.GetKeyDown(KeyCode.Z) && flag2)
+            {
+                if (!flag && thePlayer.animator.GetFloat("DirY") == 1f)
+                {
+                    flag = true;
+                    StartCoroutine(EventCoroutine());
+                }
+            }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

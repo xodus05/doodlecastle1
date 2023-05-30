@@ -40,12 +40,14 @@ public class openEvent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        flag2 = true;
+        if (collision.gameObject.name == "Player")
+            flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        flag2 = false;
+        if (collision.gameObject.name == "Player")
+            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -62,7 +64,7 @@ public class openEvent : MonoBehaviour
         SceneManager.LoadScene(transferMapName); // 이동할 맵의 이름으로 이동
         theFade.FadeIn();
         flag = false;
-
+        flag2 = false;
 
         theOrder.Move();
     }

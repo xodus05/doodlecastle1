@@ -63,6 +63,7 @@ public class addKing : MonoBehaviour
             yield return new WaitUntil(() => !theDM.talking);
             Panel1.SetActive(true);
             inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
+            yield return new WaitForSeconds(0.5f);
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
             isOpen = true;
