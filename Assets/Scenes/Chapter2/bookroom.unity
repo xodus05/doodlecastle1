@@ -197,15 +197,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uC774 \uC138\uACC4\uC5D0\uC11C \uC0B4\uC544\uB0A8\uB294 \uBC95."
-    - "( \uD0C8\uCD9C )"
-    - "\uC544... \uC7AC\uC218 \uC5C6\uC5B4..."
+    - "<\uC774 \uC138\uACC4\uC5D0\uC11C \uC0B4\uC544\uB0A8\uB294 \uBC95>"
+    - "\uD0C8\uCD9C"
     sprites:
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
     dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   dialogue_2:
@@ -286,10 +283,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uC2DC\uC9D1\uC5D0 \uAD00\uD55C \uCC45\uC774\uC788\uB2E4."
+    - "<\uBB38\uC758 \uBE44\uBC00>"
+    - "\uD55C \uBC88 \uB450\uB4DC\uB824 \uBCF8 \uAC83\uC73C\uB85C \uD655\uC2E0\uD558\uAE30\uC5D0
+      \uC774\uACF3\uC740 \uACE0\uC7A5\uC774 \uC7A6\uB2E4."
+    - "\uC800\uC790\uB294 \uC774 \uCC45\uC744 \uC77D\uC744 \uC774\uC5D0\uAC8C \uCD5C\uC18C\uD55C
+      10\uBC88 \uC815\uB3C4\uB294 \uC2DC\uB3C4\uD574\uBCF4\uB294 \uAC83\uC744 \uCD94\uCC9C\uD55C\uB2E4."
     sprites:
     - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   dialogue_2:
     sentences:
@@ -298,6 +303,129 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueWindows:
     - {fileID: 0}
+--- !u!1 &122912677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 122912681}
+  - component: {fileID: 122912680}
+  - component: {fileID: 122912679}
+  - component: {fileID: 122912678}
+  m_Layer: 0
+  m_Name: event (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &122912678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122912677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba6186bda0b3e148965bb77dd2d09d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_1:
+    sentences:
+    - "\uC5B4\uB9B4 \uB54C \uC790\uC8FC \uADF8\uB9AC\uACE0 \uD588\uB358 \uACF5\uC8FC
+      \uADF8\uB9BC\uC774\uB2E4."
+    - "\uC655\uAD00\uC744 \uAC16\uACE0 \uC2F6\uC5B4!"
+    - "\uC640 \uC528, \uBB50\uC57C? \uBCBD\uC5D0 \uC788\uB294 \uB099\uC11C\uAC00
+      \uB9D0\uC744..."
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - "\uC655\uAD00\uC744 \uAC16\uACE0 \uC2F6\uC5B4! \uC655 \uB9D0\uACE0, \uAF2D
+      \uB098\uC5D0\uAC8C \uC918."
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+--- !u!114 &122912679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122912677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63f41bfa3ac3134b8be46318beb24aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_1:
+    sentences:
+    - "\uC5B4\uB9B4 \uB54C \uC790\uC8FC \uADF8\uB9AC\uACE0 \uD588\uB358 \uACF5\uC8FC
+      \uADF8\uB9BC\uC774\uB2E4."
+    - "\uC640, \uC655\uAD00\uC744 \uAC16\uACE0 \uC2F6\uC5B4..."
+    - "\uC640 \uC528, \uBB50\uC57C?"
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+--- !u!61 &122912680
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122912677}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 28.267578, y: -4.090088}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 160.70898, y: 78.180176}
+  m_EdgeRadius: 0
+--- !u!4 &122912681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122912677}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11433, y: 2944, z: -86.447464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &254850140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1245,10 +1373,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uD504\uB85C\uADF8\uB798\uBC0D \uCC45\uC774 \uC788\uB2E4."
+    - "<\uBE48\uB465\uC9C0 \uC99D\uD6C4\uAD70>"
+    - "\uC0C8\uB07C\uC0C8\uAC00 \uC790\uB77C \uB465\uC9C0\uB97C \uB5A0\uB09C \uD6C4
+      \uD145 \uBE48 \uB465\uC9C0\uC5D0 \uC5B4\uBBF8\uC0C8\uB9CC \uB0A8\uC740 \uAC83\uCC98\uB7FC
+      \uC790\uB140\uAC00 \uB3C5\uB9BD\uD55C \uD6C4 \uC591\uC721\uC790\uAC00 \uB290\uB07C\uB294
+      \uACF5\uD5C8\uD568\uACFC \uC2AC\uD514\uC744 \uB73B\uD55C\uB2E4. "
+    - "...\uADF8\uB7EC\uACE0 \uBCF4\uB2C8 \uCD5C\uADFC \uBD4C \uC801\uC774 \uC5C6\uB124."
     sprites:
     - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
     dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   dialogue_2:
     sentences:
