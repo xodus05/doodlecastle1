@@ -10,7 +10,6 @@ public class Test2 : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private BGMManager BGM;
-     
 
     private bool flag;
 
@@ -41,8 +40,8 @@ public class Test2 : MonoBehaviour
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue);
-
         yield return new WaitUntil(()=>!theDM.talking);
+
 
         theOrder.Move();
     }

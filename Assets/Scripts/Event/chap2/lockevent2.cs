@@ -16,7 +16,7 @@ public class lockevent2 : MonoBehaviour
 
     private static bool flag;
     private static bool flag2;
-    private static bool isOpen;
+    public bool isOpen;
     public int correctNumber;
     public GameObject Panel;
     public GameObject Panel1;

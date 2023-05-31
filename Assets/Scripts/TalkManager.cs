@@ -36,7 +36,6 @@ public class TalkManager : MonoBehaviour
         talkData.Add(500, new string[] { "열쇠는 눈에 보이지 않아." }); 
         talkData.Add(100, new string[] { "어제 먹고 버린 쓰레기가 남아있어."}); //id???? ??? ???
         talkData.Add(1000, new string[] { "평범한 책장이야."});
-
         talkData.Add(2000, new string[] { "여기서 무슨일이 있었던거지? \n다시 돌아가고싶지 않아.. " });
         talkData.Add(2001, new string[] { "지금은 자고싶지 않아." });
     }
