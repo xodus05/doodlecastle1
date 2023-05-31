@@ -59,6 +59,8 @@ public class fgevent : MonoBehaviour
         yield return new WaitUntil(() => !theDM.talking);
         Panel.SetActivity(false);
 
+
+
         theOrder.Move();
     }
 
