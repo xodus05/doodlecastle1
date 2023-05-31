@@ -1338,7 +1338,7 @@ MonoBehaviour:
     sprites: []
     dialogueWindows: []
   door: {fileID: 0}
-  moveSpeed: 180
+  moveSpeed: 190
   contactDistance: 1
   follow: 0
 --- !u!58 &1458989532

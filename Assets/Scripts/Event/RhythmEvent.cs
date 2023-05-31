@@ -149,7 +149,8 @@ public class RhythmEvent : MonoBehaviour
                 theDM.ShowDialogue(Dialogue_2);
                 yield return new WaitUntil(() => !theDM.talking);
                 SceneManager.LoadScene("house2");
-                thePlayer.transform.position = new Vector2(-5900, 146);
+                thePlayer.transform.position = new Vector2(-5955, 170);
+                theOrder.Turn("player", "DOWN");
                 theOrder.Move();
                 break;
             case 1:
