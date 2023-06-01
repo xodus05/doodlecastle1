@@ -820,7 +820,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 1231083692, guid: 3c4137673bec47645b946bac674b7afd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5512,7 +5512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1216655341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6115,7 +6115,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -9197,6 +9197,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 55b0706974d4d3f49953a20b717cb105, type: 3}
     Volume: 3
     loop: 0
+  - name: phone
+    clip: {fileID: 8300000, guid: c9064cad547e9ee4f92a8bfc42a386bc, type: 3}
+    Volume: 2
+    loop: 0
 --- !u!4 &2009068470
 Transform:
   m_ObjectHideFlags: 0
@@ -11477,7 +11481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2116580906
 MonoBehaviour:
   m_ObjectHideFlags: 0

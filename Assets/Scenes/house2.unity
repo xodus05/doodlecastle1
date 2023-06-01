@@ -1120,7 +1120,10 @@ GameObject:
   - component: {fileID: 1025777599}
   - component: {fileID: 1025777598}
   - component: {fileID: 1025777600}
-  m_Layer: 0
+  - component: {fileID: 1025777601}
+  - component: {fileID: 1025777603}
+  - component: {fileID: 1025777602}
+  m_Layer: 8
   m_Name: phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,7 +1170,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: c2ecaa237a307244c820ab6feb66e79c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1220,6 +1223,91 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 26.023602, y: 19.66687}
   m_EdgeRadius: 0
+--- !u!114 &1025777601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025777597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392d6eaba3890a14fb15bc5663bc04a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_1:
+    sentences:
+    - "\uD734\uB300\uD3F0? \uAC08\uB54C \uB5A8\uC5B4\uD2B8\uB9B0\uAC74\uAC00?"
+    - "\uD734\uB300\uD3F0\uC744 \uD68D\uB4DD\uD588\uB2E4."
+    sprites:
+    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - "\uC5B4\uBB34\uC774\uB178"
+    sprites:
+    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 1025777597}
+  phone: phone
+--- !u!19719996 &1025777602
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025777597}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!1839735485 &1025777603
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025777597}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
 --- !u!1 &1345597597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436053356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -137.40002, y: 0.5, z: 0}
+  m_LocalPosition: {x: -136.8, y: 0.5, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
