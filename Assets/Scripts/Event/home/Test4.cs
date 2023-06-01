@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class fgevent : MonoBehaviour
+public class Test4 : MonoBehaviour
 {
 
     public Dialogue dialogue_1;
+    public Dialogue dialogue_2;
     public GameObject Panel;
+    public string phone;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
     private Inventory inventory;
     private controlEvent control;
+    private AudioManager theAudio;
 
     BoxCollider2D boxCollider;
 
@@ -28,6 +31,7 @@ public class fgevent : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
         control = FindObjectOfType<controlEvent>();
+        theAudio = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -57,8 +61,15 @@ public class fgevent : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
-        Panel.SetActivity(false);
+        Panel.SetActive(false);
+        theAudio.Play(phone);
 
+        yield return new WaitForSeconds(3f);
+        Debug.Log("왜않되노");
+        theAudio.Stop(phone);
+
+        theDM.ShowDialogue(dialogue_2);
+        yield return new WaitUntil(() => !theDM.talking);
 
 
         theOrder.Move();
