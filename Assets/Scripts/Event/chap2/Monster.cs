@@ -17,7 +17,7 @@ public class Monster : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            SceneManager.LoadScene("Died1");
+            SceneManager.LoadScene("Died2");
         }
     }
 }
