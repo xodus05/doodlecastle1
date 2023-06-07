@@ -59,6 +59,14 @@ public class title : MonoBehaviour
         //theCamera.transform.position = new Vector2(-11048, 3455);
     }
 
+    public void ReRoad3()
+    {
+        SceneManager.LoadScene("hall");
+        thePlayer.transform.position = new Vector2(-10749, 3428);
+        inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
+        //theCamera.transform.position = new Vector2(-11048, 3455);
+    }
+
     public void OnClickExit()
     {
         Application.Quit(); // 앱 나가기
