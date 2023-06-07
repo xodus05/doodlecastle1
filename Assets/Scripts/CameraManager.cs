@@ -92,6 +92,10 @@ public class CameraManager : MonoBehaviour
         target = newTarget;
     }
 
+    public void ZoomIn(Vector3 zoomTarget)
+    {
+        StartCoroutine(Zoom(zoomTarget));
+    }
 
     IEnumerator DoShake()
     {
@@ -113,5 +117,29 @@ public class CameraManager : MonoBehaviour
         }
 
         transform.localPosition = targetPosition;
+    }
+
+    IEnumerator Zoom(Vector3 zoomTarget)
+    {
+        float targetOrthographicSize = 200f; // 줌인할 목표 Orthographic Size (원하는 값으로 변경)
+
+        float initialOrthographicSize = theCamera.orthographicSize;
+        float elapsedTime = 0f;
+
+        Vector3 initialPosition = transform.position;
+        Vector3 targetPosition = new Vector3(zoomTarget.x, zoomTarget.y, transform.position.z);
+
+        while (elapsedTime < 2f) // 1초 동안 줌인 애니메이션 진행
+        {
+            float t = elapsedTime / 1f; // 진행 시간에 따른 보간 비율 계산
+            theCamera.orthographicSize = Mathf.Lerp(initialOrthographicSize, targetOrthographicSize, t);
+            transform.position = Vector3.Lerp(initialPosition, targetPosition, t);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        theCamera.orthographicSize = targetOrthographicSize; // 최종적으로 목표 Orthographic Size로 설정
+        transform.position = targetPosition; // 최종적으로 목표 위치로 설정
     }
 }
