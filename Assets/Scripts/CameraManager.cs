@@ -114,4 +114,23 @@ public class CameraManager : MonoBehaviour
 
         transform.localPosition = targetPosition;
     }
+
+    IEnumerator ZoomIn()
+    {
+        float targetOrthographicSize = 5f; // 줌인할 목표 Orthographic Size (원하는 값으로 변경)
+
+        float initialOrthographicSize = theCamera.orthographicSize;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < 1f) // 1초 동안 줌인 애니메이션 진행
+        {
+            float t = elapsedTime / 1f; // 진행 시간에 따른 보간 비율 계산
+            theCamera.orthographicSize = Mathf.Lerp(initialOrthographicSize, targetOrthographicSize, t);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        theCamera.orthographicSize = targetOrthographicSize; // 최종적으로 목표 Orthographic Size로 설정
+    }
 }
