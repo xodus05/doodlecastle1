@@ -60,6 +60,7 @@ public class CameraManager : MonoBehaviour
             float clampedY = Mathf.Clamp(this.transform.position.y, minBound.y + halfHeight, maxBound.y - halfHeight);
 
             this.transform.position = new Vector3(clampedX, clampedY, this.transform.position.z);
+           
         }
     }
 
@@ -131,7 +132,7 @@ public class CameraManager : MonoBehaviour
 
         while (elapsedTime < 2f) // 1초 동안 줌인 애니메이션 진행
         {
-            float t = elapsedTime / 1f; // 진행 시간에 따른 보간 비율 계산
+            float t = elapsedTime / 2f; // 진행 시간에 따른 보간 비율 계산
             theCamera.orthographicSize = Mathf.Lerp(initialOrthographicSize, targetOrthographicSize, t);
             transform.position = Vector3.Lerp(initialPosition, targetPosition, t);
 
