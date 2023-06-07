@@ -1247,10 +1247,39 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   dialogue_2:
     sentences:
-    - "\uC5B4\uBB34\uC774\uB178"
+    - "\uC5C4\uB9C8\uB2E4...\uADF8\uB7EC\uACE0\uBCF4\uB2C8 \uB3C5\uB9BD\uD558\uACE0
+      \uB098\uC11C \uCC3E\uC544\uBD4C \uC801\uC774 \uC5C6\uB124."
+    - "\uC5EC....\uC5EC\uBCF4\uC138\uC694?"
+    - "[\uC5B4, \uCD98\uC2DD\uC544! \uBAA9\uC18C\uB9AC\uC5D0 \uC65C \uC774\uB807\uAC8C
+      \uAE30\uC6B4\uC774 \uC5C6\uC5B4?\t]"
+    - "\uC5C4\uB9C8....\uB098 \uB108\uBB34 \uB9CE\uC740 \uC77C\uC774 \uC788\uC5C8\uC5B4."
+    - "[\uBB50? \uC0AC\uAE30\uB77C\uB3C4 \uB2F9\uD588\uC5B4? \uBB54 \uC77C\uC778\uB370
+      \uADF8\uB798]"
+    - "\uC544\uB2C8 \uADF8\uB0E5, \uC545\uBABD \uBE44\uC2B7\uD55C \uAC78 \uAFE8\uB294\uB370.
+      \uB108\uBB34 \uB054\uCC0D\uD574\uC11C....\uC9C0\uAE08 \uC5C4\uB9C8 \uBCF4\uB7EC
+      \uAC00\uB3C4 \uB3FC?"
+    - "[\uC5B4\uD734, \uC5B8\uC81C\uB4E0 \uC640\uB3C4 \uB3FC. \uC5F0\uB77D \uD558\uB098
+      \uC5C6\uB354\uB2C8 \uC544\uC8FC \uADF8\uB0E5 \uC545\uBABD \uD558\uB098 \uAFE8\uB2E4\uACE0...\uBE68\uB9AC\uC640!
+      \uB108 \uC88B\uC544\uD558\uB294 \uAC08\uBE44\uCC1C \uD574\uB1A8\uC5B4.]"
+    - "\uC5ED\uC2DC \uC5C4\uB9C8\uBC16\uC5D0 \uC5C6\uC5B4...\uB098 \uC9C0\uAE08 \uBC14\uB85C
+      \uCD9C\uBC1C\uD560\uAC8C!"
     sprites:
-    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
+    - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
+    - {fileID: 0}
+    - {fileID: 21300000, guid: e20d3de0ae51cfb448f98ae7afc45db7, type: 3}
     dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 1893377169}
   phone: phone

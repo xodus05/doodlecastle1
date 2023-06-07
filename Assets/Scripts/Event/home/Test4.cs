@@ -9,6 +9,7 @@ public class Test4 : MonoBehaviour
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
     public GameObject Panel;
+    public GameObject Panel2;
     public string phone;
 
     private DialogueManager theDM;
@@ -16,6 +17,7 @@ public class Test4 : MonoBehaviour
     private Inventory inventory;
     private controlEvent control;
     private AudioManager theAudio;
+    private CameraManager theCamera;
 
     BoxCollider2D boxCollider;
 
@@ -32,6 +34,7 @@ public class Test4 : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         control = FindObjectOfType<controlEvent>();
         theAudio = FindObjectOfType<AudioManager>();
+        theCamera = FindObjectOfType<CameraManager>();
     }
 
     void Update()
@@ -57,22 +60,28 @@ public class Test4 : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
-        theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
+        theOrder.NotMove();
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         Panel.SetActive(false);
         theAudio.Play(phone);
 
         yield return new WaitForSeconds(3f);
-        Debug.Log("왜않되노");
         theAudio.Stop(phone);
 
         theDM.ShowDialogue(dialogue_2);
         yield return new WaitUntil(() => !theDM.talking);
-
-
-        theOrder.Move();
+        theOrder.Move("player", "LEFT");
+        theOrder.Move("player", "LEFT");
+        theOrder.Move("player", "LEFT");
+        theOrder.Move("player", "DOWN");
+        theOrder.Move("player", "DOWN");
+        theOrder.Move("player", "DOWN");
+        theOrder.Move("player", "DOWN");
+        theOrder.Move("player", "DOWN");
+        theOrder.Move("player", "DOWN");
+        theCamera.target = Panel2;
     }
 
 }
