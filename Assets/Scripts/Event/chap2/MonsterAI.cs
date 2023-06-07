@@ -12,20 +12,6 @@ public class MonsterAI : MonoBehaviour
 
     public static MonsterAI instance;
 
-    #region Singleton
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            DontDestroyOnLoad(this.gameObject);
-            instance = this;
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
-    #endregion Singleton
 
     Rigidbody2D rb;
     Transform target;

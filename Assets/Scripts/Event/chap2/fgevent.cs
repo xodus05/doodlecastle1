@@ -47,7 +47,7 @@ public class fgevent : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Player")
+        // if(collision.gameObject.name == "Player")
             flag2 = false;
     }
 
@@ -58,8 +58,8 @@ public class fgevent : MonoBehaviour
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         flag = false;
-        yield return new WaitForSeconds(0.1f);
         theOrder.Move();
+        yield return new WaitForSeconds(0.1f);
     }
 
 }

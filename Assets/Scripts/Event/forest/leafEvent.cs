@@ -53,7 +53,7 @@ public class leafEvent : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        // if (collision.gameObject.name == "Player")
             flag2 = false;
     }
 
