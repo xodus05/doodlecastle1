@@ -1738,9 +1738,9 @@ MonoBehaviour:
   Dialogue_1:
     sentences:
     - "\uB3CC, \uB3CC\uC544\uC654\uB2E4!"
-    - "\uC800 \uB140\uC11D\uC774 \uC5B4\uB5BB\uAC8C \uC5EC\uAE30\uC5D0?? \uB2E4\uC2DC
-      \uB3CC\uC544\uAC00\uC11C \uB9C8\uC800 \uD574\uCE58\uC6B0\uB3C4\uB85D \uD574!
-      \uB099\uC11C\uC655\uAD6D\uC740 \uC544\uC9C1 \uC704\uD5D8\uD558\uB2E4\uACE0!"
+    - "\uC800 \uB140\uC11D\uC774 \uC5B4\uB5BB\uAC8C \uC5EC\uAE30\uC5D0? \uB2E4\uC2DC
+      \uB3CC\uC544\uAC00\uC11C \uAD34\uBB3C\uB4E4\uC744 \uB9C8\uC800 \uD574\uCE58\uC6B0\uB3C4\uB85D
+      \uD574! \uB099\uC11C\uC655\uAD6D\uC740 \uC544\uC9C1 \uC704\uD5D8\uD558\uB2E4\uACE0!"
     - "\uB0B4\uAC00 \uBA87\uBC88\uC744 \uC8FD\uC744 \uBED4 \uD588\uB294\uB370? \uBABB
       \uAC00!"
     - "\uAC00!"
@@ -1759,10 +1759,25 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Dialogue_2:
     sentences:
-    - "\uC548\uB3FC...\uC548\uB41C\uB2E4\uACE0!"
+    - "\uC544, \uC54C\uACA0\uC5B4 \uADF8\uB9CC! \uD56D\uBCF5! \uB2E4\uC2DC \uBCF4\uB0B4\uC8FC\uBA74
+      \uB420 \uAC70 \uC544\uB2C8\uC57C!"
+    - "\uC9C4\uC791 \uADF8\uB7F4 \uAC83\uC774\uC9C0."
+    - "\uD6C4...3\uCD08 \uB4A4\uBA74 \uB2E4\uC2DC \uC9D1\uC73C\uB85C \uC774\uB3D9\uB420
+      \uAC70\uC57C"
+    - "\uC88B\uC544. \uC774\uC820 \uB2E4 \uC9C0\uCCD0\uC11C \uBE68\uB9AC \uC26C\uACE0
+      \uC2F6\uC5B4......"
+    - "\uC820\uC7A5.....\uC804\uC1A1!"
     sprites:
     - {fileID: 21300000, guid: 28442975b8a7b5545ace580059aef930, type: 3}
+    - {fileID: 21300000, guid: e20d3de0ae51cfb448f98ae7afc45db7, type: 3}
+    - {fileID: 21300000, guid: 28442975b8a7b5545ace580059aef930, type: 3}
+    - {fileID: 21300000, guid: e2d36bc4d403735459389d7597d811f3, type: 3}
+    - {fileID: 21300000, guid: 28442975b8a7b5545ace580059aef930, type: 3}
     dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Dialogue_c:
     sentences:
