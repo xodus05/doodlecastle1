@@ -10,6 +10,7 @@ public class zoomin : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private BGMManager BGM;
+    private CameraManager theCam;
 
 
     private bool flag;
@@ -19,6 +20,7 @@ public class zoomin : MonoBehaviour
         BGM = FindObjectOfType<BGMManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        theCam = FindObjectOfType<CameraManager>();
     }
 
     // Update is called once per frame
@@ -42,9 +44,12 @@ public class zoomin : MonoBehaviour
 
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
-        theDM.ShowDialogue(dialogue);
+        /*        theDM.ShowDialogue(dialogue);
+                yield return new WaitUntil(() => !theDM.talking);*/
 
-        yield return new WaitUntil(() => !theDM.talking);
+        Vector2 zoomTarget = new Vector2(-5900,179); // 줌인할 좌표 설정
+        theCam.ZoomIn(zoomTarget); // 해당 좌표로 카메라 줌인
+
 
         theOrder.Move();
     }
