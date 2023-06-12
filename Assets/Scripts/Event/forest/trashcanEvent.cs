@@ -39,12 +39,14 @@ public class trashcanEvent : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
             flag2 = true;
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
             flag2 = false;
+        Debug.Log(flag2);
     }
 
     IEnumerator EventCoroutine()
@@ -63,5 +65,6 @@ public class trashcanEvent : MonoBehaviour
             flag = false;
         }
         theOrder.Move();
+        yield return new WaitForSeconds(0.1f);
     }
 }

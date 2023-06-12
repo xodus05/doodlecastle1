@@ -121,5 +121,6 @@ public class campEvent : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         theOrder.Move();
+        yield return new WaitForSeconds(0.1f);
     }
 }

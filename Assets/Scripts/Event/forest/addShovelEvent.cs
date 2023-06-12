@@ -57,6 +57,7 @@ public class addShovelEvent : MonoBehaviour
         inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
         Panel.SetActive(false);
         theOrder.Move();
+        yield return new WaitForSeconds(0.1f);
     }
 
 }

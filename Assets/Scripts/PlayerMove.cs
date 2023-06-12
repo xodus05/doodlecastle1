@@ -63,21 +63,11 @@ public class PlayerMove : MovingObject
 
     IEnumerator MoveCoroutine()
     {
-        while (Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0 && !notMove)   // 연속 걷기 시 애니메이션이 계속 실행되도록
+        while ((Input.GetAxisRaw("Vertical") != 0 || Input.GetAxisRaw("Horizontal") != 0) && !notMove)   // 연속 걷기 시 애니메이션이 계속 실행되도록
         {
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-            {   // SHIFT를 눌렀을 시 달리기
-                applyRunSpeed = runSpeed;
-                applyRunFlag = true;
-            }
-            else
-            {
-                // applyRunSpeed = 0;
-                // applyRunFlag = false;
 
-                applyRunSpeed = runSpeed;
-                applyRunFlag = true;
-            }
+            applyRunSpeed = runSpeed;
+            applyRunFlag = true;
 
             vector.Set(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), transform.position.z); // 설정
 
@@ -116,8 +106,8 @@ public class PlayerMove : MovingObject
                 {
                     transform.Translate(0, vector.y * (speed + applyRunSpeed), 0);
                 }
-                if (applyRunFlag) currentWalkCount++;
-                currentWalkCount++; // 한 칸을 가기 위한 반복문
+                currentWalkCount+=2; // 한 칸을 가기 위한 반복문
+                // if (!notMove) break;
                 yield return new WaitForSeconds(0.01f); // 천천히 모션을 실행하기 위한 딜레이값
             }
             currentWalkCount = 0;
