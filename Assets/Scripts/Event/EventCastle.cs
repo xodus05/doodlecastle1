@@ -21,7 +21,7 @@ public class EventCastle : MonoBehaviour
     public GameObject Panel2;
 
     private bool flag;
-    private static bool isOK;
+    private static bool isOK = true;
 
     // Start is called before the first frame update
     void Start()
