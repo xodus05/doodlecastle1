@@ -10,6 +10,7 @@ public class Test4 : MonoBehaviour
     public Dialogue dialogue_2;
     public GameObject Panel;
     public GameObject Panel2;
+    public GameObject Panel3;
     public string phone;
 
     private DialogueManager theDM;
@@ -62,6 +63,7 @@ public class Test4 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         theOrder.NotMove();
+        Panel3.SetActive(true);
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         Panel.SetActive(false);
