@@ -7,7 +7,6 @@ public class zoomin : MonoBehaviour
 {
     [SerializeField]
     public Dialogue dialogue;
-
     private DialogueManager theDM;
     private OrderManager theOrder;
     private BGMManager BGM;

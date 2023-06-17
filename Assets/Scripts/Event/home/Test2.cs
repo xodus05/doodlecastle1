@@ -10,6 +10,7 @@ public class Test2 : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private BGMManager BGM;
+    private CameraManager theCam;
 
     private bool flag;
 
@@ -18,6 +19,7 @@ public class Test2 : MonoBehaviour
         BGM = FindObjectOfType<BGMManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        theCam = FindObjectOfType<CameraManager>();
     }
 
     // Update is called once per frame
