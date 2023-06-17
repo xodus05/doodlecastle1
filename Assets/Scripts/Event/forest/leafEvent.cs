@@ -22,26 +22,22 @@ public class leafEvent : MonoBehaviour
     private bool flag;
     private bool flag2;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
-        thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
         //if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2 && thePlayer.touch)
         {
-            Debug.Log("2 : " + flag2);
-            Debug.Log("1 : " + flag);
             flag = true;
             StartCoroutine(EventCoroutine());
         }

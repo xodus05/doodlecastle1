@@ -32,6 +32,7 @@ public class TVevent : MonoBehaviour
 
     void Update()
     {
+        if(!thePlayer.touch) flag2 = false;
         if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && thePlayer.touch)
         {
             flag = true;
@@ -58,8 +59,8 @@ public class TVevent : MonoBehaviour
         yield return new WaitUntil(() => !theDM.talking);
 
         flag = false;
-        theOrder.Move();
         yield return new WaitForSeconds(0.1f);
+        theOrder.Move();
     }
 
 }

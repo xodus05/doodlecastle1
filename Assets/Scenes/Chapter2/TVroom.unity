@@ -803,7 +803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uAC1C\uAD6C\uB9AC\uB4E4\uC740 \uAC70\uC9D3\uB9D0 \uC7C1\uC774\uC57C"
+    - "\uAC1C\uAD6C\uB9AC\uB4E4\uC740 \uAC70\uC9D3\uB9D0\uC7C1\uC774\uC57C"
     - "\uADF8\uB4E4\uC744 \uBBFF\uC5B4\uC120 \uC548\uB3FC"
     - "\uC774\uAC8C \uBB34\uC2A8.. \uC18C\uB9AC\uC9C0?"
     sprites:

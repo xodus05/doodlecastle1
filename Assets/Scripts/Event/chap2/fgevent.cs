@@ -17,8 +17,8 @@ public class fgevent : MonoBehaviour
 
     BoxCollider2D boxCollider;
 
-    private static bool flag;
-    private static bool flag2;
+    private bool flag;
+    private bool flag2;
 
 
     // Start is called before the first frame update
@@ -34,6 +34,7 @@ public class fgevent : MonoBehaviour
 
     void Update()
     {
+        if(!thePlayer.touch) flag2 = false;
         if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2 && thePlayer.touch)
         {
             flag = true;
@@ -50,7 +51,6 @@ public class fgevent : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         flag2 = false;
-        Debug.Log("나가");
     }
 
     IEnumerator EventCoroutine()
