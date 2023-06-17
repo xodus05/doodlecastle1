@@ -132,25 +132,26 @@ public class PlayerMove : MovingObject
             isAction = true;
         }
 
-        bool hDown = Input.GetButtonDown("Horizontal");
-        bool vDown = Input.GetButtonDown("Vertical");
-        bool hUp = Input.GetButtonDown("Horizontal");
-        bool vUp = Input.GetButtonDown("Vertical");
-
         // Direction
-        if (vDown && v == 1)
+        if (v == 1)
             dirVec = Vector3.up;
-        else if (vDown && v == -1)
+        else if (v == -1)
             dirVec = Vector3.down;
-        else if (hDown && h == -1)
+        else if (h == -1)
             dirVec = Vector3.left;
-        else if (hDown && h == 1)
+        else if (h == 1)
             dirVec = Vector3.right;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        //Ray
+        // Ray를 그림
+        Debug.DrawRay(rigid2D.position, dirVec * 50.0f, Color.red);
+        // layout이 Object 인것만 반응
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 50.0f, LayerMask.GetMask("Object"));
 
         if (canMove && !notMove)
         {
@@ -162,16 +163,10 @@ public class PlayerMove : MovingObject
             }
         }
 
-
-        //Ray
-        // Ray를 그림
-        Debug.DrawRay(rigid2D.position, dirVec * 50.0f, Color.red);
-        // layout이 Object 인것만 반응
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 50.0f, LayerMask.GetMask("Object"));
-
-        if (rayHit.collider != null)
+        if (rayHit.collider != null)    // 물체가 닿았을 때
         {
             scanObject = rayHit.collider.gameObject;
+            Debug.Log(scanObject);
         }
         else
             scanObject = null;
