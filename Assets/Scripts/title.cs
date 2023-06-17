@@ -63,7 +63,6 @@ public class title : MonoBehaviour
     {
         SceneManager.LoadScene("hall");
         thePlayer.transform.position = new Vector2(-10749, 3428);
-        inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
         //theCamera.transform.position = new Vector2(-11048, 3455);
     }
 

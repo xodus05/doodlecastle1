@@ -25,6 +25,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField] float shakeMagnitude = 0.1f;
     [SerializeField] float shakeDuration = 0.1f;
     private Vector3 initialPosition;
+    public Vector3 originalPosition; // 줌인 오브젝트의 원래 위치 저장
 
     private void Awake()
     {
@@ -97,6 +98,8 @@ public class CameraManager : MonoBehaviour
     {
         StartCoroutine(Zoom(zoomTarget));
     }
+
+ 
 
     IEnumerator DoShake()
     {
