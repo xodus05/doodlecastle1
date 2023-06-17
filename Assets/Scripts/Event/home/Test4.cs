@@ -83,7 +83,7 @@ public class Test4 : MonoBehaviour
         theOrder.Move("player", "DOWN");
         theOrder.Move("player", "DOWN");
         theOrder.Move("player", "DOWN");
-        theCamera.target = Panel2;
+        theCamera.target = Panel;
     }
 
 }

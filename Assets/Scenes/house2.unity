@@ -1282,8 +1282,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 1893377169}
-  Panel2: {fileID: 0}
-  Panel3: {fileID: 0}
+  Panel2: {fileID: 1906177540}
+  Panel3: {fileID: 1906177540}
   phone: phone
 --- !u!19719996 &1025777602
 TilemapCollider2D:
