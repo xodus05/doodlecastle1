@@ -11,6 +11,7 @@ public class controlEvent : MonoBehaviour
 
     private DialogueManager theDM;
     private OrderManager theOrder;
+    private PlayerMove thePlayer;
     private Inventory inventory;
 
     BoxCollider2D boxCollider;
@@ -18,7 +19,7 @@ public class controlEvent : MonoBehaviour
 
     private bool flag;
     private bool flag2;
-    public bool isOpen;
+    public static bool isOpen;
 
 
 
@@ -27,13 +28,15 @@ public class controlEvent : MonoBehaviour
     {
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
+        if(isOpen) Panel.SetActive(true);
     }
 
     void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && thePlayer.touch)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -54,13 +57,12 @@ public class controlEvent : MonoBehaviour
     {
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
+        isOpen = true;
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         yield return new WaitForSeconds(0.1f);
 
         Panel.SetActive(true);
-
-        isOpen = true;
         flag = false;
         theOrder.Move();
     }

@@ -28,6 +28,7 @@ public class PlayerMove : MovingObject
 
     public bool canMove = true;
     public bool notMove = false;
+    public bool touch = false;
     public bool isAction = false;
 
     public bool haveKey = false;
@@ -119,8 +120,8 @@ public class PlayerMove : MovingObject
     void Update()
     {
         // 플레이어 이동 방향 Ray 하기위한 코드
-        h = manager.isAction ? 0 : Input.GetAxisRaw("Horizontal");
-        v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
+        h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
 
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
         if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
@@ -146,15 +147,24 @@ public class PlayerMove : MovingObject
     // Update is called once per frame
     void FixedUpdate()
     {
-
-        //Ray
-        // Ray를 그림
-        Debug.DrawRay(rigid2D.position, dirVec * 50.0f, Color.red);
-        // layout이 Object 인것만 반응
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 50.0f, LayerMask.GetMask("Object"));
-
         if (canMove && !notMove)
         {
+
+            //Ray
+            Debug.DrawRay(rigid2D.position, dirVec * 75.0f, Color.red);
+            // layout이 Object 인것만 반응
+            RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 75.0f, LayerMask.GetMask("Object"));
+
+             if (rayHit.collider != null)    // 물체가 닿았을 때
+            {
+                scanObject = rayHit.collider.gameObject;
+                touch = true;
+            }
+            else {
+                scanObject = null;
+                touch = false;
+            }
+
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
                 canMove = false;
@@ -162,14 +172,6 @@ public class PlayerMove : MovingObject
 
             }
         }
-
-        if (rayHit.collider != null)    // 물체가 닿았을 때
-        {
-            scanObject = rayHit.collider.gameObject;
-            Debug.Log(scanObject);
-        }
-        else
-            scanObject = null;
     }
 
     public string getSceneName() {

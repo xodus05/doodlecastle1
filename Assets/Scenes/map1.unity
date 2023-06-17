@@ -2414,7 +2414,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 629.61816, y: 0}
+  m_Offset: {x: 630.4313, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2425,7 +2425,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 240.76373, y: 240.23438}
+  m_Size: {x: 239.13739, y: 240.23438}
   m_EdgeRadius: 0
 --- !u!61 &1998476737
 BoxCollider2D:
@@ -2440,7 +2440,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 338.55792, y: 59.218292}
+  m_Offset: {x: 338.55792, y: 60.096066}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2451,7 +2451,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 314.1737, y: 121.79779}
+  m_Size: {x: 314.1737, y: 120.042244}
   m_EdgeRadius: 0
 --- !u!61 &1998476738
 BoxCollider2D:
@@ -2518,7 +2518,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 155.66992, y: -73.16855}
+  m_Offset: {x: 155.66992, y: -75.12999}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2529,7 +2529,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1188.6602, y: 93.89727}
+  m_Size: {x: 1188.6602, y: 89.97439}
   m_EdgeRadius: 0
 --- !u!61 &1998476741
 BoxCollider2D:
@@ -2544,7 +2544,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -448.65628, y: 0}
+  m_Offset: {x: -451.96954, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2555,7 +2555,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 39.79303, y: 240.23438}
+  m_Size: {x: 33.166504, y: 240.23438}
   m_EdgeRadius: 0
 --- !u!61 &1998476742
 BoxCollider2D:

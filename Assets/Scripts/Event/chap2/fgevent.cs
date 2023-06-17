@@ -10,14 +10,15 @@ public class fgevent : MonoBehaviour
     public GameObject Panel;
 
     private DialogueManager theDM;
+    private PlayerMove thePlayer;
     private OrderManager theOrder;
     private Inventory inventory;
     private controlEvent control;
 
     BoxCollider2D boxCollider;
 
-    private bool flag;
-    private bool flag2;
+    private static bool flag;
+    private static bool flag2;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class fgevent : MonoBehaviour
     {
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
         control = FindObjectOfType<controlEvent>();
@@ -32,7 +34,7 @@ public class fgevent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2 && thePlayer.touch)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -47,8 +49,8 @@ public class fgevent : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        // if(collision.gameObject.name == "Player")
-            flag2 = false;
+        flag2 = false;
+        Debug.Log("나가");
     }
 
     IEnumerator EventCoroutine()
@@ -58,8 +60,7 @@ public class fgevent : MonoBehaviour
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
         flag = false;
-        theOrder.Move();
-        yield return new WaitForSeconds(0.1f);
+        theOrder.Move();        
     }
 
 }

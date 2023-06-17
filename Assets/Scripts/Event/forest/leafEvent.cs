@@ -51,14 +51,12 @@ public class leafEvent : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
             flag2 = true;
-        Debug.Log("Enter"+ flag2);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         // if (collision.gameObject.name == "Player")
             flag2 = false;
-        Debug.Log(flag2);
     }
 
     IEnumerator EventCoroutine()
@@ -69,8 +67,8 @@ public class leafEvent : MonoBehaviour
 
         // yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
-                theDM.ShowDialogue(dialogue_1);
-                yield return new WaitUntil(() => !theDM.talking);
+        theDM.ShowDialogue(dialogue_1);
+        yield return new WaitUntil(() => !theDM.talking);
 
         flag = false;
 
