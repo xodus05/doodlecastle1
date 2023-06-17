@@ -100,6 +100,7 @@ public class crownEvent : MonoBehaviour
 
         flag = false;
         theOrder.Move();
+        yield return new WaitForSeconds(0.1f);
     }
 
 }
