@@ -50,6 +50,7 @@ public class zoomin : MonoBehaviour
 
         Vector3 zoomTarget = new Vector3(-5900,179); // 줌인할 좌표 설정
         theCam.ZoomIn(zoomTarget); // 해당 좌표로 카메라 줌인
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene("end2");
     }
 }
