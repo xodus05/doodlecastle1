@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class zoomin : MonoBehaviour
 {
@@ -49,5 +50,6 @@ public class zoomin : MonoBehaviour
 
         Vector3 zoomTarget = new Vector3(-5900,179); // 줌인할 좌표 설정
         theCam.ZoomIn(zoomTarget); // 해당 좌표로 카메라 줌인
+        SceneManager.LoadScene("end2");
     }
 }
