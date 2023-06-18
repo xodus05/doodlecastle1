@@ -36,7 +36,7 @@ public class controlEvent : MonoBehaviour
 
     void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && thePlayer.touch)
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && this.gameObject.ToString() == thePlayer.scanObject.ToString() && thePlayer.touch)
         {
             flag = true;
             StartCoroutine(EventCoroutine());

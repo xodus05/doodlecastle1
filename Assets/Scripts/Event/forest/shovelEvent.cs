@@ -91,7 +91,8 @@ public class shovelEvent : MonoBehaviour
         }
         else {
             theDM.ShowDialogue(dialogue_1);
-            yield return new WaitUntil(()=>!theDM.talking);
+            yield return new WaitUntil(()=>!theDM.talking); 
+            inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
             flag = false;
         }
         theOrder.Move();
