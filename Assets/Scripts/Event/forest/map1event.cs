@@ -49,7 +49,7 @@ public class map1event : MonoBehaviour
         theOrder.NotMove();
 
         yield return new WaitForSeconds(0.5f);
-        thePlayer.walkCount = 30;
+        // thePlayer.walkCount = 30;
         theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");
         yield return new WaitUntil(()=>thePlayer.queue.Count == 0);

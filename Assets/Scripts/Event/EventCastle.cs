@@ -21,7 +21,7 @@ public class EventCastle : MonoBehaviour
     public GameObject Panel2;
 
     private bool flag;
-    private static bool isOK = true;
+    private static bool isOK;
 
     // Start is called before the first frame update
     void Start()
@@ -56,8 +56,6 @@ public class EventCastle : MonoBehaviour
 
         yield return new WaitUntil(()=>!theDM.talking);
 
-        theOrder.Move("player", "UP");
-        theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");
         theOrder.Move("player", "UP");

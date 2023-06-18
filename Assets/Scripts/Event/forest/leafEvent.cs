@@ -22,26 +22,23 @@ public class leafEvent : MonoBehaviour
     private bool flag;
     private bool flag2;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
-        thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
         //if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if(!thePlayer.touch) flag2 = false;
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString() && thePlayer.touch)
         {
-            Debug.Log("2 : " + flag2);
-            Debug.Log("1 : " + flag);
             flag = true;
             StartCoroutine(EventCoroutine());
         }
@@ -51,14 +48,12 @@ public class leafEvent : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
             flag2 = true;
-        Debug.Log("Enter"+ flag2);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         // if (collision.gameObject.name == "Player")
             flag2 = false;
-        Debug.Log(flag2);
     }
 
     IEnumerator EventCoroutine()
@@ -69,13 +64,12 @@ public class leafEvent : MonoBehaviour
 
         // yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
-                theDM.ShowDialogue(dialogue_1);
-                yield return new WaitUntil(() => !theDM.talking);
+        theDM.ShowDialogue(dialogue_1);
+        yield return new WaitUntil(() => !theDM.talking);
 
         flag = false;
 
         theOrder.Move();
-        yield return new WaitForSeconds(0.1f);
     }
 
 }

@@ -7,12 +7,11 @@ public class TVevent : MonoBehaviour
 {
 
     public Dialogue dialogue_1;
-    public GameObject Panel;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
+    private PlayerMove thePlayer;
     private Inventory inventory;
-    private controlEvent control;
 
     BoxCollider2D boxCollider;
 
@@ -26,14 +25,15 @@ public class TVevent : MonoBehaviour
     {
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
-        control = FindObjectOfType<controlEvent>();
     }
 
     void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
+        if(!thePlayer.touch) flag2 = false;
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && thePlayer.touch)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -42,7 +42,8 @@ public class TVevent : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        flag2 = true;
+        if(collision.gameObject.name == "Player")
+            flag2 = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -52,16 +53,14 @@ public class TVevent : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
-        if (control.isOpen)
-        {
-            theOrder.NotMove();
-            yield return new WaitForSeconds(0.1f);
-            theDM.ShowDialogue(dialogue_1);
-            yield return new WaitUntil(() => !theDM.talking);
-            yield return new WaitForSeconds(0.1f);
-            flag = false;
-            theOrder.Move();
-        }
+        theOrder.NotMove();
+        yield return new WaitForSeconds(0.1f);
+        theDM.ShowDialogue(dialogue_1);
+        yield return new WaitUntil(() => !theDM.talking);
+
+        flag = false;
+        theOrder.Move();
+        yield return new WaitForSeconds(0.1f);
     }
 
 }

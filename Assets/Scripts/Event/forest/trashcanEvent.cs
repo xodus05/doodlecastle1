@@ -11,6 +11,7 @@ public class trashcanEvent : MonoBehaviour
 
     private DialogueManager theDM;
     private OrderManager theOrder;
+     private PlayerMove thePlayer;
 
     BoxCollider2D boxCollider;
 
@@ -22,13 +23,15 @@ public class trashcanEvent : MonoBehaviour
     {
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if(!thePlayer.touch) flag2 = false;
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());

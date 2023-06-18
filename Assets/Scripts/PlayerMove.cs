@@ -8,7 +8,7 @@ public class PlayerMove : MovingObject
     public GameManager manager;
 
     Vector3 dirVec; //현재 바라보고있는 방향 값을 가진 변수
-    GameObject scanObject; // 스캔 확인
+    public GameObject scanObject; // 스캔 확인
 
     Scene scene;
 
@@ -21,6 +21,7 @@ public class PlayerMove : MovingObject
     public int startPointNumber;
 
     private AudioSource audioSource; // 사운드 플레이어
+    private DialogueManager theDM;
 
     public float runSpeed;
     private float applyRunSpeed;
@@ -28,7 +29,8 @@ public class PlayerMove : MovingObject
 
     public bool canMove = true;
     public bool notMove = false;
-    public bool isAction = false;
+    public bool touch = false;
+    public string tName;
 
     public bool haveKey = false;
     public bool haveShovel = false;
@@ -46,6 +48,7 @@ public class PlayerMove : MovingObject
     // Start is called before the first frame update
     void Start()
     {
+        theDM = FindObjectOfType<DialogueManager>();
         scene = SceneManager.GetActiveScene();
         queue = new Queue<string>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -119,8 +122,8 @@ public class PlayerMove : MovingObject
     void Update()
     {
         // 플레이어 이동 방향 Ray 하기위한 코드
-        h = manager.isAction ? 0 : Input.GetAxisRaw("Horizontal");
-        v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
+        h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
 
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
         if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
@@ -128,29 +131,37 @@ public class PlayerMove : MovingObject
             manager.Action(scanObject);
         }
 
-        if(Input.GetKeyDown(KeyCode.Z)) {
-            isAction = true;
-        }
-
-        bool hDown = Input.GetButtonDown("Horizontal");
-        bool vDown = Input.GetButtonDown("Vertical");
-        bool hUp = Input.GetButtonDown("Horizontal");
-        bool vUp = Input.GetButtonDown("Vertical");
-
         // Direction
-        if (vDown && v == 1)
+        if (v == 1)
             dirVec = Vector3.up;
-        else if (vDown && v == -1)
+        else if (v == -1)
             dirVec = Vector3.down;
-        else if (hDown && h == -1)
+        else if (h == -1)
             dirVec = Vector3.left;
-        else if (hDown && h == 1)
+        else if (h == 1)
             dirVec = Vector3.right;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(!theDM.talking) {
+        //Ray
+            Debug.DrawRay(rigid2D.position, dirVec * 75.0f, Color.red);
+            // layout이 Object 인것만 반응
+            RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 75.0f, LayerMask.GetMask("Object"));
+
+             if (rayHit.collider != null)    // 물체가 닿았을 때
+            {
+                scanObject = rayHit.collider.gameObject;
+                touch = true;
+            }
+            else {
+                scanObject = null;
+                touch = false;
+            }
+        }
+
 
         if (canMove && !notMove)
         {
@@ -161,20 +172,6 @@ public class PlayerMove : MovingObject
 
             }
         }
-
-
-        //Ray
-        // Ray를 그림
-        Debug.DrawRay(rigid2D.position, dirVec * 50.0f, Color.red);
-        // layout이 Object 인것만 반응
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 50.0f, LayerMask.GetMask("Object"));
-
-        if (rayHit.collider != null)
-        {
-            scanObject = rayHit.collider.gameObject;
-        }
-        else
-            scanObject = null;
     }
 
     public string getSceneName() {

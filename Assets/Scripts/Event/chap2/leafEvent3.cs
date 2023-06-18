@@ -39,7 +39,7 @@ public class leafEvent3 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2 && thePlayer.touch)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
