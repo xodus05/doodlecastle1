@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: player
-  speed: 2.4
+  speed: 2.365
   walkCount: 42
   boxCollider: {fileID: 0}
   layerMask:
@@ -752,13 +752,14 @@ MonoBehaviour:
     m_Bits: 256
   animator: {fileID: 0}
   manager: {fileID: 95841284}
+  scanObject: {fileID: 0}
   currentMapName: 
   startPointNumber: 0
   runSpeed: 2.4
   canMove: 1
   notMove: 0
   touch: 0
-  isAction: 0
+  tName: 
   haveKey: 0
   haveShovel: 0
 --- !u!95 &187257745
@@ -861,7 +862,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0086913705, y: 0.028989077}
+  m_Offset: {x: -0.01747176, y: 0.28324717}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.2}
@@ -872,7 +873,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1079103, y: 1.479284}
+  m_Size: {x: 0.5771778, y: 0.9435271}
   m_EdgeRadius: 0
 --- !u!50 &187257752
 Rigidbody2D:
@@ -2428,6 +2429,7 @@ MonoBehaviour:
   bound: {fileID: 1509262569}
   shakeMagnitude: 50
   shakeDuration: 50
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &527657177
 GameObject:
   m_ObjectHideFlags: 0
@@ -4609,7 +4611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1086531357
 Rigidbody2D:
   serializedVersion: 4
@@ -7037,7 +7039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402254846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6212.7, y: -310.7, z: -2.3297622}
+  m_LocalPosition: {x: -6251, y: -270, z: -2.3297622}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

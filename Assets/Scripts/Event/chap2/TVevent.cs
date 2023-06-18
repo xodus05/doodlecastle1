@@ -59,8 +59,8 @@ public class TVevent : MonoBehaviour
         yield return new WaitUntil(() => !theDM.talking);
 
         flag = false;
-        yield return new WaitForSeconds(0.1f);
         theOrder.Move();
+        yield return new WaitForSeconds(0.1f);
     }
 
 }

@@ -46,7 +46,7 @@ public class campEvent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());

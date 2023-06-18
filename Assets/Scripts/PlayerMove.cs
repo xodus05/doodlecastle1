@@ -8,7 +8,7 @@ public class PlayerMove : MovingObject
     public GameManager manager;
 
     Vector3 dirVec; //현재 바라보고있는 방향 값을 가진 변수
-    GameObject scanObject; // 스캔 확인
+    public GameObject scanObject; // 스캔 확인
 
     Scene scene;
 
@@ -21,6 +21,7 @@ public class PlayerMove : MovingObject
     public int startPointNumber;
 
     private AudioSource audioSource; // 사운드 플레이어
+    private DialogueManager theDM;
 
     public float runSpeed;
     private float applyRunSpeed;
@@ -29,7 +30,7 @@ public class PlayerMove : MovingObject
     public bool canMove = true;
     public bool notMove = false;
     public bool touch = false;
-    public bool isAction = false;
+    public string tName;
 
     public bool haveKey = false;
     public bool haveShovel = false;
@@ -47,6 +48,7 @@ public class PlayerMove : MovingObject
     // Start is called before the first frame update
     void Start()
     {
+        theDM = FindObjectOfType<DialogueManager>();
         scene = SceneManager.GetActiveScene();
         queue = new Queue<string>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -129,10 +131,6 @@ public class PlayerMove : MovingObject
             manager.Action(scanObject);
         }
 
-        if(Input.GetKeyDown(KeyCode.Z)) {
-            isAction = true;
-        }
-
         // Direction
         if (v == 1)
             dirVec = Vector3.up;
@@ -147,10 +145,8 @@ public class PlayerMove : MovingObject
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (canMove && !notMove)
-        {
-
-            //Ray
+        if(!theDM.talking) {
+        //Ray
             Debug.DrawRay(rigid2D.position, dirVec * 75.0f, Color.red);
             // layout이 Object 인것만 반응
             RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 75.0f, LayerMask.GetMask("Object"));
@@ -164,7 +160,11 @@ public class PlayerMove : MovingObject
                 scanObject = null;
                 touch = false;
             }
+        }
 
+
+        if (canMove && !notMove)
+        {
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             {
                 canMove = false;

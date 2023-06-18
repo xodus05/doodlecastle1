@@ -34,23 +34,15 @@ public class fgevent : MonoBehaviour
 
     void Update()
     {
-        if(!thePlayer.touch) flag2 = false;
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2 && thePlayer.touch)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString() && thePlayer.touch)
         {
+            bool isTrue = this.gameObject.ToString()==thePlayer.scanObject.ToString();
+            Debug.Log(this.gameObject.ToString());
+            Debug.Log(thePlayer.scanObject.ToString());
+            Debug.Log(isTrue);
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.name == "Player")
-            flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
     }
 
     IEnumerator EventCoroutine()

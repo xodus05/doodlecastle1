@@ -31,7 +31,7 @@ public class lockEvent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -71,6 +71,6 @@ public class lockEvent : MonoBehaviour
         yield return new WaitUntil(() => !theDM.talking);
         flag = false;
         if (isOpen2) flag = true;
-        theOrder.Move();
+        if (!theNumber.GetResult())theOrder.Move();
     }
 }

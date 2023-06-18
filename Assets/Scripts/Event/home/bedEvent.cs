@@ -68,7 +68,6 @@ public class bedEvent : MonoBehaviour
         yield return new WaitUntil(() => !theChoice.choiceIng);
         if(theChoice.GetResult()==0) {
             theOrder.Move("player", "LEFT");
-            theOrder.Move("player", "LEFT");
             yield return new WaitUntil(()=>thePlayer.queue.Count == 0);
             yield return new WaitForSeconds(1.0f);
             theAudio.Play(sound);
@@ -77,7 +76,6 @@ public class bedEvent : MonoBehaviour
 
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(()=>!theDM.talking);
-            theOrder.Move("player", "RIGHT");
             theOrder.Move("player", "RIGHT");
             Panel.SetActive(true);
             Panel2.SetActive(false);

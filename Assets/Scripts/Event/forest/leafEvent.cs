@@ -36,7 +36,8 @@ public class leafEvent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2 && thePlayer.touch)
+        if(!thePlayer.touch) flag2 = false;
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString() && thePlayer.touch)
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -69,7 +70,6 @@ public class leafEvent : MonoBehaviour
         flag = false;
 
         theOrder.Move();
-        yield return new WaitForSeconds(0.1f);
     }
 
 }
