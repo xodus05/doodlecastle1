@@ -62,7 +62,7 @@ public class Inventory : MonoBehaviour
         StopAllCoroutines();
         Color color = selectedTabImages[selectedTab].GetComponent<Image>().color;
         color.a = 0f;
-        for(int i = 0; i < selectedTabImages.Length; i++)
+        for (int i = 0; i < selectedTabImages.Length; i++)
         {
             selectedTabImages[i].GetComponent<Image>().color = color;
         }
@@ -108,7 +108,7 @@ public class Inventory : MonoBehaviour
         while (tabActivated)
         {
             Color color = selectedTabImages[selectedTab].GetComponent<Image>().color;
-            while(color.a < 0.5f)
+            while (color.a < 0.5f)
             {
                 color.a += 0.03f;
                 selectedTabImages[selectedTab].GetComponent<Image>().color = color;
@@ -212,7 +212,7 @@ public class Inventory : MonoBehaviour
                 {
                     theOrder.NotMove();
                     go.SetActive(true);
-                    selectedTab = 0;
+                    //selectedTab = 0;
                     tabActivated = true; // �Ǻ��� ������� �ֵ���
                     itemActivated = false;
                     ShowTab();
@@ -238,7 +238,7 @@ public class Inventory : MonoBehaviour
                             selectedTab++;
                         else
                             selectedTab = 0;
-                        SelectedTab();
+                        //SelectedTab();
                     }
                     else if (Input.GetKeyDown(KeyCode.LeftArrow))
                     {
@@ -260,7 +260,7 @@ public class Inventory : MonoBehaviour
                     }
                 }
 
-                else if (itemActivated)
+                if (itemActivated)
                 {
                     if (Input.GetKeyDown(KeyCode.DownArrow))
                     {
@@ -294,19 +294,19 @@ public class Inventory : MonoBehaviour
                             selectedItem = inventoryTabList.Count - 2;
                         SelectedItem();
                     }
-/*                    else if (Input.GetKeyDown(KeyCode.Z) && !preventExec)
+                else if (Input.GetKeyDown(KeyCode.Z) && !preventExec)
+                {
+                    if (selectedTab == 0)
                     {
-                        if(selectedTab == 0)
-                        {
-                            stopKeyInput = true;
-                            // ������ ��� �Ұų� �ϴ� ���� ������
-                        }
-                        else if(selectedTab == 1)
-                        {
-                            // ����. ��� �� �߳�
-                        }
-                    }*/
-                    else if (Input.GetKeyDown(KeyCode.X))
+                        stopKeyInput = true;
+                        // ������ ��� �Ұų� �ϴ� ���� ������
+                    }
+                    else if (selectedTab == 1)
+                    {
+                        // ����. ��� �� �߳�
+                    }
+                }
+                else if (Input.GetKeyDown(KeyCode.X))
                     {
                         StopAllCoroutines();
                         itemActivated = false;
