@@ -84,8 +84,8 @@ public class EventCastle : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         BGM.FadeOutMusic();
         Panel.SetActive(true);
-        gameObject.SetActive(false);
         isOK = true;
+        gameObject.SetActive(false);
 
         theOrder.Move();
     }

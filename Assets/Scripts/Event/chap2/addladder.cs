@@ -43,13 +43,10 @@ public class addladder : MonoBehaviour
     void Update()
     {
         
-            if (Input.GetKeyDown(KeyCode.Z) && this.gameObject.ToString() == thePlayer.scanObject.ToString())
+            if (Input.GetKeyDown(KeyCode.Z) && this.gameObject.ToString() == thePlayer.scanObject.ToString() && !flag)
             {
-                if (!flag && thePlayer.animator.GetFloat("DirY") == 1f)
-                {
-                    flag = true;
-                    StartCoroutine(EventCoroutine());
-                }
+                flag = true;
+                StartCoroutine(EventCoroutine());
             }
     }
 
