@@ -56,7 +56,7 @@ public class EventCollider : MonoBehaviour
 
         theMonster.follow = false; // 몬스터를 멈추게 설정
 
-        theMonster.transform.position = new Vector2(-10549, 2853);
+        theMonster.transform.position = new Vector2(-10551, 2867);
 
         theMonster.follow = true; // 몬스터가 움직이도록 설정
         flag2 = true;

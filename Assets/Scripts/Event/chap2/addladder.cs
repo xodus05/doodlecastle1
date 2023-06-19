@@ -42,6 +42,7 @@ public class addladder : MonoBehaviour
 
     void Update()
     {
+        
             if (Input.GetKeyDown(KeyCode.Z) && this.gameObject.ToString() == thePlayer.scanObject.ToString())
             {
                 if (!flag && thePlayer.animator.GetFloat("DirY") == 1f)
@@ -50,16 +51,6 @@ public class addladder : MonoBehaviour
                     StartCoroutine(EventCoroutine());
                 }
             }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
     }
 
     IEnumerator EventCoroutine()

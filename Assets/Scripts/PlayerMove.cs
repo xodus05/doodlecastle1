@@ -22,6 +22,7 @@ public class PlayerMove : MovingObject
 
     private AudioSource audioSource; // 사운드 플레이어
     private DialogueManager theDM;
+    private NumberSystem theNumber;
 
     public float runSpeed;
     private float applyRunSpeed;
@@ -49,6 +50,7 @@ public class PlayerMove : MovingObject
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
+        theNumber = FindObjectOfType<NumberSystem>();
         scene = SceneManager.GetActiveScene();
         queue = new Queue<string>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -129,14 +131,15 @@ public class PlayerMove : MovingObject
         if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
         {
             manager.Action(scanObject);
-            notMove = true;
+            if(theDM.talking || theNumber.activated) notMove = true;
         }
-        if (!theDM.talking && !notMove)
+        if ((!theDM.talking || theNumber.activated) && !notMove)
         {
             // Direction
             if (v == 1)
                 dirVec = Vector3.up;
             else if (v == -1)
+
                 dirVec = Vector3.down;
             else if (h == -1)
                 dirVec = Vector3.left;
