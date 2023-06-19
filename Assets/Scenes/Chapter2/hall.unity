@@ -418,7 +418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214600321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10853, y: 2946, z: 0}
+  m_LocalPosition: {x: -10848, y: 2946, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1143,7 +1143,8 @@ GameObject:
   - component: {fileID: 1398196092}
   - component: {fileID: 1398196091}
   - component: {fileID: 1398196093}
-  m_Layer: 0
+  - component: {fileID: 1398196094}
+  m_Layer: 3
   m_Name: openEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1184,7 +1185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398196090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10563.4, y: 2791.9, z: 0}
+  m_LocalPosition: {x: -10563.4, y: 2745, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1198,9 +1199,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398196090}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a820959c89407f4597b0138c8b309e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transferMapName: start
+  startPointNumber: 1
+  sound: door2
+--- !u!114 &1398196094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398196090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f849ad63fab4bc459077773c24a2fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: start
@@ -1435,7 +1451,8 @@ GameObject:
   - component: {fileID: 1548904117}
   - component: {fileID: 1548904116}
   - component: {fileID: 1548904118}
-  m_Layer: 0
+  - component: {fileID: 1548904119}
+  m_Layer: 3
   m_Name: openEvent (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548904114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10322, y: 3477, z: 0}
+  m_LocalPosition: {x: -10287, y: 3477, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1493,6 +1510,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4194252753b488e459fa32902ef7ec3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transferMapName: tvroom
+  startPointNumber: 0
+  sound: door2
+--- !u!114 &1548904119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548904114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f849ad63fab4bc459077773c24a2fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: tvroom
@@ -2178,7 +2210,8 @@ GameObject:
   - component: {fileID: 2006208067}
   - component: {fileID: 2006208066}
   - component: {fileID: 2006208065}
-  m_Layer: 0
+  - component: {fileID: 2006208068}
+  m_Layer: 3
   m_Name: openEvent (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2225,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006208064}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc2bcde091f8ed5458e35314fdcc2484, type: 3}
   m_Name: 
@@ -2234,10 +2267,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006208064}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10814, y: 3368, z: 0}
+  m_LocalPosition: {x: -10847, y: 3368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2006208068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006208064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f849ad63fab4bc459077773c24a2fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transferMapName: buttonroom
+  startPointNumber: 0
+  sound: door2

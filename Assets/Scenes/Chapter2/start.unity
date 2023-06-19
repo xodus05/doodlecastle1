@@ -1589,7 +1589,8 @@ GameObject:
   - component: {fileID: 1730195819}
   - component: {fileID: 1730195818}
   - component: {fileID: 1730195820}
-  m_Layer: 0
+  - component: {fileID: 1730195821}
+  m_Layer: 3
   m_Name: openEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1610,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 18.354492, y: 10.695984}
+  m_Offset: {x: 21.283691, y: 10.695984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1620,7 +1621,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 88.19336, y: 84.19177}
+  m_Size: {x: 94.05176, y: 84.19177}
   m_EdgeRadius: 0
 --- !u!4 &1730195819
 Transform:
@@ -1630,7 +1631,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730195816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10271, y: 2291, z: 0}
+  m_LocalPosition: {x: -10271, y: 2313, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1644,9 +1645,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730195816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5e5b48fe794c31428d3bff446506e21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transferMapName: hall
+  startPointNumber: 50
+  sound: door2
+--- !u!114 &1730195821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730195816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f849ad63fab4bc459077773c24a2fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transferMapName: hall

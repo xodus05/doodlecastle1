@@ -1954,7 +1954,8 @@ GameObject:
   - component: {fileID: 1915311602}
   - component: {fileID: 1915311601}
   - component: {fileID: 1915311600}
-  m_Layer: 0
+  - component: {fileID: 1915311603}
+  m_Layer: 3
   m_Name: openEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1968,7 +1969,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915311599}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4194252753b488e459fa32902ef7ec3f, type: 3}
   m_Name: 
@@ -1989,7 +1990,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 23.341309, y: -17.291138}
+  m_Offset: {x: 23.341309, y: -10.886841}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2000,7 +2001,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 107.08301, y: 114.559814}
+  m_Size: {x: 107.08301, y: 101.75122}
   m_EdgeRadius: 0
 --- !u!4 &1915311602
 Transform:
@@ -2010,13 +2011,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915311599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11102.544, y: 2239.231, z: 0}
+  m_LocalPosition: {x: -11084, y: 2259, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1915311603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915311599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f849ad63fab4bc459077773c24a2fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transferMapName: hall
+  startPointNumber: 1
+  sound: door2
 --- !u!1 &1959563967
 GameObject:
   m_ObjectHideFlags: 0

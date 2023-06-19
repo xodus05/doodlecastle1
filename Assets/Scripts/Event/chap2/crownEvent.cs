@@ -18,12 +18,12 @@ public class crownEvent : MonoBehaviour
     private DialogueManager theDM;
     private ChoiceManager theChoice;
     private OrderManager theOrder;
+    private PlayerMove thePlayer;
     private Inventory inventory;
 
     BoxCollider2D boxCollider;
 
     private bool flag;
-    private bool flag2;
 
     private static bool isOpen;
     public static bool isOpen2;
@@ -36,6 +36,7 @@ public class crownEvent : MonoBehaviour
         theDM = FindObjectOfType<DialogueManager>();
         theChoice = FindObjectOfType<ChoiceManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
         if (inventory.haveItem("왕관"))

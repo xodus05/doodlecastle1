@@ -913,7 +913,8 @@ GameObject:
   - component: {fileID: 1537666671}
   - component: {fileID: 1537666670}
   - component: {fileID: 1537666669}
-  m_Layer: 0
+  - component: {fileID: 1537666672}
+  m_Layer: 3
   m_Name: openEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,7 +928,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537666668}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4194252753b488e459fa32902ef7ec3f, type: 3}
   m_Name: 
@@ -969,13 +970,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537666668}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10995, y: 3467, z: 0}
+  m_LocalPosition: {x: -10984, y: 3467, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1537666672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537666668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f849ad63fab4bc459077773c24a2fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transferMapName: hall
+  startPointNumber: 2
+  sound: door2
 --- !u!1 &1631848264
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,7 +1005,7 @@ GameObject:
   - component: {fileID: 1631848267}
   - component: {fileID: 1631848269}
   - component: {fileID: 1631848268}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: event (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,7 +1041,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.7555599, y: 0.50276613}
+  m_Offset: {x: 0.7555599, y: -1.0171108}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1036,7 +1052,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.998207, y: 16.525963}
+  m_Size: {x: 16.998207, y: 19.565716}
   m_EdgeRadius: 0
 --- !u!114 &1631848267
 MonoBehaviour:
@@ -1795,7 +1811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2145848808}
   - component: {fileID: 2145848809}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "\uC655\uAD00"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

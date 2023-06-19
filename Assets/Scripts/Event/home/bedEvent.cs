@@ -82,6 +82,7 @@ public class bedEvent : MonoBehaviour
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(()=>!theDM.talking);
             theOrder.Move("player", "RIGHT");
+            yield return new WaitForSeconds(0.2f);
             Panel.SetActive(true);
             Panel2.SetActive(false);
             Panel3.SetActive(false);

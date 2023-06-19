@@ -33,12 +33,9 @@ public class fgevent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.scanObject && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             bool isTrue = this.gameObject.ToString()==thePlayer.scanObject.ToString();
-            Debug.Log(this.gameObject.ToString());
-            Debug.Log(thePlayer.scanObject.ToString());
-            Debug.Log(isTrue);
             flag = true;
             StartCoroutine(EventCoroutine());
         }
