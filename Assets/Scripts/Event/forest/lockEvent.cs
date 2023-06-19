@@ -71,5 +71,6 @@ public class lockEvent : MonoBehaviour
         yield return new WaitUntil(() => !theDM.talking);
         flag = false;
         if (isOpen2) flag = true;
+        if (!theNumber.GetResult())theOrder.Move();
     }
 }
