@@ -31,21 +31,11 @@ public class bookEvent1 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
