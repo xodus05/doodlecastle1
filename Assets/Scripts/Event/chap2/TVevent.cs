@@ -32,9 +32,14 @@ public class TVevent : MonoBehaviour
 
     void Update()
     {
-        if(!thePlayer.touch) flag2 = false;
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2 && thePlayer.touch)
+
+        Debug.Log(thePlayer.notMove);
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString() == thePlayer.scanObject.ToString() && thePlayer.touch)
         {
+            bool isTrue = this.gameObject.ToString() == thePlayer.scanObject.ToString();
+            Debug.Log(this.gameObject.ToString());
+            Debug.Log(thePlayer.scanObject.ToString());
+            Debug.Log(isTrue);
             flag = true;
             StartCoroutine(EventCoroutine());
         }
@@ -53,14 +58,14 @@ public class TVevent : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
+
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
-
         flag = false;
         theOrder.Move();
-        yield return new WaitForSeconds(0.1f);
+
     }
 
 }

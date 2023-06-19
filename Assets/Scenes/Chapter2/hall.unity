@@ -265,7 +265,7 @@ Transform:
   m_GameObject: {fileID: 18836591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10551, y: 2911, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -818,7 +818,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 140.07568, y: -83.19641}
+  m_Offset: {x: 146.83789, y: -83.19641}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -829,7 +829,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 105.21582, y: 99.87915}
+  m_Size: {x: 91.69141, y: 99.87915}
   m_EdgeRadius: 0
 --- !u!61 &1253294256
 BoxCollider2D:
@@ -1640,7 +1640,7 @@ Transform:
   m_GameObject: {fileID: 1589062435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10551, y: 2856, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1914,7 +1914,7 @@ GameObject:
   - component: {fileID: 1817194502}
   - component: {fileID: 1817194501}
   - component: {fileID: 1817194503}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1934,7 +1934,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.543457, y: 15.000122}
+  m_Offset: {x: -0.5131836, y: 15.000122}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1945,7 +1945,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 87.086914, y: 100.000244}
+  m_Size: {x: 71.02637, y: 100.000244}
   m_EdgeRadius: 0
 --- !u!4 &1817194502
 Transform:
@@ -1976,7 +1976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uC8FC\uC791, \uCCAD\uB8E1, \uD604\uBB34, \uD669\uB8E1"
+    - "\uC801\uC0C9, \uCCAD\uC0C9, \uD751\uC0C9, \uD669\uC0C9"
     - "\uC774\uAC8C \uBB34\uC2A8\uB73B\uC774\uC9C0?"
     sprites:
     - {fileID: 0}
