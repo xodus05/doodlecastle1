@@ -31,23 +31,11 @@ public class openEvent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
