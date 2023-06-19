@@ -47,10 +47,12 @@ public class EventCollider : MonoBehaviour
         dialogue_1.sentences[0] = "저..저게 뭐야!! 빨리 문을 열고 도망가자";
         theDM.ShowDialogue(dialogue_1);
         yield return new WaitUntil(() => !theDM.talking);
+        theOrder.Move();
     }
 
     IEnumerator EventCoroutine1()
     {
+        theOrder.Move();
         Panel.SetActive(true);
         Panel2.SetActive(true);
 

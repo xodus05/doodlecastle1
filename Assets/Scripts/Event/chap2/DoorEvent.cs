@@ -16,6 +16,7 @@ public class DoorEvent : MonoBehaviour
     private PlayerMove thePlayer;
     private Monster theMonster;
     public AudioManager theAudio;
+    public Dialogue dialogue_1;
 
     public string sound;
 
@@ -52,6 +53,7 @@ public class DoorEvent : MonoBehaviour
         {
             flag = true;
             StartCoroutine(CountKeyPresses());
+            
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -83,6 +85,7 @@ public class DoorEvent : MonoBehaviour
 
     private IEnumerator CountKeyPresses()
     {
+
         while (true)
             {
 
@@ -105,34 +108,11 @@ public class DoorEvent : MonoBehaviour
                     //crownEvent.isOpen2 = false; // isOpen을 false로 설정
 
                     yield break;
-                }
+                    }
                 }
                 yield return null;
             }
-        }
+    }
 
-/*    IEnumerator EventCoroutine()
-    {
-        theOrder.PreLoadCharacter(); // 리스트 채우기
-        theOrder.NotMove();
-
-
-        if (crownEvent.isOpen2)
-        {
-
-            dialogue_1.sentences[0] = "저..저게 뭐야! 어서 문으로 가자";
-            theDM.ShowDialogue(dialogue_1); // 대사를 나타내는 대화창을 활성화
-            yield return new WaitForSeconds(3f); // 3초 대기
-
-            Panel1.SetActive(true);
-            Panel2.SetActive(true);
-
-            yield return new WaitForSeconds(3f);
-        }
-
-
-
-        theOrder.Move();
-    }*/
 
 }

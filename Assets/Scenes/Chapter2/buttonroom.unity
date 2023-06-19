@@ -344,7 +344,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
-    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    question: "\uBD88\uC744 \uC120\uD0DD\uD560\uAE4C?"
     answers:
     - "\uC608"
     - "\uC544\uB2C8\uC624"
@@ -1452,7 +1452,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
-    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    question: "\uD30C\uB780 \uB208\uC744 \uC120\uD0DD\uD560\uAE4C?"
     answers:
     - "\uC608"
     - "\uC544\uB2C8\uC624"
@@ -1649,7 +1649,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
-    question: "\uC774\uAC83\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    question: "\uB2EC\uC744 \uC120\uD0DD\uD560\uAE4C?"
     answers:
     - "\uC608"
     - "\uC544\uB2C8\uC624"

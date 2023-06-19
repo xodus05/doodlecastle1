@@ -22,6 +22,7 @@ public class leafEvent2 : MonoBehaviour
 
     private bool flag;
     private bool flag2;
+    public bool isActive; //체크 확인
 
 
 
@@ -46,16 +47,6 @@ public class leafEvent2 : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
-    }
-
     IEnumerator EventCoroutine()
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
@@ -78,16 +69,17 @@ public class leafEvent2 : MonoBehaviour
                 yield return new WaitUntil(() => !theDM.talking);
                 inventory.inventoryItemList.Add(new Item(5004, "도서관 열쇠", Item.ItemType.Use));
                 thePlayer.queue.Clear();
+                isActive = true;
                 break;
             case 1:
                 //dialogue_1.sentences[0] = "다시 생각해보자";
                 //theDM.ShowDialogue(dialogue_1);
                 //yield return new WaitUntil(() => !theDM.talking);
                 //thePlayer.queue.Clear();
+                flag = false;
                 break;
         }
 
-        flag = false;
 
         theOrder.Move();
     }
