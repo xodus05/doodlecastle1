@@ -69,6 +69,7 @@ public class lockevent2 : MonoBehaviour
         yield return new WaitUntil(() => !theNumber.activated);
         if (theNumber.GetResult())
         {
+            theOrder.NotMove();
             dialogue_3.sentences[0] = "열렸다!!";
             theDM.ShowDialogue(dialogue_3);
             Panel1.SetActive(true);

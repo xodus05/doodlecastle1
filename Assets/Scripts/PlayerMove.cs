@@ -131,22 +131,24 @@ public class PlayerMove : MovingObject
             manager.Action(scanObject);
             notMove = true;
         }
-
-        // Direction
-        if (v == 1)
-            dirVec = Vector3.up;
-        else if (v == -1)
-            dirVec = Vector3.down;
-        else if (h == -1)
-            dirVec = Vector3.left;
-        else if (h == 1)
-            dirVec = Vector3.right;
+        if (!theDM.talking && !notMove)
+        {
+            // Direction
+            if (v == 1)
+                dirVec = Vector3.up;
+            else if (v == -1)
+                dirVec = Vector3.down;
+            else if (h == -1)
+                dirVec = Vector3.left;
+            else if (h == 1)
+                dirVec = Vector3.right;
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!theDM.talking) {
+        if(!theDM.talking && !notMove) {
         //Ray
             Debug.DrawRay(rigid2D.position, dirVec * 75.0f, Color.red);
             // layout이 Object 인것만 반응
