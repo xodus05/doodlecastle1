@@ -112,6 +112,7 @@ public class PlayerMove : MovingObject
                     transform.Translate(0, vector.y * (speed + applyRunSpeed), 0);
                 }
                 currentWalkCount+=2; // 한 칸을 가기 위한 반복문
+
                 yield return new WaitForSeconds(0.01f); // 천천히 모션을 실행하기 위한 딜레이값
             }
             currentWalkCount = 0;
