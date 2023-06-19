@@ -129,6 +129,7 @@ public class PlayerMove : MovingObject
         if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
         {
             manager.Action(scanObject);
+            notMove = true;
         }
 
         // Direction
