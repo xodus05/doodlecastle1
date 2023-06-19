@@ -22,6 +22,7 @@ public class PlayerMove : MovingObject
 
     private AudioSource audioSource; // 사운드 플레이어
     private DialogueManager theDM;
+    private NumberSystem theNumber;
 
     public float runSpeed;
     private float applyRunSpeed;
@@ -49,6 +50,7 @@ public class PlayerMove : MovingObject
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
+        theNumber = FindObjectOfType<NumberSystem>();
         scene = SceneManager.GetActiveScene();
         queue = new Queue<string>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -110,7 +112,7 @@ public class PlayerMove : MovingObject
                     transform.Translate(0, vector.y * (speed + applyRunSpeed), 0);
                 }
                 currentWalkCount+=2; // 한 칸을 가기 위한 반복문
-                // if (!notMove) break;
+
                 yield return new WaitForSeconds(0.01f); // 천천히 모션을 실행하기 위한 딜레이값
             }
             currentWalkCount = 0;
@@ -126,26 +128,30 @@ public class PlayerMove : MovingObject
         v = Input.GetAxisRaw("Vertical");
 
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
-        if (Input.GetKeyDown(KeyCode.Z) && scanObject != null)
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             manager.Action(scanObject);
+            if(theDM.talking || theNumber.activated) notMove = true;
         }
+        if ((!theDM.talking || theNumber.activated) && !notMove)
+        {
+            // Direction
+            if (v == 1)
+                dirVec = Vector3.up;
+            else if (v == -1)
 
-        // Direction
-        if (v == 1)
-            dirVec = Vector3.up;
-        else if (v == -1)
-            dirVec = Vector3.down;
-        else if (h == -1)
-            dirVec = Vector3.left;
-        else if (h == 1)
-            dirVec = Vector3.right;
+                dirVec = Vector3.down;
+            else if (h == -1)
+                dirVec = Vector3.left;
+            else if (h == 1)
+                dirVec = Vector3.right;
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!theDM.talking) {
+        if(!theDM.talking && !notMove) {
         //Ray
             Debug.DrawRay(rigid2D.position, dirVec * 75.0f, Color.red);
             // layout이 Object 인것만 반응

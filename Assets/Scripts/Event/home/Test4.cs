@@ -19,6 +19,7 @@ public class Test4 : MonoBehaviour
     private controlEvent control;
     private AudioManager theAudio;
     private CameraManager theCamera;
+    private PlayerMove thePlayer;
 
     BoxCollider2D boxCollider;
 
@@ -34,29 +35,18 @@ public class Test4 : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
         control = FindObjectOfType<controlEvent>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         theAudio = FindObjectOfType<AudioManager>();
         theCamera = FindObjectOfType<CameraManager>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -74,7 +64,6 @@ public class Test4 : MonoBehaviour
 
         theDM.ShowDialogue(dialogue_2);
         yield return new WaitUntil(() => !theDM.talking);
-        theOrder.Move("player", "LEFT");
         theOrder.Move("player", "LEFT");
         theOrder.Move("player", "LEFT");
         theOrder.Move("player", "DOWN");

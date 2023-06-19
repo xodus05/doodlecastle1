@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 12594011}
   - component: {fileID: 12594010}
   - component: {fileID: 12594012}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -10.84668, y: 31.125}
+  m_Offset: {x: -10.84668, y: 16.33374}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -165,7 +165,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 99.05664, y: 88.68164}
+  m_Size: {x: 99.05664, y: 118.26416}
   m_EdgeRadius: 0
 --- !u!4 &12594011
 Transform:
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 102731231}
   - component: {fileID: 102731230}
   - component: {fileID: 102731232}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.6796875, y: 0}
+  m_Offset: {x: -4.6796875, y: -18.299805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -251,7 +251,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 90.640625, y: 100}
+  m_Size: {x: 90.640625, y: 136.59961}
   m_EdgeRadius: 0
 --- !u!4 &102731231
 Transform:
@@ -313,9 +313,8 @@ GameObject:
   m_Component:
   - component: {fileID: 122912681}
   - component: {fileID: 122912680}
-  - component: {fileID: 122912679}
   - component: {fileID: 122912678}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: event (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,33 +355,6 @@ MonoBehaviour:
     sprites:
     - {fileID: 0}
     dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
-  Panel: {fileID: 0}
---- !u!114 &122912679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122912677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b63f41bfa3ac3134b8be46318beb24aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_1:
-    sentences:
-    - "\uC5B4\uB9B4 \uB54C \uC790\uC8FC \uADF8\uB9AC\uACE0 \uD588\uB358 \uACF5\uC8FC
-      \uADF8\uB9BC\uC774\uB2E4."
-    - "\uC640, \uC655\uAD00\uC744 \uAC16\uACE0 \uC2F6\uC5B4..."
-    - "\uC640 \uC528, \uBB50\uC57C?"
-    sprites:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 21300000, guid: a8c2a918a590e684287d255b094f3802, type: 3}
-    dialogueWindows:
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
-    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
 --- !u!61 &122912680
@@ -673,7 +645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 751322013}
   - component: {fileID: 751322012}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 943251505}
   - component: {fileID: 943251504}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,7 +981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1356498355}
   - component: {fileID: 1356498354}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1094,7 +1066,7 @@ GameObject:
   - component: {fileID: 1429577114}
   - component: {fileID: 1429577113}
   - component: {fileID: 1429577115}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (1) (r)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1114,7 +1086,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -21.525879}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1125,7 +1097,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 100, y: 143.05176}
   m_EdgeRadius: 0
 --- !u!4 &1429577114
 Transform:
@@ -1173,7 +1145,7 @@ GameObject:
   - component: {fileID: 1429653696}
   - component: {fileID: 1429653695}
   - component: {fileID: 1429653694}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -175}
   m_SizeDelta: {x: 200.00002, y: 112.47217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1429653694
@@ -1310,7 +1282,7 @@ GameObject:
   - component: {fileID: 1482781458}
   - component: {fileID: 1482781457}
   - component: {fileID: 1482781459}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1330,7 +1302,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -3.394287}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1341,7 +1313,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 100, y: 106.788574}
   m_EdgeRadius: 0
 --- !u!4 &1482781458
 Transform:
@@ -1405,7 +1377,7 @@ GameObject:
   - component: {fileID: 1521437968}
   - component: {fileID: 1521437967}
   - component: {fileID: 1521437969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (r)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1480,7 +1452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1610820211}
   - component: {fileID: 1610820210}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,7 +1540,7 @@ GameObject:
   - component: {fileID: 1671658767}
   - component: {fileID: 1671658769}
   - component: {fileID: 1671658768}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: book1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1592,7 +1564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -175}
   m_SizeDelta: {x: 200.00002, y: 112.47217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671658765
@@ -1704,7 +1676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704443227}
   - component: {fileID: 1704443226}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

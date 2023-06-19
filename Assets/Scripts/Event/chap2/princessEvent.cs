@@ -14,6 +14,7 @@ public class princessEvent : MonoBehaviour
     private OrderManager theOrder;
     private Inventory inventory;
     private controlEvent control;
+    private PlayerMove thePlayer;
 
     BoxCollider2D boxCollider;
 
@@ -26,6 +27,7 @@ public class princessEvent : MonoBehaviour
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         theOrder = FindObjectOfType<OrderManager>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
@@ -35,24 +37,13 @@ public class princessEvent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = false;
-    }
 
     IEnumerator EventCoroutine()
     {

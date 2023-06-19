@@ -6,6 +6,7 @@ public class addKing : MonoBehaviour
 {
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
+    public Dialogue dialogue_3;
 
     private DialogueManager theDM;
     private OrderManager theOrder;
@@ -23,6 +24,7 @@ public class addKing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (isOpen) Panel1.SetActive(true);
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
         inventory = FindObjectOfType<Inventory>();
@@ -34,23 +36,14 @@ public class addKing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isOpen) Panel1.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        Debug.Log(this.gameObject.ToString() == thePlayer.scanObject.ToString());
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
-    }
 
     IEnumerator EventCoroutine()
     {
@@ -67,8 +60,17 @@ public class addKing : MonoBehaviour
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
             isOpen = true;
+            flag = true;
+        } else
+        {
+            theOrder.NotMove();
+            theDM.ShowDialogue(dialogue_3);
+            yield return new WaitUntil(() => !theDM.talking);
+            yield return new WaitForSeconds(0.5f);
+            isOpen = false;
+            flag = false;
         }
-        flag = true;
+
         theOrder.Move();
     }
 }

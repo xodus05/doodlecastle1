@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 1473399770}
   - component: {fileID: 1473399769}
   - component: {fileID: 1473399768}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shovelEvent
   m_TagString: Untagged
   m_Icon: {fileID: 0}

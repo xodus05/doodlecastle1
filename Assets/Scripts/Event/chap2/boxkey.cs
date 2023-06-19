@@ -85,7 +85,6 @@ public class boxkey : MonoBehaviour
                     {
                         theOrder.Move("player", "UP");
                         theOrder.Move("player", "UP");
-                        theOrder.Move("player", "UP");
                         Panel1.SetActive(true);
                         theDM.ShowDialogue(dialogue_2);
                         yield return new WaitUntil(() => !theDM.talking);

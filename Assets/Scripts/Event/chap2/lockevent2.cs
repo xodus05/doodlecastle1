@@ -40,22 +40,13 @@ public class lockevent2 : MonoBehaviour
     void Update()
     {
         //if (isOpen) Panel.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
-    }
 
     IEnumerator EventCoroutine()
     {
@@ -69,12 +60,16 @@ public class lockevent2 : MonoBehaviour
         yield return new WaitUntil(() => !theNumber.activated);
         if (theNumber.GetResult())
         {
+            theOrder.NotMove();
+            Debug.Log(thePlayer.notMove);
+
             dialogue_3.sentences[0] = "열렸다!!";
             theDM.ShowDialogue(dialogue_3);
+            yield return new WaitUntil(() => !theDM.talking);
             Panel1.SetActive(true);
             Panel2.SetActive(true);
             Panel3.SetActive(true);
-            Panel.SetActive(true);
+            // Panel.SetActive(true);
             isOpen = true;
         }
         else
@@ -83,19 +78,8 @@ public class lockevent2 : MonoBehaviour
             theDM.ShowDialogue(dialogue_2);
             yield return new WaitUntil(() => !theDM.talking);
             flag = false;
+
         }
-
-
-        /*
-                if (!flag && Input.GetKey(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
-                {
-                    flag = true;
-                    inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
-                    theDM.ShowDialogue(dialogue_3);
-                    yield return new WaitUntil(() => !theDM.talking);
-                    Panel2.SetActive(false);
-                }*/
-
         theOrder.Move();
     }
 }

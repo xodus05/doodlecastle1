@@ -40,36 +40,14 @@ public class addladder : MonoBehaviour
         if (inventory.haveItem("사다리")) Panel.SetActive(false);
     }
 
-    // Update is called once per frame
-    /*    private void OnTriggerStay2D(Collider2D collision)
-        {
-
-            if (!flag && Input.GetKeyDown(KeyCode.Z) && thePlayer.animator.GetFloat("DirY") == 1f)
+    void Update()
+    {
+        
+            if (Input.GetKeyDown(KeyCode.Z) && this.gameObject.ToString() == thePlayer.scanObject.ToString() && !flag)
             {
                 flag = true;
                 StartCoroutine(EventCoroutine());
             }
-        }*/
-    void Update()
-    {
-            if (Input.GetKeyDown(KeyCode.Z) && flag2)
-            {
-                if (!flag && thePlayer.animator.GetFloat("DirY") == 1f)
-                {
-                    flag = true;
-                    StartCoroutine(EventCoroutine());
-                }
-            }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
