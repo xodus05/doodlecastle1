@@ -18,7 +18,6 @@ public class fgevent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
-    private bool flag2;
 
 
     // Start is called before the first frame update
@@ -34,7 +33,7 @@ public class fgevent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString() && thePlayer.touch)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             bool isTrue = this.gameObject.ToString()==thePlayer.scanObject.ToString();
             Debug.Log(this.gameObject.ToString());
