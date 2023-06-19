@@ -35,7 +35,7 @@ public class addKing : MonoBehaviour
     void Update()
     {
         if (isOpen) Panel1.SetActive(true);
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.animator.GetFloat("DirY") == 1f && flag2)
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
