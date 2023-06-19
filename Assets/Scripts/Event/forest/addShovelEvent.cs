@@ -13,6 +13,7 @@ public class addShovelEvent : MonoBehaviour
     private DialogueManager theDM;
     private OrderManager theOrder;
     private ChoiceManager theChoice;
+    private PlayerMove thePlayer;
 
     private static bool flag;
     private static bool flag2;
@@ -22,13 +23,14 @@ public class addShovelEvent : MonoBehaviour
         theChoice = FindObjectOfType<ChoiceManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         inventory = FindObjectOfType<Inventory>();
         if(inventory.haveItem("삽")) Panel.SetActive(false);
     }
 
     void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
