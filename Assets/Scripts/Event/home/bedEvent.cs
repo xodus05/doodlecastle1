@@ -12,9 +12,12 @@ public class bedEvent : MonoBehaviour
     private OrderManager theOrder;
     private ChoiceManager theChoice;
     private PlayerMove thePlayer;
+    private BGMManager BGM;
 
     public GameObject Panel;
     public GameObject Panel2;
+    public GameObject Panel3;
+    public GameObject Panel4;
 
     BoxCollider2D boxCollider;
 
@@ -36,6 +39,7 @@ public class bedEvent : MonoBehaviour
         theChoice = FindObjectOfType<ChoiceManager>();
         theAudio = FindObjectOfType<AudioManager>();
         boxCollider = GetComponent<BoxCollider2D>();
+        BGM = FindObjectOfType<BGMManager>();
     }
 
     void Update()
@@ -71,6 +75,7 @@ public class bedEvent : MonoBehaviour
             yield return new WaitUntil(()=>thePlayer.queue.Count == 0);
             yield return new WaitForSeconds(1.0f);
             theAudio.Play(sound);
+            BGM.Stop(0);
             yield return new WaitForSeconds(3.0f);
             // 부스럭 거리는 효과음 넣기
 
@@ -79,6 +84,8 @@ public class bedEvent : MonoBehaviour
             theOrder.Move("player", "RIGHT");
             Panel.SetActive(true);
             Panel2.SetActive(false);
+            Panel3.SetActive(false);
+            Panel4.SetActive(true);
         }
         else {
             flag = false;

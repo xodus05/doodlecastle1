@@ -48,22 +48,12 @@ public class crownEvent : MonoBehaviour
     void Update()
     {
         if (isOpen) Panel.SetActive(true);
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && thePlayer.scanObject && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             isOpen2 = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -97,10 +87,7 @@ public class crownEvent : MonoBehaviour
             isOpen2 = false;
             flag = false;
         }
-
-        flag = false;
         theOrder.Move();
-        yield return new WaitForSeconds(0.1f);
     }
 
 }

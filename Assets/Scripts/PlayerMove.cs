@@ -130,7 +130,7 @@ public class PlayerMove : MovingObject
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            manager.Action(scanObject);
+            // manager.Action(scanObject);
             if(theDM.talking || theNumber.activated) notMove = true;
         }
         if ((!theDM.talking || theNumber.activated) && !notMove)

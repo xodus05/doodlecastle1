@@ -17,7 +17,6 @@ public class openEvent2 : MonoBehaviour
     public Dialogue dialogue_2;
 
     private static bool flag;
-    private static bool flag2;
     private static bool isFirst = true;
 
     private DialogueManager theDM;
@@ -39,23 +38,11 @@ public class openEvent2 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.scanObject && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.name == "Player")
-            flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.gameObject.name == "Player")
-            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -84,7 +71,6 @@ public class openEvent2 : MonoBehaviour
             yield return new WaitForSeconds(0.4f);
         }
         flag = false;
-        flag2 = false;
         theOrder.Move();
     }
 }

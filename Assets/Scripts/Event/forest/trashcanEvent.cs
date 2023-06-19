@@ -31,7 +31,7 @@ public class trashcanEvent : MonoBehaviour
     void Update()
     {
         if(!thePlayer.touch) flag2 = false;
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.scanObject && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());

@@ -13,7 +13,6 @@ public class lockEvent : MonoBehaviour
     private NumberSystem theNumber;
 
     private static bool flag;
-    private static bool flag2;
     private static bool isOpen2;
     public int correctNumber;
     public GameObject Panel;
@@ -31,7 +30,7 @@ public class lockEvent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.scanObject && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -71,6 +70,6 @@ public class lockEvent : MonoBehaviour
         yield return new WaitUntil(() => !theDM.talking);
         flag = false;
         if (isOpen2) flag = true;
-        if (!theNumber.GetResult())theOrder.Move();
+        theOrder.Move();
     }
 }

@@ -30,7 +30,7 @@ public class addShovelEvent : MonoBehaviour
 
     void Update()
     {
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && this.gameObject.ToString() == thePlayer.scanObject.ToString())
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && thePlayer.scanObject && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());

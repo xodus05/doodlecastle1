@@ -20,7 +20,6 @@ public class leafEvent : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
-    private bool flag2;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +36,7 @@ public class leafEvent : MonoBehaviour
     void Update()
     {
         if(!thePlayer.touch) flag2 = false;
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString()==thePlayer.scanObject.ToString())
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.scanObject && this.gameObject.ToString()==thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -59,8 +58,8 @@ public class leafEvent : MonoBehaviour
     IEnumerator EventCoroutine()
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
-        theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
+        theOrder.NotMove();
 
         // yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
