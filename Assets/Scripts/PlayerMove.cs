@@ -32,6 +32,7 @@ public class PlayerMove : MovingObject
     public bool notMove = false;
     public bool touch = false;
     public string tName;
+    public bool isBoss;
 
     public bool haveKey = false;
     public bool haveShovel = false;
@@ -62,7 +63,7 @@ public class PlayerMove : MovingObject
             instance = this;
         }
 
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -114,7 +115,9 @@ public class PlayerMove : MovingObject
                 }
                 currentWalkCount+=2; // 한 칸을 가기 위한 반복문
 
-                yield return new WaitForSeconds(0.01f); // 천천히 모션을 실행하기 위한 딜레이값
+                yield return new WaitForSeconds(0.01f); // 천천히 모션을 실행하기 위한 딜레이값 테스트용
+                //yield return new WaitForSeconds(0.001f); // 천천히 모션을 실행하기 위한 딜레이값 빌드용
+                // yield return 0;
             }
             currentWalkCount = 0;
         }

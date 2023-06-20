@@ -69,7 +69,13 @@ public class title : MonoBehaviour
 
     public void OnClickExit()
     {
-        Application.Quit(); // 앱 나가기
-        System.Diagnostics.Process.GetCurrentProcess().Kill(); // omg 이거 누르면 유니티 아예 꺼버림..ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+        Application.Quit();
+        System.Diagnostics.Process.GetCurrentProcess().Kill();
+    }
+
+    public void OnChapter2()
+    {
+        SceneManager.LoadScene("start");
+        thePlayer.transform.position = new Vector2(-10728, 1832);
     }
 }

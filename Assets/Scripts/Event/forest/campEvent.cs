@@ -77,11 +77,11 @@ public class campEvent : MonoBehaviour
                     theFade.Flash(0.01f);
                     yield return new WaitForSeconds(1.0f);
                     Panel3.SetActive(true);
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(6.0f);
                     Panel4.SetActive(true);
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(6.0f);
                     Panel5.SetActive(true);
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(8.0f);
                     theFade.FadeOut();
                     yield return new WaitForSeconds(0.1f);
                     Panel.SetActive(false);

@@ -419,10 +419,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 982333095}
   listSentences:
-  - "\uADF8\uB807\uAC8C \uB098\uB294 \uB099\uC11C\uC655\uAD6D \uC18D\uC5D0\uC11C
-    \u3148\u3134 \uAD74\uB800\uACE0,"
+  - "\uADF8\uB807\uAC8C \uB098\uB294 \uB099\uC11C\uC655\uAD6D\uC5D0\uC11C"
   - "\uAF43\uB2E4\uC6B4 \uB098\uC774 25\uC0B4\uC5D0 "
-  - "\uAC1C\uAC19\uC774 \uC0DD\uC744 \uB9C8\uAC10\uD55C\uB2E4...."
+  - "\uC0DD\uC744 \uB9C8\uAC10\uD588\uB2E4...."
   - "End1 . \uC8FD\uC74C"
 --- !u!4 &1568446123
 Transform:

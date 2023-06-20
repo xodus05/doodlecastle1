@@ -38,7 +38,7 @@ public class end1 : MonoBehaviour
             text.text += listSentences[count][i];   // 한글자씩 출력
             yield return new WaitForSeconds(0.01f);
         }
-        count++;
+        // count++;
     }
 
 

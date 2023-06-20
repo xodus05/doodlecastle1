@@ -26,11 +26,11 @@ public class EventCastle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (isOK) Panel2.SetActive(true);
+        thePlayer = FindObjectOfType<PlayerMove>();
+        if (isOK || thePlayer.isBoss) Panel2.SetActive(true);
         BGM = FindObjectOfType<BGMManager>();
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
-        thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
         theFade = FindObjectOfType<FadeManager>();
     }
