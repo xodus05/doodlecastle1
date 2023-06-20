@@ -30,7 +30,6 @@ public class campEvent : MonoBehaviour
     public GameObject Panel5;
 
     private bool flag;
-    private bool flag2;
 
     // Start is called before the first frame update
     void Start()
@@ -51,18 +50,6 @@ public class campEvent : MonoBehaviour
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player")
-            flag2 = false;
     }
 
     IEnumerator EventCoroutine()
@@ -90,11 +77,11 @@ public class campEvent : MonoBehaviour
                     theFade.Flash(0.01f);
                     yield return new WaitForSeconds(1.0f);
                     Panel3.SetActive(true);
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(6.0f);
                     Panel4.SetActive(true);
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(6.0f);
                     Panel5.SetActive(true);
-                    yield return new WaitForSeconds(5.0f);
+                    yield return new WaitForSeconds(8.0f);
                     theFade.FadeOut();
                     yield return new WaitForSeconds(0.1f);
                     Panel.SetActive(false);

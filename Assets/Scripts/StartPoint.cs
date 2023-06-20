@@ -10,6 +10,7 @@ public class StartPoint : MonoBehaviour
     private Enemy theEnemy;
     private EnemyAI theEnemyAI;
     private CameraManager theCamera;
+    private title theTitle;
    
 
     // Start is called before the first frame update

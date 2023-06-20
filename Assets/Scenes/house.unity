@@ -584,6 +584,7 @@ MonoBehaviour:
   notMove: 0
   touch: 0
   tName: 
+  isBoss: 0
   haveKey: 0
   haveShovel: 0
 --- !u!95 &187257745
@@ -5003,6 +5004,7 @@ MonoBehaviour:
   Panel: {fileID: 475685556}
   moveSpeed: 45
   contactDistance: 1
+  follow: 0
 --- !u!212 &1128147324
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8151,6 +8153,7 @@ GameObject:
   - component: {fileID: 1689185058}
   - component: {fileID: 1689185057}
   - component: {fileID: 1689185056}
+  - component: {fileID: 1689185061}
   m_Layer: 3
   m_Name: trash
   m_TagString: Untagged
@@ -8180,14 +8183,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689185054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b7db5491541c8b4ca731b9071ad5875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uC5B4\uC81C \uBA39\uB2E4 \uB0A8\uC740 \uC74C\uC2DD\uC774 \uBC84\uB824\uC838\uC788\uB2E4."
+    - "\uC9E7\uC740 \uD50C\uB808\uC774\uB97C \uC704\uD55C \uC774\uB3D9 \uD3EC\uC778\uD2B8\uC785\uB2C8\uB2E4."
     sprites:
     - {fileID: 0}
     dialogueWindows:
@@ -8325,6 +8328,32 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1689185061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689185054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa418e6b3f57dbc4d88e1105ee8d8f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_1:
+    sentences:
+    - "\uC9E7\uC740 \uD50C\uB808\uC774\uB97C \uC704\uD55C \uC774\uB3D9 \uD3EC\uC778\uD2B8\uC785\uB2C8\uB2E4."
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  Panel: {fileID: 0}
+  choice_1:
+    question: "\uC5B4\uB514\uB85C \uC774\uB3D9\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+    answers:
+    - "\uCC55\uD130 2"
+    - "\uBCF4\uC2A4\uC804"
+    - "\uACC4\uC18D \uD50C\uB808\uC774(\uCC55\uD130 1\uBD80\uD130)"
 --- !u!1 &1758305267
 GameObject:
   m_ObjectHideFlags: 0
@@ -9769,8 +9798,8 @@ Tilemap:
   - first: {x: -14, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 27
+      m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -9799,8 +9828,8 @@ Tilemap:
   - first: {x: -11, y: -6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
+      m_TileIndex: 27
+      m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -11352,7 +11381,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 46
+  - m_RefCount: 44
     m_Data: {fileID: 11400000, guid: 9c439de8c2eedc445960f98d84044c74, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -11392,7 +11421,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 79f705e7cc1f2e24e85996739a3d9acf, type: 2}
   - m_RefCount: 29
     m_Data: {fileID: 11400000, guid: 4f1390f7ac7075b469d5f8cc775bdbb6, type: 2}
-  - m_RefCount: 29
+  - m_RefCount: 31
     m_Data: {fileID: 11400000, guid: 4e0d8b43379ce684ea0838bfd4491609, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -11409,7 +11438,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 46
+  - m_RefCount: 44
     m_Data: {fileID: -1362551191, guid: 85dbe0710fc603c4bb9c775c80863593, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -11449,7 +11478,7 @@ Tilemap:
     m_Data: {fileID: -469321114, guid: 85dbe0710fc603c4bb9c775c80863593, type: 3}
   - m_RefCount: 29
     m_Data: {fileID: 1320059737, guid: 85dbe0710fc603c4bb9c775c80863593, type: 3}
-  - m_RefCount: 29
+  - m_RefCount: 31
     m_Data: {fileID: -415873549, guid: 85dbe0710fc603c4bb9c775c80863593, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 160

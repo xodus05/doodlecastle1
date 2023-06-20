@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class leafEvent3 : MonoBehaviour
+public class Test5 : MonoBehaviour
 {
 
     public Dialogue dialogue_1;
@@ -12,7 +11,7 @@ public class leafEvent3 : MonoBehaviour
     public GameObject Panel;
     public Choice choice_1;
     private PlayerMove thePlayer;
-    private leafEvent2 leaf2;
+
     private DialogueManager theDM;
     private OrderManager theOrder;
     private Inventory inventory;
@@ -21,20 +20,16 @@ public class leafEvent3 : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
-    private bool flag2;
-
-
 
     // Start is called before the first frame update
     void Start()
     {
         theDM = FindObjectOfType<DialogueManager>();
         theOrder = FindObjectOfType<OrderManager>();
+        thePlayer = FindObjectOfType<PlayerMove>();
         boxCollider = GetComponent<BoxCollider2D>();
         inventory = FindObjectOfType<Inventory>();
-        thePlayer = FindObjectOfType<PlayerMove>();
         theChoice = FindObjectOfType<ChoiceManager>();
-        leaf2 = FindObjectOfType<leafEvent2>();
         //if (inventory.haveItem("도서관 열쇠")) Panel.SetActive(false);
     }
 
@@ -50,28 +45,32 @@ public class leafEvent3 : MonoBehaviour
     IEnumerator EventCoroutine()
     {
         theOrder.PreLoadCharacter(); // 리스트 채우기
-        theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
+        theOrder.NotMove();
 
-        yield return new WaitUntil(() => thePlayer.queue.Count == 0);
+        theDM.ShowDialogue(dialogue_1);
+        yield return new WaitUntil(() => !theDM.talking);
 
-        if(leaf2.isActive == false)
+        theChoice.ShowChoice(choice_1);
+        yield return new WaitUntil(() => !theChoice.choiceIng);
+        Debug.Log(theChoice.GetResult());
+        switch (theChoice.GetResult())
         {
-            theChoice.ShowChoice(choice_1);
-            yield return new WaitUntil(() => !theChoice.choiceIng);
-            Debug.Log(theChoice.GetResult());
-            switch (theChoice.GetResult())
-            {
-                case 0:
-                    dialogue_1.sentences[0] = "틀렸어...";
-                    theDM.ShowDialogue(dialogue_1);
-                    yield return new WaitUntil(() => !theDM.talking);
-                    SceneManager.LoadScene("Died1");
-                    break;
-            }
-
+            case 0:
+                SceneManager.LoadScene("start");
+                thePlayer.transform.position = new Vector2(-10728, 1832);
+                break;
+            case 1:
+                SceneManager.LoadScene("castle");
+                thePlayer.transform.position = new Vector2(-6239, -240);
+                thePlayer.isBoss = true;
+                break;
+            default:
+                break;
         }
+
         flag = false;
+
         theOrder.Move();
     }
 
