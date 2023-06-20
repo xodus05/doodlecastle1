@@ -1,40 +1,79 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ChatControll : MonoBehaviour
 {
 
-    public Text ChatText; // 실제 채팅이 나오는 텍스트
-    //public Text CharacterName; // 캐릭터 이름이 나오는 텍스트 (아직 안쓸듯)
-    public float m_Speed = 0.2f;
+    public Text text;
+    public List<string> listSentences;
 
-    IEnumerator NormalChat(string narrator, string narration)
+    private int count;
+    private bool keyActivated = false;
+    private bool isChatFinished = false;
+
+    private FadeManager theFade;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        int a = 0;
-        //CharacterName.text = narrator;
-        string writerText = " ";
+        theFade = GetComponent<FadeManager>();
+        count = 0;
+        text.text = "";
+        StartCoroutine(StartChat());
+    }
 
-        // 텍스트 타이핑 효과
-        for(a = 0; a < narration.Length; a++)
+    IEnumerator NormalChat()
+    {
+        keyActivated = true;
+        for (int i = 0; i < listSentences[count].Length; i++)
         {
-            writerText += narration[a];
-            ChatText.text = writerText;
-            yield return new WaitForSeconds(m_Speed/2);
+            text.text += listSentences[count][i];   // 한글자씩 출력
+            yield return new WaitForSeconds(0.2f);
         }
     }
 
-    IEnumerator TextPractice()
+    IEnumerator StartChat()
     {
-        yield return StartCoroutine(NormalChat("캐릭터1", "추억은 일종의 만남이다. -칼릴 지브란"));
-        //yield return StartCoroutine(NormalChat("캐릭터2", "안녕..! 구현 연습중!"));
+        keyActivated = true;
+        for (int i = 0; i < listSentences[count].Length; i++)
+        {
+            text.text += listSentences[count][i];   // 한글자씩 출력
+            yield return new WaitForSeconds(0.2f);
+        }
+        // count++;
     }
 
 
-    private void Start()
+    void Update()
     {
-        StartCoroutine(TextPractice());
+        if (keyActivated)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                keyActivated = false;
+                text.text = "";     // text 초기화
+                count++;
+                if (count == listSentences.Count)
+                {
+                    StopAllCoroutines();
+                    isChatFinished = true; // 대화가 모두 출력되었음을 표시
+                }
+                else
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(NormalChat());
+                }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            SceneManager.LoadScene("house"); //quote에서 house로 scene 이동
+        }
     }
+
 }
