@@ -24,9 +24,6 @@ public class boxkey : MonoBehaviour
     BoxCollider2D boxCollider;
 
     private bool flag;
-    private bool flag2;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +34,7 @@ public class boxkey : MonoBehaviour
         thePlayer = FindObjectOfType<PlayerMove>();
         inventory = FindObjectOfType<Inventory>();
         theChoice = FindObjectOfType<ChoiceManager>();
-        //inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
+        inventory.inventoryItemList.Add(new Item(5005, "사다리", Item.ItemType.Use));
         //inventory.inventoryItemList.Add(new Item(5007, "왕관", Item.ItemType.Use));
         //inventory.inventoryItemList.Add(new Item(5006, "도서관 열쇠", Item.ItemType.Use));
         if (inventory.haveItem("사다리"))
@@ -50,21 +47,11 @@ public class boxkey : MonoBehaviour
     void Update()
     {
         if (isOpen) Panel.SetActive(false);
-        if (!flag && Input.GetKeyDown(KeyCode.Z) && flag2)
+        if (!flag && Input.GetKeyDown(KeyCode.Z) && thePlayer.scanObject && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        flag2 = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        flag2 = false;
     }
 
     IEnumerator EventCoroutine()

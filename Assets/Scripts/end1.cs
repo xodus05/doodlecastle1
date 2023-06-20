@@ -10,6 +10,7 @@ public class end1 : MonoBehaviour
 
     private int count;
     private bool keyActivated = false;
+    private bool isChatFinished = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,7 @@ public class end1 : MonoBehaviour
     }
 
     IEnumerator StartChat()
-    {        
+    {
         keyActivated = true;
         for (int i = 0; i < listSentences[count].Length; i++)
         {
@@ -39,6 +40,7 @@ public class end1 : MonoBehaviour
         }
         count++;
     }
+
 
     void Update()
     {
@@ -52,6 +54,7 @@ public class end1 : MonoBehaviour
                 if (count == listSentences.Count)
                 {
                     StopAllCoroutines();
+                    isChatFinished = true; // 대화가 모두 출력되었음을 표시
                 }
                 else
                 {
@@ -60,5 +63,20 @@ public class end1 : MonoBehaviour
                 }
             }
         }
+
+        if (isChatFinished && Input.GetKeyDown(KeyCode.Z))
+        {
+            // 대화가 모두 출력된 후 'Z' 키를 누르면 Unity 종료
+            QuitUnity();
+        }
+    }
+
+    void QuitUnity()
+    {
+#if UNITY_EDITOR
+        System.Diagnostics.Process.GetCurrentProcess().Kill();
+#else
+
+#endif
     }
 }

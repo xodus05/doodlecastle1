@@ -44,7 +44,7 @@ public class shovelEvent : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && !flag && this.gameObject.ToString() == thePlayer.scanObject.ToString())
+        if (Input.GetKeyDown(KeyCode.Z) && !flag && thePlayer.scanObject && this.gameObject.ToString() == thePlayer.scanObject.ToString())
         {
             flag = true;
             StartCoroutine(EventCoroutine());
@@ -90,6 +90,7 @@ public class shovelEvent : MonoBehaviour
             }
         }
         else {
+            //inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(()=>!theDM.talking); 
             flag = false;

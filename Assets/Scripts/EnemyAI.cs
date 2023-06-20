@@ -31,7 +31,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] [Range(0f, 3f)] float contactDistance = 1f;
 
-    bool follow = false;
+    public bool follow = false;
 
     void Start() {
         inventory = FindObjectOfType<Inventory>();

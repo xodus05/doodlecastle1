@@ -20,7 +20,6 @@ public class title : MonoBehaviour
 
     void Start()
     {
-        startPosition = transform.position;
         inventory = FindObjectOfType<Inventory>();
         theCamera = FindObjectOfType<CameraManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
@@ -46,9 +45,11 @@ public class title : MonoBehaviour
     public void ReRoad()
     {
         SceneManager.LoadScene("map5");
-        theEnemy.transform.position = new Vector2(-819, 452);
-        theEnemyAI.transform.position = new Vector2(-819, 452);
-        thePlayer.transform.position = new Vector2(40, 370);
+        thePlayer.transform.position = new Vector2(3770, 297);
+        thePlayer.currentMapName = "map5"; 
+        thePlayer.startPointNumber = 3;
+        theEnemy.transform.position = new Vector2(2896, 447);
+        theEnemyAI.transform.position = new Vector2(2896, 447);
         // theCamera.transform.position = new Vector2(40, 370);
     }
 

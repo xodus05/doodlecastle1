@@ -19,7 +19,6 @@ public class EventCollider : MonoBehaviour
     private MonsterAI theMonster;
 
     private bool flag;
-    private bool flag2;
 
     void Start()
     {
@@ -61,7 +60,6 @@ public class EventCollider : MonoBehaviour
         theMonster.transform.position = new Vector2(-10551, 2867);
 
         theMonster.follow = true; // 몬스터가 움직이도록 설정
-        flag2 = true;
         yield return null;
     }
 }

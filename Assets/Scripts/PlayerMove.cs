@@ -46,6 +46,7 @@ public class PlayerMove : MovingObject
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -126,6 +127,8 @@ public class PlayerMove : MovingObject
         // 플레이어 이동 방향 Ray 하기위한 코드
         h = Input.GetAxisRaw("Horizontal");
         v = Input.GetAxisRaw("Vertical");
+
+        Debug.Log(this.transform.position);
 
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
         if (Input.GetKeyDown(KeyCode.Z))
