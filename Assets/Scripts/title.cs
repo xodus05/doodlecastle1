@@ -34,7 +34,8 @@ public class title : MonoBehaviour
 
     public void QuoteChange()
     {
-        SceneManager.LoadScene("house"); //quote에서 house로 scene 이동
+            SceneManager.LoadScene("house"); //quote에서 house로 scene 이동
+
     }
 
     public void GameOverChange()
