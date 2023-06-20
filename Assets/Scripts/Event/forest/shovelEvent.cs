@@ -90,7 +90,7 @@ public class shovelEvent : MonoBehaviour
             }
         }
         else {
-            //inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
+            inventory.inventoryItemList.Add(new Item(5001, "삽", Item.ItemType.Use));
             theDM.ShowDialogue(dialogue_1);
             yield return new WaitUntil(()=>!theDM.talking); 
             flag = false;
