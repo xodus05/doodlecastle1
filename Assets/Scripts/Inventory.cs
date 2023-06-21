@@ -27,7 +27,7 @@ public class Inventory : MonoBehaviour
     private bool tabActivated; // �� Ȱ��ȭ�� true;
     private bool itemActivated; // ������ Ȱ��ȭ�� true;
     private bool stopKeyInput; // Ű �Է� ���� (�Һ��� �� ���ǰ� ���� �ٵ�, �� �� Ű �Է� ����);
-    private bool preventExec; // �ߺ����� ����;
+    public bool preventExec; // �ߺ����� ����;
 
     private WaitForSeconds waitTime = new WaitForSeconds(0.01f);
 
@@ -175,7 +175,7 @@ public class Inventory : MonoBehaviour
 
         }
 
-    } // ���õ� ������ ����, �ٸ� ��� ���� �÷� ���İ� 0
+    }
     IEnumerator SelectedItemEffectCoroutine()
     {
         while (itemActivated)
@@ -197,13 +197,12 @@ public class Inventory : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
 
         }
-    } // ���õ� ������ ��¦�� ȿ��
-
+    } 
     // Update is called once per frame
     void Update()
     {
-        if(!stopKeyInput)
-        {
+/*        if(!stopKeyInput)
+        {*/
             if (Input.GetKeyDown(KeyCode.Tab))
             {
                 activated = !activated;
@@ -212,55 +211,58 @@ public class Inventory : MonoBehaviour
                 {
                     theOrder.NotMove();
                     go.SetActive(true);
-                    //selectedTab = 0;
+                    selectedTab = 0;
                     tabActivated = true; // �Ǻ��� ������� �ֵ���
                     itemActivated = false;
+                    preventExec = false;
                     ShowTab();
                 }
                 else
                 {
+                    theOrder.Move();
                     go.SetActive(false);
                     tabActivated = false;
                     itemActivated = false;
-                    theOrder.Move();
                     preventExec = true;
                     StopAllCoroutines();
                 }
+            /*}*/
+
+            /*            if (activated)
+                        {
+            *//*                if (tabActivated)
+                            {*/
+            /*                    if (Input.GetKeyDown(KeyCode.RightArrow)) // ȭ��ǥ ������ �̵�
+                                {
+                                    if (selectedTab < selectedTabImages.Length - 1)
+                                        selectedTab++;
+                                    else
+                                        selectedTab = 0;
+                                        SelectedTab();
+                                }
+                                else if (Input.GetKeyDown(KeyCode.LeftArrow))
+                                {
+                                    if (selectedTab > 0)
+                                        selectedTab--;
+                                    else
+                                        selectedTab = selectedTabImages.Length - 1;
+                                    SelectedTab();
+                                }*//*
+
+                           }*/
+
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                Color color = selectedTabImages[selectedTab].GetComponent<Image>().color;
+                color.a = 0.25f;
+                selectedTabImages[selectedTab].GetComponent<Image>().color = color;
+                itemActivated = true; // ������ â
+                tabActivated = false; // �� â
+                preventExec = true; // �ߺ�Ű ����
+                ShowItem();
             }
 
-            if (activated)
-            {
-                if (tabActivated)
-                {
-                    if (Input.GetKeyDown(KeyCode.RightArrow)) // ȭ��ǥ ������ �̵�
-                    {
-                        if (selectedTab < selectedTabImages.Length - 1)
-                            selectedTab++;
-                        else
-                            selectedTab = 0;
-                        //SelectedTab();
-                    }
-                    else if (Input.GetKeyDown(KeyCode.LeftArrow))
-                    {
-                        if (selectedTab > 0)
-                            selectedTab--;
-                        else
-                            selectedTab = selectedTabImages.Length - 1;
-                        SelectedTab();
-                    }
-                    else if (Input.GetKeyDown(KeyCode.Z))
-                    {
-                        Color color = selectedTabImages[selectedTab].GetComponent<Image>().color;
-                        color.a = 0.25f;
-                        selectedTabImages[selectedTab].GetComponent<Image>().color = color;
-                        itemActivated = true; // ������ â
-                        tabActivated = false; // �� â
-                        preventExec = true; // �ߺ�Ű ����
-                        ShowItem();
-                    }
-                }
-
-                if (itemActivated)
+            else if (itemActivated)
                 {
                     if (Input.GetKeyDown(KeyCode.DownArrow))
                     {
@@ -320,4 +322,3 @@ public class Inventory : MonoBehaviour
             }
         }
     }
-}

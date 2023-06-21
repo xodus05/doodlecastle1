@@ -115,7 +115,7 @@ public class PlayerMove : MovingObject
                 }
                 currentWalkCount+=2; // 한 칸을 가기 위한 반복문
 
-                yield return new WaitForSeconds(0.01f); // 천천히 모션을 실행하기 위한 딜레이값 테스트용
+                yield return new WaitForSeconds(0.007f); // 천천히 모션을 실행하기 위한 딜레이값 테스트용
                 //yield return new WaitForSeconds(0.001f); // 천천히 모션을 실행하기 위한 딜레이값 빌드용
                 // yield return 0;
             }
@@ -131,7 +131,7 @@ public class PlayerMove : MovingObject
         h = Input.GetAxisRaw("Horizontal");
         v = Input.GetAxisRaw("Vertical");
 
-        Debug.Log(this.transform.position);
+        //Debug.Log(this.transform.position);
 
         // 스페이스바 클릭시 콘솔창에 오브젝트 이름 등장!
         if (Input.GetKeyDown(KeyCode.Z))
