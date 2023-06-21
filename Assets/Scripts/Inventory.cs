@@ -214,17 +214,17 @@ public class Inventory : MonoBehaviour
                     selectedTab = 0;
                     tabActivated = true; // �Ǻ��� ������� �ֵ���
                     itemActivated = false;
-                    preventExec = false;
-                    ShowTab();
+                preventExec = false;
+                ShowTab();
                 }
                 else
                 {
-                    theOrder.Move();
                     go.SetActive(false);
                     tabActivated = false;
                     itemActivated = false;
-                    preventExec = true;
-                    StopAllCoroutines();
+                preventExec = true;
+                theOrder.Move();
+                StopAllCoroutines();
                 }
             /*}*/
 

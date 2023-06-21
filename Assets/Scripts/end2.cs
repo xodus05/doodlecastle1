@@ -79,6 +79,7 @@ public class end2 : MonoBehaviour
     void QuitUnity()
     {
 #if UNITY_EDITOR
+        Application.Quit();
         System.Diagnostics.Process.GetCurrentProcess().Kill();
 #else
 

@@ -4284,6 +4284,7 @@ MonoBehaviour:
   go: {fileID: 1396589524}
   selectedTabImages:
   - {fileID: 255413046}
+  preventExec: 0
 --- !u!1 &1033364704
 GameObject:
   m_ObjectHideFlags: 0
