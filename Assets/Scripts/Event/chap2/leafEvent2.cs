@@ -9,8 +9,10 @@ public class leafEvent2 : MonoBehaviour
 
     public Dialogue dialogue_1;
     public Dialogue dialogue_2;
+    public Dialogue dialogue_3;
     public GameObject Panel;
     public Choice choice_1;
+    public Choice choice_2;
     private PlayerMove thePlayer;
 
     private DialogueManager theDM;
@@ -55,32 +57,42 @@ public class leafEvent2 : MonoBehaviour
 
         yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
-        theChoice.ShowChoice(choice_1);
-        yield return new WaitUntil(() => !theChoice.choiceIng);
-        Debug.Log(theChoice.GetResult());
-        switch (theChoice.GetResult())
+        if (inventory.doing("버튼"))
         {
-            case 0:
-                dialogue_1.sentences[0] = "문이 열리는 소리가 났다.";
-                theDM.ShowDialogue(dialogue_1);
-                yield return new WaitUntil(() => !theDM.talking);
-                dialogue_2.sentences[0] = "풀었다!";
-                theDM.ShowDialogue(dialogue_2);
-                yield return new WaitUntil(() => !theDM.talking);
-                inventory.inventoryItemList.Add(new Item(5004, "도서관 열쇠", Item.ItemType.Use));
-                thePlayer.queue.Clear();
-                isActive = true;
-                break;
-            case 1:
-                //dialogue_1.sentences[0] = "다시 생각해보자";
-                //theDM.ShowDialogue(dialogue_1);
-                //yield return new WaitUntil(() => !theDM.talking);
-                //thePlayer.queue.Clear();
-                flag = false;
-                break;
+            theChoice.ShowChoice(choice_1);
+            yield return new WaitUntil(() => !theChoice.choiceIng);
+            Debug.Log(theChoice.GetResult());
+            switch (theChoice.GetResult())
+            {
+                case 0:
+                    theChoice.ShowChoice(choice_2);
+                    yield return new WaitUntil(() => !theChoice.choiceIng);
+                    switch (theChoice.GetResult())
+                    {
+                        case 0:
+                            dialogue_1.sentences[0] = "문이 열리는 소리가 났다.";
+                            theDM.ShowDialogue(dialogue_1);
+                            yield return new WaitUntil(() => !theDM.talking);
+                            dialogue_2.sentences[0] = "풀었다!";
+                            theDM.ShowDialogue(dialogue_2);
+                            yield return new WaitUntil(() => !theDM.talking);
+                            inventory.inventoryItemList.Add(new Item(5004, "도서관 열쇠", Item.ItemType.Use));
+                            thePlayer.queue.Clear();
+                            isActive = true;
+                            break;
+                    }
+                    flag = false;
+                    break;
+            }
+
         }
-
-
+        else
+        {
+            dialogue_3.sentences[0] = "이건 뭐지? 누를수 있을 것 같은데..";
+            theDM.ShowDialogue(dialogue_3);
+            yield return new WaitUntil(() => !theDM.talking);
+        }
+        flag = false;
         theOrder.Move();
     }
 

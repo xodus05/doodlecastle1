@@ -344,9 +344,21 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - 
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
     question: "\uBD88\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
+  choice_2:
+    question: "\uC815\uB9D0\uB85C?"
     answers:
     - "\uC608"
     - "\uC544\uB2C8\uC624"
@@ -1640,9 +1652,21 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_2:
+    sentences:
+    - 
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
     question: "\uD30C\uB780 \uB208\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
+  choice_2:
+    question: "\uC9C4\uC9DC\uB85C?"
     answers:
     - "\uC608"
     - "\uC544\uB2C8\uC624"
@@ -1837,9 +1861,21 @@ MonoBehaviour:
     - {fileID: 21300000, guid: e20d3de0ae51cfb448f98ae7afc45db7, type: 3}
     dialogueWindows:
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
+  dialogue_3:
+    sentences:
+    - 
+    sprites:
+    - {fileID: 0}
+    dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}
   choice_1:
     question: "\uB2EC\uC744 \uC120\uD0DD\uD560\uAE4C?"
+    answers:
+    - "\uC608"
+    - "\uC544\uB2C8\uC624"
+  choice_2:
+    question: "\uC9C4\uC9DC\uB85C?"
     answers:
     - "\uC608"
     - "\uC544\uB2C8\uC624"
@@ -1894,13 +1930,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_1:
     sentences:
-    - "\uC720\uB2C8\uD2F0\uC5D0 \uAD00\uD558\uC5EC, \uBC84\uADF8\uC758 \uC5ED\uC0AC,
-      \nC#\uC774\uB780?,  \uCF04 \uD1B0\uC2A8\uC740 \uC774\uB807\uAC8C \uB9D0\uD588\uB2E4."
-    - "\uC6E9... \uC9C0\uB8E8\uD574"
+    - "\uD53C = ?\n\uC644\uB450\uCF69 = ?"
+    - "\uAC80\uC740\uCF69 = ?\n\uC790\uC0C9 = ?"
+    - "\uBB58 \uB9D0\uD558\uACE0\uC2F6\uC740\uAC70\uC9C0?"
     sprites:
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 21300000, guid: 538b05149500ea24a9ddab5abffdf36d, type: 3}
     dialogueWindows:
+    - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
     - {fileID: 21300000, guid: be0707de5e323714cab7f21c89bfcd83, type: 3}
   Panel: {fileID: 0}

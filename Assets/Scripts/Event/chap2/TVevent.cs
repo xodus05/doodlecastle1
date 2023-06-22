@@ -43,7 +43,7 @@ public class TVevent : MonoBehaviour
 
     IEnumerator EventCoroutine()
     {
-
+        inventory.activeList.Add("버튼");
         theOrder.NotMove();
         yield return new WaitForSeconds(0.1f);
         theDM.ShowDialogue(dialogue_1);

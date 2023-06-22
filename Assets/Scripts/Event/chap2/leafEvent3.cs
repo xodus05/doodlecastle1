@@ -8,9 +8,10 @@ public class leafEvent3 : MonoBehaviour
 {
 
     public Dialogue dialogue_1;
-    //public Dialogue dialogue_2;
+    public Dialogue dialogue_2;
     public GameObject Panel;
     public Choice choice_1;
+    public Choice choice_2;
     private PlayerMove thePlayer;
     private leafEvent2 leaf2;
     private DialogueManager theDM;
@@ -55,21 +56,40 @@ public class leafEvent3 : MonoBehaviour
 
         yield return new WaitUntil(() => thePlayer.queue.Count == 0);
 
-        if(leaf2.isActive == false)
+        if (inventory.doing("버튼"))
         {
-            theChoice.ShowChoice(choice_1);
-            yield return new WaitUntil(() => !theChoice.choiceIng);
-            Debug.Log(theChoice.GetResult());
-            switch (theChoice.GetResult())
+            if (leaf2.isActive == false)
             {
-                case 0:
-                    dialogue_1.sentences[0] = "틀렸어...";
-                    theDM.ShowDialogue(dialogue_1);
-                    yield return new WaitUntil(() => !theDM.talking);
-                    SceneManager.LoadScene("Died1");
-                    break;
-            }
 
+                theChoice.ShowChoice(choice_1);
+                yield return new WaitUntil(() => !theChoice.choiceIng);
+                Debug.Log(theChoice.GetResult());
+                switch (theChoice.GetResult())
+                {
+                    case 0:
+                        theChoice.ShowChoice(choice_2);
+                        yield return new WaitUntil(() => !theChoice.choiceIng);
+                        switch (theChoice.GetResult())
+                        {
+                            case 0:
+                                dialogue_1.sentences[0] = "틀렸어...";
+                                theDM.ShowDialogue(dialogue_1);
+                                yield return new WaitUntil(() => !theDM.talking);
+                                SceneManager.LoadScene("Died1");
+                                break;
+                        }
+                        flag = false;
+
+                        break;
+                }
+
+            }
+        }
+        else
+        {
+            dialogue_2.sentences[0] = "이건 뭐지? 누를수 있을 것 같은데..";
+            theDM.ShowDialogue(dialogue_2);
+            yield return new WaitUntil(() => !theDM.talking);
         }
         flag = false;
         theOrder.Move();

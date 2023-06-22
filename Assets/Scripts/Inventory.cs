@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
 {
     private OrderManager theOrder;
     private PlayerMove thePlayer;
+    private DialogueManager theDM;
 
     private InventorySlot[] slots; // �κ��丮 ���Ե�;
 
@@ -36,6 +37,7 @@ public class Inventory : MonoBehaviour
     {
         theOrder = FindObjectOfType<OrderManager>();
         thePlayer = FindObjectOfType<PlayerMove>();
+        theDM = FindObjectOfType<DialogueManager>();
         inventoryItemList = new List<Item>();
         inventoryTabList = new List<Item>();
         activeList = new List<string>();
@@ -201,57 +203,62 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-/*        if(!stopKeyInput)
-        {*/
-            if (Input.GetKeyDown(KeyCode.Tab))
-            {
-                activated = !activated;
+        /*        if(!stopKeyInput)
+                {*/
+        if (!theDM.talking && Input.GetKeyDown(KeyCode.Tab))
+        {
+            activated = !activated;
 
-                if (activated)
-                {
-                    theOrder.NotMove();
-                    go.SetActive(true);
-                    selectedTab = 0;
-                    tabActivated = true; // �Ǻ��� ������� �ֵ���
-                    itemActivated = false;
+            if (activated)
+            {
+                theOrder.NotMove();
+                go.SetActive(true);
+                selectedTab = 0;
+                tabActivated = true; // 탭 활성화 여부를 나타내는 플래그
+                itemActivated = false;
                 preventExec = false;
-                ShowTab();
-                }
-                else
-                {
-                    go.SetActive(false);
-                    tabActivated = false;
-                    itemActivated = false;
+                ShowTab(); // 탭 표시 함수 호출
+            }
+            else
+            {
+                go.SetActive(false);
+                tabActivated = false;
+                itemActivated = false;
                 preventExec = true;
                 theOrder.Move();
                 StopAllCoroutines();
-                }
-            /*}*/
+            }
+        }
 
-            /*            if (activated)
-                        {
-            *//*                if (tabActivated)
-                            {*/
-            /*                    if (Input.GetKeyDown(KeyCode.RightArrow)) // ȭ��ǥ ������ �̵�
-                                {
-                                    if (selectedTab < selectedTabImages.Length - 1)
-                                        selectedTab++;
-                                    else
-                                        selectedTab = 0;
-                                        SelectedTab();
-                                }
-                                else if (Input.GetKeyDown(KeyCode.LeftArrow))
-                                {
-                                    if (selectedTab > 0)
-                                        selectedTab--;
-                                    else
-                                        selectedTab = selectedTabImages.Length - 1;
+
+
+
+
+
+        /*            if (activated)
+                    {
+        *//*                if (tabActivated)
+                        {*/
+        /*                    if (Input.GetKeyDown(KeyCode.RightArrow)) // ȭ��ǥ ������ �̵�
+                            {
+                                if (selectedTab < selectedTabImages.Length - 1)
+                                    selectedTab++;
+                                else
+                                    selectedTab = 0;
                                     SelectedTab();
-                                }*//*
+                            }
+                            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+                            {
+                                if (selectedTab > 0)
+                                    selectedTab--;
+                                else
+                                    selectedTab = selectedTabImages.Length - 1;
+                                SelectedTab();
+                            }*//*
 
-                           }*/
+                       }*/
 
-            if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z))
             {
                 Color color = selectedTabImages[selectedTab].GetComponent<Image>().color;
                 color.a = 0.25f;
@@ -321,4 +328,4 @@ public class Inventory : MonoBehaviour
                     preventExec = false;
             }
         }
-    }
+

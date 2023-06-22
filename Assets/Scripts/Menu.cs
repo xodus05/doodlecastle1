@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public static Menu instance; //scene ³Ñ¾î°¡µµ ±×´ë·Î
+    public static Menu instance; //scene ë„˜ì–´ê°€ë„ ê·¸ëŒ€ë¡œ
 
     public GameObject go;
-    //public AudioManager theAudio; // ³ªÁß¿¡ ¼Ò¸® Ãß°¡!
+    //public AudioManager theAudio; // ë‚˜ì¤‘ì— ì†Œë¦¬ ì¶”ê°€!
 
     public OrderManager theOrder;
+    private PlayerMove thePlayer;
+    private DialogueManager theDM;
 
     private bool activated;
 
@@ -29,8 +31,8 @@ public class Menu : MonoBehaviour
 
     public void Exit()
     {
-        Application.Quit(); // ¾Û Á¾·á
-        System.Diagnostics.Process.GetCurrentProcess().Kill(); //À¯´ÏÆ¼ Á¾·á
+        Application.Quit(); // ì•± ì¢…ë£Œ
+        System.Diagnostics.Process.GetCurrentProcess().Kill(); //ìœ ë‹ˆí‹° ì¢…ë£Œ
     }
 
     public void restart()
@@ -45,14 +47,21 @@ public class Menu : MonoBehaviour
         theOrder.Move();
     }
 
+    void Start()
+    {
+        thePlayer = FindObjectOfType<PlayerMove>();
+        theDM = FindObjectOfType<DialogueManager>();
+    }
+
 
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             activated = !activated;
-            if (activated)
+            if (activated || theDM.talking)
             {
                 theOrder.NotMove();
                 go.SetActive(true);
