@@ -6,6 +6,7 @@ public class EnemyAI : MonoBehaviour
 {
 
     private Inventory inventory;
+    private PlayerMove thePlayer;
 
     public static EnemyAI instance;
 
@@ -37,6 +38,7 @@ public class EnemyAI : MonoBehaviour
         inventory = FindObjectOfType<Inventory>();
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        thePlayer = FindObjectOfType<PlayerMove>();
     }
 
     void Update() {
@@ -44,7 +46,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     void FollowTarget() {
-        if (inventory.doing("불")) follow = false;
+        if (inventory.doing("불") || thePlayer.notMove) follow = false;
         else follow = true;
         if(Vector2.Distance(transform.position, target.position) > contactDistance && follow) {
             Panel.transform.position = Vector2.MoveTowards(Panel.transform.position, target.position, moveSpeed * Time.deltaTime);
