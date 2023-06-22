@@ -13,12 +13,14 @@ public class Enemy : MonoBehaviour
     public static Enemy instance;
 
     public GameObject monster;
+    private PlayerMove thePlayer;
 
     #region Singleton
 
     void Start() {
         startPosition = this.transform.position;
         inventory = FindObjectOfType<Inventory>();
+        thePlayer = FindObjectOfType<PlayerMove>();
     }
 
     private void Awake() {
@@ -32,9 +34,9 @@ public class Enemy : MonoBehaviour
     }
     #endregion Singleton
 
-    private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D collision)
     {
-          if(collision.gameObject.name == "Player" && !inventory.doing("불")) {
+          if(collision.gameObject.name == "Player" && !inventory.doing("불") && !thePlayer.notMove) {
             // inventory.activeList.Add("불");
             SceneManager.LoadScene("Died"); //quote 로 scene 이동
           }
