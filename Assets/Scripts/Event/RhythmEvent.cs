@@ -122,7 +122,7 @@ public class RhythmEvent : MonoBehaviour
                     {
                         theAudio.Play(sound2);
                         theRhythm.createTile();
-                        yield return new WaitForSeconds(0.6f);
+                        yield return new WaitForSeconds(1f);
                     }
                     flag2 = true;
                     yield return new WaitUntil(() => go);
@@ -131,7 +131,7 @@ public class RhythmEvent : MonoBehaviour
                         theFade.Flash();
                         theCamera.Shake();
                         theDM.ShowDialogue(Dialogue_c);
-                        yield return new WaitForSeconds(0.6f);
+                        yield return new WaitForSeconds(1f);
                         theCamera.StopShake();
                         yield return new WaitUntil(() => !theDM.talking);
                         c++;
