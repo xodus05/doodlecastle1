@@ -155,8 +155,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 200567182}
   listSentences:
-  - "\uCD94\uC5B5\uC740 \uC77C\uC885\uC758 \uB9CC\uB0A8\uC774\uB2E4. -\uCE7C\uB9B4
-    \uC9C0\uBE0C\uB780"
+  - "\uD50C\uB808\uC774 \uBC29\uBC95 \nZ\uD0A4\uB97C \uB20C\uB7EC\uC8FC\uC138\uC694.
+    \uC2A4\uD398\uC774\uC2A4 \uC544\uB2D9\uB2C8\uB2E4.. \n\uBC29\uD5A5\uD0A4\uB85C
+    \uC6C0\uC9C1\uC77C \uC218 \uC788\uC2B5\uB2C8\uB2E4. \n- z\uD0A4\uB97C \uB20C\uB7EC
+    \uB118\uC5B4\uAC00\uAE30 -"
 --- !u!4 &121367023
 Transform:
   m_ObjectHideFlags: 0

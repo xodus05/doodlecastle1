@@ -159,7 +159,7 @@ public class PlayerMove : MovingObject
     {
         if(!theDM.talking && !notMove) {
         //Ray
-            Debug.DrawRay(rigid2D.position, dirVec * 75.0f, Color.red);
+            // Debug.DrawRay(rigid2D.position, dirVec * 75.0f, Color.red);
             // layout이 Object 인것만 반응
             RaycastHit2D rayHit = Physics2D.Raycast(rigid2D.position, dirVec, 75.0f, LayerMask.GetMask("Object"));
 

@@ -9,6 +9,7 @@ public class ChatControll : MonoBehaviour
 {
 
     public Text text;
+    [TextArea(1, 2)]
     public List<string> listSentences;
 
     private int count;

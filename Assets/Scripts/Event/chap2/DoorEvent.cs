@@ -97,6 +97,7 @@ public class DoorEvent : MonoBehaviour
 
                     if (currentKeyPresses >= requiredKeyPresses)
                     {
+                    theOrder.NotMove();
                     isOpen = true;
                     Panel.SetActive(true);
                         theFade.Flash(0.01f);

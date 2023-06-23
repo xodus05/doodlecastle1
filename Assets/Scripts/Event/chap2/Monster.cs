@@ -10,12 +10,18 @@ public class Monster : MonoBehaviour
     public Vector2 startPosition;
 
     public static Monster instance;
+    private PlayerMove thePlayer;
 
     public GameObject monster;
 
+    void Start()
+    {
+        thePlayer = FindObjectOfType<PlayerMove>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == "Player" && !thePlayer.notMove)
         {
             SceneManager.LoadScene("Died2");
         }
